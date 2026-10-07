@@ -475,8 +475,6 @@ function renderHome(){
  homeNow.innerHTML=now.length?gameCard(now[0][0],now[0][1]):'<div class="meta">Ничего не отмечено как Playing.</div>';
  let nxt=all.filter(([fi,gi,g])=>saved(fi,gi).status==='todo'&&g.priority==='⭐')[0];
  homeNext.innerHTML=nxt?gameCard(nxt[0],nxt[1]):'<div class="meta">Backlog чист!</div>';
- const t=trophyData(), u=t.filter(x=>x[2]).length;
- homeAchievements.innerHTML=`<div class="home-ach-row"><div class="home-ach-big">${u}/${t.length}</div><div style="flex:1;min-width:160px"><div class="progressbar"><i style="width:${u/t.length*100}%"></i></div><div class="meta">Library trophies • RetroAchievements profile: ${RA_USER}</div></div><button class="small" onclick="switchView('trophies',document.querySelector('[data-view=trophies]'))">VIEW TROPHY ROOM →</button></div>`;
 }
 const _updateStatsV9=updateStats;
 updateStats=function(){_updateStatsV9();renderHome()}
