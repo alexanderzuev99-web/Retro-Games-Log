@@ -275,9 +275,9 @@ button:active{transform:translate(2px,2px)!important;box-shadow:1px 1px #000!imp
 <style id="v951-ra-live-style">
 .ra-live-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:8px}.ra-live-badge{font-size:9px;border:1px solid #5de2e7;color:#5de2e7;padding:4px 6px;background:#081317}.ra-live-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:10px}.ra-live-ach{display:grid;grid-template-columns:46px 1fr;gap:9px;align-items:center;border:1px solid #584466;background:#171020;padding:8px}.ra-live-ach.locked{opacity:.48}.ra-live-ach img{width:44px;height:44px;object-fit:cover;border:1px solid #6d567d}.ra-live-ach b{display:block;font-size:11px;color:#fff3c4}.ra-live-ach small{display:block;font-size:9px;color:var(--muted);margin-top:3px}.ra-error{color:#ff9d9d;font-size:10px}.ra-loading{color:var(--cyan);font-size:10px;animation:pulse 1.15s steps(2,end) infinite}.ra-profile-card{border:2px solid #5de2e7;background:#0c1519;box-shadow:4px 4px #000;padding:14px;margin-bottom:12px}.ra-profile-card h3{margin:0 0 8px;color:#5de2e7}.ra-profile-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.ra-profile-stats div{border:1px solid #345b60;padding:8px}.ra-profile-stats b{display:block;color:#fff3c4;font-size:18px}.ra-profile-stats small{color:var(--muted);font-size:8px}@media(max-width:720px){.ra-live-grid{grid-template-columns:1fr}.ra-profile-stats{grid-template-columns:1fr 1fr}}
 </style>
-</head><body><!-- Retro Games Log v9.8.0 RC4: canonical 21 franchises / 216 games -->
+</head><body><!-- Retro Games Log v9.8.0 RC5: canonical 21 franchises / 216 games -->
 
-<div class="pixel-bat">🦇</div><div id="seasonCountdown" class="corner-hud left"></div><div class="corner-hud right">v9.8.0 RC4</div>
+<div class="pixel-bat">🦇</div><div id="seasonCountdown" class="corner-hud left"></div><div class="corner-hud right">v9.8.0 RC5</div>
 <div class="stickers"><div class="sticker s1">INSERT COIN</div><div class="sticker s2">1UP</div><div class="sticker s3">HIGH SCORE</div><div class="sticker s4">BOSS RUSH</div><div class="sticker s5">PRESS START</div></div>
 <div class="arcade-stickers background-stickers" aria-hidden="true"><span class="arcade-sticker"><svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="#080610" d="M4 1h8v2h2v2h1v5h-3v4h-2v1H6v-1H4v-4H1V5h1V3h2z"/><path fill="#ec5368" d="M4 3h8v2h2v4H2V5h2z"/><path fill="#fff2ca" d="M6 3h4v3H6zM2 6h3v3H2zM11 6h3v3h-3zM5 10h6v3H5z"/><path fill="#282132" d="M6 10h1v2H6zM9 10h1v2H9z"/></svg>1UP</span><span class="arcade-sticker"><svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="#291a05" d="M5 1h6v2h2v2h1v6h-1v2h-2v2H5v-2H3v-2H2V5h1V3h2z"/><path fill="#ffb72e" d="M5 3h6v2h1v6h-1v2H5v-2H4V5h1z"/><path fill="#fff0a2" d="M6 4h2v8H6zM8 3h2v1H8z"/></svg>× 99</span><span class="arcade-sticker"><svg viewBox="0 0 24 24" aria-hidden="true" shape-rendering="crispEdges"><path fill="#ed609e" d="M1 2h6v3H1zM9 2h6v3H9zM17 2h6v3h-6z"/><path fill="#ffdc70" d="M1 7h6v3H1zM9 7h6v3H9zM17 7h6v3h-6z"/><path fill="#6bf0ee" d="M9 20h12v3H9z"/><path fill="#fff2d7" d="M14 14h3v3h-3z"/></svg>ARKANOID</span></div>
 <div class="app">
@@ -846,7 +846,7 @@ setTimeout(()=>{try{renderLibrary();renderFranchises();renderHome();renderSpecia
 .radio-on .v968-led{background:#9cff57;box-shadow:0 0 8px #9cff57}
 .v968-bb-main{display:grid;grid-template-columns:52px 1fr 52px;gap:7px;align-items:center}
 .v968-speaker{aspect-ratio:1;border:3px solid #08060b;border-radius:50%;background:repeating-radial-gradient(circle,#31263b 0 3px,#17111e 3px 6px);box-shadow:inset 0 0 0 3px #5f4a6f}
-.v968-speaker:after{content:"";display:block;width:32%;height:32%;margin:34%;border-radius:50%;background:#09070d;border:2px solid #ff4fa3}
+.v968-speaker:after{content:"";display:block;width:32%;height:32%;margin:34%;border-radius:50%;background:#09070d;border:2px solid #5f4a6f}
 .radio-on .v968-speaker:after{animation:v968beat .48s ease-in-out infinite alternate}
 .v968-deck{height:45px;border:2px solid #725d83;background:#08060c;position:relative;box-shadow:inset 0 0 12px #5de2e71c}
 .v968-reel{position:absolute;top:11px;width:19px;height:19px;border:3px dotted #ffd166;border-radius:50%}
@@ -1254,7 +1254,14 @@ window.renderSpecials=function(){const all=entriesRC(),now=sortEntries(all.filte
 window.gpStatus=function(fi,gi,v){const y=scrollY;setSaved(fi,gi,{status:v});paintStatsRC();renderHomeRC();renderSpecials();requestAnimationFrame(()=>scrollTo({top:y,left:0,behavior:'instant'}))};
 
 const oldOpenGameRC=window.openGame;
-window.openGame=function(fi,gi){fi=Number(fi);gi=Number(gi);if(!DATA[fi]?.games?.[gi]||!visibleRC(fi,gi))return;oldOpenGameRC(fi,gi);const s=saved(fi,gi);/* Stored dates remain visible for every status. */};
+window.openGame=function(fi,gi){fi=Number(fi);gi=Number(gi);if(!DATA[fi]?.games?.[gi]||!visibleRC(fi,gi))return;oldOpenGameRC(fi,gi);const s=saved(fi,gi);/* Stored dates remain visible for every status. */
+ requestAnimationFrame(()=>{
+  const page=document.getElementById('view-gameDetail');
+  if(!page||!page.classList.contains('active'))return;
+  const nav=document.querySelector('.nav');
+  const inset=(nav?nav.getBoundingClientRect().height:0)+12;
+  scrollTo({top:Math.max(0,page.getBoundingClientRect().top+scrollY-inset),left:0,behavior:'instant'});
+ });};
 
 document.addEventListener('error',e=>{const img=e.target;if(!(img instanceof HTMLImageElement))return;if(!(img.classList.contains('game-poster')||img.closest('.game-page-poster')))return;setTimeout(()=>{if(img.style.display==='none'||img.classList.contains('broken')){const host=img.parentElement;if(host&&!host.querySelector('.cover-missing-rc'))host.insertAdjacentHTML('beforeend','<div class="cover-missing-rc">🎮<br>COVER SOURCE NEEDED</div>')}},0)},true);
 
@@ -1411,7 +1418,7 @@ function refreshCovers(){renderLibrary();renderFranchises();renderHome();renderS
 refreshCovers();
 addEventListener('pageshow',()=>window.renderSeasonPanel?.());
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)window.renderSeasonPanel?.()});
-document.querySelector('.corner-hud.right').textContent='v9.8.0 RC4';
+document.querySelector('.corner-hud.right').textContent='v9.8.0 RC5';
 })();
 </script>
 
@@ -1445,4 +1452,4 @@ document.querySelector('.corner-hud.right').textContent='v9.8.0 RC4';
 @media(prefers-reduced-motion:reduce){#v93Picks .v93-pick{transition:none}}
 </style>
 </body></html>
-<!-- v9.8.0 RC4: canonical 21 franchises / 216 games; dynamic stats + sorting + QA fixes. -->
+<!-- v9.8.0 RC5: canonical 21 franchises / 216 games; dynamic stats + sorting + QA fixes. -->
