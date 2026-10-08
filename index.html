@@ -281,9 +281,9 @@ button:active{transform:translate(2px,2px)!important;box-shadow:1px 1px #000!imp
 @keyframes neonBreath{0%,100%{box-shadow:0 0 12px #ff4fa366,inset 0 0 12px #5de2e733}50%{box-shadow:0 0 25px #ff4fa399,inset 0 0 18px #5de2e755}}
 @keyframes startPulse{0%,100%{opacity:1}50%{opacity:.55}}@keyframes playerGlow{0%,100%{text-shadow:none}50%{text-shadow:0 0 10px #a8f55a}}
 @media(prefers-reduced-motion:reduce){.hero .neon-library,.hero .press-start-clean,.hero-player,.hero .neon-flicker{animation:none!important}}
-</style></head><body><!-- Retro Games Log v9.8.0 RC11: canonical 33 franchises / 321 games -->
+</style></head><body><!-- Retro Games Log v9.8.0 RC12: canonical 33 franchises / 321 games -->
 
-<div class="pixel-bat">🦇</div><div id="seasonCountdown" class="corner-hud left"></div><div class="corner-hud right">v9.8.0 RC11</div>
+<div class="pixel-bat">🦇</div><div id="seasonCountdown" class="corner-hud left"></div><div class="corner-hud right">v9.8.0 RC12</div>
 <div class="stickers"><div class="sticker s1">INSERT COIN</div><div class="sticker s2">1UP</div><div class="sticker s3">HIGH SCORE</div><div class="sticker s4">BOSS RUSH</div><div class="sticker s5">PRESS START</div></div>
 <div class="arcade-stickers background-stickers" aria-hidden="true"><span class="arcade-sticker"><svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="#080610" d="M4 1h8v2h2v2h1v5h-3v4h-2v1H6v-1H4v-4H1V5h1V3h2z"/><path fill="#ec5368" d="M4 3h8v2h2v4H2V5h2z"/><path fill="#fff2ca" d="M6 3h4v3H6zM2 6h3v3H2zM11 6h3v3h-3zM5 10h6v3H5z"/><path fill="#282132" d="M6 10h1v2H6zM9 10h1v2H9z"/></svg>1UP</span><span class="arcade-sticker"><svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="#291a05" d="M5 1h6v2h2v2h1v6h-1v2h-2v2H5v-2H3v-2H2V5h1V3h2z"/><path fill="#ffb72e" d="M5 3h6v2h1v6h-1v2H5v-2H4V5h1z"/><path fill="#fff0a2" d="M6 4h2v8H6zM8 3h2v1H8z"/></svg>× 99</span><span class="arcade-sticker"><svg viewBox="0 0 24 24" aria-hidden="true" shape-rendering="crispEdges"><path fill="#ed609e" d="M1 2h6v3H1zM9 2h6v3H9zM17 2h6v3h-6z"/><path fill="#ffdc70" d="M1 7h6v3H1zM9 7h6v3H9zM17 7h6v3h-6z"/><path fill="#6bf0ee" d="M9 20h12v3H9z"/><path fill="#fff2d7" d="M14 14h3v3h-3z"/></svg>ARKANOID</span></div>
 <div class="app">
@@ -1074,12 +1074,12 @@ DATA.forEach(f=>f.games.forEach(g=>{if(!String(g.description||'').trim())g.descr
 window.gameCard=function(fi,gi){
  if(hiddenGame9(fi,gi))return '';
  const f=DATA[fi],g=f.games[gi],s=saved(fi,gi),r=g.internet_rating||{};
- const rt=r.critic!=null?`★ ${r.critic}/100 critics`:r.user!=null?`★ ${r.user}/10 · ${esc(r.source||"users")}`:r.moby_score!=null?`★ ${r.moby_score}/10 Moby`:'Нет подтверждённой оценки';
+ const rt=r.critic!=null?`★ ${r.critic}/100 critics`:r.user!=null?`★ ${r.user}/10 · ${esc9(r.source||"users")}`:r.moby_score!=null?`★ ${r.moby_score}/10 Moby`:'Нет подтверждённой оценки';
  const plats=String(g.platform).split('/').map(x=>x.trim()).filter(Boolean).map(p=>`<button class="pill clickable-platform" onclick="event.stopPropagation();openConsole('${esc9(p)}')">${esc9(p)}</button>`).join('');
  return `<article class="game" data-fi="${fi}" data-gi="${gi}" data-search="${esc9((f.name+' '+g.title+' '+g.platform).toLowerCase())}">
  <button class="poster" onclick="event.stopPropagation();openGame(${fi},${gi})">${coverImg(g)}<div class="fallback">${f.emoji}<small>POSTER</small></div></button>
  <div><h4 class="clickable-title" onclick="event.stopPropagation();openGame(${fi},${gi})">${g.order}. ${esc9(g.title)}</h4>
- <div class="meta">${g.year}</div><div class="meta-pills">${plats}</div><div class="genre-tags" aria-label="Жанры">${g.genres.map(x=>`<span>${esc9(x)}</span>`).join('')}</div><div class="rating-badge" title="${esc(r.source||'Нет подтверждённого источника')}">${rt}</div>
+ <div class="meta">${g.year}</div><div class="meta-pills">${plats}</div><div class="genre-tags" aria-label="Жанры">${g.genres.map(x=>`<span>${esc9(x)}</span>`).join('')}</div><div class="rating-badge" title="${esc9(r.source||'Нет подтверждённого источника')}">${rt}</div>
  <p>${esc9(g.note||'')}</p><div class="actions"><button onclick="event.stopPropagation();cycle(${fi},${gi})">${s.status==='todo'?'○':s.status==='playing'?'▶':'✓'} Статус</button>${s.favorite?'<span title="Favorite">♥</span>':''}</div></div></article>`;
 };
 
@@ -1215,7 +1215,7 @@ setTimeout(()=>{decorate();try{renderHome();renderLibrary();renderFranchises();r
 
 <script id="v980-rc">
 (()=>{
-const RC_VERSION='9.8.0 RC11',HIDDEN_KEY_RC='retro-games-hidden-v1';
+const RC_VERSION='9.8.0 RC12',HIDDEN_KEY_RC='retro-games-hidden-v1';
 const hiddenRC=()=>{try{return new Set(JSON.parse(localStorage.getItem(HIDDEN_KEY_RC)||'[]'))}catch(e){return new Set()}};
 const keyRC=(fi,gi)=>{const f=DATA[fi],g=f?.games?.[gi];return f&&g?`${f.name}|${g.title}|${g.platform}|${g.year}`:''};
 const visibleRC=(fi,gi)=>DATA[fi].games[gi].platform!=='PSP'&&!hiddenRC().has(keyRC(fi,gi));
@@ -1482,7 +1482,7 @@ function refreshCovers(){renderLibrary();renderFranchises();renderHome();renderS
 refreshCovers();
 addEventListener('pageshow',()=>window.renderSeasonPanel?.());
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)window.renderSeasonPanel?.()});
-document.querySelector('.corner-hud.right').textContent='v9.8.0 RC11';
+document.querySelector('.corner-hud.right').textContent='v9.8.0 RC12';
 })();
 </script>
 
@@ -1643,5 +1643,5 @@ paint();setTimeout(sync,30000);setInterval(sync,900000);document.addEventListene
 .ra-latest-room b,.ra-latest-home b{font-size:16px!important;line-height:1.5!important}.ra-latest-room small,.ra-latest-home small{font-size:12px!important;line-height:1.7!important;margin-top:5px;overflow-wrap:anywhere}.ra-latest-room .v94-kicker,.ra-latest-home .v94-kicker{font-size:10px!important;line-height:1.5}
 .ra-recent-card b{font-size:14px!important;line-height:1.5!important}.ra-recent-card small{font-size:12px!important;line-height:1.65!important;overflow-wrap:anywhere}.ra-profile-stats small{font-size:10px!important;line-height:1.5!important}.ra-recent-card{align-items:start!important;padding:12px!important;gap:12px!important}.ra-live-ach b{font-size:12px!important;line-height:1.5!important}.ra-live-ach small{font-size:11px!important;line-height:1.6!important}
 @media(max-width:480px){.ra-latest-room b,.ra-latest-home b{font-size:14px!important}.ra-recent-grid{grid-template-columns:1fr!important}.ra-latest-room,.ra-latest-home{gap:12px!important}.ra-latest-room img{width:72px!important;height:72px!important}}
-</style></body></html>
-<!-- v9.8.0 RC11: canonical 33 franchises / 321 games; dynamic stats + sorting + QA fixes. -->
+</style><style>.hero-title-row .neon-library,.hero-title-row .hero-counter{transform:none!important}</style><script>const rc12Filter=document.getElementById('platformFilter');const rc12Clean=()=>{for(const o of rc12Filter?.querySelectorAll('option')||[])if(o.value==='PSP')o.remove()};rc12Clean();setTimeout(rc12Clean,300);</script></body></html>
+<!-- v9.8.0 RC12: canonical 33 franchises / 321 games; dynamic stats + sorting + QA fixes. -->
