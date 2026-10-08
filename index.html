@@ -548,7 +548,8 @@ initPlatform();renderSeason();applySeasonTheme();updateCountdown();renderLibrary
 
 
 
-\n<script id="rc11-ra-client">(function(){
+
+<script id="rc11-ra-client">(function(){
 const API='https://retro-games-ra-api.alexander-zuev99.workers.dev',CACHE='retro-ra-responses-v1',RETRY='retro-ra-retry-after-v1',LAST='retro-ra-last-request-v1',LOCK='retro-ra-request-lock-v1',FAIL='retro-ra-failure-count-v1';
 const owner=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2),pending=new Map();let lane=Promise.resolve();
 function read(k,f){try{return JSON.parse(localStorage.getItem(k))??f}catch(e){return f}}
