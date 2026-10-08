@@ -281,9 +281,9 @@ button:active{transform:translate(2px,2px)!important;box-shadow:1px 1px #000!imp
 @keyframes neonBreath{0%,100%{box-shadow:0 0 12px #ff4fa366,inset 0 0 12px #5de2e733}50%{box-shadow:0 0 25px #ff4fa399,inset 0 0 18px #5de2e755}}
 @keyframes startPulse{0%,100%{opacity:1}50%{opacity:.55}}@keyframes playerGlow{0%,100%{text-shadow:none}50%{text-shadow:0 0 10px #a8f55a}}
 @media(prefers-reduced-motion:reduce){.hero .neon-library,.hero .press-start-clean,.hero-player,.hero .neon-flicker{animation:none!important}}
-</style></head><body><!-- Retro Games Log v9.8.0 RC7: canonical 33 franchises / 321 games -->
+</style></head><body><!-- Retro Games Log v9.8.0 RC8: canonical 33 franchises / 321 games -->
 
-<div class="pixel-bat">🦇</div><div id="seasonCountdown" class="corner-hud left"></div><div class="corner-hud right">v9.8.0 RC7</div>
+<div class="pixel-bat">🦇</div><div id="seasonCountdown" class="corner-hud left"></div><div class="corner-hud right">v9.8.0 RC8</div>
 <div class="stickers"><div class="sticker s1">INSERT COIN</div><div class="sticker s2">1UP</div><div class="sticker s3">HIGH SCORE</div><div class="sticker s4">BOSS RUSH</div><div class="sticker s5">PRESS START</div></div>
 <div class="arcade-stickers background-stickers" aria-hidden="true"><span class="arcade-sticker"><svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="#080610" d="M4 1h8v2h2v2h1v5h-3v4h-2v1H6v-1H4v-4H1V5h1V3h2z"/><path fill="#ec5368" d="M4 3h8v2h2v4H2V5h2z"/><path fill="#fff2ca" d="M6 3h4v3H6zM2 6h3v3H2zM11 6h3v3h-3zM5 10h6v3H5z"/><path fill="#282132" d="M6 10h1v2H6zM9 10h1v2H9z"/></svg>1UP</span><span class="arcade-sticker"><svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="#291a05" d="M5 1h6v2h2v2h1v6h-1v2h-2v2H5v-2H3v-2H2V5h1V3h2z"/><path fill="#ffb72e" d="M5 3h6v2h1v6h-1v2H5v-2H4V5h1z"/><path fill="#fff0a2" d="M6 4h2v8H6zM8 3h2v1H8z"/></svg>× 99</span><span class="arcade-sticker"><svg viewBox="0 0 24 24" aria-hidden="true" shape-rendering="crispEdges"><path fill="#ed609e" d="M1 2h6v3H1zM9 2h6v3H9zM17 2h6v3h-6z"/><path fill="#ffdc70" d="M1 7h6v3H1zM9 7h6v3H9zM17 7h6v3h-6z"/><path fill="#6bf0ee" d="M9 20h12v3H9z"/><path fill="#fff2d7" d="M14 14h3v3h-3z"/></svg>ARKANOID</span></div>
 <div class="app">
@@ -613,7 +613,9 @@ function updateHomeRA(){
 }
 const RA_SELECTION_KEY='retro-ra-selected-version-v1';let raSelected={};try{raSelected=JSON.parse(localStorage.getItem(RA_SELECTION_KEY)||'{}')||{}}catch(e){}
 let raRenderSerial=0;
-const raCache=new Map();
+const raCache=new Map(),raCacheTimes=new Map();
+window.raProgressConsoleMatches=raConsoleMatches;
+window.raGetGameProgress=raFetchGame;
 function raEscape(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function raLibraryKey(fi,gi){const f=DATA[fi],g=f.games[gi];return `${f.name}|${g.title}|${g.platform}|${g.year}`}
 function raConsoleMatches(platform,consoleName){
@@ -621,9 +623,9 @@ function raConsoleMatches(platform,consoleName){
  return String(platform).split('/').some(p=>raNorm(aliases[p.trim()]||p.trim())===raNorm(consoleName));
 }
 async function raFetchGame(id){
- if(raCache.has(id))return raCache.get(id);
+ if(raCache.has(id)&&Date.now()-(raCacheTimes.get(id)||0)<60000){const d=raCache.get(id);window.raRecordProgress?.(d);return d}
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
- try{const r=await fetch(RA_API+'/game?gameId='+id,{headers:{Accept:'application/json'},signal:controller.signal});if(!r.ok)throw new Error('HTTP '+r.status);const d=await r.json();if(!d.ok||Number(d.game?.id)!==id)throw new Error('Ответ RetroAchievements не соответствует игре');raCache.set(id,d);return d}finally{clearTimeout(timer)}
+ try{const r=await fetch(RA_API+'/game?gameId='+id,{headers:{Accept:'application/json'},signal:controller.signal});if(!r.ok)throw new Error('HTTP '+r.status);const d=await r.json();if(!d.ok||Number(d.game?.id)!==id)throw new Error('Ответ RetroAchievements не соответствует игре');raCache.set(id,d);raCacheTimes.set(id,Date.now());window.raRecordProgress?.(d);return d}finally{clearTimeout(timer)}
 }
 window.renderGameAchievements=async function(fi,gi){
  const box=document.querySelector('#view-gameDetail.active #gpAchievements')||document.querySelector('#modal.show #mAchievements');if(!box)return;
@@ -1184,7 +1186,7 @@ setTimeout(()=>{decorate();try{renderHome();renderLibrary();renderFranchises();r
 
 <script id="v980-rc">
 (()=>{
-const RC_VERSION='9.8.0 RC7',HIDDEN_KEY_RC='retro-games-hidden-v1';
+const RC_VERSION='9.8.0 RC8',HIDDEN_KEY_RC='retro-games-hidden-v1';
 const hiddenRC=()=>{try{return new Set(JSON.parse(localStorage.getItem(HIDDEN_KEY_RC)||'[]'))}catch(e){return new Set()}};
 const keyRC=(fi,gi)=>{const f=DATA[fi],g=f?.games?.[gi];return f&&g?`${f.name}|${g.title}|${g.platform}|${g.year}`:''};
 const visibleRC=(fi,gi)=>!hiddenRC().has(keyRC(fi,gi));
@@ -1273,7 +1275,7 @@ window.renderConsoles=function(){
 };
 
 function renderHomeRC(){
- const now=sortEntries(entriesRC().filter(e=>saved(e.fi,e.gi).status==='playing'),'POPULARITY'),nxt=sortEntries(entriesRC().filter(e=>saved(e.fi,e.gi).status==='todo'),'POPULARITY')[0];
+ const now=sortEntries(entriesRC().filter(e=>saved(e.fi,e.gi).status==='playing'),'POPULARITY').sort((a,b)=>(saved(b.fi,b.gi).raLastEarned||0)-(saved(a.fi,a.gi).raLastEarned||0)),nxt=sortEntries(entriesRC().filter(e=>saved(e.fi,e.gi).status==='todo'),'POPULARITY')[0];
  const hNow=document.getElementById('homeNow'),hNext=document.getElementById('homeNext'),vNow=document.getElementById('v93Now'),vNext=document.getElementById('v93Next');
  if(hNow)hNow.innerHTML=now.length?gameCard(now[0].fi,now[0].gi):'<div class="meta">Ничего не отмечено как Playing.</div>';
  if(hNext)hNext.innerHTML=nxt?gameCard(nxt.fi,nxt.gi):'<div class="meta">Backlog чист!</div>';
@@ -1282,7 +1284,7 @@ function renderHomeRC(){
 }
 window.renderHome=renderHomeRC;
 window.showDone=function(){const a=sortEntries(entriesRC().filter(e=>saved(e.fi,e.gi).status==='done'),'POPULARITY'),box=document.getElementById('doneGrid');if(box)box.innerHTML=a.length?a.map(e=>gameCard(e.fi,e.gi)).join(''):'<div class="empty">Пока ни одной пройденной игры.</div>';showViewOnly('done');scrollTo(0,0)};
-window.renderSpecials=function(){const all=entriesRC(),now=sortEntries(all.filter(e=>saved(e.fi,e.gi).status==='playing'),'POPULARITY'),next=sortEntries(all.filter(e=>saved(e.fi,e.gi).status==='todo'),'POPULARITY').slice(0,6),ng=document.getElementById('nowGrid'),nx=document.getElementById('nextGrid');if(ng)ng.innerHTML=now.length?now.map(e=>gameCard(e.fi,e.gi)).join(''):'<div class="empty">Сейчас ничего не отмечено как «Играю».</div>';if(nx)nx.innerHTML=next.length?next.map(e=>gameCard(e.fi,e.gi)).join(''):'<div class="empty">Backlog чист.</div>'};
+window.renderSpecials=function(){const all=entriesRC(),now=sortEntries(all.filter(e=>saved(e.fi,e.gi).status==='playing'),'POPULARITY').sort((a,b)=>(saved(b.fi,b.gi).raLastEarned||0)-(saved(a.fi,a.gi).raLastEarned||0)),next=sortEntries(all.filter(e=>saved(e.fi,e.gi).status==='todo'),'POPULARITY').slice(0,6),ng=document.getElementById('nowGrid'),nx=document.getElementById('nextGrid');if(ng)ng.innerHTML=now.length?now.map(e=>gameCard(e.fi,e.gi)).join(''):'<div class="empty">Сейчас ничего не отмечено как «Играю».</div>';if(nx)nx.innerHTML=next.length?next.map(e=>gameCard(e.fi,e.gi)).join(''):'<div class="empty">Backlog чист.</div>'};
 
 window.gpStatus=function(fi,gi,v){const y=scrollY;setSaved(fi,gi,{status:v});paintStatsRC();renderHomeRC();renderSpecials();requestAnimationFrame(()=>scrollTo({top:y,left:0,behavior:'instant'}))};
 
@@ -1451,7 +1453,7 @@ function refreshCovers(){renderLibrary();renderFranchises();renderHome();renderS
 refreshCovers();
 addEventListener('pageshow',()=>window.renderSeasonPanel?.());
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)window.renderSeasonPanel?.()});
-document.querySelector('.corner-hud.right').textContent='v9.8.0 RC7';
+document.querySelector('.corner-hud.right').textContent='v9.8.0 RC8';
 })();
 </script>
 
@@ -1484,5 +1486,59 @@ document.querySelector('.corner-hud.right').textContent='v9.8.0 RC7';
 @media(min-width:481px) and (max-width:720px){#v93Picks{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){#v93Picks .v93-pick{transition:none}}
 </style>
-<style id="rc6-genres">.genre-tags{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0}.genre-tags span{font:700 10px 'Courier New',monospace;color:#dbcbe5;background:#251a30;border:1px solid #685378;padding:5px 8px}.ra-link-row{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}.ra-link-row a{color:#ffe3a0}.ra-connect{margin:12px 0;color:#bfaecc}.ra-connect input{width:100%;max-width:500px;min-height:40px;background:#17101f;color:#fff;border:1px solid #735687;padding:8px;margin:8px 0}.ra-connect button{background:#251a30;color:#ffe3a0;border:1px solid #735687;padding:10px;cursor:pointer}.ra-status-note{line-height:1.7;font-size:11px}.ra-live-grid{content-visibility:auto}.ra-live-ach.locked{opacity:1}.ra-live-ach.locked img{opacity:.65}.ra-live-ach b{font-size:12px}.ra-live-ach small{font-size:10px;line-height:1.6;color:#bfaecc}.ra-link-row button{min-height:40px;padding:8px 12px;background:#251a30;color:#ffe3a0;border:1px solid #735687;cursor:pointer;font:700 11px 'Courier New',monospace}.ra-live-ach small{overflow-wrap:anywhere}</style></body></html>
-<!-- v9.8.0 RC7: canonical 33 franchises / 321 games; dynamic stats + sorting + QA fixes. -->
+<style id="rc6-genres">.genre-tags{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0}.genre-tags span{font:700 10px 'Courier New',monospace;color:#dbcbe5;background:#251a30;border:1px solid #685378;padding:5px 8px}.ra-link-row{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}.ra-link-row a{color:#ffe3a0}.ra-connect{margin:12px 0;color:#bfaecc}.ra-connect input{width:100%;max-width:500px;min-height:40px;background:#17101f;color:#fff;border:1px solid #735687;padding:8px;margin:8px 0}.ra-connect button{background:#251a30;color:#ffe3a0;border:1px solid #735687;padding:10px;cursor:pointer}.ra-status-note{line-height:1.7;font-size:11px}.ra-live-grid{content-visibility:auto}.ra-live-ach.locked{opacity:1}.ra-live-ach.locked img{opacity:.65}.ra-live-ach b{font-size:12px}.ra-live-ach small{font-size:10px;line-height:1.6;color:#bfaecc}.ra-link-row button{min-height:40px;padding:8px 12px;background:#251a30;color:#ffe3a0;border:1px solid #735687;cursor:pointer;font:700 11px 'Courier New',monospace}.ra-live-ach small{overflow-wrap:anywhere}</style><style id="rc8-auto-status-style">.ra-auto-sync-note,.ra-auto-game-note{font:11px/1.7 "Courier New",monospace;color:#b9d996;margin:12px 0 0;overflow-wrap:anywhere}.game-controls>select:disabled{opacity:1;color:#fff1bf;border-color:#9ab573;cursor:default}</style><script id="rc8-auto-status">
+(function(){
+const STORE='retro-ra-progress-krenot-v1',API='https://retro-games-ra-api.alexander-zuev99.workers.dev',DAY=86400000;
+let progress={};try{progress=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch(e){}
+const ids=[...new Set(DATA.flatMap(f=>f.games.flatMap(g=>(g.raVersions||[]).map(v=>v.id))))],expected=new Map();
+DATA.forEach(f=>f.games.forEach(g=>(g.raVersions||[]).forEach(v=>expected.set(v.id,v.platform))));
+let busy=false,paintTimer=null,failures=0,checked=0;
+const originalSaved=window.saved;
+function raState(fi,gi){
+ const versions=DATA[fi].games[gi].raVersions||[],rows=versions.map(v=>progress[v.id]).filter(Boolean);
+ const withSets=rows.filter(p=>p.total>0),auto=withSets.length>0||versions.some(v=>v.achievements>0);
+ if(!auto)return null;
+ const started=withSets.filter(p=>p.unlocked>0||p.done),completed=started.filter(p=>p.done),chosen=(completed.length?completed:started).sort((a,b)=>b.lastEarned-a.lastEarned)[0];
+ return {status:completed.length?'done':started.length?'playing':'todo',raAuto:true,raPending:!rows.length,raLastEarned:chosen?.lastEarned||0,raGameId:chosen?.id};
+}
+window.saved=function(fi,gi){return Object.assign({},originalSaved(fi,gi),raState(fi,gi)||{})};
+function paint(){
+ const y=scrollY;window.renderHome?.();window.renderSpecials?.();window.updateStats?.();window.renderLibrary?.();window.showRAAutoNotice();
+ const view=document.querySelector('#view-gameDetail.active'),sel=view?.querySelector('.game-controls>select');
+ if(sel){const m=(sel.getAttribute('onchange')||'').match(/gpStatus\((\d+),(\d+)/);if(m){const s=saved(+m[1],+m[2]);sel.value=s.status;sel.disabled=!!s.raAuto;let n=view.querySelector('.ra-auto-game-note');if(!n){n=document.createElement('p');n.className='ra-auto-game-note';sel.after(n)}n.textContent=s.raAuto?'Статус обновляется по достижениям RetroAchievements.':'Статус этой версии можно выбрать вручную.'}}
+ requestAnimationFrame(()=>scrollTo({top:y,left:0,behavior:'instant'}));
+}
+function schedulePaint(){clearTimeout(paintTimer);paintTimer=setTimeout(paint,750)}
+window.showRAAutoNotice=function(){
+ for(const panel of [document.querySelector('#v93Now')?.parentElement,document.getElementById('view-now')||document.getElementById('nowGrid')?.parentElement]){
+  if(!panel)continue;let n=panel.querySelector('.ra-auto-sync-note');if(!n){n=document.createElement('p');n.className='ra-auto-sync-note';n.setAttribute('role','status');panel.append(n)}
+  n.textContent=busy?`RETROACHIEVEMENTS · Синхронизация ${checked}/${ids.length}`:failures?'RETROACHIEVEMENTS · Сервис временно недоступен. Сохранён последний подтверждённый прогресс.':'RETROACHIEVEMENTS · Первое достижение → Играю · Игра пройдена → Пройдено';
+ }
+};
+window.raRecordProgress=function(d){
+ const id=Number(d?.game?.id);if(!d?.ok||!expected.has(id)||!window.raProgressConsoleMatches(expected.get(id),d.game?.console))return;
+ const p=d.progress||{},a=Array.isArray(d.achievements)?d.achievements:[],total=Math.max(Number(p.achievementsTotal)||0,a.length),unlocked=Math.max(Number(p.unlocked)||0,a.filter(x=>x.unlocked).length);
+ const award=String(p.highestAward||'').toLowerCase(),done=total>0&&(unlocked>=total||/beaten|mastered|completed/.test(award));
+ const dates=a.filter(x=>x.unlocked&&x.dateEarned).map(x=>{let t=String(x.dateEarned);if(!/[zZ]|[+-]\d\d:\d\d$/.test(t))t=t.replace(' ','T')+'Z';return Date.parse(t)||0});
+ const previous=progress[id],lastEarned=Math.max(0,...dates);progress[id]={id,total,unlocked,done,lastEarned,checkedAt:Date.now()};
+ try{localStorage.setItem(STORE,JSON.stringify(progress))}catch(e){console.warn('RA progress storage unavailable')}
+ if(unlocked!==(previous?.unlocked||0)||done!==!!previous?.done||lastEarned!==(previous?.lastEarned||0))schedulePaint();
+};
+window.raAutoStatus=raState;
+async function sync(){
+ if(busy||document.hidden)return;busy=true;failures=0;checked=0;showRAAutoNotice();
+ let recent=[];
+ try{const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);let d;try{const r=await fetch(API+'/profile',{headers:{Accept:'application/json'},signal:controller.signal});if(!r.ok)throw Error('profile');d=await r.json()}finally{clearTimeout(timer)}if(!d.ok||d.user!=='Krenot')throw Error('profile account');recent=[...(d.recentlyPlayed||[]).map(x=>Number(x.GameID)),...Object.keys(d.recentAchievements||{}).map(Number)].filter(id=>expected.has(id))}catch(e){failures++}
+ const priority=[...new Set(recent)],queue=[...priority,...ids.filter(id=>!priority.includes(id)&&(!progress[id]||Date.now()-progress[id].checkedAt>DAY))];checked=ids.length-queue.length;
+ let cursor=0;
+ async function worker(){while(cursor<queue.length&&!document.hidden){const id=queue[cursor++];try{await window.raGetGameProgress(id)}catch(e){failures++}checked++;showRAAutoNotice();if(cursor<queue.length)await new Promise(r=>setTimeout(r,300))}}
+ try{await Promise.all([worker(),worker(),worker()])}finally{busy=false;paint()}
+}
+// Initial scan finds older started games; subsequent scans reuse daily snapshots.
+window.refreshRAStatus=sync;
+const oldOpen=window.openGame;window.openGame=function(fi,gi){const result=oldOpen(fi,gi);schedulePaint();return result};
+paint();setTimeout(sync,0);setInterval(sync,60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)sync()});
+})();
+
+</script></body></html>
+<!-- v9.8.0 RC8: canonical 33 franchises / 321 games; dynamic stats + sorting + QA fixes. -->
