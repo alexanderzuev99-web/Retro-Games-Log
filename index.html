@@ -281,9 +281,9 @@ button:active{transform:translate(2px,2px)!important;box-shadow:1px 1px #000!imp
 @keyframes neonBreath{0%,100%{box-shadow:0 0 12px #ff4fa366,inset 0 0 12px #5de2e733}50%{box-shadow:0 0 25px #ff4fa399,inset 0 0 18px #5de2e755}}
 @keyframes startPulse{0%,100%{opacity:1}50%{opacity:.55}}@keyframes playerGlow{0%,100%{text-shadow:none}50%{text-shadow:0 0 10px #a8f55a}}
 @media(prefers-reduced-motion:reduce){.hero .neon-library,.hero .press-start-clean,.hero-player,.hero .neon-flicker{animation:none!important}}
-</style></head><body><!-- Retro Games Log v9.8.0 RC14: canonical 33 franchises / 321 games -->
+</style></head><body><!-- Retro Games Log v9.8.0 RC15: canonical 33 franchises / 321 games -->
 
-<div class="pixel-bat">🦇</div><div id="seasonCountdown" class="corner-hud left"></div><div class="corner-hud right">v9.8.0 RC14</div>
+<div class="pixel-bat">🦇</div><div id="seasonCountdown" class="corner-hud left"></div><div class="corner-hud right">v9.8.0 RC15</div>
 <div class="stickers"><div class="sticker s1">INSERT COIN</div><div class="sticker s2">1UP</div><div class="sticker s3">HIGH SCORE</div><div class="sticker s4">BOSS RUSH</div><div class="sticker s5">PRESS START</div></div>
 <div class="arcade-stickers background-stickers" aria-hidden="true"><span class="arcade-sticker"><svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="#080610" d="M4 1h8v2h2v2h1v5h-3v4h-2v1H6v-1H4v-4H1V5h1V3h2z"/><path fill="#ec5368" d="M4 3h8v2h2v4H2V5h2z"/><path fill="#fff2ca" d="M6 3h4v3H6zM2 6h3v3H2zM11 6h3v3h-3zM5 10h6v3H5z"/><path fill="#282132" d="M6 10h1v2H6zM9 10h1v2H9z"/></svg>1UP</span><span class="arcade-sticker"><svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="#291a05" d="M5 1h6v2h2v2h1v6h-1v2h-2v2H5v-2H3v-2H2V5h1V3h2z"/><path fill="#ffb72e" d="M5 3h6v2h1v6h-1v2H5v-2H4V5h1z"/><path fill="#fff0a2" d="M6 4h2v8H6zM8 3h2v1H8z"/></svg>× 99</span><span class="arcade-sticker"><svg viewBox="0 0 24 24" aria-hidden="true" shape-rendering="crispEdges"><path fill="#ed609e" d="M1 2h6v3H1zM9 2h6v3H9zM17 2h6v3h-6z"/><path fill="#ffdc70" d="M1 7h6v3H1zM9 7h6v3H9zM17 7h6v3h-6z"/><path fill="#6bf0ee" d="M9 20h12v3H9z"/><path fill="#fff2d7" d="M14 14h3v3h-3z"/></svg>ARKANOID</span></div>
 <div class="app">
@@ -375,7 +375,7 @@ function renderRating(v){
  inp.addEventListener('input',()=>commit(inp.value));
  inp.addEventListener('change',()=>commit(inp.value));
 }
-function switchView(name,btn){document.getElementById('v93Home').classList.toggle('hidden',name!=='library');document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById('view-'+name).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn?.classList.add('active');if(name==='consoles')renderConsoles();if(name==='franchises')renderFranchises();if(name==='trophies')renderTrophies();renderSpecials();window.scrollTo({top:0,behavior:'smooth'})}
+function switchView(name,btn){document.getElementById('v93Home').classList.toggle('hidden',name!=='library');document.querySelectorAll('.view').forEach(x=>{x.classList.remove('active');x.style.removeProperty('display')});document.getElementById('view-'+name).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn?.classList.add('active');if(name==='consoles')renderConsoles();if(name==='franchises')renderFranchises();if(name==='trophies')renderTrophies();renderSpecials();window.scrollTo({top:0,behavior:'smooth'})}
 function updateStats(){let n=0,d=0;DATA.forEach((f,fi)=>f.games.forEach((g,gi)=>{let s=saved(fi,gi);if(s.status==='playing')n++;if(s.status==='done')d++;}));playingCount.textContent=n;doneCount.textContent=d}
 function specialCard(fi,gi,label){return `<div class="panel">${gameCard(fi,gi)}<div class="meta" style="margin-top:7px">${label}</div></div>`}
 function allGames(){let h;try{h=new Set(JSON.parse(localStorage.getItem('retro-games-hidden-v1')||'[]'))}catch(e){h=new Set()}let a=[];DATA.forEach((f,fi)=>f.games.forEach((g,gi)=>{const k=`${f.name}|${g.title}|${g.storagePlatform||g.platform}|${g.year}`;if(g.platform!=='PSP'&&!h.has(k))a.push([fi,gi,g,f])}));return a}
@@ -407,7 +407,7 @@ const CONSOLE_INFO={
 
 function showViewOnly(name){
  document.getElementById('v93Home').classList.toggle('hidden',name!=='home'&&name!=='library');if(name==='home')name='library';
- document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));
+ document.querySelectorAll('.view').forEach(x=>{x.classList.remove('active');x.style.removeProperty('display')});
  document.getElementById('view-'+name)?.classList.add('active');
  document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));
  window.scrollTo({top:0,behavior:'smooth'});
@@ -932,7 +932,7 @@ window.openRemovedGames=function(){
  window.remember?.();document.getElementById('v93Home')?.classList.add('hidden');
  let v=document.getElementById('view-removedGames');if(!v){v=document.createElement('section');v.id='view-removedGames';v.className='view';(document.querySelector('.app')||document.body).appendChild(v)}
  v.innerHTML='<button class="back-btn" onclick="smartBack()">← BACK</button><div class="panel"><h2>🗑 REMOVED GAMES</h2><p>Removed titles stay hidden after future index.html updates. Restore them whenever you want.</p><div id="removedGamesList" class="removed-panel"></div></div>';
- document.querySelectorAll('.view').forEach(x=>{x.classList.remove('active');x.style.display='none'});v.classList.add('active');v.style.display='block';renderRemoved();scrollTo({top:Math.max(0,v.getBoundingClientRect().top+scrollY-(document.querySelector('.nav')?.getBoundingClientRect().height||0)-12),behavior:'instant'});
+ showViewOnly('removedGames');renderRemoved();scrollTo({top:Math.max(0,v.getBoundingClientRect().top+scrollY-(document.querySelector('.nav')?.getBoundingClientRect().height||0)-12),behavior:'instant'});
 };
 window.openGame=function(fi,gi){
  if(isHidden(fi,gi))return;
@@ -1216,7 +1216,7 @@ setTimeout(()=>{decorate();try{renderHome();renderLibrary();renderFranchises();r
 
 <script id="v980-rc">
 (()=>{
-const RC_VERSION='9.8.0 RC14',HIDDEN_KEY_RC='retro-games-hidden-v1';
+const RC_VERSION='9.8.0 RC15',HIDDEN_KEY_RC='retro-games-hidden-v1';
 const hiddenRC=()=>{try{return new Set(JSON.parse(localStorage.getItem(HIDDEN_KEY_RC)||'[]'))}catch(e){return new Set()}};
 const keyRC=(fi,gi)=>{const f=DATA[fi],g=f?.games?.[gi];return f&&g?`${f.name}|${g.title}|${g.storagePlatform||g.platform}|${g.year}`:''};
 const visibleRC=(fi,gi)=>DATA[fi].games[gi].platform!=='PSP'&&!hiddenRC().has(keyRC(fi,gi));
@@ -1488,7 +1488,7 @@ function refreshCovers(){renderLibrary();renderFranchises();renderHome();renderS
 refreshCovers();
 addEventListener('pageshow',()=>window.renderSeasonPanel?.());
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)window.renderSeasonPanel?.()});
-document.querySelector('.corner-hud.right').textContent='v9.8.0 RC14';
+document.querySelector('.corner-hud.right').textContent='v9.8.0 RC15';
 })();
 </script>
 
@@ -1681,5 +1681,17 @@ function arrangeHero(){const hero=document.getElementById('topHero');if(!hero)re
 arrangeHero();setTimeout(arrangeHero,350);
 })();
 </script>
-</body></html>
-<!-- v9.8.0 RC14: canonical 33 franchises / 321 games; dynamic stats + sorting + QA fixes. -->
+<style id="rc15-hero-grid">
+#topHero{display:grid!important;grid-template-columns:minmax(0,1fr);gap:12px!important;padding:24px!important}
+#topHero .hero-title-row{grid-template-columns:max-content 180px;justify-content:space-between;align-items:center;gap:24px;margin:0!important}
+#topHero .hero-title-row .neon-library{width:max-content!important;max-width:100%;justify-self:start;padding:8px 14px!important}
+#topHero .hero-home-link{width:auto;white-space:nowrap}
+#topHero .alex-library-sub,#topHero .hero-mini-stats{margin:0!important;line-height:1.5}
+#topHero .hero-mini-stats{gap:10px;align-items:center}
+#topHero .hero-actions{display:grid;grid-template-columns:repeat(3,max-content);justify-content:start;align-items:center;gap:24px;margin:0!important}
+#topHero .hero-actions .press-start-clean{line-height:1.5;padding:0!important;min-height:32px}
+@media(max-width:720px){#topHero{padding:18px!important}#topHero .hero-title-row{gap:16px}#topHero .hero-actions{gap:18px}}
+@media(max-width:480px){#topHero{padding:16px!important;gap:12px!important}#topHero .hero-title-row{grid-template-columns:minmax(0,max-content) 108px;gap:10px}#topHero .hero-title-row .neon-library{width:max-content!important;max-width:100%;padding:6px 8px!important;font-size:clamp(11px,3.5vw,14px)!important}#topHero .hero-home-link{white-space:normal}#topHero .hero-actions{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:100%}#topHero .hero-actions .press-start-clean{font-size:9px!important;letter-spacing:.04em;white-space:nowrap}#topHero .hero-mini-stats{gap:6px}}
+@media(max-width:360px){#topHero .hero-title-row{grid-template-columns:minmax(0,max-content) 96px}#topHero .hero-actions{gap:8px}#topHero .hero-actions .press-start-clean{font-size:8px!important}}
+</style></body></html>
+<!-- v9.8.0 RC15: canonical 33 franchises / 321 games; dynamic stats + sorting + QA fixes. -->
