@@ -281,13 +281,13 @@ button:active{transform:translate(2px,2px)!important;box-shadow:1px 1px #000!imp
 @keyframes neonBreath{0%,100%{box-shadow:0 0 12px #ff4fa366,inset 0 0 12px #5de2e733}50%{box-shadow:0 0 25px #ff4fa399,inset 0 0 18px #5de2e755}}
 @keyframes startPulse{0%,100%{opacity:1}50%{opacity:.55}}@keyframes playerGlow{0%,100%{text-shadow:none}50%{text-shadow:0 0 10px #a8f55a}}
 @media(prefers-reduced-motion:reduce){.hero .neon-library,.hero .press-start-clean,.hero-player,.hero .neon-flicker{animation:none!important}}
-</style></head><body><!-- Retro Games Log v9.8.0 RC8: canonical 33 franchises / 321 games -->
+</style></head><body><!-- Retro Games Log v9.8.0 RC9: canonical 33 franchises / 321 games -->
 
-<div class="pixel-bat">🦇</div><div id="seasonCountdown" class="corner-hud left"></div><div class="corner-hud right">v9.8.0 RC8</div>
+<div class="pixel-bat">🦇</div><div id="seasonCountdown" class="corner-hud left"></div><div class="corner-hud right">v9.8.0 RC9</div>
 <div class="stickers"><div class="sticker s1">INSERT COIN</div><div class="sticker s2">1UP</div><div class="sticker s3">HIGH SCORE</div><div class="sticker s4">BOSS RUSH</div><div class="sticker s5">PRESS START</div></div>
 <div class="arcade-stickers background-stickers" aria-hidden="true"><span class="arcade-sticker"><svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="#080610" d="M4 1h8v2h2v2h1v5h-3v4h-2v1H6v-1H4v-4H1V5h1V3h2z"/><path fill="#ec5368" d="M4 3h8v2h2v4H2V5h2z"/><path fill="#fff2ca" d="M6 3h4v3H6zM2 6h3v3H2zM11 6h3v3h-3zM5 10h6v3H5z"/><path fill="#282132" d="M6 10h1v2H6zM9 10h1v2H9z"/></svg>1UP</span><span class="arcade-sticker"><svg viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="#291a05" d="M5 1h6v2h2v2h1v6h-1v2h-2v2H5v-2H3v-2H2V5h1V3h2z"/><path fill="#ffb72e" d="M5 3h6v2h1v6h-1v2H5v-2H4V5h1z"/><path fill="#fff0a2" d="M6 4h2v8H6zM8 3h2v1H8z"/></svg>× 99</span><span class="arcade-sticker"><svg viewBox="0 0 24 24" aria-hidden="true" shape-rendering="crispEdges"><path fill="#ed609e" d="M1 2h6v3H1zM9 2h6v3H9zM17 2h6v3h-6z"/><path fill="#ffdc70" d="M1 7h6v3H1zM9 7h6v3H9zM17 7h6v3h-6z"/><path fill="#6bf0ee" d="M9 20h12v3H9z"/><path fill="#fff2d7" d="M14 14h3v3h-3z"/></svg>ARKANOID</span></div>
 <div class="app">
-<section class="hero hero-clean" id="topHero"><div class="hero-player">PLAYER 1 • KRENOT</div><h1 class="neon-library" aria-label="Retro Game Library">RETRO GAME L<span class="neon-flicker">I</span>BRARY</h1><div class="alex-library-sub">PLAYER 1 • ALEX • PERSONAL COLLECTION</div><div class="hero-mini-stats"><span><b id="heroGameCount">0</b> GAMES</span><i>•</i><span><b id="heroFrCount">0</b> FRANCHISES</span><i>•</i><span>🏆 RETROACHIEVEMENTS</span></div><button class="press-start-clean" onclick="document.getElementById('v93Home')?.scrollIntoView({behavior:'smooth'})">▶ PRESS START</button><button class="ui-motion-toggle" onclick="toggleUIAnimations(event)">Анимации: <span id="heroFXLabel">Вкл.</span></button></section>
+<section class="hero hero-clean" id="topHero"><div class="hero-heading-row"><div class="hero-player">PLAYER 1 • KRENOT</div><button id="heroTrophyCounter" class="hero-counter" onclick="switchView('trophies',document.querySelector('[data-view=trophies]'))"><span class="hero-counter-label">ТРОФЕИ<br>В КАТАЛОГЕ<small id="heroTrophySync">Синхронизация…</small></span><span class="trophy-digits" id="heroTrophyDigits"></span></button></div><h1 class="neon-library" aria-label="Retro Game Library"><button class="hero-home-link" onclick="goLibraryHome()" aria-label="Retro Game Library — на главную">RETRO GAME L<span class="neon-flicker">I</span>BRARY</button></h1><div class="alex-library-sub">PLAYER 1 • ALEX • PERSONAL COLLECTION</div><div class="hero-mini-stats"><span><b id="heroGameCount">0</b> GAMES</span><i>•</i><span><b id="heroFrCount">0</b> FRANCHISES</span><i>•</i><span>🏆 RETROACHIEVEMENTS</span></div><button class="press-start-clean" onclick="document.getElementById('v93Home')?.scrollIntoView({behavior:'smooth'})">▶ PRESS START</button><button class="ui-motion-toggle" onclick="toggleUIAnimations(event)"><span class="motion-caption">FX:</span> <span id="heroFXLabel">Вкл.</span></button></section>
 
 <nav class="nav">
 <button class="active" data-view="library" onclick="switchView('library',this)">🎮 Каталог</button>
@@ -521,7 +521,7 @@ modal.addEventListener('click',e=>{if(e.target===modal)closeGame()});document.ad
 initPlatform();renderSeason();applySeasonTheme();updateCountdown();renderLibrary();renderFranchises();updateStats();renderSpecials();renderTrophies();
 </script><div id="radioPop" class="radio-pop">
 <h4>📻 RETRO RADIO • SPOOKY FM</h4>
-<div class="meta">Original browser-generated chiptune • no vocals</div>
+<div class="meta">2 ORIGINAL FM TRACKS · 4:30 + 5:20</div>
 <div style="display:flex;gap:6px;margin:9px 0"><button onclick="radioPrev(event)">⏮</button><button id="radioPlayBtn" onclick="toggleRadio(event)">▶ PLAY</button><button onclick="radioNext(event)">⏭</button></div>
 <label class="meta">VOLUME <input id="radioVol" type="range" min="0" max="0.18" step="0.01" value="0.06" oninput="setRadioVolume(this.value)"></label>
 <div style="margin-top:8px"><button onclick="cycleFX(event)">FX: <span id="fxLabel">FULL</span></button></div>
@@ -961,13 +961,13 @@ setTimeout(()=>{const p=document.getElementById('randomHeroBtn');if(p&&!document
 function rebuildRadio(){
  const r=document.getElementById('retroRadio');if(!r)return setTimeout(rebuildRadio,80);
  r.className='v968-boombox';
- r.innerHTML=`<div class="v968-size"><button data-s="icon">•</button><button data-s="mini">−</button><button data-s="full">+</button></div>
- <div class="v968-icon">📻</div><div class="v968-bb-head"><span class="v968-bb-brand">16-BIT FM</span><span class="v968-bb-track">GENESIS NIGHT DRIVE</span><i class="v968-led"></i></div>
+ r.innerHTML=`<div class="v968-size"><button data-s="icon" aria-label="Radio Icon">ICON</button><button data-s="mini" aria-label="Radio Mini">MINI</button><button data-s="full" aria-label="Radio Full">FULL</button></div>
+ <div class="v968-icon"><svg viewBox="0 0 48 32" aria-hidden="true"><rect x="1" y="1" width="46" height="30" rx="4" fill="#d9c58a"/><rect x="5" y="5" width="38" height="15" rx="3" fill="#242921"/><circle cx="14" cy="12" r="5" fill="#b7a56f"/><circle cx="34" cy="12" r="5" fill="#b7a56f"/><path d="M13 25h22l3 5H10z" fill="#635a3e"/><path d="M19 12h10" stroke="#b7a56f" stroke-width="2"/></svg></div><div class="v968-bb-head"><span class="v968-bb-brand">RETRO TAPE · FM</span><span class="v968-bb-track">MIDNIGHT HIGHWAY</span><i class="v968-led"></i></div>
  <div class="v968-bb-main"><div class="v968-speaker"></div><div class="v968-deck"><i class="v968-reel a"></i><i class="v968-tape"></i><i class="v968-reel b"></i></div><div class="v968-speaker"></div></div>
- <div class="v968-controls"><button class="prev">◀◀</button><button class="play">▶</button><button class="next">▶▶</button><button class="mix">EQ</button></div>`;
+ <div class="v968-controls"><button class="prev" aria-label="Предыдущий трек">◀◀</button><button class="play" aria-label="Воспроизведение или пауза">▶</button><button class="next" aria-label="Следующий трек">▶▶</button><button class="mix" aria-label="Громкость и настройки">VOL</button></div><div class="v968-footer"><span class="v968-section">INTRO</span><span class="v968-time">0:00 / 4:30</span></div><div class="v968-progress"><i></i></div>`;
  let size=localStorage.getItem(SIZE_KEY);if(!['full','mini','icon'].includes(size))size=innerWidth<=720?'mini':'full';
  const apply=s=>{size=s;r.classList.remove('radio-icon','radio-mini','radio-full');r.classList.add('radio-'+s);localStorage.setItem(SIZE_KEY,s);r.querySelectorAll('.v968-size button').forEach(b=>{b.classList.toggle('active',b.dataset.s===s);b.setAttribute('aria-pressed',String(b.dataset.s===s))});document.getElementById('radioPop')?.classList.remove('show');requestAnimationFrame(()=>window.retroRadioClamp?.(true))};
- apply(size);
+ apply(size);r.tabIndex=0;r.setAttribute('aria-label','Кассетное радио');r.addEventListener('keydown',e=>{if(r.classList.contains('radio-icon')&&(e.key==='Enter'||e.key===' ')){e.preventDefault();apply('mini')}});
  r.querySelectorAll('.v968-size button').forEach(b=>b.onclick=e=>{e.stopPropagation();apply(b.dataset.s)});
  r.querySelector('.prev').onclick=e=>{e.stopPropagation();radioPrev(e)};
  r.querySelector('.next').onclick=e=>{e.stopPropagation();radioNext(e)};
@@ -979,40 +979,78 @@ function rebuildRadio(){
 }
 rebuildRadio();
 
-// New original FM-inspired music engine (no copyrighted melodies).
-let ac=null,master=null,comp=null,timer=null,playing=false,step=0,track=0;
+// Two original arrangements: six FM voices, arpeggios and PCM-style percussion.
+let ac=null,master=null,comp=null,toneBus=null,echo=null,timer=null,playing=false,step=0,track=0,nextTime=0,noise=null;
+const activeVoices=new Set();
 const songs=[
- {name:"GENESIS NIGHT DRIVE",bpm:126,root:110,bass:[0,0,7,5,3,5,7,10],lead:[12,15,19,22,19,17,15,12,10,12,15,17,19,17,15,12]},
- {name:"BLAST PROCESSING",bpm:142,root:98,bass:[0,7,5,3,0,10,7,5],lead:[19,19,22,24,22,19,17,15,17,19,22,19,17,15,12,15]},
- {name:"SAVE ROOM 16-BIT",bpm:92,root:130.81,bass:[0,-5,3,-2,0,5,3,-2],lead:[12,16,19,16,14,17,21,17,12,14,16,19,17,16,14,12]}
+ {name:'MIDNIGHT HIGHWAY',bpm:128,root:45,prog:[0,5,3,7,0,3,5,7],major:[false,false,true,true,false,true,false,true],sections:[['INTRO',8],['VERSE A',24],['CHORUS',24],['BRIDGE',16],['BREAKDOWN',16],['VERSE B',24],['FINAL CHORUS',24],['OUTRO',8]],motifs:[[0,null,2,4,null,3,2,null,1,null,2,3,4,null,2,0],[4,null,6,7,6,null,4,3,2,null,3,4,2,1,0,null],[0,2,null,3,4,null,6,4,3,2,null,1,2,null,0,null],[7,null,6,4,3,null,4,6,4,3,null,2,1,null,0,null]],scale:[0,2,3,5,7,8,10]},
+ {name:'SKY ISLANDS',bpm:108,root:48,prog:[0,7,9,5,0,4,5,7],major:[true,true,false,true,true,false,true,true],sections:[['DAWN',8],['EXPLORATION',24],['FLIGHT',24],['QUIET GARDEN',24],['NEW HORIZON',24],['FINAL FLIGHT',24],['SUNSET',16]],motifs:[[4,null,2,1,0,null,1,2,4,null,5,4,2,null,1,0],[0,null,2,4,5,null,7,5,4,2,null,1,2,4,null,2],[7,null,5,4,2,null,4,5,4,null,2,1,0,null,1,null],[2,4,null,5,7,null,5,4,2,null,1,2,0,null,null,null]],scale:[0,2,4,5,7,9,11]}
 ];
-const hz=(r,s)=>r*Math.pow(2,s/12);
-function env(freq,when,dur,type,vol,det=0){
- const o=ac.createOscillator(),g=ac.createGain();o.type=type;o.frequency.setValueAtTime(freq,when);o.detune.value=det;o.connect(g);g.connect(master);
- g.gain.setValueAtTime(.0001,when);g.gain.linearRampToValueAtTime(vol,when+.012);g.gain.exponentialRampToValueAtTime(Math.max(.0001,vol*.55),when+dur*.55);g.gain.exponentialRampToValueAtTime(.0001,when+dur);
- o.start(when);o.stop(when+dur+.03);
+songs.forEach(s=>s.bars=s.sections.reduce((n,x)=>n+x[1],0));
+try{track=Math.max(0,Math.min(songs.length-1,Number(localStorage.getItem('retro-radio-track-v2'))||0))}catch(e){}
+const noteHz=n=>440*Math.pow(2,(n-69)/12);
+function arrangement(s,bar){let start=0;for(let i=0;i<s.sections.length;i++){const [name,len]=s.sections[i];if(bar<start+len)return {index:i,name,bar:bar-start,length:len};start+=len}return {index:0,name:s.sections[0][0],bar:0,length:s.sections[0][1]}}
+function retain(node,extras=[]){activeVoices.add(node);node.onended=()=>{activeVoices.delete(node);node.disconnect();extras.forEach(x=>x.disconnect())}}
+function fm(note,t,dur,vol,ratio=2,index=1.3,pan=0){
+ const freq=noteHz(note),carrier=ac.createOscillator(),mod=ac.createOscillator(),depth=ac.createGain(),gain=ac.createGain(),panner=ac.createStereoPanner();
+ carrier.type='sine';carrier.frequency.setValueAtTime(freq,t);mod.type='sine';mod.frequency.setValueAtTime(freq*ratio,t);depth.gain.setValueAtTime(freq*index,t);depth.gain.exponentialRampToValueAtTime(Math.max(1,freq*.12),t+dur);mod.connect(depth);depth.connect(carrier.frequency);
+ gain.gain.setValueAtTime(.0001,t);gain.gain.linearRampToValueAtTime(vol,t+.012);gain.gain.exponentialRampToValueAtTime(Math.max(.0001,vol*.5),t+dur*.45);gain.gain.exponentialRampToValueAtTime(.0001,t+dur);panner.pan.value=pan;carrier.connect(gain);gain.connect(panner);panner.connect(toneBus);
+ retain(carrier,[gain,panner]);retain(mod,[depth]);carrier.start(t);mod.start(t);carrier.stop(t+dur+.02);mod.stop(t+dur+.02);
 }
-function drum(when,vol=.025){
- const len=Math.floor(ac.sampleRate*.045),b=ac.createBuffer(1,len,ac.sampleRate),a=b.getChannelData(0);for(let i=0;i<len;i++)a[i]=(Math.random()*2-1)*(1-i/len);
- const n=ac.createBufferSource(),g=ac.createGain();n.buffer=b;n.connect(g);g.connect(master);g.gain.setValueAtTime(vol,when);g.gain.exponentialRampToValueAtTime(.0001,when+.045);n.start(when);
+function percussion(kind,t,vol){
+ if(kind==='kick'){
+  const o=ac.createOscillator(),g=ac.createGain();o.frequency.setValueAtTime(135,t);o.frequency.exponentialRampToValueAtTime(42,t+.13);g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(.0001,t+.2);o.connect(g);g.connect(toneBus);retain(o,[g]);o.start(t);o.stop(t+.22);return;
+ }
+ const n=ac.createBufferSource(),g=ac.createGain(),filter=ac.createBiquadFilter();n.buffer=noise;filter.type=kind==='snare'?'bandpass':'highpass';filter.frequency.value=kind==='snare'?1800:6500;filter.Q.value=.6;const dur=kind==='snare'?.14:.035;g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(.0001,t+dur);n.connect(filter);filter.connect(g);g.connect(toneBus);retain(n,[filter,g]);n.start(t);n.stop(t+dur+.01);
+ if(kind==='snare')fm(50,t,.09,vol*.25,1,.3);
+}
+function sequenceFrame(s,tick,t,emit=fm,beat=percussion){
+ const bar=Math.floor(tick/16),i=tick%16,a=arrangement(s,bar),beatTime=60/s.bpm,unit=beatTime/4,ci=Math.floor(a.bar/2)%s.prog.length,root=s.root+s.prog[ci],third=s.major[ci]?4:3;
+ const intro=a.index===0,outro=a.index===s.sections.length-1,quiet=/BREAKDOWN|QUIET/.test(a.name),chorus=/CHORUS|FLIGHT/.test(a.name),bridge=/BRIDGE|HORIZON/.test(a.name),level=outro?Math.max(.15,1-a.bar/a.length):intro?Math.min(1,.3+a.bar/8):1;
+ if(i===0){[0,third,7].forEach((n,j)=>emit(root+12+n,t,beatTime*3.7,.026*level,1,.45,(j-1)*.55))}
+ if((quiet?i%8===0:[0,3,6,8,11,14].includes(i))&&(!intro||a.bar>=2))emit(root+([6,14].includes(i)?12:[3,11].includes(i)?7:0),t,unit*(quiet?5:2),.105*level,1,.95);
+ if(i%2===0){const arp=[0,third,7,12,7,third,12,7][(i/2+Math.floor(a.bar/4))%8];emit(root+24+arp,t,unit*1.45,.026*level,3,1.4,(i%4?-1:1)*.35)}
+ if((!intro||a.bar>=4)&&!outro){
+  const motif=s.motifs[(Math.floor(a.bar/4)+(chorus?1:bridge?2:0))%s.motifs.length],m=motif[(i+((a.bar%4===3)?2:0))%16];
+  if(m!=null&&(!quiet||i%4===0)){
+   const n=s.root+24+s.scale[m%7]+12*Math.floor(m/7)+(chorus&&a.bar>=16?12:0);emit(n,t,unit*(quiet?3.5:1.65),.062*level,2,chorus?2.4:1.45,-.12);
+   if(chorus&&a.bar%4>=2&&i%4===0)emit(s.root+12+s.scale[(m+2)%7]+12*Math.floor((m+2)/7),t+unit*.12,unit*1.8,.023,1,.6,.25);
+  }
+ }
+ if(!quiet&&(!intro||a.bar>=4)&&(!outro||a.bar<4)){
+  if(i===0||i===8||(chorus&&i===11))beat('kick',t,.25*level);
+  if(i===4||i===12)beat('snare',t,.14*level);
+  if(i%2===0||(chorus&&a.bar%8===7))beat('hat',t,(i%4===0?.026:.016)*level);
+  if(a.bar%8===7&&i>=12&&i%2===1)beat('snare',t,.06*level);
+ }
+}
+function initAudio(){
+ if(ac)return;
+ ac=new (window.AudioContext||window.webkitAudioContext)();master=ac.createGain();comp=ac.createDynamicsCompressor();comp.threshold.value=-18;comp.knee.value=14;comp.ratio.value=4;comp.attack.value=.008;comp.release.value=.22;toneBus=ac.createBiquadFilter();toneBus.type='lowpass';toneBus.frequency.value=7200;toneBus.Q.value=.4;
+ echo=ac.createDelay(1);echo.delayTime.value=.28;const feedback=ac.createGain(),wet=ac.createGain();feedback.gain.value=.2;wet.gain.value=.15;toneBus.connect(master);toneBus.connect(echo);echo.connect(feedback);feedback.connect(echo);echo.connect(wet);wet.connect(master);master.connect(comp);comp.connect(ac.destination);master.gain.value=Number(localStorage.getItem('retro-radio-vol')??.06);
+ noise=ac.createBuffer(1,Math.floor(ac.sampleRate*.2),ac.sampleRate);const a=noise.getChannelData(0);for(let i=0;i<a.length;i++)a[i]=Math.random()*2-1;
+}
+function clockText(seconds){const n=Math.floor(seconds);return Math.floor(n/60)+':'+String(n%60).padStart(2,'0')}
+function updateTrack(){
+ const s=songs[track],elapsed=step*60/s.bpm/4,total=s.bars*4*60/s.bpm,x=document.querySelector('.v968-bb-track'),h=document.querySelector('#radioPop h4'),time=document.querySelector('.v968-time'),bar=document.querySelector('.v968-progress i'),section=document.querySelector('.v968-section');
+ if(x&&x.textContent!==s.name)x.textContent=s.name;if(h)h.textContent='16-BIT FM · '+s.name;
+ const label=clockText(elapsed)+' / '+clockText(total);if(time&&time.textContent!==label)time.textContent=label;if(bar)bar.style.width=Math.min(100,elapsed/total*100)+'%';if(section)section.textContent=arrangement(s,Math.min(s.bars-1,Math.floor(step/16))).name;
 }
 function musicTick(){
- if(!playing||!ac)return;const s=songs[track],e=60/s.bpm/2,t=ac.currentTime+.035,i=step%16;
- const b=s.bass[Math.floor(i/2)%8],l=s.lead[i];
- env(hz(s.root,b),t,e*1.75,'sawtooth',.035);env(hz(s.root,l),t,e*.82,'square',.018,-5);env(hz(s.root,l+12),t,e*.55,'sine',.009,5);
- if(i%4===0){env(hz(s.root,24+(i%8?7:0)),t,e*.18,'square',.009);drum(t,.018)}
- if(i%4===2)drum(t,.010);step++;
+ if(!playing||!ac||ac.state!=='running')return;
+ if(nextTime<ac.currentTime-.2)nextTime=ac.currentTime+.035;
+ while(nextTime<ac.currentTime+.16){const s=songs[track];sequenceFrame(s,step,nextTime);nextTime+=60/s.bpm/4;step++;if(step>=s.bars*16){step=0;track=(track+1)%songs.length;localStorage.setItem('retro-radio-track-v2',String(track))}}
+ updateTrack();
 }
-window.startRadio=function(){
- if(!ac){ac=new (window.AudioContext||window.webkitAudioContext)();master=ac.createGain();comp=ac.createDynamicsCompressor();comp.threshold.value=-20;comp.knee.value=14;comp.ratio.value=5;comp.attack.value=.008;comp.release.value=.18;master.gain.value=Number(localStorage.getItem('retro-radio-vol')??.06);master.connect(comp);comp.connect(ac.destination)}
- ac.resume();if(timer)clearInterval(timer);playing=true;musicTick();timer=setInterval(musicTick,(60/songs[track].bpm/2)*1000);document.getElementById('retroRadio')?.classList.add('radio-on');localStorage.setItem('retro-radio-on','1');updateTrack();
+window.startRadio=async function(){
+ initAudio();try{await ac.resume()}catch(e){return}if(ac.state!=='running')return;
+ master.gain.cancelScheduledValues(ac.currentTime);master.gain.setTargetAtTime(Number(localStorage.getItem('retro-radio-vol')??.06),ac.currentTime,.02);if(timer)clearInterval(timer);playing=true;nextTime=ac.currentTime+.04;musicTick();timer=setInterval(musicTick,25);document.getElementById('retroRadio')?.classList.add('radio-on');localStorage.setItem('retro-radio-on','1');updateTrack();
 };
-window.stopRadio=function(save=true){playing=false;if(timer)clearInterval(timer);timer=null;document.getElementById('retroRadio')?.classList.remove('radio-on');if(save)localStorage.setItem('retro-radio-on','0')};
+window.stopRadio=function(save=true){playing=false;if(timer)clearInterval(timer);timer=null;if(ac){master.gain.cancelScheduledValues(ac.currentTime);master.gain.setTargetAtTime(.0001,ac.currentTime,.012);activeVoices.forEach(n=>{try{n.stop(ac.currentTime+.025)}catch(e){}})}document.getElementById('retroRadio')?.classList.remove('radio-on');if(save)localStorage.setItem('retro-radio-on','0')};
 window.toggleRadio=e=>{e?.stopPropagation();playing?stopRadio():startRadio()};
-window.radioNext=e=>{e?.stopPropagation();track=(track+1)%songs.length;step=0;const was=playing;if(was)stopRadio(false);updateTrack();if(was)startRadio()};
-window.radioPrev=e=>{e?.stopPropagation();track=(track+songs.length-1)%songs.length;step=0;const was=playing;if(was)stopRadio(false);updateTrack();if(was)startRadio()};
-window.setRadioVolume=v=>{v=Number(v);if(!Number.isFinite(v))return;v=Math.max(0,Math.min(.18,v));localStorage.setItem('retro-radio-vol',String(v));if(master)master.gain.value=v};
-function updateTrack(){const x=document.querySelector('.v968-bb-track');if(x)x.textContent=songs[track].name;const h=document.querySelector('#radioPop h4');if(h)h.textContent='📻 16-BIT FM • '+songs[track].name}
+function changeTrack(delta,e){e?.stopPropagation();const was=playing;if(was)stopRadio(false);track=(track+delta+songs.length)%songs.length;step=0;localStorage.setItem('retro-radio-track-v2',String(track));updateTrack();if(was)startRadio()}
+window.radioNext=e=>changeTrack(1,e);window.radioPrev=e=>changeTrack(-1,e);
+window.setRadioVolume=v=>{v=Number(v);if(!Number.isFinite(v))return;v=Math.max(0,Math.min(.18,v));localStorage.setItem('retro-radio-vol',String(v));if(master&&playing)master.gain.setTargetAtTime(v,ac.currentTime,.02)};
 updateTrack();
 
 // Re-render after adding the 216th game.
@@ -1186,7 +1224,7 @@ setTimeout(()=>{decorate();try{renderHome();renderLibrary();renderFranchises();r
 
 <script id="v980-rc">
 (()=>{
-const RC_VERSION='9.8.0 RC8',HIDDEN_KEY_RC='retro-games-hidden-v1';
+const RC_VERSION='9.8.0 RC9',HIDDEN_KEY_RC='retro-games-hidden-v1';
 const hiddenRC=()=>{try{return new Set(JSON.parse(localStorage.getItem(HIDDEN_KEY_RC)||'[]'))}catch(e){return new Set()}};
 const keyRC=(fi,gi)=>{const f=DATA[fi],g=f?.games?.[gi];return f&&g?`${f.name}|${g.title}|${g.platform}|${g.year}`:''};
 const visibleRC=(fi,gi)=>!hiddenRC().has(keyRC(fi,gi));
@@ -1453,7 +1491,7 @@ function refreshCovers(){renderLibrary();renderFranchises();renderHome();renderS
 refreshCovers();
 addEventListener('pageshow',()=>window.renderSeasonPanel?.());
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)window.renderSeasonPanel?.()});
-document.querySelector('.corner-hud.right').textContent='v9.8.0 RC8';
+document.querySelector('.corner-hud.right').textContent='v9.8.0 RC9';
 })();
 </script>
 
@@ -1486,7 +1524,40 @@ document.querySelector('.corner-hud.right').textContent='v9.8.0 RC8';
 @media(min-width:481px) and (max-width:720px){#v93Picks{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){#v93Picks .v93-pick{transition:none}}
 </style>
-<style id="rc6-genres">.genre-tags{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0}.genre-tags span{font:700 10px 'Courier New',monospace;color:#dbcbe5;background:#251a30;border:1px solid #685378;padding:5px 8px}.ra-link-row{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}.ra-link-row a{color:#ffe3a0}.ra-connect{margin:12px 0;color:#bfaecc}.ra-connect input{width:100%;max-width:500px;min-height:40px;background:#17101f;color:#fff;border:1px solid #735687;padding:8px;margin:8px 0}.ra-connect button{background:#251a30;color:#ffe3a0;border:1px solid #735687;padding:10px;cursor:pointer}.ra-status-note{line-height:1.7;font-size:11px}.ra-live-grid{content-visibility:auto}.ra-live-ach.locked{opacity:1}.ra-live-ach.locked img{opacity:.65}.ra-live-ach b{font-size:12px}.ra-live-ach small{font-size:10px;line-height:1.6;color:#bfaecc}.ra-link-row button{min-height:40px;padding:8px 12px;background:#251a30;color:#ffe3a0;border:1px solid #735687;cursor:pointer;font:700 11px 'Courier New',monospace}.ra-live-ach small{overflow-wrap:anywhere}</style><style id="rc8-auto-status-style">.ra-auto-sync-note,.ra-auto-game-note{font:11px/1.7 "Courier New",monospace;color:#b9d996;margin:12px 0 0;overflow-wrap:anywhere}.game-controls>select:disabled{opacity:1;color:#fff1bf;border-color:#9ab573;cursor:default}</style><script id="rc8-auto-status">
+<style id="rc6-genres">.genre-tags{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0}.genre-tags span{font:700 10px 'Courier New',monospace;color:#dbcbe5;background:#251a30;border:1px solid #685378;padding:5px 8px}.ra-link-row{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}.ra-link-row a{color:#ffe3a0}.ra-connect{margin:12px 0;color:#bfaecc}.ra-connect input{width:100%;max-width:500px;min-height:40px;background:#17101f;color:#fff;border:1px solid #735687;padding:8px;margin:8px 0}.ra-connect button{background:#251a30;color:#ffe3a0;border:1px solid #735687;padding:10px;cursor:pointer}.ra-status-note{line-height:1.7;font-size:11px}.ra-live-grid{content-visibility:auto}.ra-live-ach.locked{opacity:1}.ra-live-ach.locked img{opacity:.65}.ra-live-ach b{font-size:12px}.ra-live-ach small{font-size:10px;line-height:1.6;color:#bfaecc}.ra-link-row button{min-height:40px;padding:8px 12px;background:#251a30;color:#ffe3a0;border:1px solid #735687;cursor:pointer;font:700 11px 'Courier New',monospace}.ra-live-ach small{overflow-wrap:anywhere}</style><style id="rc8-auto-status-style">.ra-auto-sync-note,.ra-auto-game-note{font:11px/1.7 "Courier New",monospace;color:#b9d996;margin:12px 0 0;overflow-wrap:anywhere}.game-controls>select:disabled{opacity:1;color:#fff1bf;border-color:#9ab573;cursor:default}</style><style id="rc9-interface">button.pill,.clickable-platform{color:#e8deed!important;font-family:inherit!important}.clickable-platform:hover{color:#fff3be!important;border-color:#b99b61!important}
+.hero-home-link{display:block;background:none!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important;color:inherit!important;font:inherit!important;letter-spacing:inherit!important;text-shadow:inherit!important;cursor:pointer;text-align:inherit}.hero-home-link:focus-visible{outline:2px solid #b9ed84;outline-offset:7px;border-radius:3px}
+.ui-motion-toggle{position:fixed!important;top:7px!important;right:128px!important;z-index:100!important;margin:0!important;padding:0 4px!important;min-height:20px;background:transparent!important;border:0!important;box-shadow:none!important;color:#a99ab6!important;font:10px 'Courier New',monospace!important;letter-spacing:.04em!important;opacity:.8}.ui-motion-toggle:hover{opacity:1;color:#dfd2e8!important}.ui-motion-toggle:focus-visible{outline:1px solid #b6db80;outline-offset:2px}
+.hero-heading-row{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:10px}.hero-counter{display:flex;align-items:center;gap:11px;padding:10px 12px;background:#0e1810;border:1px solid #506644;border-radius:4px;box-shadow:inset 0 1px 9px #0008;cursor:pointer;color:#a6e675;min-height:63px}.hero-counter-label{font:9px/1.6 'Courier New',monospace;text-align:left;letter-spacing:.08em;max-width:72px}.hero-counter-label small{display:block;font-size:8px;color:#80986b;letter-spacing:0}.trophy-digits{display:flex;gap:4px;filter:drop-shadow(0 0 3px #8fe05255)}.trophy-digits svg{width:19px;height:34px}.hero-counter:hover{border-color:#a6e675}.hero-counter:focus-visible{outline:2px solid #a6e675;outline-offset:4px}
+#retroRadio.v968-boombox{width:256px!important;padding:12px!important;border:1px solid #71664c!important;border-radius:10px!important;background:linear-gradient(140deg,#2e3033,#161a1d 65%)!important;box-shadow:0 9px 24px #0008,inset 0 1px #b4b1a933!important;color:#ede5ce!important}
+#retroRadio.v968-boombox:before{display:none!important}.v968-size{position:static!important;justify-content:flex-end;margin:0 0 7px;gap:4px!important}.v968-size button{min-width:34px!important;min-height:24px!important;height:auto!important;border:1px solid #615d51!important;box-shadow:none!important;background:#24282a!important;font:8px 'Courier New',monospace!important;color:#bdb7a4!important;border-radius:3px!important}
+#retroRadio .v968-size button.active{background:#e5c77f!important;color:#211b0e!important;border-color:#e5c77f!important}.v968-bb-head{height:auto!important;display:grid!important;grid-template-columns:1fr auto;gap:6px!important;margin:0 0 9px!important;padding:6px 8px;background:#121815;border:1px solid #4e5742;border-radius:3px}.v968-bb-brand{font-size:8px!important;color:#9eaa83!important;grid-column:1}.v968-bb-track{display:block!important;grid-column:1;grid-row:2;font:900 10px 'Courier New',monospace!important;color:#efcf80!important;max-width:100%!important;margin:0!important;letter-spacing:.04em}.v968-led{grid-column:2;grid-row:1/3;align-self:center;width:5px!important;height:5px!important;border-radius:50%;background:#4c4c38!important;border:0!important}.radio-on .v968-led{background:#dac773!important;box-shadow:0 0 6px #e5c77f88!important}
+.v968-bb-main{display:block!important}.v968-speaker{display:none!important}.v968-deck{height:76px!important;background:linear-gradient(160deg,#29221a,#131610)!important;border:1px solid #7c7052!important;border-radius:5px;box-shadow:inset 0 0 14px #0009!important}.v968-deck:before{content:'SIDE A   •   STEREO';position:absolute;top:7px;left:10px;color:#a39266;font:7px 'Courier New',monospace;letter-spacing:.16em}.v968-deck:after{content:'AUTO REVERSE';position:absolute;bottom:5px;left:0;right:0;text-align:center;font:7px 'Courier New',monospace;color:#948865;letter-spacing:.2em}.v968-reel{width:30px!important;height:30px!important;top:25px!important;border:4px dotted #c3ad77!important;background:#111511;border-radius:50%;box-shadow:0 0 0 3px #5c5037,inset 0 0 0 7px #22241b}.v968-reel.a{left:26px!important}.v968-reel.b{right:26px!important}.v968-tape{top:39px!important;left:54px!important;right:54px!important;height:3px!important;background:#a5925f!important}.v968-controls{gap:6px!important;margin-top:9px!important;display:grid!important;grid-template-columns:1fr 1.2fr 1fr 1fr}.v968-controls button{min-width:0!important;min-height:35px!important;border:1px solid #686452!important;border-radius:4px!important;background:linear-gradient(#383b3b,#252929)!important;color:#eee4c4!important;box-shadow:0 2px #0a0c0c!important;font:900 11px 'Courier New',monospace!important}.v968-controls button.play{background:linear-gradient(#e0c985,#b59b58)!important;color:#242011!important;border-color:#e3ca84!important}.v968-controls button:active{transform:translateY(1px);box-shadow:none!important}.v968-controls button:focus-visible{outline:2px solid #e8d190;outline-offset:2px}
+.v968-footer{display:flex;align-items:center;justify-content:space-between;gap:7px;font:7px 'Courier New',monospace;color:#c7b784;margin-top:9px;letter-spacing:.04em}.v968-section{color:#89977b;white-space:nowrap;max-width:112px;overflow:hidden;text-overflow:ellipsis}.v968-progress{height:2px;background:#454837;margin-top:5px}.v968-progress i{display:block;height:100%;background:#d5bc73;width:0}
+#retroRadio.v968-boombox.radio-mini{width:194px!important;padding:9px!important}.radio-mini .v968-deck{height:54px!important}.radio-mini .v968-reel{width:22px!important;height:22px!important;top:18px!important;border-width:3px!important;box-shadow:0 0 0 2px #5c5037,inset 0 0 0 5px #22241b}.radio-mini .v968-reel.a{left:24px!important}.radio-mini .v968-reel.b{right:24px!important}.radio-mini .v968-tape{top:27px!important;left:46px!important;right:46px!important}.radio-mini .v968-deck:before{font-size:6px;top:4px}.radio-mini .v968-deck:after{display:none}.radio-mini .v968-section{display:none}.radio-mini .v968-bb-brand{display:none}.radio-mini .v968-bb-track{grid-row:1;font-size:9px!important}.radio-mini .v968-led{grid-row:1}.radio-mini .v968-controls button{min-height:32px!important}.radio-mini .v968-footer{justify-content:center}
+#retroRadio.v968-boombox.radio-icon{width:58px!important;height:46px!important;border-radius:7px!important;padding:0!important}.radio-icon .v968-footer,.radio-icon .v968-progress{display:none!important}.v968-icon svg{display:block;width:36px;height:26px}.radio-icon .v968-icon{font-size:0!important}
+#radioPop{background:#1b2020!important;border:1px solid #776e51!important;border-radius:9px!important;box-shadow:0 8px 22px #0009!important;color:#e9ddba!important}#radioPop h4{color:#e9cd83!important;font-size:12px}#radioPop button{border:1px solid #706750;background:#303432;color:#e9ddba;font:11px 'Courier New',monospace;padding:9px;border-radius:3px}#radioPop .meta{color:#c0bda8}#radioVol{accent-color:#d7bf7e}
+@media(max-width:480px){.ui-motion-toggle{right:117px!important;top:4px!important;font-size:8px!important}.hero-heading-row{gap:8px}.hero-counter{gap:6px;padding:7px 8px;min-height:54px}.hero-counter-label{font-size:7px;max-width:56px}.hero-counter-label small{font-size:7px}.trophy-digits{gap:2px}.trophy-digits svg{width:14px;height:27px}.hero-player{font-size:9px!important}.hero .neon-library{font-size:18px!important;max-width:100%}.hero-home-link{white-space:normal}#retroRadio.v968-boombox.radio-full{width:256px!important}}
+
+.ra-auto-label{display:inline-flex;align-items:center;padding:8px 10px;background:#192319;border:1px solid #526447;color:#ced9b6;font:11px 'Courier New',monospace;border-radius:3px}
+</style><script id="rc9-interface-js">(function(){
+window.goLibraryHome=function(){
+ if(typeof remember==='function')remember();
+ document.querySelectorAll('.view').forEach(v=>v.style.removeProperty('display'));
+ for(const id of ['search','platformFilter','priorityFilter']){const el=document.getElementById(id);if(el)el.value=''}
+ switchView('library',document.querySelector('[data-view="library"]'));renderLibrary();renderHome();window.showRAAutoNotice?.();document.getElementById('radioPop')?.classList.remove('show');scrollTo({top:0,left:0,behavior:'instant'});
+};
+const priorCard=window.gameCard;window.gameCard=function(fi,gi){let html=priorCard(fi,gi);if(saved(fi,gi).raAuto)html=html.replace(/<button([^>]*onclick="[^"]*cycle\([^"<>]*"[^>]*)>(.*?)<\/button>/g,(_,attrs,label)=>`<span class="ra-auto-label" title="Статус обновляется по достижениям">${label.replace('Статус',saved(fi,gi).status==='playing'?'Играю':saved(fi,gi).status==='done'?'Пройдено':'Не начато')}</span>`);return html};
+const motion=document.querySelector('.ui-motion-toggle');if(motion){document.body.append(motion);motion.title='Включить или выключить анимации'}
+const digits=[['a','b','c','d','e','f'],['b','c'],['a','b','g','e','d'],['a','b','c','d','g'],['f','g','b','c'],['a','f','g','c','d'],['a','f','e','d','c','g'],['a','b','c'],['a','b','c','d','e','f','g'],['a','b','c','d','f','g']];
+const paths={a:'5,2 19,2 22,5 19,8 5,8 2,5',b:'20,7 23,5 23,19 20,22 17,19 17,10',c:'20,24 23,27 23,41 20,43 17,40 17,27',d:'5,40 19,40 22,43 19,46 5,46 2,43',e:'2,24 5,27 5,40 2,43 0,40 0,27',f:'2,7 5,10 5,19 2,22 0,19 0,5',g:'5,21 19,21 22,24 19,27 5,27 2,24'};
+window.renderRATrophyCounter=function(total,complete){
+ const box=document.getElementById('heroTrophyDigits'),status=document.getElementById('heroTrophySync'),button=document.getElementById('heroTrophyCounter');if(!box)return;
+ const value=total==null?'----':String(Math.max(0,total)).padStart(4,'0'),signature=value+'|'+complete;if(box.dataset.value===signature)return;box.dataset.value=signature;
+ box.innerHTML=[...value].map(c=>`<svg viewBox="0 0 24 48" aria-hidden="true">${Object.entries(paths).map(([seg,p])=>`<polygon points="${p}" fill="${(c==='-'?seg==='g':digits[+c]?.includes(seg))?'#a5ef73':'#233921'}"/>`).join('')}</svg>`).join('');status.textContent=complete?'RETROACHIEVEMENTS':'Синхронизация…';button.setAttribute('aria-label',total==null?'Трофеи: загружаются':`Открыто достижений в каталоге: ${total}${complete?'':', синхронизация продолжается'}`);
+};
+renderRATrophyCounter(null,false);
+})();
+</script><script id="rc8-auto-status">
 (function(){
 const STORE='retro-ra-progress-krenot-v1',API='https://retro-games-ra-api.alexander-zuev99.workers.dev',DAY=86400000;
 let progress={};try{progress=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch(e){}
@@ -1503,7 +1574,7 @@ function raState(fi,gi){
 }
 window.saved=function(fi,gi){return Object.assign({},originalSaved(fi,gi),raState(fi,gi)||{})};
 function paint(){
- const y=scrollY;window.renderHome?.();window.renderSpecials?.();window.updateStats?.();window.renderLibrary?.();window.showRAAutoNotice();
+ const y=scrollY;window.renderHome?.();window.renderSpecials?.();window.updateStats?.();window.renderLibrary?.();window.showRAAutoNotice();window.renderRATrophyCounter?.(Object.keys(progress).length?Object.values(progress).reduce((n,p)=>n+p.unlocked,0):null,ids.every(id=>progress[id]));
  const view=document.querySelector('#view-gameDetail.active'),sel=view?.querySelector('.game-controls>select');
  if(sel){const m=(sel.getAttribute('onchange')||'').match(/gpStatus\((\d+),(\d+)/);if(m){const s=saved(+m[1],+m[2]);sel.value=s.status;sel.disabled=!!s.raAuto;let n=view.querySelector('.ra-auto-game-note');if(!n){n=document.createElement('p');n.className='ra-auto-game-note';sel.after(n)}n.textContent=s.raAuto?'Статус обновляется по достижениям RetroAchievements.':'Статус этой версии можно выбрать вручную.'}}
  requestAnimationFrame(()=>scrollTo({top:y,left:0,behavior:'instant'}));
@@ -1517,7 +1588,7 @@ window.showRAAutoNotice=function(){
 };
 window.raRecordProgress=function(d){
  const id=Number(d?.game?.id);if(!d?.ok||!expected.has(id)||!window.raProgressConsoleMatches(expected.get(id),d.game?.console))return;
- const p=d.progress||{},a=Array.isArray(d.achievements)?d.achievements:[],total=Math.max(Number(p.achievementsTotal)||0,a.length),unlocked=Math.max(Number(p.unlocked)||0,a.filter(x=>x.unlocked).length);
+ if(!d.progress||!Array.isArray(d.achievements)||!Number.isFinite(Number(d.progress.achievementsTotal))||!Number.isFinite(Number(d.progress.unlocked)))return;const p=d.progress,a=d.achievements,total=Math.max(Number(p.achievementsTotal)||0,a.length),unlocked=Math.max(Number(p.unlocked)||0,a.filter(x=>x.unlocked).length);
  const award=String(p.highestAward||'').toLowerCase(),done=total>0&&(unlocked>=total||/beaten|mastered|completed/.test(award));
  const dates=a.filter(x=>x.unlocked&&x.dateEarned).map(x=>{let t=String(x.dateEarned);if(!/[zZ]|[+-]\d\d:\d\d$/.test(t))t=t.replace(' ','T')+'Z';return Date.parse(t)||0});
  const previous=progress[id],lastEarned=Math.max(0,...dates);progress[id]={id,total,unlocked,done,lastEarned,checkedAt:Date.now()};
@@ -1541,4 +1612,4 @@ paint();setTimeout(sync,0);setInterval(sync,60000);document.addEventListener('vi
 })();
 
 </script></body></html>
-<!-- v9.8.0 RC8: canonical 33 franchises / 321 games; dynamic stats + sorting + QA fixes. -->
+<!-- v9.8.0 RC9: canonical 33 franchises / 321 games; dynamic stats + sorting + QA fixes. -->
