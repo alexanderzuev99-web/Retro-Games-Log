@@ -1696,17 +1696,22 @@ const OWNED='retro-ra-owned-krenot-v1';let owned=[];try{owned=JSON.parse(localSt
 const ids=[...new Set(DATA.flatMap(f=>f.games.flatMap(g=>(g.raVersions||[]).map(v=>v.id))))],expected=new Map();
 DATA.forEach(f=>f.games.forEach(g=>(g.raVersions||[]).forEach(v=>expected.set(v.id,v.platform))));
 let busy=false,paintTimer=null,failures=Number(localStorage.getItem('retro-ra-retry-after-v1')||0)>Date.now()?1:0,checked=0;
+window.raStorySummary=function(achievements){
+ const story=achievements.filter(a=>['progression','win_condition'].includes(String(a.type||'').toLowerCase()));
+ const finalUnlocked=story.some(a=>String(a.type||'').toLowerCase()==='win_condition'&&a.unlocked);
+ return {storyTotal:story.length,storyUnlocked:story.filter(a=>a.unlocked).length,finalUnlocked,storyPercent:story.length?(finalUnlocked?100:Math.min(99,Math.round(story.filter(a=>a.unlocked).length/story.length*100))):null};
+};
 const originalSaved=window.saved;
 function raState(fi,gi){
  const versions=DATA[fi].games[gi].raVersions||[],rows=versions.map(v=>progress[v.id]).filter(Boolean);
  const withSets=rows.filter(p=>p.total>0),auto=withSets.length>0||versions.some(v=>v.achievements>0);
  if(!auto)return null;
- const started=withSets.filter(p=>p.unlocked>0||p.done),completed=started.filter(p=>p.done),chosen=(completed.length?completed:started).sort((a,b)=>b.lastEarned-a.lastEarned)[0];
- return {status:completed.length?'done':started.length?'playing':'todo',raAuto:true,raPending:!rows.length,raLastEarned:chosen?.lastEarned||0,raGameId:chosen?.id};
+ const started=withSets.filter(p=>p.unlocked>0||p.done),completed=started.filter(p=>p.done),chosen=(completed.length?completed:started.length?started:withSets).sort((a,b)=>b.lastEarned-a.lastEarned)[0];
+ return {status:completed.length?'done':started.length?'playing':'todo',raAuto:true,raPending:!rows.length,raLastEarned:chosen?.lastEarned||0,raGameId:chosen?.id,...(Number.isFinite(chosen?.storyPercent)?{progress:chosen.storyPercent,raProgressAuto:true}:{})};
 }
 window.saved=function(fi,gi){return Object.assign({},originalSaved(fi,gi),raState(fi,gi)||{})};
 function paint(){
- const y=scrollY;window.renderHome?.();window.renderSpecials?.();window.updateStats?.();window.renderLibrary?.();window.showRAAutoNotice();window.renderRATrophyCounter?.(Object.keys(progress).length?Object.values(progress).filter(p=>expected.has(p.id)).reduce((n,p)=>n+p.unlocked,0):null,ids.every(id=>progress[id]),failures>0);window.renderRASyncStatus?.();
+ const y=scrollY;window.renderHome?.();window.renderSpecials?.();window.updateStats?.();window.renderLibrary?.();window.showRAAutoNotice();window.paintRAStoryProgress?.();window.renderRATrophyCounter?.(Object.keys(progress).length?Object.values(progress).filter(p=>expected.has(p.id)).reduce((n,p)=>n+p.unlocked,0):null,ids.every(id=>progress[id]),failures>0);window.renderRASyncStatus?.();
  const view=document.querySelector('#view-gameDetail.active'),sel=view?.querySelector('.game-controls>select');
  if(sel){const m=(sel.getAttribute('onchange')||'').match(/gpStatus\((\d+),(\d+)/);if(m){const s=saved(+m[1],+m[2]);sel.value=s.status;sel.disabled=!!s.raAuto;let n=view.querySelector('.ra-auto-game-note');if(!n){n=document.createElement('p');n.className='ra-auto-game-note';sel.after(n)}n.textContent=s.raAuto?'Статус обновляется по достижениям RetroAchievements.':'Статус этой версии можно выбрать вручную.'}}
  requestAnimationFrame(()=>scrollTo({top:y,left:0,behavior:'instant'}));
@@ -1721,11 +1726,11 @@ window.showRAAutoNotice=function(){
 window.raRecordProgress=function(d,responseAt=Date.now()){
  const id=Number(d?.game?.id);if(d?.ok&&d.game.imageBoxArt){DATA.forEach(f=>f.games.forEach(g=>{if((g.raVersions||[]).some(v=>Number(v.id)===id)&&!g.covers?.length)g.covers=[d.game.imageBoxArt]}));localStorage.setItem(OWNED,JSON.stringify(ownedGroup.games))}if(!d?.ok||!expected.has(id)||!window.raProgressConsoleMatches(expected.get(id),d.game?.console))return;
  if(!d.progress||!Array.isArray(d.achievements)||!Number.isFinite(Number(d.progress.achievementsTotal))||!Number.isFinite(Number(d.progress.unlocked)))return;const p=d.progress,a=d.achievements,total=Math.max(Number(p.achievementsTotal)||0,a.length),unlocked=Math.max(Number(p.unlocked)||0,a.filter(x=>x.unlocked).length);
- const award=String(p.highestAward||'').toLowerCase(),done=total>0&&(unlocked>=total||/beaten|mastered|completed/.test(award));
+ const story=window.raStorySummary(a),award=String(p.highestAward||'').toLowerCase(),done=total>0&&(story.finalUnlocked||unlocked>=total||/beaten|mastered|completed/.test(award));if(done)story.storyPercent=100;
  const dates=a.filter(x=>x.unlocked&&x.dateEarned).map(x=>{let t=String(x.dateEarned);if(!/[zZ]|[+-]\d\d:\d\d$/.test(t))t=t.replace(' ','T')+'Z';return Date.parse(t)||0});
- const previous=progress[id],lastEarned=Math.max(0,...dates);progress[id]={id,total,unlocked,done,lastEarned,checkedAt:responseAt||Date.now()};
+ const previous=progress[id],lastEarned=Math.max(0,...dates);progress[id]={id,total,unlocked,done,lastEarned,...story,checkedAt:responseAt||Date.now()};
  try{localStorage.setItem(STORE,JSON.stringify(progress))}catch(e){console.warn('RA progress storage unavailable')}
- if(unlocked!==(previous?.unlocked||0)||done!==!!previous?.done||lastEarned!==(previous?.lastEarned||0))schedulePaint();
+ if(unlocked!==(previous?.unlocked||0)||done!==!!previous?.done||story.storyPercent!==previous?.storyPercent||lastEarned!==(previous?.lastEarned||0))schedulePaint();
 };
 
 const ACCOUNT='retro-ra-account-krenot-v1';let account=null;try{account=JSON.parse(localStorage.getItem(ACCOUNT)||'null')}catch(e){}
@@ -1741,7 +1746,7 @@ window.raApplyCompletion=function(d){
   const platform=platformNames[r.ConsoleName]||r.ConsoleName||'RA';
   if(!game){game={order:ownedGroup.games.length+1,title:String(r.Title||'Игра '+id),year:'—',platform,priority:'🟡',note:'Добавлено по достижениям RetroAchievements.',description:'Игра из твоего профиля RetroAchievements.',genres:inferImportedGenres(String(r.Title||''),id),status:'todo',covers:(r.ImageBoxArt||r.ImageIcon)?['https://media.retroachievements.org'+(r.ImageBoxArt||r.ImageIcon)]:[],raGameId:id,raVersions:[{id,platform,title:r.Title,achievements:Number(r.MaxPossible)||0}],libraryId:'ra-owned-'+id,internet_rating:{verified:false}};ownedGroup.games.push(game)}
   expected.set(id,platform);if(!ids.includes(id))ids.push(id);
-  const total=Number(r.MaxPossible)||0,unlocked=Number(r.NumAwarded),lastEarned=Date.parse(r.MostRecentAwardedDate)||0;progress[id]={id,total,unlocked,done:total>0&&(unlocked>=total||/beaten|mastered|completed/.test(r.HighestAwardKind||'')),lastEarned,checkedAt:at};
+  const total=Number(r.MaxPossible)||0,unlocked=Number(r.NumAwarded),lastEarned=Date.parse(r.MostRecentAwardedDate)||0;const previous=progress[id],confirmedDone=total>0&&(unlocked>=total||/beaten|mastered|completed/.test(r.HighestAwardKind||''));progress[id]={...previous,id,total,unlocked,done:confirmedDone||!!previous?.finalUnlocked,lastEarned,checkedAt:at,...(confirmedDone?{storyPercent:100}:{})};
  }
  localStorage.setItem(OWNED,JSON.stringify(ownedGroup.games));localStorage.setItem(STORE,JSON.stringify(progress));schedulePaint();
 };
@@ -2416,4 +2421,18 @@ const pop=document.getElementById('radioPop'),button=document.createElement('but
 })();
 </script>
 
+<script id="ra-story-progress-ui">
+(()=>{
+window.paintRAStoryProgress=function(){
+ const page=document.querySelector('#view-gameDetail.active .game-page');if(!page)return;
+ const fi=Number(page.dataset.detailFi),gi=Number(page.dataset.detailGi);if(!Number.isInteger(fi)||!Number.isInteger(gi))return;
+ const state=saved(fi,gi),range=page.querySelector('#gpProgress'),value=page.querySelector('#gpProgressVal');if(!range)return;
+ range.disabled=!!state.raProgressAuto;
+ if(state.raProgressAuto){range.value=state.progress;range.style.setProperty('--rating-pct',state.progress+'%');if(value)value.textContent=state.progress+'%'}
+ let note=page.querySelector('.ra-story-progress-note');if(!note){note=document.createElement('p');note.className='ra-story-progress-note ra-status-note';range.closest('.game-progress').append(note)}
+ note.textContent=state.raProgressAuto?'Сюжетный прогресс RetroAchievements · финальное достижение → 100%.':'Прогресс можно указать вручную: сюжетные достижения пока не определены.';
+};
+const open=window.openGame;window.openGame=function(...args){const result=open.apply(this,args);window.paintRAStoryProgress();return result};
+})();
+</script>
 </body></html>
