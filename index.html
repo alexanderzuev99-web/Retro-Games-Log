@@ -1104,9 +1104,15 @@ rebuildRadio();
 const autumnSongs=[
  {name:'Haunted House Groove',src:'haunted-house-groove.mp3',duration:141.6},
  {name:'Skeleton Dance',src:'skeleton-dance.mp3',duration:121.512},
- {name:'16-Bit Skeletons',src:'16-bit-skeletons.mp3',duration:103.464}
+ {name:'16-Bit Skeletons',src:'16-bit-skeletons.mp3',duration:103.464},
+ {name:"Pumpkin King's Quest",src:'pumpkin-kings-quest.mp3',duration:129.36}
 ];
-const SEASON_PLAYLISTS={spring:[],summer:[],autumn:autumnSongs,winter:[]};
+const winterSongs=[
+ {name:'Winter Wonderland',src:'winter-wonderland.mp3',duration:137.232},
+ {name:'Winter Cave Arp',src:'winter-cave-arp.mp3',duration:163.224},
+ {name:'Snowfall',src:'snowfall.mp3',duration:137.64}
+];
+const SEASON_PLAYLISTS={spring:[],summer:[],autumn:autumnSongs,winter:winterSongs};
 window.radioSeasonPlaylists=SEASON_PLAYLISTS;
 function musicSeason(now=new Date()){const m=now.getMonth();return m>=2&&m<=4?'spring':m>=5&&m<=7?'summer':m>=8&&m<=10?'autumn':'winter'}
 const seasonNames={spring:'Весна',summer:'Лето',autumn:'Осень',winter:'Зима'};
