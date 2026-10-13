@@ -1115,7 +1115,8 @@ const winterSongs=[
 const christmasSongs=[{name:'Pixel Christmas',src:'pixel-christmas.mp3',duration:138.84},{name:'Sleigh-Bell Workshop',src:'sleigh-bell-workshop.mp3',duration:97.224}];
 const bossSongs=[{name:'Final Boss',src:'final-boss.mp3',duration:146.04},{name:'Boss Fight',src:'boss-fight.mp3',duration:91.224}];
 const fantasySongs=[{name:'Fantasy Quest',src:'fantasy-quest.mp3',duration:163.224},{name:'New Adventure',src:'new-adventure.mp3',duration:167.304}];
-const SEASON_PLAYLISTS={spring:[],summer:[],autumn:autumnSongs,winter:winterSongs,christmas:christmasSongs,bossrush:bossSongs,fantasy:fantasySongs};
+const summerSongs=[{name:'16-Bit Heatwave',src:'16-bit-heatwave.mp3',duration:162.36}];
+const SEASON_PLAYLISTS={spring:[],summer:summerSongs,autumn:autumnSongs,winter:winterSongs,christmas:christmasSongs,bossrush:bossSongs,fantasy:fantasySongs};
 window.radioSeasonPlaylists=SEASON_PLAYLISTS;
 function musicSeason(now=new Date()){const m=now.getMonth();return m>=2&&m<=4?'spring':m>=5&&m<=7?'summer':m>=8&&m<=10?'autumn':'winter'}
 function radioPlaylistKey(now=new Date()){
