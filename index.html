@@ -1316,7 +1316,7 @@ window.raRecordProgress=function(d,responseAt=Date.now()){
  if(!d.progress||!Array.isArray(d.achievements)||!Number.isFinite(Number(d.progress.achievementsTotal))||!Number.isFinite(Number(d.progress.unlocked)))return;const p=d.progress,a=d.achievements,total=Math.max(Number(p.achievementsTotal)||0,a.length),unlocked=Math.max(Number(p.unlocked)||0,a.filter(x=>x.unlocked).length);
  const story=window.raStorySummary(a),award=String(p.highestAward||'').toLowerCase(),done=total>0&&(story.finalUnlocked||unlocked>=total||/beaten|mastered|completed/.test(award));if(done)story.storyPercent=100;
  const dates=a.filter(x=>x.unlocked&&x.dateEarned).map(x=>{let t=String(x.dateEarned);if(!/[zZ]|[+-]\d\d:\d\d$/.test(t))t=t.replace(' ','T')+'Z';return Date.parse(t)||0});
- const previous=progress[id],at=Number(responseAt)||Date.now();if(previous?.fullCheckedAt>at)return;const finalUnlocked=story.finalUnlocked||!!previous?.finalUnlocked,confirmedDone=done||!!previous?.done||finalUnlocked;if(confirmedDone)story.storyPercent=100;story.finalUnlocked=finalUnlocked;const lastEarned=Math.max(previous?.lastEarned||0,...dates);progress[id]={...previous,id,total,unlocked:Math.max(previous?.unlocked||0,unlocked),done:confirmedDone,lastEarned,...story,checkedAt:Math.max(previous?.checkedAt||0,at),fullCheckedAt:at};
+ const previous=progress[id],at=Number(responseAt)||Date.now();if(previous?.fullCheckedAt>at)return;const finalUnlocked=story.finalUnlocked||!!previous?.finalUnlocked,confirmedDone=done||!!previous?.done||finalUnlocked;if(confirmedDone)story.storyPercent=100;story.finalUnlocked=finalUnlocked;const lastEarned=Math.max(previous?.lastEarned||0,...dates);progress[id]={...previous,id,total,unlocked:Math.max(previous?.unlocked||0,unlocked),done:confirmedDone,lastEarned,...story,checkedAt:Math.max(previous?.checkedAt||0,at),fullCheckedAt:at,fullUnlocked:unlocked};
  try{localStorage.setItem(STORE,JSON.stringify(progress))}catch(e){console.warn('RA progress storage unavailable')}
  if(unlocked!==(previous?.unlocked||0)||confirmedDone!==!!previous?.done||story.storyPercent!==previous?.storyPercent||lastEarned!==(previous?.lastEarned||0))schedulePaint();
 };
@@ -1346,7 +1346,8 @@ window.raPauseSync=function(ms=900000){try{localStorage.setItem(COOLDOWN,String(
 function claimSync(){try{const lease=JSON.parse(localStorage.getItem(LEASE)||'null');if(lease&&lease.owner!==owner&&lease.until>Date.now())return false;localStorage.setItem(LEASE,JSON.stringify({owner,until:Date.now()+30000}));return true}catch(e){return true}}
 function releaseSync(){try{const lease=JSON.parse(localStorage.getItem(LEASE)||'null');if(lease?.owner===owner)localStorage.removeItem(LEASE)}catch(e){}}
 async function sync(force=false){
- if(busy||document.hidden||Date.now()<Number(localStorage.getItem(COOLDOWN)||0)||!force&&Date.now()-Number(localStorage.getItem('retro-ra-last-batch-v1')||0)<300000||!claimSync()){paint();return}
+ const pendingInitialCompletion=ids.some(id=>progress[id]?.unlocked>0&&!progress[id]?.done&&progress[id]?.fullUnlocked==null);
+ if(busy||document.hidden||Date.now()<Number(localStorage.getItem(COOLDOWN)||0)||!force&&!pendingInitialCompletion&&Date.now()-Number(localStorage.getItem('retro-ra-last-batch-v1')||0)<300000||!claimSync()){paint();return}
  localStorage.setItem('retro-ra-last-batch-v1',String(Date.now()));
  busy=true;failures=0;checked=Object.keys(progress).length;showRAAutoNotice();window.renderRASyncStatus?.();
  try{
@@ -1362,7 +1363,7 @@ async function sync(force=false){
   // Bound each cycle; never request hundreds of full achievement sets at once.
   const hot=[...priority].filter(id=>force||!progress[id]||Date.now()-(progress[id].fullCheckedAt||0)>=300000).slice(0,2);
   // Completion summaries do not always include story-ending achievements. Check started sets in the background.
-  const started=ids.filter(id=>progress[id]?.unlocked>0&&!progress[id]?.done&&(force||!progress[id]?.fullCheckedAt||Date.now()-progress[id].fullCheckedAt>DAY)).sort((a,b)=>(progress[a]?.fullCheckedAt||0)-(progress[b]?.fullCheckedAt||0));
+  const started=ids.filter(id=>progress[id]?.unlocked>0&&!progress[id]?.done&&(force||progress[id]?.fullUnlocked==null||!progress[id]?.fullCheckedAt||Date.now()-progress[id].fullCheckedAt>DAY||progress[id].lastEarned>progress[id].fullCheckedAt)).sort((a,b)=>(progress[a]?.fullCheckedAt||0)-(progress[b]?.fullCheckedAt||0));
   const queue=[...new Set([...started,...hot])].slice(0,4);
   for(let i=0;i<queue.length&&!document.hidden;i++){
    claimSync();const id=queue[i];try{await window.raGetGameProgress(id,force)}catch(e){failures++;raPauseSync();break}
