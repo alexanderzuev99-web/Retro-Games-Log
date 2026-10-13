@@ -382,13 +382,14 @@ function changeLibraryRemoval(fi,gi,removed){
 }
 function libraryPlatformMatches(platform,filter){return !filter||String(platform).split('/').some(p=>p.trim().toLowerCase()===String(filter).trim().toLowerCase())}
 
-const KEY='retro-games-log-v3';
+const KEY='retro-games-log-v3',PERSONAL_KEY='retro-games-personal-by-id-v1';
+let personalById=readLibraryJSON(PERSONAL_KEY,{});
 let state={};try{state=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){state={}}
 let current=null;
 
 function gid(fi,gi){return fi+'::'+gi}
-function saved(fi,gi){const g=DATA[fi].games[gi],k=gid(fi,gi);return Object.assign({status:g.status,wishlist:false,rating:null,notes:''},state[k]||{})}
-function setSaved(fi,gi,patch){const k=gid(fi,gi),latest=readLibraryJSON(KEY,{});state=(latest&&typeof latest==='object'&&!Array.isArray(latest))?latest:{};state[k]=Object.assign({},state[k]||{},patch);localStorage.setItem(KEY,JSON.stringify(state));updateStats();renderSpecials()}
+function saved(fi,gi){const g=DATA[fi].games[gi],k=gid(fi,gi);return Object.assign({status:g.status,wishlist:false,rating:null,notes:''},personalById[g.libraryId]||state[k]||{})}
+function setSaved(fi,gi,patch){const k=gid(fi,gi),latest=readLibraryJSON(KEY,{});state=(latest&&typeof latest==='object'&&!Array.isArray(latest))?latest:{};const id=DATA[fi].games[gi].libraryId;personalById=readLibraryJSON(PERSONAL_KEY,{});state[k]=Object.assign({},personalById[id]||state[k]||{},patch);personalById[id]=state[k];localStorage.setItem(PERSONAL_KEY,JSON.stringify(personalById));localStorage.setItem(KEY,JSON.stringify(state));updateStats();renderSpecials()}
 function coverImg(g,cls='game-poster'){const c=encodeURIComponent(JSON.stringify(g.covers));return `<img class="${cls}" loading="lazy" decoding="async" src="${g.covers[0]||''}" data-covers="${c}" data-try="0" onerror="nextCover(this)">`}
 function nextCover(img){let a=[];try{a=JSON.parse(decodeURIComponent(img.dataset.covers||''))}catch(e){}let i=+img.dataset.try+1;if(i<a.length){img.dataset.try=i;img.src=a[i]}else{img.classList.add('broken');img.style.display='none'}}
 function gameCard(fi,gi){const f=DATA[fi],g=f.games[gi],s=saved(fi,gi);const r=g.internet_rating||{};let rtxt='Нет подтверждённой оценки',rcls='rating-na';if(r.critic!=null){rtxt='★ '+r.critic+'/100 critics';rcls=r.critic>=80?'good':r.critic>=60?'mid':'low'}else if(r.user!=null){rtxt='★ '+r.user+'/10 users';rcls=r.user>=8?'good':r.user>=6?'mid':'low'}else if(r.moby_score!=null){rtxt='★ '+r.moby_score+'/10 Moby';rcls=r.moby_score>=8?'good':r.moby_score>=6?'mid':'low'}return `<article class="game" data-search="${(f.name+' '+g.title+' '+g.platform).toLowerCase()}"><button class="poster" onclick="openGame(${fi},${gi})">${coverImg(g)}<div class="fallback">${f.emoji}<small>POSTER</small></div></button><div><h4 onclick="openGame(${fi},${gi})" style="cursor:pointer">${g.order}. ${g.title}</h4><div class="meta">${g.year} • ${g.platform}</div><div class="rating-badge ${rcls}">${rtxt}</div><p>${g.note}</p><div class="actions"><button onclick="cycle(${fi},${gi})">${s.status==='todo'?'○':s.status==='playing'?'▶':'✓'} Статус</button></div></div></article>`}
@@ -2385,8 +2386,8 @@ window.PersonalBackup={validate,capture,plan,write};
 const core=window.PersonalBackup,KEY='retro-games-log-v3',HIDDEN='retro-games-hidden-v2',PENDING='retro-library-backup-pending-v1',UNDO='retro-library-backup-before-restore-v1';
 const read=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||'null')??d}catch(e){return d}};
 function capture(){libraryRemovedKeys();return core.capture(DATA,read(KEY,{}),read(HIDDEN,[]),read(PENDING,[]))}
-function patch(p){return{[KEY]:p.state,[HIDDEN]:p.hiddenIds,'retro-games-hidden-v1':[],[PENDING]:p.pending}}
-function refresh(){state=read(KEY,{});updateStats();renderLibrary();renderSpecials();renderHome();if(document.getElementById('view-playerProfile')?.classList.contains('active'))openProfile();const d=document.querySelector('#view-gameDetail.active .game-page');if(d)openGame(Number(d.dataset.detailFi),Number(d.dataset.detailGi))}
+function patch(p){const nextPersonal={};DATA.forEach((f,fi)=>f.games.forEach((g,gi)=>{const v=p.state[fi+'::'+gi];if(v)nextPersonal[g.libraryId]=v}));return{[PERSONAL_KEY]:nextPersonal,[KEY]:p.state,[HIDDEN]:p.hiddenIds,'retro-games-hidden-v1':[],[PENDING]:p.pending}}
+function refresh(){personalById=read(PERSONAL_KEY,{});state=read(KEY,{});updateStats();renderLibrary();renderSpecials();renderHome();if(document.getElementById('view-playerProfile')?.classList.contains('active'))openProfile();const d=document.querySelector('#view-gameDetail.active .game-page');if(d)openGame(Number(d.dataset.detailFi),Number(d.dataset.detailGi))}
 let file=null;
 const dialog=document.createElement('dialog');dialog.className='backup-dialog';dialog.setAttribute('aria-labelledby','backupTitle');dialog.innerHTML='<h2 id="backupTitle">Резервная копия библиотеки</h2><p>Заметки, оценки, избранное, даты, личный прогресс и удалённые игры сохраняются в файл. Достижения снова загрузятся из RetroAchievements.</p><div class="backup-actions"><button id="backupExport">Скачать копию</button><button id="backupChoose">Выбрать файл</button></div><input id="backupFile" type="file" accept=".json,application/json" hidden><p id="backupPreview" class="backup-status" role="status"></p><div id="backupModes" hidden><label><input type="radio" name="backupMode" value="merge" checked>Объединить — сохранить мои заполненные данные, добавить недостающие</label><label><input type="radio" name="backupMode" value="replace">Заменить — использовать личные данные из файла</label></div><div class="backup-actions"><button id="backupApply" disabled>Восстановить</button><button id="backupUndo" hidden>Отменить восстановление</button><button id="backupClose">Закрыть</button></div>';document.body.append(dialog);
 const q=id=>dialog.querySelector('#'+id),say=text=>q('backupPreview').textContent=text;
@@ -2397,7 +2398,7 @@ q('backupFile').onchange=async()=>{file=null;q('backupApply').disabled=true;q('b
 q('backupApply').onclick=()=>{if(!file)return;try{const before=capture(),mode=dialog.querySelector('input[name=backupMode]:checked').value,p=core.plan(DATA,before,file,mode);core.write(localStorage,{...patch(p),[UNDO]:before});refresh();file=null;q('backupApply').disabled=true;q('backupModes').hidden=true;q('backupUndo').hidden=false;say('Восстановлено. Можно отменить это действие и вернуть предыдущие данные.')}catch(e){say('Восстановление не выполнено: '+e.message)}};
 q('backupUndo').onclick=()=>{try{const before=core.validate(read(UNDO,null)),p=core.plan(DATA,capture(),before,'replace');core.write(localStorage,{...patch(p),[UNDO]:null});refresh();q('backupUndo').hidden=true;say('Предыдущие личные данные возвращены.')}catch(e){say('Не удалось отменить: '+e.message)}};
 const oldProfile=window.openProfile;window.openProfile=function(){const result=oldProfile();const v=document.getElementById('view-playerProfile'),section=document.createElement('section');section.className='backup-panel';section.innerHTML='<h3>СОХРАНИТЬ МОЮ БИБЛИОТЕКУ</h3><p>Скачай резервную копию или перенеси свои заметки и оценки на другое устройство.</p><div class="backup-actions"><button>Резервная копия и восстановление</button></div>';section.querySelector('button').onclick=show;v.append(section);return result};const profileTrigger=document.querySelector('#topHero .alex-library-sub');if(profileTrigger)profileTrigger.onclick=()=>openProfile();
-function restorePending(){const pending=read(PENDING,[]);if(!pending.length)return;const ids=new Set(DATA.flatMap(f=>f.games.map(g=>g.libraryId)));if(!pending.some(r=>ids.has(r.libraryId)))return;try{const p=core.plan(DATA,capture(),{format:'retro-game-library-backup',version:1,games:pending,hiddenIds:[]},'merge');core.write(localStorage,patch(p));state=read(KEY,{});renderLibrary();renderSpecials()}catch(e){console.warn('Pending personal backup could not be applied')}}
+function restorePending(){const pending=read(PENDING,[]);if(!pending.length)return;const ids=new Set(DATA.flatMap(f=>f.games.map(g=>g.libraryId)));if(!pending.some(r=>ids.has(r.libraryId)))return;try{const p=core.plan(DATA,capture(),{format:'retro-game-library-backup',version:1,games:pending,hiddenIds:[]},'merge');core.write(localStorage,patch(p));personalById=read(PERSONAL_KEY,{});state=read(KEY,{});renderLibrary();renderSpecials()}catch(e){console.warn('Pending personal backup could not be applied')}}
 document.addEventListener('retro-ra-profile',()=>setTimeout(restorePending,0));restorePending();
 const oldOpen=window.openGame;window.openGame=function(fi,gi){const result=oldOpen(fi,gi),v=document.querySelector('#view-gameDetail.active'),back=v?.querySelector('.back-btn'),f=DATA[fi];if(back&&f&&!v.querySelector('.game-detail-nav')){const nav=document.createElement('nav');nav.className='game-detail-nav';nav.setAttribute('aria-label','Навигация игры');back.before(nav);nav.append(back);const link=document.createElement('button');link.className='game-franchise-link';link.textContent=f.standalone?'🎮 Без франшизы →':f.emoji+' '+f.name+' →';link.onclick=()=>f.standalone?openSingleGames():openFranchise(fi);nav.append(link)}return result};
 
@@ -2433,6 +2434,16 @@ window.paintRAStoryProgress=function(){
  note.textContent=state.raProgressAuto?'Сюжетный прогресс RetroAchievements · финальное достижение → 100%.':'Прогресс можно указать вручную: сюжетные достижения пока не определены.';
 };
 const open=window.openGame;window.openGame=function(...args){const result=open.apply(this,args);window.paintRAStoryProgress();return result};
+})();
+</script>
+<script id="personal-stable-migration">
+(()=>{
+ const hadStable=localStorage.getItem(PERSONAL_KEY)!==null;
+ DATA.forEach((f,fi)=>f.games.forEach((g,gi)=>{
+  const key=gid(fi,gi),v=personalById[g.libraryId];
+  if(v)state[key]={...v};else if(!hadStable&&state[key])personalById[g.libraryId]={...state[key]};else if(hadStable)delete state[key];
+ }));
+ localStorage.setItem(PERSONAL_KEY,JSON.stringify(personalById));localStorage.setItem(KEY,JSON.stringify(state));updateStats();renderLibrary();renderSpecials();renderHome();
 })();
 </script>
 </body></html>
