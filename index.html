@@ -1305,6 +1305,7 @@ function paint(){
  requestAnimationFrame(()=>scrollTo({top:y,left:0,behavior:'instant'}));
 }
 function schedulePaint(){clearTimeout(paintTimer);paintTimer=setTimeout(paint,750)}
+window.raReloadStoredProgress=function(){try{progress=JSON.parse(localStorage.getItem(STORE)||'{}')||{};schedulePaint()}catch(e){}};
 window.showRAAutoNotice=function(){
  for(const panel of [document.getElementById('view-now')||document.getElementById('nowGrid')?.parentElement]){
   if(!panel)continue;let n=panel.querySelector('.ra-auto-sync-note');if(!n){n=document.createElement('p');n.className='ra-auto-sync-note';n.setAttribute('role','status');panel.append(n)}
@@ -1742,4 +1743,168 @@ body.fx-off #topHero #pressStartBtn .start-pixels{animation:none!important}@medi
 .game .actions:has(.ds-badge)>:first-child,.game .actions .ds-badge{display:flex!important;align-items:center;justify-content:center;width:100%;min-height:32px;box-sizing:border-box;margin:0!important;padding:7px 10px!important;font:700 11px/1.4 'Courier New',monospace!important;text-align:center;white-space:normal;border-radius:3px;box-shadow:2px 2px #000}
 @media(max-width:420px){#topHero .hero-copy .alex-library-sub{font-size:8px!important;padding:7px!important;letter-spacing:0!important}}
 </style>
+<script id="email-cloud-sync">
+(()=>{
+'use strict';
+const CONFIG={url:'https://xaihokqoubgyabndeffu.supabase.co',key:'sb_publishable_K7Cmi4AlMTBlEi97usj9gg_TS2mL1O-'};
+const PREFIX='retro-email-sync-v1:',PERSONAL='retro-games-personal-by-id-v1',INDEX='retro-games-log-v3',HIDDEN='retro-games-hidden-v2',TOMBS=PREFIX+'hidden';
+const tracked=new Set([PERSONAL,HIDDEN,'retro-holiday-adopted-v1','retro-holiday-library-v1','retro-ra-progress-krenot-v1','retro-ra-owned-krenot-v1']);
+const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||'null')??fallback}catch{return fallback}};
+const clone=x=>JSON.parse(JSON.stringify(x));
+const eq=(a,b)=>{if(a===b)return true;if(a==null||b==null||typeof a!=='object'||typeof b!=='object')return false;if(Array.isArray(a)!==Array.isArray(b))return false;const ak=Object.keys(a).sort(),bk=Object.keys(b).sort();return ak.length===bk.length&&ak.every((k,i)=>k===bk[i]&&eq(a[k],b[k]));};
+const plain=x=>!!x&&typeof x==='object'&&!Array.isArray(x);
+let client,session,base,revision=0,applying=false,busy=false,timer,activeUser=null,conflictDraft=null;
+const empty=()=>({format:'retro-library-cloud',version:1,personal:{},hidden:{},adopted:{},ra:{progress:{},owned:{}}});
+function reconcile(b,l,r,path=[]){
+ if(eq(l,b))return {value:r,conflicts:[]};
+ if(eq(r,b)||eq(l,r))return {value:l,conflicts:[]};
+ if(plain(l)&&plain(r)&&(plain(b)||b===undefined)){
+  const value={},conflicts=[];
+  for(const key of new Set([...Object.keys(b||{}),...Object.keys(l),...Object.keys(r)])){
+   if(['__proto__','prototype','constructor'].includes(key))throw Error('Некорректный ключ библиотеки');
+   const row=reconcile(b?.[key],l[key],r[key],[...path,key]);
+   if(row.value!==undefined)value[key]=row.value;conflicts.push(...row.conflicts);
+  }return {value,conflicts};
+ }return {value:r,conflicts:[{path,local:l,remote:r}]};
+}
+function mergeRA(a,b){
+ const out={progress:{...a.progress},owned:{...a.owned,...b.owned}};
+ for(const [id,p] of Object.entries(b.progress||{})){
+  const old=out.progress[id];if(!old){out.progress[id]=p;continue}
+  const newer=Number(p.checkedAt||0)>=Number(old.checkedAt||0)?p:old;
+  out.progress[id]={...newer,unlocked:Math.max(p.unlocked||0,old.unlocked||0),...(old.done||p.done?{done:true,storyPercent:100}:{})};
+ }return out;
+}
+function validate(x){
+ if(!plain(x)||x.format!=='retro-library-cloud'||x.version!==1||!plain(x.personal)||!plain(x.hidden)||!plain(x.adopted)||!plain(x.ra))throw Error('Неподдерживаемые облачные данные');
+ const ids=Object.keys(x.hidden);if(ids.some(id=>!/^[-\w]{1,120}$/.test(id)||typeof x.hidden[id]!=='boolean'))throw Error('Некорректный список удалений');
+ const backup=PersonalBackup.validate({format:'retro-game-library-backup',version:2,games:Object.entries(x.personal).map(([libraryId,values])=>({libraryId,values})),hiddenIds:ids,retroAchievements:{progress:x.ra.progress||{},owned:Object.values(x.ra.owned||{})}});
+ for(const [id,g] of Object.entries(x.adopted)){
+  if(!/^[-\w]{1,120}$/.test(id)||!plain(g)||g.id!==id||typeof g.libraryId!=='string'||!/^[-\w]{1,120}$/.test(g.libraryId)||typeof g.title!=='string'||!Array.isArray(g.covers)||g.covers.some(u=>typeof u!=='string'||!/^https:\/\//.test(u)))throw Error('Некорректная добавленная игра');
+ }
+ if(JSON.stringify(x).length>15000000)throw Error('Библиотека слишком большая');
+ return {...clone(x),personal:Object.fromEntries(backup.games.map(g=>[g.libraryId,g.values])),ra:{progress:backup.retroAchievements.progress||{},owned:Object.fromEntries((backup.retroAchievements.owned||[]).map(g=>[g.libraryId,g]))}};
+}
+function capture(){
+ applying=true;
+ try{
+  libraryRemovedKeys();const result=empty();result.personal=read(PERSONAL,{});
+  for(const row of read('retro-library-backup-pending-v1',[]))if(!result.personal[row.libraryId])result.personal[row.libraryId]=row.values;
+  result.hidden=read(TOMBS,{});for(const id of read(HIDDEN,[]))result.hidden[id]=true;
+  result.adopted=Object.fromEntries(read('retro-holiday-adopted-v1',[]).map(g=>[g.id,g]));
+  result.ra={progress:read('retro-ra-progress-krenot-v1',{}),owned:Object.fromEntries(read('retro-ra-owned-krenot-v1',[]).map(g=>[g.libraryId,g]))};
+  return validate(result);
+ }finally{applying=false}
+}
+function key(name){return PREFIX+activeUser+':'+name}
+function apply(snapshot){
+ snapshot=validate(snapshot);const before=capture(),patch={},indexed={},pending=[];
+ const coordinates=new Map(DATA.flatMap((f,fi)=>f.games.map((g,gi)=>[g.libraryId,fi+'::'+gi])));
+ for(const [id,values] of Object.entries(snapshot.personal)){if(coordinates.has(id))indexed[coordinates.get(id)]=values;else pending.push({libraryId:id,values})}
+ patch[PERSONAL]=snapshot.personal;patch[INDEX]=indexed;patch[HIDDEN]=Object.keys(snapshot.hidden).filter(id=>snapshot.hidden[id]);patch['retro-games-hidden-v1']=[];patch[TOMBS]=snapshot.hidden;
+ patch['retro-holiday-adopted-v1']=Object.values(snapshot.adopted);patch['retro-holiday-library-v1']=Object.keys(snapshot.adopted);patch['retro-library-backup-pending-v1']=pending;
+ patch['retro-ra-progress-krenot-v1']=snapshot.ra.progress;patch['retro-ra-owned-krenot-v1']=Object.values(snapshot.ra.owned);
+ applying=true;try{PersonalBackup.write(localStorage,patch)}finally{applying=false}
+ personalById=read(PERSONAL,{});state=read(INDEX,{});
+ window.raReloadStoredProgress?.();
+ const scrollY=window.scrollY,detail=document.querySelector('#view-gameDetail.active .game-page');updateStats();renderLibrary();renderSpecials();renderHome();window.refreshLibraryVisibility?.();window.renderRemoved?.();if(document.getElementById('view-playerProfile')?.classList.contains('active'))openProfile();if(detail)openGame(Number(detail.dataset.detailFi),Number(detail.dataset.detailGi));window.scrollTo(0,scrollY);
+ return !eq(before.adopted,snapshot.adopted)||!eq(before.ra.owned,snapshot.ra.owned);
+}
+function status(message){dialog.querySelector('[data-status]').textContent=message}
+function count(x){return Object.values(x.personal).filter(v=>v.status==='done').length+' пройдено · '+Object.values(x.personal).filter(v=>v.status==='playing').length+' играю · '+Object.values(x.hidden).filter(Boolean).length+' удалено'}
+function stage(name){for(const el of dialog.querySelectorAll('[data-stage]'))el.hidden=el.dataset.stage!==name}
+const dialog=document.createElement('dialog');dialog.className='backup-dialog';dialog.setAttribute('aria-labelledby','emailSyncTitle');
+dialog.innerHTML=`<h2 id="emailSyncTitle">Одна библиотека во всех браузерах</h2><div data-stage="login"><p>Войди с тем же email в Safari и других браузерах. На этот адрес придёт ссылка для входа. Открой её в том браузере, который хочешь подключить.</p><p>Пока используй email своего аккаунта Supabase. Для других адресов понадобится подключить почтовый сервис.</p><form data-login><label>Email<input type="email" name="email" autocomplete="email" required style="width:100%;box-sizing:border-box;min-height:44px"></label><button>Отправить ссылку</button></form></div><div data-stage="import" hidden><p data-browser></p><p data-cloud></p><p>При первом подключении выбери данные и отдельно список удалений. Перед переносом сохраним копию в этом браузере.</p><fieldset><legend>Прогресс, оценки, заметки и добавленные игры</legend><label><input type="radio" name="source" value="browser">Из этого браузера</label><label><input type="radio" name="source" value="cloud">Из общей библиотеки</label></fieldset><fieldset><legend>Удалённые игры</legend><label><input type="radio" name="removed" value="browser">Сохранить удаления этого браузера</label><label><input type="radio" name="removed" value="cloud">Использовать общие удаления</label><label><input type="radio" name="removed" value="none">Вернуть все игры</label></fieldset><button data-import>Подключить выбранную библиотеку</button></div><div data-stage="ready" hidden><p data-account></p><p>Прогресс, даты, оценки, заметки, добавленные и удалённые игры синхронизируются автоматически. Изменения без интернета отправятся после подключения.</p><button data-now>Обновить сейчас</button><button data-backup>Скачать копию до первого подключения</button><button data-revert>Вернуться к копии до подключения</button><button data-out>Выйти</button></div><div data-stage="conflict" hidden><p>В разных браузерах изменены одни и те же данные. Выбери вариант для каждого поля.</p><div data-conflicts></div><button data-resolve>Сохранить выбранное</button></div><p data-status role="status" class="backup-status"></p><button data-close>Закрыть</button>`;
+document.body.append(dialog);const q=s=>dialog.querySelector(s);q('[data-close]').onclick=()=>dialog.close();
+const fieldNames={status:'Статус',rating:'Оценка',notes:'Заметка',started:'Начал играть',finished:'Закончил',progress:'Прогресс',favorite:'Избранное',wishlist:'Хочу играть',lastPlayedAt:'Последняя игра'};
+const describe=(value,field)=>field==='rating'&&value!=null?Math.round(value*10)+'/100':field==='status'?({todo:'Не начато',playing:'Играю',done:'Пройдено'}[value]||'Не задано'):typeof value==='boolean'?(value?'Да':'Нет'):value===undefined?'Не задано':String(typeof value==='object'?JSON.stringify(value):value).slice(0,180);
+function showConflicts(draft,rows){
+ conflictDraft={draft,rows};q('[data-conflicts]').replaceChildren();
+ rows.forEach((row,i)=>{const label=document.createElement('label'),title=document.createElement('span'),select=document.createElement('select');
+  const id=row.path[1],game=DATA.flatMap(f=>f.games).find(g=>g.libraryId===id);title.textContent=(game?.title||id||'Библиотека')+' · '+(fieldNames[row.path.at(-1)]||row.path.at(-1))+' ';select.dataset.row=i;
+  for(const [value,text] of [['','Выбери вариант'],['local','Этот браузер: '+describe(row.local,row.path.at(-1))],['remote','Общая библиотека: '+describe(row.remote,row.path.at(-1))]]){const option=document.createElement('option');option.value=value;option.textContent=text;select.append(option)}label.append(title,select);q('[data-conflicts]').append(label);
+ });stage('conflict');if(!dialog.open)dialog.showModal();status('Автоматическая запись приостановлена до выбора.');
+}
+async function loadRemote(){const {data,error}=await client.from('retro_library_accounts').select('revision,snapshot').eq('owner',activeUser).maybeSingle();if(error)throw error;return data?{revision:Number(data.revision),snapshot:validate(data.snapshot)}:{revision:0,snapshot:empty()}}
+async function save(next,expected){const {data,error}=await client.rpc('retro_library_save',{expected_revision:expected,next_snapshot:next});if(error)throw error;return {conflict:data.conflict,revision:Number(data.revision),snapshot:validate(data.snapshot)}}
+async function synchronize(forced){
+ if(!session||!base||busy||conflictDraft)return;
+ if(document.hidden&&!forced)return;busy=true;const uid=activeUser;
+ try{
+  const local=capture();localStorage.setItem(key('pending'),JSON.stringify(local));const remote=await loadRemote();if(uid!==activeUser)return;
+  const parts=x=>({...x,ra:{}}),merged=reconcile(parts(base),parts(local),parts(remote.snapshot));merged.value.ra=mergeRA(local.ra,remote.snapshot.ra);
+  if(merged.conflicts.length){showConflicts({next:merged.value,remote},merged.conflicts);return}
+  const next=validate(merged.value);let result=remote;
+  if(!eq(next,remote.snapshot)){
+   result=await save(next,remote.revision);if(uid!==activeUser)return;
+   if(result.conflict){status('Получены более свежие изменения. Повторяю синхронизацию.');timer=setTimeout(()=>synchronize(true),500);return}
+  }
+  // Retain writes made while a network request was in flight.
+  const latest=capture(),late=reconcile(parts(local),parts(latest),parts(result.snapshot));late.value.ra=mergeRA(latest.ra,result.snapshot.ra);
+  if(late.conflicts.length){showConflicts({next:late.value,remote:result},late.conflicts);return}
+  const needsReload=apply(late.value);base=result.snapshot;revision=result.revision;
+  localStorage.setItem(key('base'),JSON.stringify({snapshot:base,revision}));
+  if(eq(late.value,result.snapshot))localStorage.removeItem(key('pending'));else localStorage.setItem(key('pending'),JSON.stringify(late.value));
+  status('Синхронизировано · '+new Date().toLocaleTimeString());
+  if(needsReload){sessionStorage.setItem(PREFIX+'return','1');location.reload()}else if(!eq(late.value,result.snapshot))timer=setTimeout(()=>synchronize(true),500);
+ }catch(e){status('Не удалось синхронизировать. Изменения сохранены в браузере. '+(e.message||''))}finally{busy=false}
+}
+async function connected(s){
+ session=s;activeUser=s?.user.id||null;base=null;clearTimeout(timer);conflictDraft=null;
+ if(!s){stage('login');return}
+ q('[data-account]').textContent='Выполнен вход: '+s.user.email;
+ const cached=read(key('base'),null);if(cached){base=validate(cached.snapshot);revision=cached.revision;stage('ready');await synchronize(true)}
+ else{const remote=await loadRemote();const local=capture();q('[data-browser]').textContent='Этот браузер: '+count(local);q('[data-cloud]').textContent='Общая библиотека: '+count(remote.snapshot);stage('import');status('Ничего не перенесено, пока ты не выберешь данные.');}
+}
+async function init(){
+ if(client)return client;
+ const sdk=await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
+ client=sdk.createClient(CONFIG.url,CONFIG.key,{auth:{storageKey:PREFIX+'auth',persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+ client.auth.onAuthStateChange((event,s)=>{if(event==='SIGNED_OUT'){session=null;activeUser=null;base=null;conflictDraft=null;clearTimeout(timer);stage('login')}else if(event==='SIGNED_IN'&&s?.user.id!==activeUser)setTimeout(()=>{if(s?.user.id!==activeUser)connected(s).catch(e=>status(e.message))},0)});
+ const {data,error}=await client.auth.getSession();if(error)throw error;if(data.session)await connected(data.session);else stage('login');return client;
+}
+let email='';q('[data-login]').onsubmit=async e=>{e.preventDefault();const form=e.currentTarget,button=form.querySelector('button');button.disabled=true;try{await init();email=new FormData(form).get('email');const {error}=await client.auth.signInWithOtp({email,options:{shouldCreateUser:true}});if(error)throw error;status('Ссылка отправлена. Открой письмо в этом браузере. Проверь также папку «Спам».')}catch(e){status('Не удалось отправить ссылку: '+e.message)}finally{button.disabled=false}};
+q('[data-import]').onclick=async()=>{
+ const source=q('input[name=source]:checked')?.value,removal=q('input[name=removed]:checked')?.value;
+ if(!source||!removal){status('Выбери источник данных и список удалений.');return}
+ const button=q('[data-import]');button.disabled=true;busy=true;
+ try{
+  const local=capture();localStorage.setItem(key('before'),JSON.stringify(local));const remote=await loadRemote();let next=clone(source==='browser'?local:remote.snapshot);
+  next.hidden=removal==='none'?{}:clone(removal==='browser'?local.hidden:remote.snapshot.hidden);next.ra=mergeRA(local.ra,remote.snapshot.ra);
+  const result=eq(next,remote.snapshot)?remote:await save(next,remote.revision);
+  if(result.conflict)throw Error('Общая библиотека изменилась. Обнови и проверь выбор ещё раз.');
+  const needsReload=apply(result.snapshot);base=result.snapshot;revision=result.revision;localStorage.setItem(key('base'),JSON.stringify({snapshot:base,revision}));stage('ready');status('Библиотека подключена.');if(needsReload)location.reload();
+ }catch(e){status('Подключение не завершено: '+e.message)}finally{busy=false;button.disabled=false}
+};
+q('[data-resolve]').onclick=async()=>{
+ if(!conflictDraft)return;const choices=[...q('[data-conflicts]').querySelectorAll('select')];if(choices.some(el=>!el.value)){status('Выбери вариант для каждого поля.');return}
+ const next=clone(conflictDraft.draft.next);choices.forEach((el,i)=>{const row=conflictDraft.rows[i];let target=next;for(const k of row.path.slice(0,-1))target=target[k]??=( {} );const field=row.path.at(-1),value=row[el.value];if(value===undefined)delete target[field];else target[field]=clone(value)});
+ // Rebase these explicit choices on the snapshot used for the conflict preview.
+ base=conflictDraft.draft.remote.snapshot;revision=conflictDraft.draft.remote.revision;apply(next);localStorage.setItem(key('base'),JSON.stringify({snapshot:base,revision}));localStorage.setItem(key('pending'),JSON.stringify(next));conflictDraft=null;stage('ready');await synchronize(true);
+};
+q('[data-now]').onclick=()=>synchronize(true);q('[data-out]').onclick=async()=>{if(busy){status('Дождись завершения записи.');return}const {error}=await client.auth.signOut();if(error)status(error.message);else{session=null;activeUser=null;base=null;status('Выполнен выход. Копия в браузере сохранена.')}};
+q('[data-backup]').onclick=()=>{const before=read(key('before'),null);if(!before){status('Копия до первого подключения отсутствует в этом браузере.');return}const url=URL.createObjectURL(new Blob([JSON.stringify({format:'retro-game-library-backup',version:2,games:Object.entries(before.personal).map(([libraryId,values])=>({libraryId,values})),hiddenIds:Object.keys(before.hidden).filter(id=>before.hidden[id]),retroAchievements:{progress:before.ra.progress,owned:Object.values(before.ra.owned)},adoptedGames:Object.values(before.adopted)},null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='retro-before-sync.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+async function open(){if(!dialog.open)dialog.showModal();try{await init()}catch(e){status('Не удалось подключить вход: '+e.message)}}
+const oldProfile=window.openProfile;window.openProfile=function(){const result=oldProfile();const panel=document.createElement('section');panel.className='backup-panel';panel.innerHTML='<h3>ОДНА БИБЛИОТЕКА ВО ВСЕХ БРАУЗЕРАХ</h3><p>Вход по email: прогресс, заметки, оценки и удаления.</p><button>Вход и синхронизация</button>';panel.querySelector('button').onclick=open;document.getElementById('view-playerProfile').append(panel);return result};
+const profile=document.querySelector('#topHero .alex-library-sub');if(profile)profile.onclick=()=>openProfile();
+const originalSet=Storage.prototype.setItem;
+Storage.prototype.setItem=function(name,value){
+ let oldHidden;if(this===localStorage&&!applying&&name===HIDDEN)oldHidden=read(HIDDEN,[]);
+ originalSet.call(this,name,value);
+ if(this!==localStorage||applying||!tracked.has(name))return;
+ if(oldHidden){const current=read(HIDDEN,[]),tombs=read(TOMBS,{});for(const id of oldHidden)if(!current.includes(id))tombs[id]=false;for(const id of current)tombs[id]=true;originalSet.call(this,TOMBS,JSON.stringify(tombs))}
+ if(!activeUser||!base)return;
+ try{originalSet.call(this,key('pending'),JSON.stringify(capture()));clearTimeout(timer);timer=setTimeout(()=>synchronize(true),1200)}catch(e){status('Не удалось сохранить очередь синхронизации: '+e.message)}
+};
+window.addEventListener('online',()=>synchronize(true));window.addEventListener('focus',()=>synchronize(true));
+window.addEventListener('storage',e=>{if(e.key===PREFIX+'auth')setTimeout(async()=>{try{const {data}=await client?.auth.getSession()||{};if(data)await connected(data.session)}catch{}},0);else if(tracked.has(e.key)&&activeUser&&base){personalById=read(PERSONAL,{});state=read(INDEX,{});synchronize(true)}});
+setInterval(()=>synchronize(false),30000);
+const authArrived=/^#(?:access_token|error)=/.test(location.hash);
+if(authArrived)dialog.showModal();
+if(read(PREFIX+'auth',null)||authArrived)init().catch(e=>status('Вход временно недоступен: '+e.message));
+q('[data-revert]').onclick=()=>{const before=read(key('before'),null);if(!before){status('В этом браузере нет копии до подключения.');return}try{const needsReload=apply(before);base=null;localStorage.removeItem(key('base'));localStorage.removeItem(key('pending'));stage('import');q('[data-browser]').textContent='Этот браузер: '+count(before);q('[data-cloud]').textContent='Выбери, какие данные подключить заново.';status('Возвращена копия в этом браузере. Общая библиотека пока не изменена.');if(needsReload)location.reload()}catch(e){status(e.message)}};
+window.RetroEmailSync={open};
+})();
+
+</script>
 </body></html>
