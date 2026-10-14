@@ -1962,6 +1962,11 @@ window.RetroEmailSync={open};
 
 </script>
 <style id="beta3-showcase-lamp">
+/* Both home previews share a card row and an equally sized caption row. */
+.v93-duo #v93Now .now-playing-preview,.v93-duo #v93Next .next-choice{display:grid;grid-template-rows:minmax(0,1fr) auto;gap:12px;width:100%;min-width:0;flex:1}
+.v93-duo #v93Now .now-playing-all,.v93-duo #v93Next .next-reason{display:flex;align-items:center;justify-content:center;width:100%;min-height:64px;box-sizing:border-box;margin:0!important;padding:12px 16px!important;border:1px solid #655078!important;border-radius:0!important;background:#1b1526!important;color:#d8c5e5!important;font:700 12px/1.6 'Courier New',monospace!important;letter-spacing:0!important;text-align:center;box-shadow:none!important;white-space:normal}
+.v93-duo #v93Now .now-playing-all:hover{border-color:#e69acb!important;color:#fff0c2!important;background:#281b35!important}
+
 .v93-duo #v93Next .next-choice{width:100%;min-width:0;flex:1}
 .v93-duo .game>.poster{height:clamp(240px,24vw,320px)!important;min-height:0!important;align-self:start!important}
 .v93-duo .game>.poster img{height:100%!important;max-height:none!important}
