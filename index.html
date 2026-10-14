@@ -1680,7 +1680,7 @@ window.buildNextRecommendations=function(all,anchor){const todo=all.filter(e=>sa
 for(const e of todo.slice().sort(rank)){if(result.length>=6)break;if(result.some(r=>r.entry===e))continue;result.push({entry:e,reason:anchor?'Для разнообразия: другой непройденный вариант':e[2].priority==='⭐'?'Из обязательных игр твоей библиотеки':'Непройденная игра из библиотеки'})}return result};
 const priorSpecials=window.renderSpecials;
 function paintRecommendations(){const all=allGames(),history=all.filter(e=>saved(e[0],e[1]).status!=='todo').sort((a,b)=>activity(b)-activity(a)),automatic=history.find(e=>activity(e)>0),anchor=all.find(e=>e[2].libraryId===chosenId)||automatic;const panel=document.querySelector('#view-next .panel');if(panel){panel.innerHTML=`<h3>🎯 ЧТО ИГРАТЬ СЛЕДУЮЩИМ?</h3><p class="next-explanation">${anchor?`Подборка после <b>${esc(anchor[2].title)}</b>: следующая часть по порядку в франшизе, затем непройденные игры с похожими жанрами. Если совпадений мало, добавляются варианты для разнообразия. Пройденные игры и игры, которые уже начал, не предлагаются.`:'Пока нет даты последней игры. Выбери игру ниже, чтобы получить следующую часть франшизы и похожие жанры. До выбора показаны непройденные игры с приоритетом «обязательно».'}</p><label class="next-anchor">После какой игры?<select id="nextAnchor"><option value="">Автоматически по последней активности</option>${all.slice().sort((a,b)=>a[2].title.localeCompare(b[2].title)).map(e=>`<option value="${esc(e[2].libraryId)}" ${chosenId===e[2].libraryId?'selected':''}>${esc(e[2].title)} · ${esc(e[2].platform)}</option>`).join('')}</select></label>${!automatic&&!chosenId?'<p class="meta">Автоматический выбор использует последнее достижение RA, дату прохождения или изменение статуса. Без этих данных порядок игр не угадывается.</p>':''}`;document.getElementById('nextAnchor').onchange=e=>{chosenId=e.target.value;paintRecommendations()}}
-const recs=buildNextRecommendations(all,anchor),html=recs.map(r=>`<div class="next-choice"><p class="next-reason">${esc(r.reason)}</p>${gameCard(r.entry[0],r.entry[1])}</div>`);document.getElementById('nextGrid').innerHTML=html.join('')||'<div class="empty">Нет непройденных игр с похожими жанрами или следующих частей. Выбери другую игру.</div>';for(const id of ['homeNext','v93Next']){const el=document.getElementById(id);if(el)el.innerHTML=html[0]||'<div class="meta">Нет следующего выбора для этой игры.</div>'}}
+const recs=buildNextRecommendations(all,anchor),html=recs.map(r=>`<div class="next-choice">${gameCard(r.entry[0],r.entry[1])}<p class="next-reason">${esc(r.reason)}</p></div>`);document.getElementById('nextGrid').innerHTML=html.join('')||'<div class="empty">Нет непройденных игр с похожими жанрами или следующих частей. Выбери другую игру.</div>';for(const id of ['homeNext','v93Next']){const el=document.getElementById(id);if(el)el.innerHTML=html[0]||'<div class="meta">Нет следующего выбора для этой игры.</div>'}}
 window.renderSpecials=function(){priorSpecials();paintRecommendations()};const priorHome=window.renderHome;window.renderHome=function(){priorHome();paintRecommendations()};const watch=new MutationObserver(()=>{watch.disconnect();paintRecommendations();watch.observe(document.getElementById('v93Next'),{childList:true})});if(document.getElementById('v93Next'))watch.observe(document.getElementById('v93Next'),{childList:true});renderSpecials();
 })();
 </script>
@@ -1907,4 +1907,16 @@ window.RetroEmailSync={open};
 })();
 
 </script>
+<style id="beta3-showcase-lamp">
+.v93-duo #v93Next .next-choice{width:100%;min-width:0;flex:1}
+.v93-duo .game>.poster{height:clamp(240px,24vw,320px)!important;min-height:0!important;align-self:start!important}
+.v93-duo .game>.poster img{height:100%!important;max-height:none!important}
+.ra-on-air.is-live{animation:raLampIgnition 1.6s steps(1,end) 1}
+@keyframes raLampIgnition{
+0%,26%,54%{color:#594047;text-shadow:none;box-shadow:none}
+12%,40%,68%,100%{color:#ff6d7f;text-shadow:0 0 3px #ffbac3,0 0 12px #ff2249;box-shadow:inset 0 0 9px #fa28472a,0 0 7px #ff365861,0 0 22px #ff34542e}
+}
+.fx-off .ra-on-air.is-live{animation:none!important}
+@media(prefers-reduced-motion:reduce){.ra-on-air.is-live{animation:none!important}}
+</style>
 </body></html>
