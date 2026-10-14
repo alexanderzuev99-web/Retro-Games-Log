@@ -157,7 +157,7 @@ function renderRating(v){
 function switchView(name,btn){document.getElementById('v93Home').classList.toggle('hidden',name!=='library');document.querySelectorAll('.view').forEach(x=>{x.classList.remove('active');x.style.removeProperty('display')});document.getElementById('view-'+name).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn?.classList.add('active');if(name==='consoles')renderConsoles();if(name==='franchises')renderFranchises();if(name==='trophies')renderTrophies();renderSpecials();window.scrollTo({top:0,behavior:'smooth'})}
 function updateStats(){let n=0,d=0;DATA.forEach((f,fi)=>f.games.forEach((g,gi)=>{let s=saved(fi,gi);if(s.status==='playing')n++;if(s.status==='done')d++;}));playingCount.textContent=n;doneCount.textContent=d}
 function specialCard(fi,gi,label){return `<div class="panel">${gameCard(fi,gi)}<div class="meta" style="margin-top:7px">${label}</div></div>`}
-function allGames(){let h;try{h=new Set(libraryRemovedKeys())}catch(e){h=new Set()}let a=[];DATA.forEach((f,fi)=>f.games.forEach((g,gi)=>{const k=`${f.name}|${g.title}|${g.storagePlatform||g.platform}|${g.year}`;if(!h.has(k))a.push([fi,gi,g,f])}));return a}
+function allGames(){let h;try{h=new Set(libraryRemovedKeys())}catch(e){h=new Set()}let a=[];DATA.forEach((f,fi)=>f.games.forEach((g,gi)=>{const k=`${f.name}|${g.title}|${g.storagePlatform||g.platform}|${g.year}`;if(!h.has(k)&&!g.cloudAdoptionRemoved)a.push([fi,gi,g,f])}));return a}
 function renderSpecials(){let all=allGames();let now=all.filter(([fi,gi])=>saved(fi,gi).status==='playing');nowGrid.innerHTML=now.length?now.map(([fi,gi])=>specialCard(fi,gi,'▶ Сейчас играешь')).join(''):'<div class="empty">Сейчас ничего не отмечено как «Играю».</div>';let spooky=['castlevania','spider-man','resident evil','medievil'];let next=all.filter(([fi,gi])=>saved(fi,gi).status==='todo').map(x=>{let sc=x[2].priority==='⭐'?10:x[2].priority==='🟡'?5:1;let t=(x[3].name+' '+x[2].title).toLowerCase();if(new Date().getMonth()===9&&spooky.some(z=>t.includes(z)))sc+=4;let rr=x[2].internet_rating||{};if(rr.critic!=null)sc+=rr.critic/20;else if(rr.user!=null)sc+=rr.user/2;return [x,sc]}).sort((a,b)=>b[1]-a[1]).slice(0,6).map(x=>x[0]);nextGrid.innerHTML=next.map(([fi,gi])=>specialCard(fi,gi,'🎯 Хороший следующий выбор')).join('')}
 function renderConsoles(){consoleGrid.innerHTML=CONSOLES.map(c=>{let count=allGames().filter(x=>x[2].platform.split('/').map(y=>y.trim()).includes(c.id)).length;return `<article class="console"><div class="console-img"><img src="${c.image}" onerror="this.style.display='none'"></div><div class="console-body"><h3>${c.name}</h3><div class="meta">${c.year} • ${c.kind}</div><p>${count} игр из твоего каталога.</p>${c.id==='PC Engine CD'?'<small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:NEC_PC_Engine_CDROM2.jpg" target="_blank" rel="noopener" onclick="event.stopPropagation()">Photo: RetroEditor</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" onclick="event.stopPropagation()">CC BY 4.0</a></small>':''}<button onclick="openConsole('${c.id}')">Открыть консоль →</button></div></article>`}).join('')}
 function findGameByName(label){let raw=String(label||'').replace(/\s+[—–]\s+(PS1|PSP|GBA|GBC|GB|DS|SNES|NES|N64|Genesis|Dreamcast).*$/i,'');let target=norm(raw.replace(/^Castlevania:\s*/i,''));let best=null,bestScore=-1;allGames().forEach(([fi,gi,g,f])=>{let title=norm(g.title),full=norm(f.name+' '+g.title);let score=title===target?100:full===target?98:title.includes(target)?85:target.includes(title)?75:0;if(score>bestScore){bestScore=score;best=[fi,gi]}});return bestScore>=75?best:null}
@@ -1305,7 +1305,12 @@ function paint(){
  requestAnimationFrame(()=>scrollTo({top:y,left:0,behavior:'instant'}));
 }
 function schedulePaint(){clearTimeout(paintTimer);paintTimer=setTimeout(paint,750)}
-window.raReloadStoredProgress=function(){try{progress=JSON.parse(localStorage.getItem(STORE)||'{}')||{};schedulePaint()}catch(e){}};
+window.raInstallStoredOwned=function(){
+ let next=[];try{next=JSON.parse(localStorage.getItem(OWNED)||'[]')}catch(e){};if(!Array.isArray(next))return;
+ for(const g of next){if(!DATA.some(f=>f.games.some(row=>row.libraryId===g.libraryId)))ownedGroup.games.push({...g,order:ownedGroup.games.length+1});for(const v of g.raVersions||[]){if(!ids.includes(v.id))ids.push(v.id);expected.set(v.id,v.platform)}}
+ owned=ownedGroup.games;
+};
+window.raReloadStoredProgress=function(paintChanges=true){try{progress=JSON.parse(localStorage.getItem(STORE)||'{}')||{};if(paintChanges)schedulePaint()}catch(e){}};
 window.showRAAutoNotice=function(){
  for(const panel of [document.getElementById('view-now')||document.getElementById('nowGrid')?.parentElement]){
   if(!panel)continue;let n=panel.querySelector('.ra-auto-sync-note');if(!n){n=document.createElement('p');n.className='ra-auto-sync-note';n.setAttribute('role','status');panel.append(n)}
@@ -1785,10 +1790,20 @@ function validate(x){
  if(JSON.stringify(x).length>15000000)throw Error('Библиотека слишком большая');
  return {...clone(x),personal:Object.fromEntries(backup.games.map(g=>[g.libraryId,g.values])),ra:{progress:backup.retroAchievements.progress||{},owned:Object.fromEntries((backup.retroAchievements.owned||[]).map(g=>[g.libraryId,g]))}};
 }
+function recoverLegacyAdopted(){
+ const flag=PREFIX+'legacy-adopted-recovered';if(read(flag,false))return;
+ const records=new Map(read('retro-holiday-adopted-v1',[]).map(g=>[g.id,g]));
+ for(const f of DATA.filter(f=>f.holidayDiscoveries))for(const g of f.games){
+  const id=g.id||(typeof HOLIDAY_DISCOVERIES!=='undefined'?HOLIDAY_DISCOVERIES.find(row=>row.libraryId===g.libraryId)?.id:null)||g.libraryId;
+  if(!records.has(id))records.set(id,{...g,id});
+ }
+ const ids=[...new Set([...read('retro-holiday-library-v1',[]),...records.keys()])];
+ PersonalBackup.write(localStorage,{'retro-holiday-adopted-v1':[...records.values()],'retro-holiday-library-v1':ids,[flag]:true});
+}
 function capture(){
  applying=true;
  try{
-  libraryRemovedKeys();const result=empty();result.personal=read(PERSONAL,{});
+  recoverLegacyAdopted();libraryRemovedKeys();const result=empty();result.personal=read(PERSONAL,{});
   for(const row of read('retro-library-backup-pending-v1',[]))if(!result.personal[row.libraryId])result.personal[row.libraryId]=row.values;
   result.hidden=read(TOMBS,{});for(const id of read(HIDDEN,[]))result.hidden[id]=true;
   result.adopted=Object.fromEntries(read('retro-holiday-adopted-v1',[]).map(g=>[g.id,g]));
@@ -1797,8 +1812,27 @@ function capture(){
  }finally{applying=false}
 }
 function key(name){return PREFIX+activeUser+':'+name}
-function apply(snapshot){
- snapshot=validate(snapshot);const before=capture(),patch={},indexed={},pending=[];
+function refreshCurrentGame(page){
+ const fi=Number(page.dataset.detailFi),gi=Number(page.dataset.detailGi);if(!DATA[fi]?.games?.[gi])return;
+ const value=saved(fi,gi),editable=e=>e&&e!==document.activeElement;
+ const status=page.querySelector('.game-controls>select');if(editable(status)){status.value=value.status;status.disabled=!!value.raAuto}
+ const rating=page.querySelector('#gpRating');if(editable(rating)){const score=value.rating==null?0:Math.round(value.rating*10);rating.value=score;rating.style.setProperty('--rating-pct',score+'%');const label=page.querySelector('#gpScore');if(label)label.textContent=value.rating==null?'—':String(score)}
+ const progress=page.querySelector('#gpProgress');if(editable(progress)){const percent=value.progress||0;progress.value=percent;progress.disabled=!!value.raProgressAuto;progress.style.setProperty('--rating-pct',percent+'%');const label=page.querySelector('#gpProgressVal');if(label)label.textContent=percent+'%'}
+ const notes=page.querySelector('textarea');if(editable(notes)&&notes.value!==(value.notes||''))notes.value=value.notes||'';
+ for(const [i,field] of ['started','finished'].entries()){const input=page.querySelectorAll('.diary-row input[type=date]')[i];if(editable(input))input.value=value[field]||''}
+ const favorite=page.querySelector('.favorite-btn');if(favorite){favorite.classList.toggle('favorite-on',!!value.favorite);favorite.textContent=value.favorite?'♥ FAVORITE':'♡ FAVORITE'}
+}
+function installBackgroundMetadata(snapshot){
+ window.installHolidayDiscoveries?.();
+ // Keep DATA indexes stable while synchronizing membership in the added-games group.
+ for(const f of DATA.filter(f=>f.holidayDiscoveries))for(const g of f.games)g.cloudAdoptionRemoved=!Object.values(snapshot.adopted).some(row=>row.libraryId===g.libraryId);
+ window.raInstallStoredOwned?.();
+ const group=DATA.find(f=>f.name==='Из RetroAchievements');if(!group)return;
+ for(const g of Object.values(snapshot.ra.owned||{}))if(!DATA.some(f=>f.games.some(row=>row.libraryId===g.libraryId)))group.games.push({...g,order:group.games.length+1});
+}
+function apply(snapshot,{background=false}={}){
+ snapshot=validate(snapshot);const before=capture();if(eq(before,snapshot))return false;
+ const patch={},indexed={},pending=[];
  const coordinates=new Map(DATA.flatMap((f,fi)=>f.games.map((g,gi)=>[g.libraryId,fi+'::'+gi])));
  for(const [id,values] of Object.entries(snapshot.personal)){if(coordinates.has(id))indexed[coordinates.get(id)]=values;else pending.push({libraryId:id,values})}
  patch[PERSONAL]=snapshot.personal;patch[INDEX]=indexed;patch[HIDDEN]=Object.keys(snapshot.hidden).filter(id=>snapshot.hidden[id]);patch['retro-games-hidden-v1']=[];patch[TOMBS]=snapshot.hidden;
@@ -1806,8 +1840,12 @@ function apply(snapshot){
  patch['retro-ra-progress-krenot-v1']=snapshot.ra.progress;patch['retro-ra-owned-krenot-v1']=Object.values(snapshot.ra.owned);
  applying=true;try{PersonalBackup.write(localStorage,patch)}finally{applying=false}
  personalById=read(PERSONAL,{});state=read(INDEX,{});
- window.raReloadStoredProgress?.();
- const scrollY=window.scrollY,detail=document.querySelector('#view-gameDetail.active .game-page');updateStats();renderLibrary();renderSpecials();renderHome();window.refreshLibraryVisibility?.();window.renderRemoved?.();if(document.getElementById('view-playerProfile')?.classList.contains('active'))openProfile();if(detail)openGame(Number(detail.dataset.detailFi),Number(detail.dataset.detailGi));window.scrollTo(0,scrollY);
+ window.raReloadStoredProgress?.(!background);
+ const detail=document.querySelector('#view-gameDetail.active .game-page');
+ if(background)installBackgroundMetadata(snapshot);
+ updateStats();renderLibrary();renderSpecials();renderHome();window.renderRemoved?.();
+ if(background){if(detail)refreshCurrentGame(detail)}
+ else{const scrollY=window.scrollY;window.refreshLibraryVisibility?.();if(document.getElementById('view-playerProfile')?.classList.contains('active'))openProfile();if(detail)openGame(Number(detail.dataset.detailFi),Number(detail.dataset.detailGi));window.scrollTo(0,scrollY)}
  return !eq(before.adopted,snapshot.adopted)||!eq(before.ra.owned,snapshot.ra.owned);
 }
 function status(message){dialog.querySelector('[data-status]').textContent=message}
@@ -1842,11 +1880,11 @@ async function synchronize(forced){
   // Retain writes made while a network request was in flight.
   const latest=capture(),late=reconcile(parts(local),parts(latest),parts(result.snapshot));late.value.ra=mergeRA(latest.ra,result.snapshot.ra);
   if(late.conflicts.length){showConflicts({next:late.value,remote:result},late.conflicts);return}
-  const needsReload=apply(late.value);base=result.snapshot;revision=result.revision;
+  apply(late.value,{background:true});base=result.snapshot;revision=result.revision;
   localStorage.setItem(key('base'),JSON.stringify({snapshot:base,revision}));
   if(eq(late.value,result.snapshot))localStorage.removeItem(key('pending'));else localStorage.setItem(key('pending'),JSON.stringify(late.value));
   status('Синхронизировано · '+new Date().toLocaleTimeString());
-  if(needsReload){sessionStorage.setItem(PREFIX+'return','1');location.reload()}else if(!eq(late.value,result.snapshot))timer=setTimeout(()=>synchronize(true),500);
+  if(!eq(late.value,result.snapshot))timer=setTimeout(()=>synchronize(true),500);
  }catch(e){status('Не удалось синхронизировать. Изменения сохранены в браузере. '+(e.message||''))}finally{busy=false}
 }
 async function connected(s){
