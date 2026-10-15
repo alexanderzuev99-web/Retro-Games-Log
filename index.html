@@ -285,7 +285,7 @@ initPlatform();renderSeason();applySeasonTheme();updateCountdown();renderLibrary
 <span class="radio-pop-caption">RETRO RADIO</span><button class="radio-pop-close" aria-label="Закрыть настройки радио" onclick="document.getElementById('radioPop').classList.remove('show')">×</button><h4>RETRO RADIO</h4>
 <div class="meta">4 MP3 TRACKS</div>
 <div class="radio-pop-transport"><button aria-label="Предыдущий трек" onclick="radioPrev(event)">⏮</button><button id="radioPlayBtn" onclick="toggleRadio(event)">▶ PLAY</button><button aria-label="Следующий трек" onclick="radioNext(event)">⏭</button></div>
-<label class="meta">Громкость <input id="radioVol" type="range" min="0" max="0.18" step="0.01" value="0.06" oninput="setRadioVolume(this.value)"></label>
+<label class="meta">Громкость <input id="radioVol" type="range" min="0" max="1" step="0.01" value="0.06" oninput="setRadioVolume(this.value)"></label>
 <div class="radio-pop-fx"><button onclick="cycleFX(event)" aria-label="Переключить анимации сайта">Анимации: <span id="fxLabel">FULL</span></button></div>
 </div>
 <div id="retroRadio" class="radio-pending" aria-label="Кассетное радио"></div>
@@ -751,15 +751,17 @@ function rebuildRadio(){
  r.innerHTML=`<div class="v968-size"><button data-s="icon" aria-label="Radio Icon">ICON</button><button data-s="mini" aria-label="Radio Mini">MINI</button><button data-s="full" aria-label="Radio Full">FULL</button></div>
  <div class="v968-icon"><img src="radio-art/cassette-16bit.webp" alt="" draggable="false"></div><div class="v968-bb-head"><span class="v968-bb-brand">RETRO TAPE · FM</span><span class="v968-bb-track">Haunted House Groove</span><i class="v968-led"></i></div>
  <div class="v968-bb-main"><div class="v968-speaker"></div><div class="v968-deck"><img class="radio-cassette-art" src="radio-art/cassette-16bit.webp" alt="" draggable="false"></div><div class="v968-speaker"></div></div>
- <div class="v968-controls"><button class="prev" aria-label="Предыдущий трек">◀◀</button><button class="play" aria-label="Воспроизведение или пауза">▶</button><button class="next" aria-label="Следующий трек">▶▶</button><button class="mix" aria-label="Громкость и настройки">VOL</button></div><div class="v968-footer"><span class="v968-section">1 / 4</span><span class="v968-time">0:00 / 1:41</span></div><div class="v968-progress"><i></i></div>`;
+ <div class="v968-controls"><button class="prev" aria-label="Предыдущий трек">◀◀</button><button class="play" aria-label="Воспроизведение или пауза">▶</button><button class="next" aria-label="Следующий трек">▶▶</button><button class="shuffle" aria-label="Shuffle: off" aria-pressed="false" title="Shuffle: off">⇄</button><button class="mix" aria-label="Громкость и настройки">VOL</button></div><div class="v968-footer"><span class="v968-section">1 / 4</span><span class="v968-time">0:00 / 1:41</span></div><div class="v968-progress"><i></i></div>`;
  let size=localStorage.getItem(SIZE_KEY);if(!['full','mini','icon'].includes(size))size=innerWidth<=720?'mini':'full';
  const apply=s=>{size=s;r.classList.remove('radio-icon','radio-mini','radio-full');r.classList.add('radio-'+s);localStorage.setItem(SIZE_KEY,s);r.querySelectorAll('.v968-size button').forEach(b=>{b.classList.toggle('active',b.dataset.s===s);b.setAttribute('aria-pressed',String(b.dataset.s===s))});document.getElementById('radioPop')?.classList.remove('show');requestAnimationFrame(()=>window.retroRadioClamp?.(true))};
  apply(size);r.tabIndex=0;r.setAttribute('aria-label','Кассетное радио');r.addEventListener('keydown',e=>{if(r.classList.contains('radio-icon')&&(e.key==='Enter'||e.key===' ')){e.preventDefault();apply('mini')}});
  r.querySelectorAll('.v968-size button').forEach(b=>b.onclick=e=>{e.stopPropagation();apply(b.dataset.s)});
+ const reels=document.createElement('div');reels.className='cassette-motion';reels.setAttribute('aria-hidden','true');reels.innerHTML='<canvas width="16" height="16" class="cassette-spin-reel reel-left"></canvas><canvas width="16" height="16" class="cassette-spin-reel reel-right"></canvas>';r.append(reels);
  r.querySelector('.prev').onclick=e=>{e.stopPropagation();radioPrev(e)};
  r.querySelector('.next').onclick=e=>{e.stopPropagation();radioNext(e)};
  r.querySelector('.play').onclick=e=>{e.stopPropagation();toggleRadio(e);setTimeout(sync,0)};
  r.querySelector('.mix').onclick=e=>{e.stopPropagation();toggleRadioPanel(e)};
+ r.querySelector('.shuffle').onclick=e=>{e.stopPropagation();window.radioToggleShuffle()};
  r.onclick=e=>{if(r.classList.contains('radio-icon')){e.stopPropagation();apply('mini')}};
  function sync(){const on=r.classList.contains('radio-on');r.querySelector('.play').textContent=on?'Ⅱ':'▶'}
  new MutationObserver(sync).observe(r,{attributes:true,attributeFilter:['class']});sync();
@@ -803,15 +805,18 @@ const player=document.createElement('audio');
 player.id='radioAudio';player.preload='none';player.setAttribute('aria-hidden','true');document.body.append(player);
 if(musicKey==='autumn'&&!localStorage.getItem('retro-radio-playlist-v2')){const previous=Number(localStorage.getItem(TRACK_KEY))||0;localStorage.setItem(TRACK_KEY,String(Math.max(0,previous-1)));localStorage.setItem('retro-radio-playlist-v2','1')}
 const playlistQueues=new Map();
+let shuffleEnabled=localStorage.getItem('retro-radio-shuffle-v1')==='1';
 function shuffleRadioOrder(count,last=-1){const order=Array.from({length:count},(_,i)=>i);for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}if(order.length>1&&order[0]===last)[order[0],order[1]]=[order[1],order[0]];return order}
-function radioQueue(key){if(!playlistQueues.has(key)){const savedKey='retro-radio-mp3-track-v1'+(key==='autumn'?'':'-'+key),last=Number(localStorage.getItem(savedKey)??-1);playlistQueues.set(key,{order:shuffleRadioOrder(SEASON_PLAYLISTS[key].length,last),cursor:0})}return playlistQueues.get(key)}
-let track=radioQueue(musicKey).order[0]??0;
+function radioQueue(key){if(!playlistQueues.has(key)){const count=SEASON_PLAYLISTS[key].length,savedKey='retro-radio-mp3-track-v1'+(key==='autumn'?'':'-'+key),saved=Number(localStorage.getItem(savedKey)||0),current=saved>=0&&saved<count?saved:0;const order=shuffleEnabled?[current,...shuffleRadioOrder(count).filter(i=>i!==current)]:Array.from({length:count},(_,i)=>i);playlistQueues.set(key,{order,cursor:Math.max(0,order.indexOf(current))})}return playlistQueues.get(key)}
+let track=radioQueue(musicKey).order[radioQueue(musicKey).cursor]??0;
+window.radioToggleShuffle=function(){shuffleEnabled=!shuffleEnabled;localStorage.setItem('retro-radio-shuffle-v1',shuffleEnabled?'1':'0');playlistQueues.clear();const order=shuffleEnabled?[track,...shuffleRadioOrder(songs.length).filter(i=>i!==track)]:Array.from({length:songs.length},(_,i)=>i);playlistQueues.set(musicKey,{order,cursor:Math.max(0,order.indexOf(track))});updateTrack()};
 let requestSerial=0,trackError=false;
 function clockText(seconds){const n=Math.max(0,Math.floor(seconds||0));return Math.floor(n/60)+':'+String(n%60).padStart(2,'0')}
 function updateTrack(){
+ const shuffleButton=document.querySelector('#retroRadio .shuffle');if(shuffleButton){shuffleButton.setAttribute('aria-pressed',String(shuffleEnabled));shuffleButton.setAttribute('aria-label',shuffleEnabled?'Shuffle: on':'Shuffle: off');shuffleButton.title=shuffleEnabled?'Shuffle: on':'Shuffle: off'}
  const song=songs[track],total=Number.isFinite(player.duration)?player.duration:(song?.duration||0),elapsed=player.currentTime||0;
  const x=document.querySelector('.v968-bb-track'),h=document.querySelector('#radioPop h4'),time=document.querySelector('.v968-time'),bar=document.querySelector('.v968-progress i'),section=document.querySelector('.v968-section');
- if(x)x.textContent=song?.name||seasonNames[musicKey]+' · треки скоро';if(h)h.textContent=song?.name||seasonNames[musicKey];const meta=document.querySelector('#radioPop > .meta');if(meta)meta.textContent=seasonNames[musicKey]+' · '+songs.length+' треков · перемешано';document.querySelectorAll('#retroRadio .play,#retroRadio .prev,#retroRadio .next').forEach(b=>b.disabled=!songs.length);
+ if(x)x.textContent=song?.name||seasonNames[musicKey]+' · треки скоро';if(h)h.textContent=song?.name||seasonNames[musicKey];const meta=document.querySelector('#radioPop > .meta');if(meta)meta.textContent=seasonNames[musicKey]+' · '+songs.length+' tracks · '+(shuffleEnabled?'Shuffle on':'In order');document.querySelectorAll('#retroRadio .play,#retroRadio .prev,#retroRadio .next').forEach(b=>b.disabled=!songs.length);
  if(time)time.textContent=clockText(elapsed)+' / '+clockText(total);
  if(bar)bar.style.width=Math.min(100,elapsed/total*100)+'%';
  if(section)section.textContent=trackError?'Не удалось загрузить трек':songs.length?`${seasonNames[musicKey]} · ${track+1} / ${songs.length}`:'Плейлист сезона ожидает загрузки';
@@ -827,12 +832,12 @@ window.startRadio=async function(){
 };
 window.stopRadio=function(save=true){requestSerial++;player.pause();if(save)localStorage.setItem('retro-radio-on','0');updateTrack()};
 window.toggleRadio=e=>{e?.stopPropagation();player.paused?startRadio():stopRadio()};
-function changeTrack(delta,e,continuePlaying=!player.paused){e?.stopPropagation();if(!songs.length)return;requestSerial++;const queue=radioQueue(musicKey);let cursor=queue.cursor+delta;if(cursor>=queue.order.length){queue.order=shuffleRadioOrder(songs.length,track);cursor=0}else if(cursor<0)cursor=queue.order.length-1;queue.cursor=cursor;selectTrack(queue.order[cursor]);if(continuePlaying)startRadio()}
-window.radioCatalogState=()=>({key:musicKey,index:track,playing:!player.paused&&!trackError,manual:!!localStorage.getItem('retro-radio-manual-playlist-v1')});
-window.radioSelectPlaylist=function(key,index,play=false){if(!SEASON_PLAYLISTS[key]?.length)return;localStorage.setItem('retro-radio-manual-playlist-v1',key);requestSerial++;musicKey=key;songs=SEASON_PLAYLISTS[key];TRACK_KEY='retro-radio-mp3-track-v1'+(key==='autumn'?'':'-'+key);if(Number.isInteger(index)&&index>=0&&index<songs.length){const queue=radioQueue(key);queue.order=[index,...shuffleRadioOrder(songs.length).filter(i=>i!==index)];queue.cursor=0}selectTrack(radioQueue(key).order[radioQueue(key).cursor]);if(play)startRadio()};
+function changeTrack(delta,e,continuePlaying=!player.paused){e?.stopPropagation();if(!songs.length)return;requestSerial++;const queue=radioQueue(musicKey);let cursor=queue.cursor+delta;if(cursor>=queue.order.length){queue.order=shuffleEnabled?shuffleRadioOrder(songs.length,track):Array.from({length:songs.length},(_,i)=>i);cursor=0}else if(cursor<0)cursor=queue.order.length-1;queue.cursor=cursor;selectTrack(queue.order[cursor]);if(continuePlaying)startRadio()}
+window.radioCatalogState=()=>({key:musicKey,index:track,playing:!player.paused&&!trackError,shuffle:shuffleEnabled,manual:!!localStorage.getItem('retro-radio-manual-playlist-v1')});
+window.radioSelectPlaylist=function(key,index,play=false){if(!SEASON_PLAYLISTS[key]?.length)return;localStorage.setItem('retro-radio-manual-playlist-v1',key);requestSerial++;musicKey=key;songs=SEASON_PLAYLISTS[key];TRACK_KEY='retro-radio-mp3-track-v1'+(key==='autumn'?'':'-'+key);if(Number.isInteger(index)&&index>=0&&index<songs.length){const queue=radioQueue(key);queue.order=shuffleEnabled?[index,...shuffleRadioOrder(songs.length).filter(i=>i!==index)]:Array.from({length:songs.length},(_,i)=>i);queue.cursor=queue.order.indexOf(index)}selectTrack(radioQueue(key).order[radioQueue(key).cursor]);if(play)startRadio()};
 window.radioAutomaticPlaylist=function(){localStorage.removeItem('retro-radio-manual-playlist-v1');syncSeasonRadio();document.dispatchEvent(new Event('retro-radio-selection'))};
 window.radioNext=e=>changeTrack(1,e);window.radioPrev=e=>changeTrack(-1,e);
-window.setRadioVolume=v=>{v=Number(v);if(!Number.isFinite(v))return;v=Math.max(0,Math.min(.18,v));localStorage.setItem('retro-radio-vol',String(v));player.volume=v};
+window.setRadioVolume=v=>{v=Number(v);if(!Number.isFinite(v))return;v=Math.max(0,Math.min(1,v));localStorage.setItem('retro-radio-vol',String(v));player.volume=v};
 player.addEventListener('ended',()=>changeTrack(1,null,true));
 for(const event of ['timeupdate','loadedmetadata','durationchange','play','pause'])player.addEventListener(event,updateTrack);
 player.addEventListener('error',()=>{trackError=true;localStorage.setItem('retro-radio-on','0');updateTrack()});
@@ -1245,7 +1250,7 @@ function positionMixer(){
 }
 window.toggleRadioPanel=e=>{e?.stopPropagation();pop.classList.toggle('show');positionMixer()};
 const range=document.getElementById('radioVol');
-let volume=Number(localStorage.getItem(VOL)??range.value);if(!Number.isFinite(volume))volume=.06;volume=Math.max(0,Math.min(.18,volume));range.value=volume;
+let volume=Number(localStorage.getItem(VOL)??range.value);if(!Number.isFinite(volume))volume=.06;volume=Math.max(0,Math.min(1,volume));range.value=volume;
 window.setRadioVolume(volume);
 function syncRadio(){
  const on=r.classList.contains('radio-on'),button=document.getElementById('radioPlayBtn');
@@ -2216,6 +2221,48 @@ function schedule(root){queue.add(root);if(pending)return;pending=true;queueMicr
 walk(document.body);
 new MutationObserver(records=>{for(const r of records){if(r.type==='characterData')schedule(r.target);else if(r.type==='attributes')element(r.target);else for(const node of r.addedNodes)schedule(node)}}).observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:attrs});
 for(const name of ['alert','confirm','prompt']){const native=window[name].bind(window);window[name]=(message,...args)=>native(translate(String(message)),...args)}
+})();
+</script>
+<style id="cassette-generated-keys">
+body #retroRadio .cassette-motion{position:absolute;inset:0;pointer-events:none;z-index:1}
+body #retroRadio .cassette-spin-reel{position:absolute;width:8.333333%;height:auto;aspect-ratio:1;top:40.93023%;image-rendering:pixelated;pointer-events:none}
+body #retroRadio .cassette-spin-reel.reel-left{left:22.135417%}
+body #retroRadio .cassette-spin-reel.reel-right{left:69.270833%}
+body #retroRadio.radio-icon .cassette-motion{display:block;top:5%;bottom:5%}
+body #retroRadio.radio-on .v968-led{animation:cassette-led-beat 1.2s steps(2,end) infinite}
+@keyframes cassette-reel-turn{to{transform:rotate(360deg)}}
+@keyframes cassette-led-beat{50%{opacity:.45}}
+@media(prefers-reduced-motion:reduce){body #retroRadio .cassette-spin-reel,body #retroRadio .v968-led{animation:none!important}}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-footer .v968-section{display:none!important}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-footer .v968-time{font:inherit!important;color:#614772!important;letter-spacing:inherit!important;text-shadow:0 1px #fff8df!important}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-controls button.play,body #retroRadio.v968-boombox:not(.radio-icon) .v968-size button.active{background:transparent url('radio-art/cassette-key-v2.webp') center/100% 100% no-repeat!important;color:#362143!important;border:0!important}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-bb-track{top:20%!important;left:15%!important;width:70%!important;color:#352044!important;font:700 13px/1.2 'Courier New',monospace!important;letter-spacing:.02em!important;text-shadow:0 1px #fff8df!important}
+body #retroRadio.v968-boombox.radio-mini .v968-bb-track{font-size:10px!important}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-footer{top:29%!important;left:20%!important;right:20%!important;justify-content:center!important;color:#614772!important;font:700 9px/1.1 'Courier New',monospace!important;letter-spacing:.05em!important}
+body #retroRadio.v968-boombox.radio-mini .v968-footer{font-size:8px!important}
+body #retroRadio.v968-boombox.radio-mini .v968-controls button.mix{height:100%!important;min-height:24px!important}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-progress{top:35%!important;left:25%!important;right:25%!important;height:2px!important;background:#bba2c2!important}
+/* Generated physical key caps share the cassette's pixel-art palette. */
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-controls{left:19%!important;right:19%!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:2px!important}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-controls button,body #retroRadio.v968-boombox:not(.radio-icon) .v968-size button{background:transparent url('radio-art/cassette-key-v2.webp') center/100% 100% no-repeat!important;border:0!important;box-shadow:none!important;image-rendering:pixelated;color:#362143!important;text-shadow:none!important;padding:3px 4px 5px!important}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-controls button{min-height:24px!important;grid-column:auto / auto!important;grid-row:auto / auto!important}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-controls button.shuffle{font-size:16px!important}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-controls button[aria-pressed=true]{filter:brightness(1.2) saturate(1.3);color:#00676e!important}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-size button.active{filter:brightness(1.18)}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-controls button:active{transform:translateY(1px);filter:brightness(.85)}
+body #retroRadio.v968-boombox:not(.radio-icon) .v968-bb-brand{background:transparent url('radio-art/cassette-key-v2.webp') center/100% 100% no-repeat!important;padding:1px 5px!important;top:7%!important;left:12%!important}
+</style>
+<script id="cassette-pixel-motion">(()=>{
+ const radio=document.getElementById('retroRadio');if(!radio)return;
+ const canvases=[...radio.querySelectorAll('canvas.cassette-spin-reel')];if(canvases.length!==2)return;
+ const image=new Image();let frame=0,last=0,angle=0,ready=false;
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ function draw(){canvases.forEach((canvas,i)=>{const c=canvas.getContext('2d');c.clearRect(0,0,16,16);c.save();c.imageSmoothingEnabled=false;c.beginPath();c.arc(8,8,7.5,0,Math.PI*2);c.clip();c.translate(8,8);c.rotate(angle);c.drawImage(image,(i?282:101)-16,104-16,32,32,-8,-8,16,16);c.restore()})}
+ function tick(time){frame=0;if(last)angle=(angle+(time-last)*Math.PI*2/3200)%(Math.PI*2);last=time;draw();if(radio.classList.contains('radio-on')&&!document.hidden&&!reduced.matches)frame=requestAnimationFrame(tick)}
+ function update(){if(frame)cancelAnimationFrame(frame);frame=0;last=0;if(!ready)return;if(radio.classList.contains('radio-on')&&!document.hidden&&!reduced.matches)frame=requestAnimationFrame(tick);else draw()}
+ image.onload=()=>{ready=true;update()};image.src='radio-art/cassette-16bit.webp';
+ new MutationObserver(update).observe(radio,{attributes:true,attributeFilter:['class']});
+ document.addEventListener('visibilitychange',update);reduced.addEventListener('change',update);
 })();
 </script>
 </body></html>
