@@ -1,0 +1,248 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "key": "fresh",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-c5848739-45e9-4774-9374-3a78455d62f1.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: January new journeys: snowy mountain pass at dawn, distant layered icy peaks, a winding trail and small traveler waymarker by the right edge, snow-covered pines on the left. Muted blue gray, pale frosty lavender, deep navy.",
+      "asset": "outputs/season-backgrounds/fresh-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 424872
+    },
+    {
+      "key": "pink",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-3651ee30-705f-456f-9bf3-39efac12d7dd.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: February quiet evenings: cozy room at night, snow visible through a window near the left edge, shelves of books and a warm dim table lamp at the right edge, a low window seat and folded blanket. Plum, dusty lilac, warm gray, restrained amber.",
+      "asset": "outputs/season-backgrounds/pink-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 427934
+    },
+    {
+      "key": "green",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-fa3368c1-e63c-495f-9b43-0268402d23bb.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: March green worlds: a lush awakening woodland with a narrow stream, early shoots, mossy boulders, layers of tall pines and soft overcast spring sky. Deep moss, muted sage, charcoal, dark teal.",
+      "asset": "outputs/season-backgrounds/green-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 482524
+    },
+    {
+      "key": "hunt",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-7eae0593-d785-4025-84ec-258fbdf1cd81.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: April rain and renewal: rainy stone garden path, wet fern beds and a small closed umbrella leaning against a garden fence at the far edge, puddles and distant trees under a dark cloudy sky. Slate blue, muted jade, gray plum.",
+      "asset": "outputs/season-backgrounds/hunt-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 522146
+    },
+    {
+      "key": "bloom",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-927bd121-9bf2-456b-9023-617581b82751.png",
+      "prompt": "Generate a panoramic 3:1 background for a retro game library header. Authentic elegant 16-bit SNES pixel art with clearly visible square pixel clusters, limited cohesive palette, carefully drawn crisp silhouettes, no realism, no painterly texture, no blur. Sakura spring festival in clear gentle daylight, pink cherry blossom branches framing the left and right, distant Japanese garden bridge over a tranquil pond, fresh mint foliage and luminous pale blue sky. This must be light, sunny and life-affirming, NOT gloomy dusk or dark night. Keep saturation restrained and tasteful, not neon. All foreground detail concentrated near left and right outer quarters, central half calm low-detail pale sky and distant landscape for UI overlay. No text, no frame, no UI, no people. Wide horizontal composition.",
+      "asset": "outputs/season-backgrounds/bloom-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 558540
+    },
+    {
+      "key": "sunrise",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-c1c00d60-e121-467b-9446-45830133ae96.png",
+      "prompt": "Generate a panoramic 3:1 background for a retro game library header. Authentic elegant 16-bit SNES pixel art with clearly visible square pixel clusters, limited cohesive palette, carefully drawn crisp silhouettes, no realism, no painterly texture, no blur. Early summer countryside in bright warm golden morning sunlight, fresh green fields with wildflowers, distant windmill and orchard, sunny pale blue sky, cheerful relaxed summer adventure mood. This must be light, sunny and life-affirming, NOT gloomy dusk or dark night. Keep saturation restrained and tasteful, not neon. All foreground detail concentrated near left and right outer quarters, central half calm low-detail pale sky and distant landscape for UI overlay. No text, no frame, no UI, no people. Wide horizontal composition.",
+      "asset": "outputs/season-backgrounds/sunrise-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 595784
+    },
+    {
+      "key": "beach",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-044cd64a-5e20-4094-bf0a-a7aff4072ccf.png",
+      "prompt": "Generate a panoramic 3:1 background for a retro game library header. Authentic elegant 16-bit SNES pixel art with clearly visible square pixel clusters, limited cohesive palette, carefully drawn crisp silhouettes, no realism, no painterly texture, no blur. Joyful sunny beach holiday at midday, turquoise clear water and pale golden sand, palm trees left, little striped beach umbrella and sailboat right, light azure sky and small soft white clouds, inviting and relaxed. This must be light, sunny and life-affirming, NOT gloomy dusk or dark night. Keep saturation restrained and tasteful, not neon. All foreground detail concentrated near left and right outer quarters, central half calm low-detail pale sky and distant landscape for UI overlay. No text, no frame, no UI, no people. Wide horizontal composition.",
+      "asset": "outputs/season-backgrounds/beach-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 459524
+    },
+    {
+      "key": "arcade",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-c7dc6ee0-98f5-407f-974a-44a2519b1e20.png",
+      "prompt": "Edit the supplied background. Preserve exact arcade hall composition and existing 16-bit pixel style, cabinets on left/right and quiet central wall. Turn on cabinet screens with recognizable tiny colorful retro game shapes, illuminate the cabinet marquees and a few cyan/pink neon edge lights with restrained pixel highlights reflecting on floor. A lively active arcade, a bit brighter, still dark plum hall and calm centre. No huge glow, no added UI or text. Keep panoramic 3:1 ratio. Authentic 16-bit square pixel clusters, no realistic rendering, no blur, no painterly detail, no text, no frame. Pixel art, not a photo.",
+      "asset": "outputs/season-backgrounds/arcade-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 503458
+    },
+    {
+      "key": "school",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-d205c213-4436-4b0c-92cf-dc3cc04191c7.png",
+      "prompt": "Edit this exact sunny classroom composition. Keep all object positions, sunlight direction, warm golden lighting and color balance. Change STYLE ONLY into visibly coarse authentic 16-bit SNES pixel art. Draw using a logical 420x140 pixel canvas, nearest-neighbor upscale: deliberate chunky square pixel clusters, clean stepped outlines, limited 24-color palette, simpler grouped shading. Remove microscopic textures and tiny realistic detail. Keep the chalkboard calm and empty for overlay UI. Books and apple left, globe and sunny window right. Same panoramic 3:1 image. No blur, no painterly realism, no text, no frame, no new objects.",
+      "asset": "outputs/season-backgrounds/school-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 417132
+    },
+    {
+      "key": "spooky",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-684dc348-cb19-4221-ac55-e654b6049b47.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet wide 16-bit pixel-art website header background, autumn twilight trails. Compose a wide panoramic woodland scene with all important detail inside the central horizontal band: distant layered forest silhouettes, copper autumn leaves, a winding stone path, a tiny wooden waymarker near the far right edge, a few mushrooms and ferns at the far left lower edge, faint mist and a small dusk moon. The central half is mostly dark open sky and faint distant hills to sit behind a large logo and text. Authentic beautifully art-directed SNES era 16-bit background, crisp visible square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Limited 18-color muted palette: deep navy, dark plum, moss gray, subdued rusty copper. Carefully drawn, moderately detailed, no realism, no smooth rendering, no blur, no glow, no gradients, no bright highlights. Dark and atmospheric; readable scenery at low contrast, less bright than foreground UI. No frame, no border, no text, no lettering, no logos, no characters, no user interface, no stickers. Full opaque background, panoramic 3:1 landscape composition.",
+      "asset": "outputs/season-backgrounds/spooky-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 473992
+    },
+    {
+      "key": "cozy",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-87804b2f-7fd1-480b-a581-e422c789a4a1.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: November cozy autumn: cottage porch overlooking a rainy autumn garden, a mug and closed book on a small side table at the far left, a dim lantern and amber leaves at the right, distant dark woods. Soft amber, brown plum, charcoal, muted olive.",
+      "asset": "outputs/season-backgrounds/cozy-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 545014
+    },
+    {
+      "key": "snow",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-12b2a8a8-b2bb-47a0-a9ed-902d246c2371.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: December winter cozy: moonlit snow-covered pine forest and a distant tiny cabin at the right edge, a frozen creek, layered snowy mountains, sparse falling snow. Deep indigo, muted ice blue, gray lilac, a tiny restrained warm window.",
+      "asset": "outputs/season-backgrounds/snow-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 416944
+    },
+    {
+      "key": "newyear",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-08d96bc5-9880-4f86-beb2-0be620fe898e.png",
+      "prompt": "Edit the supplied background. Preserve snow town and river composition and warm lights. Reduce visual clutter: only THREE restrained colorful fireworks total near outer edges, fewer tiny stars and garland bulbs. Draw in visibly coarse 16-bit SNES game pixel art, logical 420x140 canvas nearest-neighbor upscale, limited 24-color palette, clean stepped silhouettes. Festive and warm but quieter, no realistic micro-detail or smooth glows. Keep panoramic 3:1 ratio. Authentic 16-bit square pixel clusters, no realistic rendering, no blur, no painterly detail, no text, no frame. Pixel art, not a photo.",
+      "asset": "outputs/season-backgrounds/newyear-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 622144
+    },
+    {
+      "key": "valentine",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-ccce8a61-7dd6-4753-b1e3-4e6eb3372eb5.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: Valentine Player Two: cozy gaming room for two at dusk, two empty chairs beside a low table with two game controllers near one edge, a small vase with roses by the opposite window, a very subtle heart-shaped paper ornament. Dusty rose, muted amber, deep plum, navy. Tasteful and quiet, no people.",
+      "asset": "outputs/season-backgrounds/valentine-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 440668
+    },
+    {
+      "key": "easter",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-091fc785-d41e-4050-8bc6-e23a87ee1882.png",
+      "prompt": "Generate a panoramic 3:1 background for a retro game library header. Authentic elegant 16-bit SNES pixel art with clearly visible square pixel clusters, limited cohesive palette, carefully drawn crisp silhouettes, no realism, no painterly texture, no blur. Easter spring garden in warm morning sunshine, pastel painted eggs in a wicker nest at left, blooming white fruit trees, fresh meadow and a clear stream, cheerful cream and sage and soft yellow accents. This must be light, sunny and life-affirming, NOT gloomy dusk or dark night. Keep saturation restrained and tasteful, not neon. All foreground detail concentrated near left and right outer quarters, central half calm low-detail pale sky and distant landscape for UI overlay. No text, no frame, no UI, no people. Wide horizontal composition.",
+      "asset": "outputs/season-backgrounds/easter-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 603642
+    },
+    {
+      "key": "halloween",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-79757e6b-94d6-4130-a065-5fd3d8f397c7.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: Halloween: old haunted castle silhouette at the far left across a misty valley, carved pumpkins near the lower right path, bare trees and a small moon through layered clouds. Deep violet, faded pumpkin orange, moss gray, navy. Atmospheric rather than frightening.",
+      "asset": "outputs/season-backgrounds/halloween-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 450194
+    },
+    {
+      "key": "christmas",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-a38cf243-1a8e-4a87-98d9-79f89f4cb81b.png",
+      "prompt": "Create a panoramic 3:1 background for a retro games library, beautiful authentic 16-bit SNES pixel art with crisp deliberate square clusters and restrained palette. Christmas in a very warm cozy wooden living room: amber fireplace and stockings on right, decorated evergreen Christmas tree left with warm ivory fairy lights, cushions and folded blanket, snow visible through small window. Warm inviting honey amber, dark wood, muted pine and burgundy. Increase warmth and comfort, not harsh brightness. Calm low-detail central half of wood wall for overlay UI, rich decorative detail near edges. No people, no text, no frame, no UI, no realism, no blur. Pixel art remains visible and tidy.",
+      "asset": "outputs/season-backgrounds/christmas-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 547582
+    },
+    {
+      "key": "starwars",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-3634892b-55c8-493f-a09c-19bc6621b5fe.png",
+      "prompt": "Edit the supplied background. Preserve epic space battle composition, X-wing left, TIE right and planet, but redraw as a much more visibly pixelated SNES 16-bit game background. Coarse intentional square pixel clusters on a logical 420x140 pixel canvas, nearest-neighbor upscale. Simplify microscopic surface detail, fewer stars and laser bolts, clean readable ship silhouettes and restrained 24-color palette. Epic rich blue violet space and red/green lasers, no smooth glows. Keep panoramic 3:1 ratio. Authentic 16-bit square pixel clusters, no realistic rendering, no blur, no painterly detail, no text, no frame. Pixel art, not a photo.",
+      "asset": "outputs/season-backgrounds/starwars-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 456486
+    },
+    {
+      "key": "friday",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-8911433a-148b-4393-8cff-56479d84ac79.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: Friday the 13th: abandoned lakeside wooden cabin near the far right, broken fence and dark fir trees near the left, moonlit lake, reeds and low mist. Moody, eerie but no violence or figures. Charcoal, dark moss, muted blue gray, dusty purple.",
+      "asset": "outputs/season-backgrounds/friday-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 467108
+    },
+    {
+      "key": "mario",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-5dbb6cf7-1738-4f36-8691-0daf5de9f3e0.png",
+      "prompt": "Edit this exact background. Preserve the panoramic 3:1 composition, every mushroom and pipe and brick platform, lake, distant castle, rounded hills, atmospheric depth, detailed pixel shading and polished naturalistic 16-bit pixel landscape style. Change ONLY lighting and palette: replace gloomy sunset with beautiful bright sunny late-morning daylight. Clear light blue sky with soft ivory clouds, vivid fresh green hills, warm sunlit ochre bricks, saturated cheerful mushroom reds and sparkling blue lake. Pleasant rich colors, not neon. The central area remains calm and uncluttered. No new objects, text, border or UI. Do not simplify to flat cartoon symbols. Retain the original level of detail and crisp pixel clusters.",
+      "asset": "outputs/season-backgrounds/mario-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 519844
+    },
+    {
+      "key": "pokemon",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-4658ab3f-1261-4fb4-ad6e-926deb663c25.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: Pok\u00e9mon Day: a quiet country route at evening, small red-roofed healing-center building partly visible at far left, tall grasses, fenced path and trees near the right, distant layered hills and soft moonlight. Muted leaf green, dusty red, cream gray, dark blue. No lettering or characters.",
+      "asset": "outputs/season-backgrounds/pokemon-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 476422
+    },
+    {
+      "key": "metroidweek",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-818a950a-fff0-4869-b212-8c920ad4fe6e.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: Metroidvania Week: ancient underground temple passage, weathered stone arches and hanging vines near left edge, a low broken stair and small dim cyan crystal at right, distant cavern layers and quiet shadowy center. Mossy teal, slate gray, deep violet, muted cyan.",
+      "asset": "outputs/season-backgrounds/metroidweek-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 486790
+    },
+    {
+      "key": "handheld",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-a66b68e8-4f27-4bd6-aab5-94346e8e81e7.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: Handheld Week: cozy retro gaming desk at night, one small gray handheld console with unlabelled dark screen near far left, a few cartridges and a closed notebook near far right, dim desk lamp and plain quiet wall. Desaturated lavender, gray beige, muted amber, navy.",
+      "asset": "outputs/season-backgrounds/handheld-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 340204
+    },
+    {
+      "key": "bossrush",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-61069682-d484-4550-9b50-3bef4467613e.png",
+      "prompt": "Edit the supplied background. Preserve EXACT previous composition: sword left, crimson banners, stone hall, brazier right, calm middle. Change ONLY palette and illumination: richer warm torch light, visible warm gray stone, saturated burgundy and gold. Retain the previous coarse 16-bit pixel style, not the realistic ornate remake. Keep panoramic 3:1 ratio. Authentic 16-bit square pixel clusters, no realistic rendering, no blur, no painterly detail, no text, no frame. Pixel art, not a photo.",
+      "asset": "outputs/season-backgrounds/bossrush-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 545466
+    },
+    {
+      "key": "rainy",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-e5caab74-2196-467a-9117-b47bbc147a31.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: Cozy Rainy Day: view from a dark quiet room through a rain-streaked window, dim city roofs and wet cobblestone street outside, house plants and a closed book near one edge, a mug near the opposite edge. Dusty teal, blue gray, navy, restrained warm amber.",
+      "asset": "outputs/season-backgrounds/rainy-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 471520
+    },
+    {
+      "key": "detective",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-3f531a42-89a0-4928-b7d8-27151345196a.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: Detective Week: moody 1940s-style city alley at night, old streetlamp, shuttered shopfronts and scattered newspaper near left edge, a misty wet street receding at right, restrained pools of dim lamplight. Muted sepia, charcoal, dusty slate blue, dark plum. No people or readable text.",
+      "asset": "outputs/season-backgrounds/detective-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 422574
+    },
+    {
+      "key": "ps1",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-bf77ae4b-8331-423b-bcd1-20db4157654c.png",
+      "prompt": "Use case: stylized-concept. Asset: quiet panoramic 3:1 website header background. Authentic beautifully art-directed SNES-era 16-bit pixel-art background, crisp square pixel clusters, logical pixel resolution around 320x120 enlarged with nearest neighbor. Moderately detailed, limited 18-color muted palette, dark and atmospheric, low contrast. No realism, smooth rendering, blur, glow, bright highlights, gradients, text, lettering, logos, border, frame, characters or user interface. Opaque full scene. Most detailed props remain near the left and right edges and lower corners; central half is quiet dark open space for a large logo and text. Keep all important detail inside the central horizontal band, suitable for a wide banner. Subject and palette: PS1 Weekend: quiet late-1990s gaming room at night, a small CRT television and gray first-generation console near far left, controller cable and compact-disc cases near far right, dim cool room with dark central wall. Muted steel gray, dusty lavender, faded cyan, navy. No logos or text.",
+      "asset": "outputs/season-backgrounds/ps1-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 364168
+    }
+  ]
+}

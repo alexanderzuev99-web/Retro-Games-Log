@@ -1,0 +1,101 @@
+{
+  "mode": "built-in image_gen",
+  "prompts": [
+    {
+      "slug": "mushroom",
+      "prompt": "Use case: stylized-concept. Asset: one transparent-background decorative sticker for a retro games library. Polished authentic 16-bit SNES pixel art, readable at 64 to 96 pixels, intentional square pixel clusters, moderate detail, limited 12\u201318 color palette, dark plum outline with tidy stepped silhouette, subtle chunky highlights. Isolated centered complete object with transparent margin. No white sticker outline, no glow halo, no pedestal, no scene, no text or watermark. This is a physical game-world object, not an emoji or flat UI icon. A plump red power-up mushroom with cream white spots and short beige stem, like a classic Mario power-up."
+    },
+    {
+      "slug": "capture-ball",
+      "prompt": "Use case: stylized-concept. Asset: one transparent-background decorative sticker for a retro games library. Polished authentic 16-bit SNES pixel art, readable at 64 to 96 pixels, intentional square pixel clusters, moderate detail, limited 12\u201318 color palette, dark plum outline with tidy stepped silhouette, subtle chunky highlights. Isolated centered complete object with transparent margin. No white sticker outline, no glow halo, no pedestal, no scene, no text or watermark. This is a physical game-world object, not an emoji or flat UI icon. A recognizable red-and-white Pok\u00e9 Ball, closed, small central button, clean chunky pixel shading."
+    },
+    {
+      "slug": "sonic-ring",
+      "prompt": "Use case: stylized-concept. Asset: one separate transparent background sticker for a retro games library. Authentic polished 16-bit SNES pixel art, readable at 64 to 96 pixels, intentional square pixel clusters, moderate detail, limited color palette, tidy dark plum outline. Exactly ONE object, centered with generous transparent margin. No additional items, no white sticker outline, no glow halo, no pedestal, no scene, no lettering, no watermark. A single upright golden collectible ring from Sonic the Hedgehog, thick circular gold band, rich chunky amber shadows and pale highlights. Ring only, no shoes or characters."
+    },
+    {
+      "slug": "chaos-emerald",
+      "prompt": "Use case: stylized-concept. Asset: one separate transparent background sticker for a retro games library. Authentic polished 16-bit SNES pixel art, readable at 64 to 96 pixels, intentional square pixel clusters, moderate detail, limited color palette, tidy dark plum outline. Exactly ONE object, centered with generous transparent margin. No additional items, no white sticker outline, no glow halo, no pedestal, no scene, no lettering, no watermark. A single cyan-blue Chaos Emerald from Sonic, recognizable broad faceted hexagonal-cut gemstone, pointed lower half and broad flat top. Jewel only, no ring or pedestal."
+    },
+    {
+      "slug": "hylian-shield",
+      "prompt": "Use case: precise-object-edit. Edit target: supplied image of an emerald gem and a Zelda-style shield. Remove the emerald COMPLETELY. Keep ONLY the blue-and-silver shield with its gold emblem. Reconstruct the shield's left edge cleanly where it touched the gem, center the single shield, give it generous transparent margin. Preserve the beautiful existing shield pixel-art style, palette, design and moderate 16-bit detail. Transparent background, no other objects, no scene, no text."
+    },
+    {
+      "slug": "game-cartridge",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one gray SNES game cartridge with a violet label, no text."
+    },
+    {
+      "slug": "treasure-chest",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one small closed fantasy wooden treasure chest with gold fittings."
+    },
+    {
+      "slug": "red-potion",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one round glass bottle of ruby-red health potion, cork stopper."
+    },
+    {
+      "slug": "retro-controller",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one lavender SNES-style game controller with dark d-pad and four colored buttons."
+    },
+    {
+      "slug": "question-block",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one golden square mystery block from a classic platform game, a simple white question mark on the front."
+    },
+    {
+      "slug": "arcade-invader-v2",
+      "prompt": "Use case: stylized-concept. Asset: transparent retro background sticker. Draw one recognizable classic Space Invaders crab-shaped alien, lime green with two raised antennae, two dark square eyes, broad stepped shoulders, and two short angular legs. STRICT authentic pixel sprite on a 24x24 logical grid enlarged with nearest-neighbor: perfectly symmetrical geometry, uniform square pixel sizes, clean rectilinear steps. Four green shades plus dark plum outline, flat game shading only. Clean eyes and legs, tidy silhouette. No shiny bevels, glow, blur, gradients, 3D rendering, lighting effects, fuzzy edges, scene, letters or extra objects. Center the complete alien on a true transparent background with margin."
+    },
+    {
+      "slug": "dungeon-key",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one ornate golden dungeon key with a simple rounded bow and two square teeth."
+    },
+    {
+      "slug": "pixel-bomb",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one dark navy spherical cartoon videogame bomb with short curved fuse, tiny amber spark at the end."
+    },
+    {
+      "slug": "magic-book",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one closed violet spellbook with a gold crescent moon embossed on its cover."
+    },
+    {
+      "slug": "fire-flower",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one classic platform-game fire flower, round orange-red blossom with two dark eyes, green stalk and two leaves."
+    },
+    {
+      "slug": "sonic-spring",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one red-and-yellow spring bumper from a classic Sonic platform game, visible silver coil."
+    },
+    {
+      "slug": "pizza-slice",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one slice of pepperoni pizza, orange cheese and brown crust, triangular silhouette."
+    },
+    {
+      "slug": "star-wand-v2",
+      "prompt": "Use case: precise-object-edit. Edit target: supplied pixel-art pink wand with a gold star. Correct only the star's orientation and its joint to the handle. The entire wand follows one diagonal axis from bottom-left to top-right: one top point of the star must point along the same diagonal axis as the handle, not straight upward. The handle joins exactly the center of the star's lower inner notch, on that axis. Make the five-pointed star geometrically tidy and symmetrical around the shaft axis. Preserve chunky visible 16-bit pixels, gold and pink palette, plum outlines, overall proportions, transparent background. One standalone wand, no glow or extra objects."
+    },
+    {
+      "slug": "jungle-barrel",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one wooden jungle platform-game barrel with two dark iron hoops, no letters."
+    },
+    {
+      "slug": "farm-turnip",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one plump white turnip with violet shoulders and three broad green leaves, farming-game harvest item."
+    },
+    {
+      "slug": "save-crystal",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one violet fantasy save-point crystal, a tall faceted diamond shape with a small dark base integral to the crystal."
+    },
+    {
+      "slug": "cherry",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one connected pair of red arcade cherries on a single green forked stem, classic arcade bonus fruit."
+    },
+    {
+      "slug": "spaceship",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one tiny red-and-white vertical arcade shooter spaceship, top view, broad pointed wings."
+    },
+    {
+      "slug": "triforce",
+      "prompt": "Use case: stylized-concept. Transparent sticker for a 16-bit game library. STRICT 16-BIT PIXEL ART SPRITE drawn on a 48x48 logical pixel grid then enlarged with nearest neighbor: large crisp square pixels, stepped edges, broad pixel clusters, 12 flat colors maximum, dark plum one-pixel outline and simple two-tone shading. No smooth curves, gradients, photorealism, 3D rendering, glow, texture, lettering, scenery or extra objects. Exactly one standalone object centered on true transparent background with ample margin. Subject: one standalone gold triangular relic formed of three small golden triangles with a triangular hole in the center, fantasy game item."
+    }
+  ]
+}

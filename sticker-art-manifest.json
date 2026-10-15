@@ -1,0 +1,283 @@
+{
+  "mode": "built-in image_gen",
+  "prompts": "sticker-prompts.json",
+  "style": "16-bit pixel sprites, standalone objects",
+  "placement": "Random angles, unique assets, best-candidate spacing, rotated bounding-box collision checks; fixed on scroll.",
+  "preparation": "Alpha crop and nearest-neighbor resize only; original generated artwork preserved.",
+  "excluded": [
+    "shoe with ring",
+    "shield with separate gem",
+    "realistic golden snitch",
+    "realistic starfighter",
+    "realistic castle",
+    "realistic ogre door",
+    "realistic arcade joystick",
+    "Game Boy (removed by request)",
+    "blue ocarina",
+    "pinball table",
+    "arc reactor"
+  ],
+  "assets": [
+    {
+      "id": "mushroom",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-b5addf41-a3b3-4777-b742-d66476e4e3e6.png",
+      "asset": "outputs/sticker-art/mushroom.webp",
+      "size": [
+        185,
+        192
+      ]
+    },
+    {
+      "id": "capture-ball",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-1b165693-c25e-43ba-a28a-d3853ea90c4b.png",
+      "asset": "outputs/sticker-art/capture-ball.webp",
+      "size": [
+        192,
+        175
+      ]
+    },
+    {
+      "id": "sonic-ring",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-8a8eb7df-75ae-4be0-ba80-88f96fa9da1f.png",
+      "asset": "outputs/sticker-art/sonic-ring.webp",
+      "size": [
+        192,
+        169
+      ]
+    },
+    {
+      "id": "chaos-emerald",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-bc864241-4ff0-457d-a7da-6b4a5a6371d2.png",
+      "asset": "outputs/sticker-art/chaos-emerald.webp",
+      "size": [
+        192,
+        177
+      ]
+    },
+    {
+      "id": "hylian-shield",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-050d2552-8f82-4b04-9dd3-4247780640d6.png",
+      "asset": "outputs/sticker-art/hylian-shield.webp",
+      "size": [
+        172,
+        192
+      ]
+    },
+    {
+      "id": "golden-snitch",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-3e0b18ea-5b15-40c8-9d8c-a5695a05095b.png",
+      "asset": "outputs/sticker-art/golden-snitch.webp",
+      "size": [
+        192,
+        132
+      ]
+    },
+    {
+      "id": "starfighter",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-9e0833bc-b8bf-4f03-9f6e-f59d84f944e2.png",
+      "asset": "outputs/sticker-art/starfighter.webp",
+      "size": [
+        192,
+        188
+      ]
+    },
+    {
+      "id": "fairytale-castle",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-157ee822-114c-4c88-a9c4-fc504265f4ab.png",
+      "asset": "outputs/sticker-art/fairytale-castle.webp",
+      "size": [
+        187,
+        192
+      ]
+    },
+    {
+      "id": "ogre-door",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-b3697388-267a-40d9-9ac3-be226a09be3f.png",
+      "asset": "outputs/sticker-art/ogre-door.webp",
+      "size": [
+        192,
+        190
+      ]
+    },
+    {
+      "id": "arcade-joystick",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-74618e3b-861b-4e5d-b9ad-30b69e8f25c3.png",
+      "asset": "outputs/sticker-art/arcade-joystick.webp",
+      "size": [
+        192,
+        147
+      ]
+    },
+    {
+      "id": "game-cartridge",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-001fd9e6-f67d-477e-b59d-e3ac61a715ee.png",
+      "asset": "outputs/sticker-art/game-cartridge.webp",
+      "size": [
+        192,
+        179
+      ]
+    },
+    {
+      "id": "treasure-chest",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-e3224f79-a702-41bd-94ae-ba812aa75312.png",
+      "asset": "outputs/sticker-art/treasure-chest.webp",
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "id": "red-potion",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-2308312d-3c4f-4138-b9fe-9851cdd664ac.png",
+      "asset": "outputs/sticker-art/red-potion.webp",
+      "size": [
+        187,
+        192
+      ]
+    },
+    {
+      "id": "retro-controller",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-074edba7-760b-439c-9e7d-e4a176a62e61.png",
+      "asset": "outputs/sticker-art/retro-controller.webp",
+      "size": [
+        192,
+        120
+      ]
+    },
+    {
+      "id": "question-block",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-ede2efe5-e7ee-4754-a824-41cbfa52b2b4.png",
+      "asset": "outputs/sticker-art/question-block.webp",
+      "size": [
+        192,
+        180
+      ]
+    },
+    {
+      "id": "arcade-invader-v2",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-aedaaab9-d749-46b3-93b2-daf190da4d95.png",
+      "asset": "outputs/sticker-art/arcade-invader-v2.webp",
+      "size": [
+        192,
+        157
+      ]
+    },
+    {
+      "id": "dungeon-key",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-2aa53da2-fa79-407b-871d-f337012fd729.png",
+      "asset": "outputs/sticker-art/dungeon-key.webp",
+      "size": [
+        191,
+        192
+      ]
+    },
+    {
+      "id": "pixel-bomb",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-2774efff-1ccd-4a48-9eab-df18beacf105.png",
+      "asset": "outputs/sticker-art/pixel-bomb.webp",
+      "size": [
+        175,
+        192
+      ]
+    },
+    {
+      "id": "magic-book",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-e1ec2e66-a694-4441-8db4-69ec99adbbfe.png",
+      "asset": "outputs/sticker-art/magic-book.webp",
+      "size": [
+        186,
+        192
+      ]
+    },
+    {
+      "id": "fire-flower",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-c651ff60-a763-4bac-9988-96ac408de0b7.png",
+      "asset": "outputs/sticker-art/fire-flower.webp",
+      "size": [
+        174,
+        192
+      ]
+    },
+    {
+      "id": "sonic-spring",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-71f5c0f8-a2aa-4db8-8f35-88cbf212c55b.png",
+      "asset": "outputs/sticker-art/sonic-spring.webp",
+      "size": [
+        192,
+        179
+      ]
+    },
+    {
+      "id": "pizza-slice",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-43700ef7-f762-4c51-a1b0-eab634ce4b83.png",
+      "asset": "outputs/sticker-art/pizza-slice.webp",
+      "size": [
+        192,
+        187
+      ]
+    },
+    {
+      "id": "star-wand-v2",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-805ed6e0-6f69-4849-a902-0ec9906b38de.png",
+      "asset": "outputs/sticker-art/star-wand-v2.webp",
+      "size": [
+        192,
+        184
+      ]
+    },
+    {
+      "id": "jungle-barrel",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-e0203e64-3155-4d5c-8400-1e0d58a8ea11.png",
+      "asset": "outputs/sticker-art/jungle-barrel.webp",
+      "size": [
+        181,
+        192
+      ]
+    },
+    {
+      "id": "farm-turnip",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-a3cfaa16-418d-46e3-828f-9e8bb81f7d89.png",
+      "asset": "outputs/sticker-art/farm-turnip.webp",
+      "size": [
+        192,
+        187
+      ]
+    },
+    {
+      "id": "save-crystal",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-96705ef0-3cca-4d1e-875f-2d88a42d42c9.png",
+      "asset": "outputs/sticker-art/save-crystal.webp",
+      "size": [
+        189,
+        192
+      ]
+    },
+    {
+      "id": "cherry",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-cdc30cc8-8e6c-4049-b5c4-44ebed1fa5e5.png",
+      "asset": "outputs/sticker-art/cherry.webp",
+      "size": [
+        187,
+        192
+      ]
+    },
+    {
+      "id": "spaceship",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-718ad41c-7cfa-4b58-abeb-7eb9861c3163.png",
+      "asset": "outputs/sticker-art/spaceship.webp",
+      "size": [
+        189,
+        192
+      ]
+    },
+    {
+      "id": "triforce",
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-d8b8cdc5-9490-4f46-b20d-e335fc298797.png",
+      "asset": "outputs/sticker-art/triforce.webp",
+      "size": [
+        192,
+        167
+      ]
+    }
+  ]
+}
