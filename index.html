@@ -2323,8 +2323,6 @@ img[src*='batman-batarang-v3']{filter:grayscale(1) contrast(1.05)}
 #topHero #heroLatestAchievement{border-color:#d7b45c!important;background:linear-gradient(145deg,#211b12,#110e17)!important;box-shadow:inset 0 0 0 1px #ffe39919!important;grid-template-columns:40px minmax(0,1fr)!important;gap:10px!important;overflow:hidden!important}
 #topHero #heroLatestAchievement small{font:11px/1.4 'Courier New',monospace!important}
 #topHero #heroLatestAchievement b{font:700 13px/1.4 'Courier New',monospace!important}
-#topHero #heroLatestAchievement:after{content:'';position:absolute;inset:0;width:auto;height:auto;padding:1px;border-radius:4px;pointer-events:none;background:linear-gradient(110deg,transparent 40%,#ffe9a1 49%,#fff8db 50%,#ffe9a1 51%,transparent 60%);background-size:350% 100%;background-position:140% 0;transform:none;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:studioGoldSweep 10s linear infinite;z-index:2}
-@keyframes studioGoldSweep{0%,70%{background-position:140% 0;opacity:0}72%{opacity:.9}94%{background-position:-40% 0;opacity:.9}95%,100%{background-position:-40% 0;opacity:0}}
 #topHero .studio-title .hero-home-link{position:relative!important}
 #topHero .studio-letter-dim{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;opacity:0;filter:brightness(.12);pointer-events:none;image-rendering:pixelated}
 #topHero.hero-has-season-frame{padding:48px 42px!important}
@@ -2336,11 +2334,7 @@ img[src*='batman-batarang-v3']{filter:grayscale(1) contrast(1.05)}
 @media(max-width:720px){#topHero .studio-air-art,#topHero .studio-start-art{height:38px!important;max-height:38px!important;object-fit:fill!important}}
 @media(prefers-reduced-motion:reduce){#topHero #heroLatestAchievement:after{display:none!important}}
 #topHero .studio-air-art,#topHero .studio-start-art{height:auto!important;aspect-ratio:4.5/1!important;max-height:none!important;object-fit:fill!important}
-#topHero #heroLatestAchievement:after,#topHero #heroLatestAchievement:before{content:none!important;animation:none!important}
-#topHero #heroLatestAchievement .studio-gold-outline{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);pointer-events:none;overflow:hidden;z-index:2}
-#topHero .studio-gold-outline rect{opacity:0;fill:none;stroke:#ffedb2;stroke-width:1.3;stroke-dasharray:8 92;stroke-dashoffset:0;vector-effect:non-scaling-stroke;animation:studioGoldPerimeter 10s linear infinite}
-@keyframes studioGoldPerimeter{0%,66%{stroke-dashoffset:0;opacity:0}70%{opacity:.95}97%{stroke-dashoffset:-100;opacity:.95}100%{stroke-dashoffset:-100;opacity:0}}
-@media(prefers-reduced-motion:reduce){#topHero .studio-gold-outline{display:none!important}}
+#topHero #heroLatestAchievement::before{content:none!important}
 #topHero.hero-has-season-frame{background:radial-gradient(ellipse at 0 70%,var(--hero-theme-tint,#1b2430),transparent 65%),radial-gradient(ellipse at 100% 0,var(--hero-theme-tint,#1b2430),transparent 60%),linear-gradient(135deg,#0c111e,#090b15)!important}
 #topHero .hero-season-backdrop{background-size:cover;background-repeat:no-repeat;opacity:.17;mask-image:linear-gradient(90deg,#000,transparent 30%,transparent 70%,#000)}
 .v93-halloween{background:radial-gradient(ellipse at 0 0,var(--studio-season-tint,#251d2c),transparent 68%),linear-gradient(140deg,#11101b,#0c0d17)!important}
@@ -2350,7 +2344,6 @@ img[src*='batman-batarang-v3']{filter:grayscale(1) contrast(1.05)}
 #topHero #heroTrophyCounter,#topHero #heroLatestAchievement{height:100%!important;min-height:78px!important;border:8px solid transparent!important;border-radius:0!important;padding:7px!important;box-shadow:none!important}
 #topHero #heroTrophyCounter{border-image:url('brand-art/console-green-frame-v2.webp') 20 stretch!important}
 #topHero #heroLatestAchievement{border-image:url('brand-art/console-gold-frame-v2.webp') 20 stretch!important;overflow:visible!important}
-#topHero #heroLatestAchievement .studio-gold-outline{inset:-8px;width:calc(100% + 16px);height:calc(100% + 16px)}
 @media(max-width:720px){#topHero .hero-trophy-rail{height:auto!important;grid-template-rows:none!important}#topHero #heroTrophyCounter,#topHero #heroLatestAchievement{height:88px!important;min-height:88px!important;padding:5px!important}#topHero #heroLatestAchievement small{font-size:9px!important}#topHero #heroLatestAchievement b{font-size:11px!important}}
 #topHero .hero-season-art{border-image-slice:250}
 .v93-halloween .season-ornaments.season-generated-frame{border-image-slice:250!important}
@@ -2360,8 +2353,6 @@ img[src*='batman-batarang-v3']{filter:grayscale(1) contrast(1.05)}
 #topHero .hero-title-row .hero-trophy-rail #heroTrophyCounter,#topHero .hero-title-row .hero-trophy-rail #heroLatestAchievement{height:100%!important;min-height:0!important;align-self:stretch!important}
 @media(max-width:720px){#topHero .hero-title-row .hero-trophy-rail #heroTrophyCounter,#topHero .hero-title-row .hero-trophy-rail #heroLatestAchievement{height:88px!important;min-height:88px!important}}
 /* Restore the original brief golden spark, on the housing's inner gold rim. */
-#topHero #heroLatestAchievement .studio-gold-outline{display:none!important}
-#topHero #heroLatestAchievement::after{content:''!important;display:block;position:absolute;inset:auto!important;top:0!important;left:0!important;width:4px!important;height:4px!important;padding:0!important;border:0!important;border-radius:50%!important;background:#fff5ce!important;box-shadow:0 0 5px 2px #eac977a0!important;-webkit-mask:none!important;mask:none!important;transform:none!important;offset-path:inset(0 round 1px)!important;offset-anchor:center!important;offset-distance:0%;opacity:0;animation:trophySpark 9s linear infinite!important;pointer-events:none;z-index:2}
 body.fx-off #topHero #heroLatestAchievement::after{display:none!important;animation:none!important}
 @media(prefers-reduced-motion:reduce){#topHero #heroLatestAchievement::after{display:none!important;animation:none!important}}
 #topHero.hero-has-season-frame,.v93-halloween{background:radial-gradient(ellipse at 0 70%,var(--studio-season-tint,var(--hero-theme-tint,#1b2430)),transparent 65%),radial-gradient(ellipse at 100% 0,var(--studio-season-tint,var(--hero-theme-tint,#1b2430)),transparent 60%),linear-gradient(135deg,#0c111e,#090b15)!important}
@@ -2379,6 +2370,18 @@ body.fx-off #topHero #heroLatestAchievement::after{display:none!important;animat
 @media(max-width:420px){#topHero #heroLatestAchievement{grid-template-columns:32px minmax(0,1fr)!important;gap:6px!important}#topHero #heroLatestAchievement img{width:32px!important;height:32px!important}#topHero #heroLatestAchievement small{font-size:10px!important}#topHero #heroLatestAchievement b{font-size:12px!important}}
 #topHero .hero-trophy-rail{margin-top:var(--studio-screen-top,0px)!important}
 @media(max-width:720px){#topHero .hero-trophy-rail{margin-top:0!important}}
+#topHero .hero-title-row .hero-trophy-rail #heroLatestAchievement{border-image:url('brand-art/achievement-gold-frame-v3.webp') 20 stretch!important}
+#topHero #heroLatestAchievement::after,#topHero #heroLatestAchievement::before{content:none!important;display:none!important;animation:none!important;offset-path:none!important}
+#topHero #heroLatestAchievement .studio-gold-contour{position:absolute;inset:-8px;width:calc(100% + 16px);height:calc(100% + 16px);overflow:hidden;pointer-events:none;z-index:2}
+#topHero .studio-gold-contour rect{fill:none;stroke-linecap:round;vector-effect:non-scaling-stroke}
+#topHero .gold-contour-pulse{opacity:0;animation:goldContourPulse 10s linear infinite}
+#topHero .gold-contour-trail{stroke:#ffe49a;stroke-width:2;stroke-dasharray:6 94;stroke-dashoffset:0;filter:drop-shadow(0 0 1px #e9bf6c);animation:goldContourTrail 10s linear infinite}
+#topHero .gold-contour-core{stroke:#fff9dc;stroke-width:1.4;stroke-dasharray:1.5 98.5;stroke-dashoffset:-4.5;animation:goldContourCore 10s linear infinite}
+@keyframes goldContourPulse{0%,73%{opacity:0}75%{opacity:.7}80%,84%{opacity:1}85%,100%{opacity:0}}
+@keyframes goldContourTrail{0%,74%{stroke-dashoffset:0;animation-timing-function:cubic-bezier(.45,0,.85,.45)}80%{stroke-dashoffset:-12;animation-timing-function:cubic-bezier(.7,0,1,.3)}84%,100%{stroke-dashoffset:-100}}
+@keyframes goldContourCore{0%,74%{stroke-dashoffset:-4.5;animation-timing-function:cubic-bezier(.45,0,.85,.45)}80%{stroke-dashoffset:-16.5;animation-timing-function:cubic-bezier(.7,0,1,.3)}84%,100%{stroke-dashoffset:-104.5}}
+body.fx-off #topHero .studio-gold-contour{display:none!important}
+@media(prefers-reduced-motion:reduce){#topHero .studio-gold-contour{display:none!important}}
 </style>
 <script id="studio-season-scenes">
 /* Quiet, non-tiling scenery. Every calendar/event key has its own scene. */
@@ -2429,6 +2432,11 @@ window.studioSeasonScene=(key)=>{
  const player=hero.querySelector('.alex-library-sub');if(player){const label=document.createElement('span');label.className='studio-accessible-label';label.textContent=player.textContent;player.replaceChildren(label,asset('player-plaque-v1','studio-player-art'));player.classList.add('studio-player')}
  const start=document.getElementById('pressStartBtn');if(start){start.replaceChildren(asset('press-start-neon-v1','studio-start-art start-pixels'));start.setAttribute('aria-label','PRESS START');start.classList.add('studio-start')}
  const sign=hero.querySelector('.ra-on-air');if(sign){sign.replaceChildren(asset('on-air-block-red-v4','studio-air-art'));sign.classList.add('studio-air')}
+ const latest=document.getElementById('heroLatestAchievement');if(latest){const ns='http://www.w3.org/2000/svg';let svg,edges=[],lastSize='';
+  const size=()=>{if(!svg)return;const b=latest.getBoundingClientRect(),w=b.width,h=b.height,key=w+':'+h;if(w<16||h<16||key===lastSize)return;lastSize=key;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);for(const edge of edges){edge.setAttribute('width',w-8);edge.setAttribute('height',h-8)}};
+  const attach=()=>{if(latest.querySelector('.studio-gold-contour'))return;svg=document.createElementNS(ns,'svg');svg.classList.add('studio-gold-contour');svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');const group=document.createElementNS(ns,'g');group.classList.add('gold-contour-pulse');edges=['trail','core'].map(kind=>{const edge=document.createElementNS(ns,'rect');edge.classList.add('gold-contour-'+kind);for(const [k,v] of Object.entries({x:4,y:4,rx:2,pathLength:100}))edge.setAttribute(k,v);group.append(edge);return edge});svg.append(group);latest.append(svg);lastSize='';size()};
+  new MutationObserver(attach).observe(latest,{childList:true});new ResizeObserver(size).observe(latest);attach();
+ }
  const frame=document.createElement('div');frame.className='hero-season-art';frame.setAttribute('aria-hidden','true');hero.prepend(frame);
  const backdrop=document.createElement('div');backdrop.className='hero-season-backdrop';backdrop.setAttribute('aria-hidden','true');hero.prepend(backdrop);
  const FRAME_KEY='retro-header-season-frame-v1';
@@ -2441,15 +2449,15 @@ window.studioSeasonScene=(key)=>{
  const heroCopy=hero.querySelector('.hero-copy');if(heroCopy){const alignScreens=()=>{const copyBox=heroCopy.getBoundingClientRect(),titleBox=heroCopy.querySelector('.studio-title-art')?.getBoundingClientRect(),startBox=heroCopy.querySelector('.studio-start-art')?.getBoundingClientRect();const top=titleBox?.top??copyBox.top,bottom=startBox?.bottom??copyBox.bottom;hero.style.setProperty('--studio-copy-height',Math.max(0,bottom-top)+'px');hero.style.setProperty('--studio-screen-top',Math.max(0,top-copyBox.top)+'px')};new ResizeObserver(alignScreens).observe(heroCopy);alignScreens()}
  const motion=matchMedia('(prefers-reduced-motion: reduce)');
  const effectsAllowed=()=>!motion.matches&&!document.hidden&&!document.body.classList.contains('fx-off');
- function neon(img,enabled,min,max,inverse=false){if(!img)return;let timer=0,animation=null,wasOn=false;
+ function neon(img,enabled,min,max,inverse=false,cluster=false){if(!img)return;let timer=0,animation=null,wasOn=false;
   function clear(){clearTimeout(timer);timer=0;animation?.cancel();animation=null}
   function schedule(){if(!timer&&!animation&&enabled()&&effectsAllowed())timer=setTimeout(flicker,min+Math.random()*(max-min))}
-  function flicker(){timer=0;if(!enabled()||!effectsAllowed())return;const count=Math.random()<.76?1:2;let elapsed=0,events=[{at:0,opacity:1}];for(let i=0;i<count;i++){elapsed+=20+Math.random()*35;events.push({at:elapsed,opacity:.12+Math.random()*.28});elapsed+=Math.random()<.65?40+Math.random()*55:110+Math.random()*90;events.push({at:elapsed,opacity:1});elapsed+=55+Math.random()*100}events.push({at:elapsed+80,opacity:1});const duration=elapsed+80;animation=img.animate(events.map(e=>({opacity:inverse?1-e.opacity:e.opacity,offset:e.at/duration})),{duration,easing:'steps(1,end)'});animation.finished.catch(()=>{}).finally(()=>{animation=null;schedule()})}
+  function flicker(){timer=0;if(!enabled()||!effectsAllowed())return;const count=cluster?3+Math.floor(Math.random()*4):(Math.random()<.76?1:2);let elapsed=0,events=[{at:0,opacity:1}];for(let i=0;i<count;i++){elapsed+=20+Math.random()*35;events.push({at:elapsed,opacity:cluster?.04+Math.random()*.22:.12+Math.random()*.28});elapsed+=Math.random()<.75?35+Math.random()*50:110+Math.random()*70;events.push({at:elapsed,opacity:1});elapsed+=cluster?(Math.random()<.28?180+Math.random()*180:25+Math.random()*65):55+Math.random()*100}events.push({at:elapsed+80,opacity:1});const duration=elapsed+80;animation=img.animate(events.map(e=>({opacity:inverse?1-e.opacity:e.opacity,offset:e.at/duration})),{duration,easing:'steps(1,end)'});animation.finished.catch(()=>{}).finally(()=>{animation=null;schedule()})}
   function update(){const on=enabled()&&effectsAllowed();if(!on)clear();else if(!wasOn){timer=setTimeout(flicker,200+Math.random()*600)}else schedule();wasOn=on}
   new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['class']});if(sign)new MutationObserver(update).observe(sign,{attributes:true,attributeFilter:['class']});document.addEventListener('visibilitychange',update);motion.addEventListener('change',update);update();
  }
  if(home){for(const [left,right] of [[23,26],[48,51],[81,84]]){const letter=asset('epic-neon-v1','studio-letter-dim');letter.style.clipPath=`inset(23% ${100-right}% 24% ${left}%)`;home.append(letter);neon(letter,()=>true,6000+left*100,14000+left*130,true)}}
- neon(sign?.querySelector('img'),()=>sign.classList.contains('is-live'),9000,28000);
+ neon(sign?.querySelector('img'),()=>sign.classList.contains('is-live'),40000,65000,false,true);
  const settings=document.createElement('dialog');settings.className='backup-dialog studio-settings';settings.setAttribute('aria-labelledby','appearanceSettingsTitle');settings.innerHTML='<h2 id="appearanceSettingsTitle">Appearance settings</h2><label><input type="checkbox" id="studioMotion"> <span>Site animations</span></label><p>Neon flicker, blinking signs and decorative movement.</p><label><input type="checkbox" id="studioSeason"> <span>Seasonal header frame</span></label><p>Match the header frame to the selected seasonal collection.</p><div class="backup-actions"><button type="button" id="studioSettingsClose">Close</button></div>';document.body.append(settings);
  const motionInput=settings.querySelector('#studioMotion'),frameInput=settings.querySelector('#studioSeason');
  function showSettings(){motionInput.checked=!document.body.classList.contains('fx-off');frameInput.checked=frameEnabled();settings.showModal()}
