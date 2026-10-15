@@ -1,0 +1,185 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "key": "zelda-day",
+      "kind": "scene",
+      "source": "exec-40b39f05-6356-4ce9-a4bb-fb821fa62253.png",
+      "prompt": "Use case: stylized-concept. Production website scenic background and event-card illustration. Wide panoramic3:1. Sunlit Hyrule-inspired valley, ancient mossy forest ruins, distant castle, stone arch and small golden triangular crest, lush greens and warm gold. No characters. Authentic SNES16-bit pixel art, deliberately visible square pixel clusters, limited rich32-color palette, layered parallaxgame scenery, no realism, no painterlybrushes or smooth3D. Cheerful daylight, tasteful contrast, detailed edges but calm spacious central third for overlaid UI text. Clear coherent environment, no text/logos/borders/watermarks. High-quality pixel craftsmanship, matching a dark plum retro game library interface.",
+      "asset": "outputs/season-backgrounds/zelda-day-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 686790
+    },
+    {
+      "key": "zelda-day",
+      "kind": "frame",
+      "source": "exec-66a6c50c-9559-4c39-b345-7e2ae7a05a11.png",
+      "prompt": "Use case: stylized-concept. A square decorative UI FRAME ONLY, fully transparent large empty centre and outside, actual alpha. Reference1 for layout architecture and16-bit pixelstyle only; make NEW unique eventart. moss-green antique-gold metal rails, leafy ivy and a small shield with a triangular golden crest at upper right, small forest leaf at lowerleft. Thin continuous parallel 4-pixel rails straight on all4sides, equalinset, rightanglecorners. Decorations mostlytopright contained withinouterquarter square, verysmall othercorners; broademptycenter. Seamless PLAIN rails at middle50% of each edge so edge strips can tile. Crisp SNES16bit limitedpalette chunky squareclusters, no realism/glow/text/logos/dropshadow. Never fill centralarea. Clean coherent pixels, output square.",
+      "asset": "outputs/brand-art/zelda-day-frame.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 92268
+    },
+    {
+      "key": "kirby-day",
+      "kind": "scene",
+      "source": "exec-06f144bd-7f1b-4816-8031-d14c60442092.png",
+      "prompt": "Use case: stylized-concept. Production website scenic background and event-card illustration. Wide panoramic3:1. Joyful Dream Land-inspired rolling pastel hills, star-shaped portal far right, fluffy clouds, small candy-colored trees and distant rainbow, pink peach mint cyan. No characters. Authentic SNES16-bit pixel art, deliberately visible square pixel clusters, limited rich32-color palette, layered parallaxgame scenery, no realism, no painterlybrushes or smooth3D. Cheerful daylight, tasteful contrast, detailed edges but calm spacious central third for overlaid UI text. Clear coherent environment, no text/logos/borders/watermarks. High-quality pixel craftsmanship, matching a dark plum retro game library interface.",
+      "asset": "outputs/season-backgrounds/kirby-day-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 553604
+    },
+    {
+      "key": "kirby-day",
+      "kind": "frame",
+      "source": "exec-53f35266-43d4-4fa1-8f1a-d314b11394e2.png",
+      "prompt": "Precise edit of image1 decorative pixel frame. Remove the stray vivid RED edge pixels/fringes visible around leaves, clouds, stars and rails. Replace those stray outlines with matching darkplum outlines or transparency. Preserve allpink creamgold artwork, stars/clouds, frame geometry, emptytransparent centre, exactrectangularrails andlayout. No changes to objects or proportions. Crisp16bitpixelart; cleanalpha no red halos. Reference2 shows required crisp pixel edgequality.",
+      "asset": "outputs/brand-art/kirby-day-frame.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 97282
+    },
+    {
+      "key": "sonic-day",
+      "kind": "scene",
+      "source": "exec-d12b704a-00d4-4526-92a7-c8ee1b9bdd0d.png",
+      "prompt": "Use case: stylized-concept. Unique wide3:1 panoramic website event background and cardillustration. Sunny Green Hill-inspired checkerboard cliffs, sparkling blue ocean, loop-shaped rock path, scattered gold rings, palm trees, bright blue sky; energetic and joyous, no characters. Authentic SNES16-bit chunky pixel art, deliberate square pixel clusters, limited32-colorpalette, layered parallaxvideo-game scenery, highquality crisp edges, absolutely no realism/3D/brushpainting. Detailed sides, calmer open centre for overlayUI. Balanced readablecolor, no excessive brightness or glow. No text/logos/watermarks/frame.",
+      "asset": "outputs/season-backgrounds/sonic-day-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 597152
+    },
+    {
+      "key": "sonic-day",
+      "kind": "frame",
+      "source": "exec-dbcfaf52-58b4-4076-a930-b5862a090f42.png",
+      "prompt": "Use case: stylized-concept. Square decorative UI FRAME ONLY on actualtransparentbackground, emptytransparentcentreandoutside. Reference1architecturalayoutonly; makeNEWuniqueart. cobaltblue metal rails with gold highlight, three golden rings and a tiny palm frond onupperright, smallgoldringlowerleft. Thin continuous4pixel straight rails all4sides, equalinsetrightanglecorners, consistentrailcolors. Decorations mainlyupperrightcontainedouterquarter, othercornerssmall. Middle50%ofeachside is completelyplain straight repeatablerail, noleaf/vine/dangletheresoitcanstretch. Authentic16-bit pixelart crisp deliberatepixelclusters limitedpalette. No text/logos, no glow/dropshadow/realism. Darkplumoutlines, cleanalphaedges withoutred or coloredfringe.",
+      "asset": "outputs/brand-art/sonic-day-frame.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 75978
+    },
+    {
+      "key": "metroid-day",
+      "kind": "scene",
+      "source": "exec-cad8084e-34aa-407d-9fdb-d3c1eb9bc845.png",
+      "prompt": "Use case: stylized-concept. Unique wide3:1 panoramic website event background and cardillustration. Epic alien cavern and ancient birdlike stone ruins, orange industrial door at right, teal bioluminescent pools and turquoise energy machinery, moody but clearly illuminated, no characters. Authentic SNES16-bit chunky pixel art, deliberate square pixel clusters, limited32-colorpalette, layered parallaxvideo-game scenery, highquality crisp edges, absolutely no realism/3D/brushpainting. Detailed sides, calmer open centre for overlayUI. Balanced readablecolor, no excessive brightness or glow. No text/logos/watermarks/frame.",
+      "asset": "outputs/season-backgrounds/metroid-day-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 602892
+    },
+    {
+      "key": "metroid-day",
+      "kind": "frame",
+      "source": "exec-9fca2101-e09c-40b4-8708-65ae3f9f3836.png",
+      "prompt": "Use case: stylized-concept. Square decorative UI FRAME ONLY on actualtransparentbackground, emptytransparentcentreandoutside. Reference1architecturalayoutonly; makeNEWuniqueart. darkteal ancient sci-fi metal rails, mutedburntorange highlights, an orange energy core and alien-stone crest upperright, smallteal circuit lowerleft. Thin continuous4pixel straight rails all4sides, equalinsetrightanglecorners, consistentrailcolors. Decorations mainlyupperrightcontainedouterquarter, othercornerssmall. Middle50%ofeachside is completelyplain straight repeatablerail, noleaf/vine/dangletheresoitcanstretch. Authentic16-bit pixelart crisp deliberatepixelclusters limitedpalette. No text/logos, no glow/dropshadow/realism. Darkplumoutlines, cleanalphaedges withoutred or coloredfringe.",
+      "asset": "outputs/brand-art/metroid-day-frame.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 88646
+    },
+    {
+      "key": "castlevania-day",
+      "kind": "scene",
+      "source": "exec-1bb80358-63eb-4ec5-a65c-f2b57fee2520.png",
+      "prompt": "Use case: stylized-concept. Unique wide3:1 panoramic websiteevent background andcard illustration. Epic moonlit gothic castle above misty mountains, foreground stone gateway and crimson velvet banners, antiquegold candlelight and stained-glass windows, deepviolet sky, no characters. AuthenticSNES16-bit chunkypixelart, visible squarepixelclusters, limited32-colorpalette, layeredvideogame scenery, highqualitycrispedges, no realism/3D/brushpainting. Detailed sides, calm centre for UItext. Balanced richcolor, restrainedglow. No text/logos/watermarks/frame.",
+      "asset": "outputs/season-backgrounds/castlevania-day-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 615850
+    },
+    {
+      "key": "castlevania-day",
+      "kind": "frame",
+      "source": "exec-1bcf05b0-57c8-4e3f-bb66-41110937e66b.png",
+      "prompt": "Use case: stylized-concept. Square decorativeUIFRAMEONLY on realtransparentbackground, centreandoutsidefullytransparent. Reference1layoutstyleonly, createNEWuniqueeventframe: antique gold and darkcrimson rails, gothic arched crest with two candles and tinyviolet stainedglass at upperright, smallredjewel lowerleft. Thin continuous straight4pixel rails onall4sides withconsistentcolors, equalinset, rightanglecorners. Decorations mostlyupperrightinsideouterquarter, othercornerssmall. Middle50%ofeachsideisplain straight repeatablerail. AuthenticSNES16bit crispchunkysquarepixels, limitedpalette, darkplumoutlines. No glow, shadow, realism, text/logos. Cleanalpha, no red/coloredfringes.",
+      "asset": "outputs/brand-art/castlevania-day-frame.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 108004
+    },
+    {
+      "key": "pinball-weekend",
+      "kind": "scene",
+      "source": "exec-cec2099d-cee1-449b-842b-e032f009e854.png",
+      "prompt": "Use case: stylized-concept. Unique wide3:1 panoramic websiteevent background andcard illustration. Inviting retro pinball arcade, richly detailed pinball table playfield in foreground edges, silver ball, flippers, gold bumpers, subtle plum cyan neon and warm bulbs, clear readable lights, no characters. AuthenticSNES16-bit chunkypixelart, visible squarepixelclusters, limited32-colorpalette, layeredvideogame scenery, highqualitycrispedges, no realism/3D/brushpainting. Detailed sides, calm centre for UItext. Balanced richcolor, restrainedglow. No text/logos/watermarks/frame.",
+      "asset": "outputs/season-backgrounds/pinball-weekend-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 627316
+    },
+    {
+      "key": "pinball-weekend",
+      "kind": "frame",
+      "source": "exec-63164538-c4b1-4c80-a5d3-8a76c054224e.png",
+      "prompt": "Use case: stylized-concept. Square decorativeUIFRAMEONLY on realtransparentbackground, centreandoutsidefullytransparent. Reference1layoutstyleonly, createNEWuniqueeventframe: deepplum metal rails with mutedcyan insetline, a silver pinball and two gold bumpers upperright, a small ivoryflipper lowerleft. Thin continuous straight4pixel rails onall4sides withconsistentcolors, equalinset, rightanglecorners. Decorations mostlyupperrightinsideouterquarter, othercornerssmall. Middle50%ofeachsideisplain straight repeatablerail. AuthenticSNES16bit crispchunkysquarepixels, limitedpalette, darkplumoutlines. No glow, shadow, realism, text/logos. Cleanalpha, no red/coloredfringes.",
+      "asset": "outputs/brand-art/pinball-weekend-frame.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 70628
+    },
+    {
+      "key": "harvest-days",
+      "kind": "scene",
+      "source": "exec-b2560f01-03e1-46f6-91ae-0880820460fe.png",
+      "prompt": "Use case: stylized-concept. Unique wide3:1 panoramic website event backdrop andcalendarcard image. Warm sunny autumn farm in late morning, red wooden barn, vegetable beds, orchard, golden hay and distant gentle hills, wholesome amber sage terracotta palette, nocharacters. Authentic SNES16-bit chunky pixelart, deliberately visible squarepixelclusters, limited32-colorpalette, layeredgamebackground, detailed edges and calmeropen centre forUItext. Crispbeautifulpixelcraft, no realism/3D/painting. Richcolor but balancedwarm light, noglow overload. No text/logos/watermarks/frame.",
+      "asset": "outputs/season-backgrounds/harvest-days-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 731772
+    },
+    {
+      "key": "harvest-days",
+      "kind": "frame",
+      "source": "exec-a18a6245-47b6-4911-8c4c-0aca7872d9c6.png",
+      "prompt": "Use case: stylized-concept. Square decorativeUIFRAMEONLY on realtransparentbackground, centreandoutsidefullytransparent. Reference1architecturelayoutonly; NEW uniqueeventframe: warm darkwood rails withsage insetlines, harvestbasket with wheat and smallpumpkin atupperright, smallleaflowerleft. Thin continuous straight4pixelrails all4sides equalinsetrightanglecorners consistentpalette. Decorations primarilyupperrightcontainedouterquarter, othercornerssmall. Middle50%ofeachsideisplain straightrepeatablerailforstretching, no dangles. AuthenticSNES16bit cleancrisp chunky squarepixels limitedpalette, darkplumoutlines. No text/logos/glow/shadow/realism. No strayredorcoloredfringes,cleanalpha.",
+      "asset": "outputs/brand-art/harvest-days-frame.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 107254
+    },
+    {
+      "key": "puzzle-picnic",
+      "kind": "scene",
+      "source": "exec-8249e1ed-0793-4fd6-9f3a-820565dba447.png",
+      "prompt": "Use case: stylized-concept. NEW Puzzle Picnic background for retro game library, wide3:1panorama. Theme MUST clearlyread PUZZLE GAMES at a glance. Closeview of cheerful picnic table in sunnygarden. LEFTforeground: large wooden jigsawpuzzleboard with visibleinterlockingclassic squarepuzzlepieces, abouttwo-thirdsassembled as a simplecolorfulsun/flowerpicture, fewdistinctloosepiecesbesideit. RIGHTforeground: a miniature falling-block puzzlegrid with clearlyrecognizable L,T,S,I geometric tetromino pieces and smallstack of colorful slidingnumberless tiles. Centerquiet checkedtablecloth and softlylayeredgarden forUI overlay. Objectsarelargeandlegible, not tinybackgroundtoys. No castle, fantasylandscape, genericcubes, randomdecor, characters,text,numbers,logos,borders. AuthenticSNES16-bit crispchunkypixelart, deliberatelyvisible squarepixels, limited32-colorpalette mintcream coral gold cyan plum, sunlightpleasantnotwashedout, highqualitypixelcraft. Not realism, not smooth3D, not painting.",
+      "asset": "outputs/season-backgrounds/puzzle-picnic-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 643670
+    },
+    {
+      "key": "puzzle-picnic",
+      "kind": "frame",
+      "source": "exec-07a123aa-2b5f-4fa1-90d2-164429c48947.png",
+      "prompt": "Use case: stylized-concept. Create a NEW square decorative UI FRAME for Puzzle Picnic. Real transparentbackground and fullyemptytransparentcenter. Frame reference architectureonly: thin continuous parallel rails, equalinsets on4sides, simple squarecorners. Palette darkplum mintcream mutedcoral gold. Upperright ONLY: three recognizable CLASSIC JIGSAW PUZZLE PIECES with square bodies, each with one round protruding tab and one round concave socket, two pieces loosely fitting together. Readable traditionaljigsaw silhouettes, NOT gears/crosses/flowers. Flatcleancolored piecefaces with one subtle bevelhighlight; NO daisies or symbols insidepieces, no floral decorations. Lowerleft: smallfour-square tetromino. Othercorners plaintrim. Keep artwork inside outerquarter, middle50%ofall4edges plain straight repeatablerails. CrispauthenticSNES16bit chunky squarepixelclusters, limitedpalette, absolutelyno realism/3D/smoothgradients/glow/shadow/text/logos. Cleanalpha darkplumoutline no redfringes. Quiet tastefulinterfaceframe that clearlycommunicates puzzles.",
+      "asset": "outputs/brand-art/puzzle-picnic-frame.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 55332
+    },
+    {
+      "key": "hidden-gems",
+      "kind": "scene",
+      "source": "exec-1c999ccf-2a08-48c4-b9dd-932d89386e7e.png",
+      "prompt": "Use case: stylized-concept. Unique wide3:1 panoramic website event backdrop andcalendarcard image. Inviting small retro game shop interior, unlabeled mysterious game cartridges in wooden display shelves, tinyglass cabinet showing a jewel-like cartridge, warm desk lamp, plum antiquegold and teal palette, nocharacters. Authentic SNES16-bit chunky pixelart, deliberately visible squarepixelclusters, limited32-colorpalette, layeredgamebackground, detailed edges and calmeropen centre forUItext. Crispbeautifulpixelcraft, no realism/3D/painting. Richcolor but balancedwarm light, noglow overload. No text/logos/watermarks/frame.",
+      "asset": "outputs/season-backgrounds/hidden-gems-v3.webp",
+      "width": 1086,
+      "height": 362,
+      "bytes": 587626
+    },
+    {
+      "key": "hidden-gems",
+      "kind": "frame",
+      "source": "exec-ad6c73ba-0927-49ae-a19c-1065e9e9776d.png",
+      "prompt": "Use case: stylized-concept. Square decorativeUIFRAMEONLY on realtransparentbackground, centreandoutsidefullytransparent. Reference1architecturelayoutonly; NEW uniqueeventframe: deepplum antiquebrass rails, a small unlabeled game cartridge and tealjewel nestled atupperright, tinybrasskeylowerleft. Thin continuous straight4pixelrails all4sides equalinsetrightanglecorners consistentpalette. Decorations primarilyupperrightcontainedouterquarter, othercornerssmall. Middle50%ofeachsideisplain straightrepeatablerailforstretching, no dangles. AuthenticSNES16bit cleancrisp chunky squarepixels limitedpalette, darkplumoutlines. No text/logos/glow/shadow/realism. No strayredorcoloredfringes,cleanalpha.",
+      "asset": "outputs/brand-art/hidden-gems-frame.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 95760
+    }
+  ]
+}

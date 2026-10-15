@@ -1,0 +1,189 @@
+[
+  {
+    "key": "zelda-day",
+    "name": "Zelda Anniversary",
+    "month": 2,
+    "day": 21,
+    "firstYear": 1986,
+    "franchise": "The Legend of Zelda",
+    "source": "https://www.nintendo.com/jp/character/zelda/history/index.html?lang=ja",
+    "art": "Sunlit Hyrule forest ruins, triangular golden crest and shield; moss-green and gold frame",
+    "kind": "anniversary",
+    "colors": [
+      "#bdd57c",
+      "#203b2b"
+    ],
+    "image": "season-backgrounds/zelda-day-v3.webp",
+    "frame": "brand-art/zelda-day-frame.webp",
+    "music": "fantasy",
+    "desc": "День рождения Zelda: исследование Хайрула, подземелья и приключения разных поколений."
+  },
+  {
+    "key": "kirby-day",
+    "name": "Kirby Birthday",
+    "month": 4,
+    "day": 27,
+    "firstYear": 1992,
+    "franchise": "Kirby",
+    "source": "https://www.nintendo.co.jp/wii/s72j/kirby.html",
+    "art": "Pastel Dream Land with star-shaped portals and rounded hills; pink and cream frame",
+    "kind": "anniversary",
+    "colors": [
+      "#f0b7d6",
+      "#38243c"
+    ],
+    "image": "season-backgrounds/kirby-day-v3.webp",
+    "frame": "brand-art/kirby-day-frame.webp",
+    "music": "fantasy",
+    "desc": "День рождения Kirby: звёздные миры и пинбольное приключение розового героя.",
+    "discoveries": [
+      "kirby3"
+    ]
+  },
+  {
+    "key": "sonic-day",
+    "name": "Sonic Birthday",
+    "month": 6,
+    "day": 23,
+    "firstYear": 1991,
+    "franchise": "Sonic",
+    "source": "https://asia.sega.com/sonic-birthday2024/en/",
+    "art": "Bright green checkerboard hills, gold rings and distant ocean; cobalt and gold frame",
+    "kind": "anniversary",
+    "colors": [
+      "#88cef0",
+      "#18314e"
+    ],
+    "image": "season-backgrounds/sonic-day-v3.webp",
+    "frame": "brand-art/sonic-day-frame.webp",
+    "music": "fantasy",
+    "desc": "День рождения Sonic: скорость, кольца и путешествия по ярким мирам серии."
+  },
+  {
+    "key": "metroid-day",
+    "name": "Metroid Anniversary",
+    "month": 8,
+    "day": 6,
+    "firstYear": 1986,
+    "franchise": "Metroid",
+    "source": "https://www.nintendo.com/en-gb/News/2021/August/Metroid-Dread-Report-Vol-4-Unravelling-a-saga-35-years-in-the-making-2018281.html",
+    "art": "Alien cavern with Chozo ruins, orange machinery and turquoise energy; orange and dark teal frame",
+    "kind": "anniversary",
+    "colors": [
+      "#a3dfd3",
+      "#183339"
+    ],
+    "image": "season-backgrounds/metroid-day-v3.webp",
+    "frame": "brand-art/metroid-day-frame.webp",
+    "music": "fantasy",
+    "desc": "Годовщина Metroid: исследование чужих планет, секреты и новые способности Самус."
+  },
+  {
+    "key": "castlevania-day",
+    "name": "Castlevania Anniversary",
+    "month": 9,
+    "day": 26,
+    "firstYear": 1986,
+    "franchise": "Castlevania",
+    "source": "https://www.konami.com/games/castlevania/us/en-us/fc_free_app",
+    "art": "Moonlit gothic castle and candlelit stone gateway, crimson and antique gold frame",
+    "kind": "anniversary",
+    "colors": [
+      "#d0a175",
+      "#302133"
+    ],
+    "image": "season-backgrounds/castlevania-day-v3.webp",
+    "frame": "brand-art/castlevania-day-frame.webp",
+    "music": "fantasy",
+    "desc": "Годовщина Castlevania: замки, вампиры и охотники на нечисть."
+  },
+  {
+    "key": "pinball-weekend",
+    "name": "Pinball Weekend",
+    "kind": "theme",
+    "month": 1,
+    "weekend": 2,
+    "art": "Neon pinball arcade, polished silver ball and bright bumpers; deep plum and muted cyan frame",
+    "desc": "Выходные с пинболом: столы, флипперы и охота за рекордом.",
+    "colors": [
+      "#c5a6e2",
+      "#2d213d"
+    ],
+    "image": "season-backgrounds/pinball-weekend-v3.webp",
+    "frame": "brand-art/pinball-weekend-frame.webp",
+    "music": "summer",
+    "genres": [
+      "Pinball"
+    ]
+  },
+  {
+    "key": "harvest-days",
+    "name": "Harvest Days",
+    "kind": "theme",
+    "month": 11,
+    "weekend": 3,
+    "art": "Warm sunlit pixel farm, vegetable garden, red barn and orchard; terracotta and sage frame",
+    "desc": "Неспешные дни на ферме: урожай, животные и маленькие заботы Harvest Moon.",
+    "colors": [
+      "#d1b17d",
+      "#342d24"
+    ],
+    "image": "season-backgrounds/harvest-days-v3.webp",
+    "frame": "brand-art/harvest-days-frame.webp",
+    "music": "autumn",
+    "genres": [
+      "Farming Simulation"
+    ]
+  },
+  {
+    "key": "puzzle-picnic",
+    "name": "Puzzle Picnic",
+    "kind": "theme",
+    "month": 7,
+    "weekend": 3,
+    "art": "Sunny picnic blanket beneath a tree, colorful falling puzzle blocks and tiles; cream mint and coral frame",
+    "desc": "Пикник с головоломками: логика, комбинации и короткие партии.",
+    "colors": [
+      "#d8ceb0",
+      "#253c35"
+    ],
+    "image": "season-backgrounds/puzzle-picnic-v3.webp",
+    "frame": "brand-art/puzzle-picnic-frame.webp",
+    "music": "summer",
+    "titles": [
+      "Mario vs. Donkey Kong",
+      "Mario vs. Donkey Kong 2",
+      "Donkey Kong",
+      "Looney Tunes: Sheep Raider"
+    ],
+    "discoveries": [
+      "devildice"
+    ]
+  },
+  {
+    "key": "hidden-gems",
+    "name": "Hidden Gems",
+    "kind": "theme",
+    "month": 5,
+    "weekend": 2,
+    "art": "Warm tiny retro game shop, obscure unlabeled cartridges displayed like treasures; plum antique gold and teal frame",
+    "desc": "Небольшая авторская подборка менее очевидных игр: необычные механики и забытые приключения.",
+    "colors": [
+      "#d6bc82",
+      "#2e283b"
+    ],
+    "image": "season-backgrounds/hidden-gems-v3.webp",
+    "frame": "brand-art/hidden-gems-frame.webp",
+    "music": "fantasy",
+    "titles": [
+      "Looney Tunes: Sheep Raider",
+      "Shaman King: Master of Spirits",
+      "Gargoyles",
+      "Pink Panther: Pinkadelic Pursuit",
+      "Jackie Chan Stuntmaster",
+      "Rhythm Tengoku",
+      "Max Payne",
+      "The Invincible Iron Man"
+    ]
+  }
+]

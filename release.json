@@ -1,19 +1,14 @@
 {
-  "version": "v9.9.1 BETA 3",
-  "build": "2026-10-15-r2",
+  "version": "v9.9.2 BETA 3",
+  "build": "2026-10-15-r3",
   "date": "2026-10-15",
   "previewState": "ready",
   "changes": [
-    "Added a full season and event calendar. Click the countdown to view active dates and event density.",
-    "Page reload now restores calendar-based scenery, seasonal recommendations and automatic music selection.",
-    "Reworked all 27 seasonal backgrounds into distinct, quiet pixel scenes shared by the header and recommendations.",
-    "Enlarged header decorations and rebuilt frame edges to stay continuous with long descriptions.",
-    "Expanded and balanced the pixel sticker collection; removed rejected items and revised the wand and Space Invaders sprite.",
-    "Seasonal games open by clicking the cover or description. External discoveries open their information page without a separate About the Game button.",
-    "Brightened Easter, Sakura, summer, Mario, New Year, Star Wars and arcade scenery; selected a warmer Christmas scene.",
-    "Centred the header with equal side columns and refreshed site controls with consistent plum surfaces, readable labels and focus states.",
-    "Added a compact pixel-art back-to-top button and a clickable version with publication status.",
-    "ON AIR now refreshes RetroAchievements; restored occasional gold frame highlights and enlarged the header logo.",
-    "Prevented old decorative textures from appearing during initial loading."
+    "Added Zelda, Kirby, Sonic, Metroid and Castlevania anniversaries on their verified original release dates.",
+    "Added Pinball Weekend, Harvest Days, Puzzle Picnic and Hidden Gems between existing events.",
+    "Created nine original pixel-art scenes and nine matching frames, shared by the header and seasonal recommendations.",
+    "Added illustrated event cards with dates, source links and theme previews to the calendar; countdowns include the new events.",
+    "Seasonal recommendations now use strict franchise and genre selections for the new collections. Existing holiday themes keep priority when dates overlap.",
+    "Redrew Puzzle Picnic with recognizable jigsaw pieces and falling-block puzzles in both its frame and background."
   ]
 }
