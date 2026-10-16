@@ -1,0 +1,4084 @@
+{
+  "source": "HowLongToBeat community reports via KasumiL5x archive",
+  "archiveUrl": "https://github.com/KasumiL5x/hltb-scraper",
+  "snapshot": "2019-06",
+  "imported": "2026-10-15",
+  "matchedGames": 314,
+  "totalGames": 439,
+  "entries": {
+    "Teenage Mutant Ninja Turtles|NES|1989": {
+      "title": "Teenage Mutant Ninja Turtles (1989)",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/9647",
+      "sourceId": "9647",
+      "main": {
+        "minutes": 170.5,
+        "reports": 22
+      },
+      "complete": {
+        "minutes": 240,
+        "reports": 3
+      }
+    },
+    "TMNT II: The Arcade Game|NES|1990": {
+      "title": "Teenage Mutant Ninja Turtles II: The Arcade Game",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/9651",
+      "sourceId": "9651",
+      "main": {
+        "minutes": 80,
+        "reports": 23
+      },
+      "complete": {
+        "minutes": 108,
+        "reports": 3
+      }
+    },
+    "Fall of the Foot Clan|GB|1990": {
+      "title": "Teenage Mutant Ninja Turtles: Fall of the Foot Clan",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/9654",
+      "sourceId": "9654",
+      "main": {
+        "minutes": 30.0,
+        "reports": 24
+      },
+      "complete": {
+        "minutes": 107.0,
+        "reports": 4
+      }
+    },
+    "TMNT III: The Manhattan Project|NES|1991": {
+      "title": "Teenage Mutant Ninja Turtles III: The Manhattan Project",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/9653",
+      "sourceId": "9653",
+      "main": {
+        "minutes": 180,
+        "reports": 15
+      },
+      "complete": {
+        "minutes": 208,
+        "reports": 1
+      }
+    },
+    "The Hyperstone Heist|Genesis|1992": {
+      "title": "Teenage Mutant Ninja Turtles: The Hyperstone Heist",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/9657",
+      "sourceId": "9657",
+      "main": {
+        "minutes": 70,
+        "reports": 25
+      },
+      "complete": {
+        "minutes": 240,
+        "reports": 1
+      }
+    },
+    "TMNT III: Radical Rescue|GB|1993": {
+      "title": "Teenage Mutant Ninja Turtles III: Radical Rescue",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/9652",
+      "sourceId": "9652",
+      "main": {
+        "minutes": 233,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 180,
+        "reports": 1
+      }
+    },
+    "Tournament Fighters|SNES|1993": {
+      "title": "Teenage Mutant Ninja Turtles: Tournament Fighters (SNES)",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/48266",
+      "sourceId": "48266",
+      "main": {
+        "minutes": 36.5,
+        "reports": 8
+      },
+      "complete": {
+        "minutes": 360,
+        "reports": 1
+      }
+    },
+    "Tournament Fighters|Genesis|1993": {
+      "title": "Teenage Mutant Ninja Turtles: Tournament Fighters (Sega)",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/9658",
+      "sourceId": "9658",
+      "main": {
+        "minutes": 30,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 310,
+        "reports": 1
+      }
+    },
+    "Teenage Mutant Ninja Turtles|GBA|2003": {
+      "title": "Teenage Mutant Ninja Turtles (2003)",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/9646",
+      "sourceId": "9646",
+      "main": {
+        "minutes": 150,
+        "reports": 7
+      },
+      "complete": {
+        "minutes": 501,
+        "reports": 1
+      }
+    },
+    "TMNT 2: Battle Nexus|GBA|2004": {
+      "title": "Teenage Mutant Ninja Turtles 2: Battle Nexus",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/9649",
+      "sourceId": "9649",
+      "main": {
+        "minutes": 544.5,
+        "reports": 2
+      }
+    },
+    "TMNT 3: Mutant Nightmare|DS|2005": {
+      "title": "Teenage Mutant Ninja Turtles 3: Mutant Nightmare",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/13507",
+      "sourceId": "13507",
+      "main": {
+        "minutes": 260,
+        "reports": 1
+      }
+    },
+    "Castlevania|NES|1986": {
+      "title": "Castlevania",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/1568",
+      "sourceId": "1568",
+      "main": {
+        "minutes": 172,
+        "reports": 141
+      },
+      "complete": {
+        "minutes": 420,
+        "reports": 11
+      }
+    },
+    "Castlevania II: Simon's Quest|NES|1987": {
+      "title": "Castlevania II: Simon's Quest",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/1572",
+      "sourceId": "1572",
+      "main": {
+        "minutes": 240.0,
+        "reports": 46
+      },
+      "complete": {
+        "minutes": 225,
+        "reports": 11
+      }
+    },
+    "Castlevania III: Dracula's Curse|NES|1989": {
+      "title": "Castlevania III: Dracula's Curse",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/1573",
+      "sourceId": "1573",
+      "main": {
+        "minutes": 222,
+        "reports": 51
+      },
+      "complete": {
+        "minutes": 980.0,
+        "reports": 2
+      }
+    },
+    "Castlevania: The Adventure|GB|1989": {
+      "title": "Castlevania: The Adventure",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/1594",
+      "sourceId": "1594",
+      "main": {
+        "minutes": 81.5,
+        "reports": 24
+      },
+      "complete": {
+        "minutes": 95.0,
+        "reports": 2
+      }
+    },
+    "Castlevania II: Belmont's Revenge|GB|1991": {
+      "title": "Castlevania II: Belmont's Revenge",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/1571",
+      "sourceId": "1571",
+      "main": {
+        "minutes": 120,
+        "reports": 25
+      },
+      "complete": {
+        "minutes": 270.0,
+        "reports": 2
+      }
+    },
+    "Super Castlevania IV|SNES|1991": {
+      "title": "Super Castlevania IV",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/9339",
+      "sourceId": "9339",
+      "main": {
+        "minutes": 240.0,
+        "reports": 96
+      },
+      "complete": {
+        "minutes": 252,
+        "reports": 15
+      }
+    },
+    "Rondo of Blood|PC Engine CD|1993": {
+      "title": "Castlevania: Rondo of Blood",
+      "platform": "PC Engine CD",
+      "sourceUrl": "https://howlongtobeat.com/game/1592",
+      "sourceId": "1592",
+      "main": {
+        "minutes": 210.0,
+        "reports": 14
+      },
+      "complete": {
+        "minutes": 675,
+        "reports": 5
+      }
+    },
+    "Bloodlines|Genesis|1994": {
+      "title": "Castlevania: Bloodlines",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/1577",
+      "sourceId": "1577",
+      "main": {
+        "minutes": 117.5,
+        "reports": 36
+      },
+      "complete": {
+        "minutes": 595.0,
+        "reports": 2
+      }
+    },
+    "Dracula X|SNES|1995": {
+      "title": "Castlevania: Dracula X",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/1581",
+      "sourceId": "1581",
+      "main": {
+        "minutes": 180.0,
+        "reports": 30
+      },
+      "complete": {
+        "minutes": 318,
+        "reports": 3
+      }
+    },
+    "Symphony of the Night|PS1|1997": {
+      "title": "Castlevania: Symphony of the Night",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/1593",
+      "sourceId": "1593",
+      "main": {
+        "minutes": 510.0,
+        "reports": 92
+      },
+      "complete": {
+        "minutes": 894.5,
+        "reports": 50
+      }
+    },
+    "Castlevania Legends|GB|1997": {
+      "title": "Castlevania Legends",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/1575",
+      "sourceId": "1575",
+      "main": {
+        "minutes": 98.0,
+        "reports": 20
+      },
+      "complete": {
+        "minutes": 180,
+        "reports": 5
+      }
+    },
+    "Castlevania 64|N64|1999": {
+      "title": "Castlevania (Nintendo 64)",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/1569",
+      "sourceId": "1569",
+      "main": {
+        "minutes": 594.5,
+        "reports": 10
+      },
+      "complete": {
+        "minutes": 846.0,
+        "reports": 4
+      }
+    },
+    "Legacy of Darkness|N64|1999": {
+      "title": "Castlevania: Legacy of Darkness",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/1586",
+      "sourceId": "1586",
+      "main": {
+        "minutes": 585.0,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 900,
+        "reports": 5
+      }
+    },
+    "Circle of the Moon|GBA|2001": {
+      "title": "Castlevania: Circle of the Moon",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/1578",
+      "sourceId": "1578",
+      "main": {
+        "minutes": 600.0,
+        "reports": 50
+      },
+      "complete": {
+        "minutes": 960,
+        "reports": 7
+      }
+    },
+    "Harmony of Dissonance|GBA|2002": {
+      "title": "Castlevania: Harmony of Dissonance",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/1583",
+      "sourceId": "1583",
+      "main": {
+        "minutes": 480.0,
+        "reports": 38
+      },
+      "complete": {
+        "minutes": 660,
+        "reports": 23
+      }
+    },
+    "Aria of Sorrow|GBA|2003": {
+      "title": "Castlevania: Aria of Sorrow",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/1576",
+      "sourceId": "1576",
+      "main": {
+        "minutes": 430,
+        "reports": 71
+      },
+      "complete": {
+        "minutes": 870.0,
+        "reports": 24
+      }
+    },
+    "Dawn of Sorrow|DS|2005": {
+      "title": "Castlevania: Dawn of Sorrow",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/1580",
+      "sourceId": "1580",
+      "main": {
+        "minutes": 600,
+        "reports": 65
+      },
+      "complete": {
+        "minutes": 1265,
+        "reports": 21
+      }
+    },
+    "Portrait of Ruin|DS|2006": {
+      "title": "Castlevania: Portrait of Ruin",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/1591",
+      "sourceId": "1591",
+      "main": {
+        "minutes": 600,
+        "reports": 41
+      },
+      "complete": {
+        "minutes": 1200.0,
+        "reports": 14
+      }
+    },
+    "Order of Ecclesia|DS|2008": {
+      "title": "Castlevania: Order of Ecclesia",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/1589",
+      "sourceId": "1589",
+      "main": {
+        "minutes": 660.0,
+        "reports": 30
+      },
+      "complete": {
+        "minutes": 1242.0,
+        "reports": 16
+      }
+    },
+    "Contra|NES|1987": {
+      "title": "Contra",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/1911",
+      "sourceId": "1911",
+      "main": {
+        "minutes": 60.0,
+        "reports": 88
+      },
+      "complete": {
+        "minutes": 46,
+        "reports": 9
+      }
+    },
+    "Super C|NES|1988": {
+      "title": "Super C",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/9338",
+      "sourceId": "9338",
+      "main": {
+        "minutes": 40.5,
+        "reports": 32
+      },
+      "complete": {
+        "minutes": 201,
+        "reports": 1
+      }
+    },
+    "Operation C|GB|1991": {
+      "title": "Operation C",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/6776",
+      "sourceId": "6776",
+      "main": {
+        "minutes": 38,
+        "reports": 15
+      },
+      "complete": {
+        "minutes": 48,
+        "reports": 1
+      }
+    },
+    "Contra III: The Alien Wars|SNES|1992": {
+      "title": "Contra III: The Alien Wars",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/1915",
+      "sourceId": "1915",
+      "main": {
+        "minutes": 86.5,
+        "reports": 52
+      },
+      "complete": {
+        "minutes": 90.0,
+        "reports": 4
+      }
+    },
+    "Contra: Hard Corps|Genesis|1994": {
+      "title": "Contra: Hard Corps",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/1917",
+      "sourceId": "1917",
+      "main": {
+        "minutes": 65.0,
+        "reports": 18
+      },
+      "complete": {
+        "minutes": 390.0,
+        "reports": 8
+      }
+    },
+    "Contra: Legacy of War|PS1|1996": {
+      "title": "Contra: Legacy of War",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/1918",
+      "sourceId": "1918",
+      "main": {
+        "minutes": 51,
+        "reports": 3
+      }
+    },
+    "C: The Contra Adventure|PS1|1998": {
+      "title": "C: The Contra Adventure",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/1437",
+      "sourceId": "1437",
+      "main": {
+        "minutes": 128.0,
+        "reports": 4
+      }
+    },
+    "Contra Advance: The Alien Wars EX|GBA|2002": {
+      "title": "Contra Advance: The Alien Wars EX",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/1913",
+      "sourceId": "1913",
+      "main": {
+        "minutes": 31.5,
+        "reports": 2
+      }
+    },
+    "Contra 4|DS|2007": {
+      "title": "Contra 4",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/1912",
+      "sourceId": "1912",
+      "main": {
+        "minutes": 119.5,
+        "reports": 12
+      },
+      "complete": {
+        "minutes": 1050.0,
+        "reports": 2
+      }
+    },
+    "Mega Man|NES|1987": {
+      "title": "Mega Man",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/5803",
+      "sourceId": "5803",
+      "main": {
+        "minutes": 164,
+        "reports": 79
+      },
+      "complete": {
+        "minutes": 170,
+        "reports": 25
+      }
+    },
+    "Mega Man 2|NES|1988": {
+      "title": "Mega Man 2",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/5807",
+      "sourceId": "5807",
+      "main": {
+        "minutes": 161,
+        "reports": 115
+      },
+      "complete": {
+        "minutes": 180.0,
+        "reports": 24
+      }
+    },
+    "Mega Man 3|NES|1990": {
+      "title": "Mega Man 3",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/5809",
+      "sourceId": "5809",
+      "main": {
+        "minutes": 199,
+        "reports": 63
+      },
+      "complete": {
+        "minutes": 270,
+        "reports": 13
+      }
+    },
+    "Mega Man 4|NES|1991": {
+      "title": "Mega Man 4",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/5810",
+      "sourceId": "5810",
+      "main": {
+        "minutes": 180,
+        "reports": 37
+      },
+      "complete": {
+        "minutes": 160,
+        "reports": 11
+      }
+    },
+    "Mega Man 5|NES|1992": {
+      "title": "Mega Man 5",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/5811",
+      "sourceId": "5811",
+      "main": {
+        "minutes": 165,
+        "reports": 31
+      },
+      "complete": {
+        "minutes": 154,
+        "reports": 7
+      }
+    },
+    "Mega Man 6|NES|1993": {
+      "title": "Mega Man 6",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/5812",
+      "sourceId": "5812",
+      "main": {
+        "minutes": 155.0,
+        "reports": 34
+      },
+      "complete": {
+        "minutes": 180,
+        "reports": 9
+      }
+    },
+    "Mega Man 7|SNES|1995": {
+      "title": "Mega Man 7",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/5814",
+      "sourceId": "5814",
+      "main": {
+        "minutes": 298,
+        "reports": 23
+      },
+      "complete": {
+        "minutes": 300,
+        "reports": 7
+      }
+    },
+    "Mega Man 8|PS1|1996": {
+      "title": "Mega Man 8",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/5815",
+      "sourceId": "5815",
+      "main": {
+        "minutes": 217.5,
+        "reports": 20
+      },
+      "complete": {
+        "minutes": 402.5,
+        "reports": 2
+      }
+    },
+    "Mega Man X|SNES|1993": {
+      "title": "Mega Man X",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/5843",
+      "sourceId": "5843",
+      "main": {
+        "minutes": 203.0,
+        "reports": 56
+      },
+      "complete": {
+        "minutes": 210,
+        "reports": 71
+      }
+    },
+    "Mega Man X2|SNES|1994": {
+      "title": "Mega Man X2",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/5845",
+      "sourceId": "5845",
+      "main": {
+        "minutes": 301.5,
+        "reports": 18
+      },
+      "complete": {
+        "minutes": 327,
+        "reports": 23
+      }
+    },
+    "Mega Man X3|SNES|1995": {
+      "title": "Mega Man X3",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/5846",
+      "sourceId": "5846",
+      "main": {
+        "minutes": 313,
+        "reports": 11
+      },
+      "complete": {
+        "minutes": 327.5,
+        "reports": 20
+      }
+    },
+    "Mega Man X4|PS1|1997": {
+      "title": "Mega Man X4",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/5847",
+      "sourceId": "5847",
+      "main": {
+        "minutes": 240.0,
+        "reports": 22
+      },
+      "complete": {
+        "minutes": 281.5,
+        "reports": 14
+      }
+    },
+    "Mega Man X5|PS1|2000": {
+      "title": "Mega Man X5",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/5848",
+      "sourceId": "5848",
+      "main": {
+        "minutes": 240.0,
+        "reports": 14
+      },
+      "complete": {
+        "minutes": 360,
+        "reports": 7
+      }
+    },
+    "Mega Man X6|PS1|2001": {
+      "title": "Mega Man X6",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/5849",
+      "sourceId": "5849",
+      "main": {
+        "minutes": 300,
+        "reports": 13
+      },
+      "complete": {
+        "minutes": 480,
+        "reports": 5
+      }
+    },
+    "Battle Network|GBA|2001": {
+      "title": "Mega Man Battle Network",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5820",
+      "sourceId": "5820",
+      "main": {
+        "minutes": 819.5,
+        "reports": 26
+      },
+      "complete": {
+        "minutes": 2172.0,
+        "reports": 6
+      }
+    },
+    "Battle Network 2|GBA|2001": {
+      "title": "Mega Man Battle Network 2",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5821",
+      "sourceId": "5821",
+      "main": {
+        "minutes": 1023.0,
+        "reports": 8
+      },
+      "complete": {
+        "minutes": 2532,
+        "reports": 3
+      }
+    },
+    "Battle Network 3|GBA|2002": {
+      "title": "Mega Man Battle Network 3",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5822",
+      "sourceId": "5822",
+      "main": {
+        "minutes": 1454.0,
+        "reports": 12
+      },
+      "complete": {
+        "minutes": 3608,
+        "reports": 7
+      }
+    },
+    "Battle Network 4|GBA|2003": {
+      "title": "Mega Man Battle Network 4",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5823",
+      "sourceId": "5823",
+      "main": {
+        "minutes": 1117,
+        "reports": 7
+      },
+      "complete": {
+        "minutes": 3521.0,
+        "reports": 2
+      }
+    },
+    "Battle Network 5|GBA|2004": {
+      "title": "Mega Man Battle Network 5",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5824",
+      "sourceId": "5824",
+      "main": {
+        "minutes": 1649,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 3073.5,
+        "reports": 2
+      }
+    },
+    "Battle Network 6|GBA|2005": {
+      "title": "Mega Man Battle Network 6",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5825",
+      "sourceId": "5825",
+      "main": {
+        "minutes": 1320,
+        "reports": 9
+      },
+      "complete": {
+        "minutes": 3844.5,
+        "reports": 2
+      }
+    },
+    "Rayman|PS1|1995": {
+      "title": "Rayman",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/7607",
+      "sourceId": "7607",
+      "main": {
+        "minutes": 730,
+        "reports": 13
+      },
+      "complete": {
+        "minutes": 897.0,
+        "reports": 4
+      }
+    },
+    "Rayman|GBC|2000": {
+      "title": "Rayman",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/7607",
+      "sourceId": "7607",
+      "complete": {
+        "minutes": 312,
+        "reports": 1
+      }
+    },
+    "Rayman Advance|GBA|2001": {
+      "title": "Rayman Advance",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/7614",
+      "sourceId": "7614",
+      "main": {
+        "minutes": 1158.5,
+        "reports": 2
+      }
+    },
+    "Rayman 3|GBA|2003": {
+      "title": "Rayman 3 (Handheld)",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/28850",
+      "sourceId": "28850",
+      "main": {
+        "minutes": 540,
+        "reports": 1
+      }
+    },
+    "Rayman DS|DS|2005": {
+      "title": "Rayman DS",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/24904",
+      "sourceId": "24904",
+      "main": {
+        "minutes": 720,
+        "reports": 1
+      }
+    },
+    "Return of the Sinister Six|NES|1992": {
+      "title": "Spider-Man: Return of the Sinister Six",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/8948",
+      "sourceId": "8948",
+      "main": {
+        "minutes": 30,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 32.0,
+        "reports": 2
+      }
+    },
+    "The Amazing Spider-Man|GB|1990": {
+      "title": "The Amazing Spider-Man (1990)",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/48498",
+      "sourceId": "48498",
+      "main": {
+        "minutes": 18,
+        "reports": 1
+      }
+    },
+    "Web of Fire|32X|1996": {
+      "title": "Spider-Man: Web of Fire",
+      "platform": "32X",
+      "sourceUrl": "https://howlongtobeat.com/game/8951",
+      "sourceId": "8951",
+      "main": {
+        "minutes": 39,
+        "reports": 1
+      }
+    },
+    "Spider-Man|PS1|2000": {
+      "title": "Spider-Man (2000)",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/8938",
+      "sourceId": "8938",
+      "main": {
+        "minutes": 480,
+        "reports": 29
+      },
+      "complete": {
+        "minutes": 795.5,
+        "reports": 4
+      }
+    },
+    "Spider-Man 2: Enter Electro|PS1|2001": {
+      "title": "Spider-Man 2: Enter Electro",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/8941",
+      "sourceId": "8941",
+      "main": {
+        "minutes": 535,
+        "reports": 11
+      }
+    },
+    "Spider-Man 2: The Sinister Six|GBC|2001": {
+      "title": "Spider-Man 2: The Sinister Six",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/8942",
+      "sourceId": "8942",
+      "main": {
+        "minutes": 76.0,
+        "reports": 4
+      }
+    },
+    "Mysterio's Menace|GBA|2001": {
+      "title": "Spider-Man: Mysterio's Menace",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/13908",
+      "sourceId": "13908",
+      "main": {
+        "minutes": 67.0,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 123.0,
+        "reports": 2
+      }
+    },
+    "Spider-Man|GBA|2002": {
+      "title": "Spider-Man (2002)",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8939",
+      "sourceId": "8939",
+      "main": {
+        "minutes": 360,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 1800,
+        "reports": 1
+      }
+    },
+    "Spider-Man 2|GBA|2004": {
+      "title": "Spider-Man 2",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8940",
+      "sourceId": "8940",
+      "main": {
+        "minutes": 199,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 720,
+        "reports": 1
+      }
+    },
+    "Shattered Dimensions|DS|2010": {
+      "title": "Spider-Man: Shattered Dimensions",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/8949",
+      "sourceId": "8949",
+      "main": {
+        "minutes": 600,
+        "reports": 1
+      }
+    },
+    "Sonic the Hedgehog 2|Genesis|1992": {
+      "title": "Sonic the Hedgehog 2 (16-bit)",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/8788",
+      "sourceId": "8788",
+      "main": {
+        "minutes": 150,
+        "reports": 75
+      },
+      "complete": {
+        "minutes": 180,
+        "reports": 17
+      }
+    },
+    "Sonic CD|Sega CD|1993": {
+      "title": "Sonic CD",
+      "platform": "Sega CD",
+      "sourceUrl": "https://howlongtobeat.com/game/8793",
+      "sourceId": "8793",
+      "main": {
+        "minutes": 119.0,
+        "reports": 20
+      },
+      "complete": {
+        "minutes": 420,
+        "reports": 1
+      }
+    },
+    "Sonic 3|Genesis|1994": {
+      "title": "Sonic the Hedgehog 3",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/8790",
+      "sourceId": "8790",
+      "main": {
+        "minutes": 180.0,
+        "reports": 38
+      },
+      "complete": {
+        "minutes": 210,
+        "reports": 13
+      }
+    },
+    "Sonic & Knuckles|Genesis|1994": {
+      "title": "Sonic & Knuckles",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/8741",
+      "sourceId": "8741",
+      "main": {
+        "minutes": 180.0,
+        "reports": 26
+      },
+      "complete": {
+        "minutes": 427.5,
+        "reports": 12
+      }
+    },
+    "Knuckles' Chaotix|32X|1995": {
+      "title": "Knuckles' Chaotix",
+      "platform": "32X",
+      "sourceUrl": "https://howlongtobeat.com/game/5111",
+      "sourceId": "5111",
+      "main": {
+        "minutes": 139.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 251,
+        "reports": 1
+      }
+    },
+    "Sonic 3D Blast|Genesis|1996": {
+      "title": "Sonic 3D Blast",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/8744",
+      "sourceId": "8744",
+      "main": {
+        "minutes": 240,
+        "reports": 9
+      },
+      "complete": {
+        "minutes": 320,
+        "reports": 5
+      }
+    },
+    "Sonic Adventure|Dreamcast|1998": {
+      "title": "Sonic Adventure",
+      "platform": "Dreamcast",
+      "sourceUrl": "https://howlongtobeat.com/game/8748",
+      "sourceId": "8748",
+      "main": {
+        "minutes": 555.0,
+        "reports": 28
+      },
+      "complete": {
+        "minutes": 1200,
+        "reports": 11
+      }
+    },
+    "Sonic Adventure 2|Dreamcast|2001": {
+      "title": "Sonic Adventure 2",
+      "platform": "Dreamcast",
+      "sourceUrl": "https://howlongtobeat.com/game/8749",
+      "sourceId": "8749",
+      "main": {
+        "minutes": 600.0,
+        "reports": 16
+      },
+      "complete": {
+        "minutes": 2257.5,
+        "reports": 8
+      }
+    },
+    "Sonic Advance|GBA|2001": {
+      "title": "Sonic Advance",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8745",
+      "sourceId": "8745",
+      "main": {
+        "minutes": 104,
+        "reports": 39
+      },
+      "complete": {
+        "minutes": 300,
+        "reports": 5
+      }
+    },
+    "Sonic Advance 2|GBA|2002": {
+      "title": "Sonic Advance 2",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8746",
+      "sourceId": "8746",
+      "main": {
+        "minutes": 180.0,
+        "reports": 22
+      },
+      "complete": {
+        "minutes": 360,
+        "reports": 3
+      }
+    },
+    "Sonic Advance 3|GBA|2004": {
+      "title": "Sonic Advance 3",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8747",
+      "sourceId": "8747",
+      "main": {
+        "minutes": 240.0,
+        "reports": 14
+      },
+      "complete": {
+        "minutes": 420,
+        "reports": 7
+      }
+    },
+    "Sonic Rush|DS|2005": {
+      "title": "Sonic Rush",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/8777",
+      "sourceId": "8777",
+      "main": {
+        "minutes": 327,
+        "reports": 21
+      },
+      "complete": {
+        "minutes": 830.5,
+        "reports": 8
+      }
+    },
+    "Sonic Rush Adventure|DS|2007": {
+      "title": "Sonic Rush Adventure",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/8778",
+      "sourceId": "8778",
+      "main": {
+        "minutes": 420.0,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 660,
+        "reports": 5
+      }
+    },
+    "Sonic Chronicles|DS|2008": {
+      "title": "Sonic Chronicles: The Dark Brotherhood",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/8757",
+      "sourceId": "8757",
+      "main": {
+        "minutes": 720,
+        "reports": 5
+      },
+      "complete": {
+        "minutes": 1320,
+        "reports": 1
+      }
+    },
+    "Sonic Colors|DS|2010": {
+      "title": "Sonic Colors",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/8759",
+      "sourceId": "8759",
+      "main": {
+        "minutes": 207,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 660,
+        "reports": 3
+      }
+    },
+    "Super Mario Bros.|NES|1985": {
+      "title": "Super Mario Bros.",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/9371",
+      "sourceId": "9371",
+      "main": {
+        "minutes": 105,
+        "reports": 223
+      },
+      "complete": {
+        "minutes": 132.5,
+        "reports": 44
+      }
+    },
+    "Super Mario Bros. 2|NES|1988": {
+      "title": "Super Mario Bros. 2",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/9372",
+      "sourceId": "9372",
+      "main": {
+        "minutes": 156.5,
+        "reports": 88
+      },
+      "complete": {
+        "minutes": 195.0,
+        "reports": 18
+      }
+    },
+    "Super Mario Bros. 3|NES|1988": {
+      "title": "Super Mario Bros. 3",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/9373",
+      "sourceId": "9373",
+      "main": {
+        "minutes": 300,
+        "reports": 117
+      },
+      "complete": {
+        "minutes": 339.0,
+        "reports": 36
+      }
+    },
+    "Super Mario Land|GB|1989": {
+      "title": "Super Mario Land",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/9380",
+      "sourceId": "9380",
+      "main": {
+        "minutes": 60.0,
+        "reports": 138
+      },
+      "complete": {
+        "minutes": 60,
+        "reports": 27
+      }
+    },
+    "Super Mario World|SNES|1990": {
+      "title": "Super Mario World",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/9387",
+      "sourceId": "9387",
+      "main": {
+        "minutes": 300.0,
+        "reports": 154
+      },
+      "complete": {
+        "minutes": 600,
+        "reports": 93
+      }
+    },
+    "Super Mario Land 2|GB|1992": {
+      "title": "Super Mario Land 2: 6 Golden Coins",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/9381",
+      "sourceId": "9381",
+      "main": {
+        "minutes": 126.5,
+        "reports": 80
+      },
+      "complete": {
+        "minutes": 216,
+        "reports": 31
+      }
+    },
+    "Super Mario 64|N64|1996": {
+      "title": "Super Mario 64",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/9364",
+      "sourceId": "9364",
+      "main": {
+        "minutes": 840,
+        "reports": 115
+      },
+      "complete": {
+        "minutes": 1440,
+        "reports": 115
+      }
+    },
+    "New Super Mario Bros.|DS|2006": {
+      "title": "New Super Mario Bros.",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/6534",
+      "sourceId": "6534",
+      "main": {
+        "minutes": 420,
+        "reports": 117
+      },
+      "complete": {
+        "minutes": 1020.0,
+        "reports": 50
+      }
+    },
+    "Super Mario Kart|SNES|1992": {
+      "title": "Super Mario Kart",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/9379",
+      "sourceId": "9379",
+      "main": {
+        "minutes": 166.0,
+        "reports": 56
+      },
+      "complete": {
+        "minutes": 1200,
+        "reports": 17
+      }
+    },
+    "Mario Kart 64|N64|1996": {
+      "title": "Mario Kart 64",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/5633",
+      "sourceId": "5633",
+      "main": {
+        "minutes": 360,
+        "reports": 71
+      },
+      "complete": {
+        "minutes": 1014.0,
+        "reports": 28
+      }
+    },
+    "Mario Kart: Super Circuit|GBA|2001": {
+      "title": "Mario Kart: Super Circuit",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5639",
+      "sourceId": "5639",
+      "main": {
+        "minutes": 300,
+        "reports": 29
+      },
+      "complete": {
+        "minutes": 1505,
+        "reports": 13
+      }
+    },
+    "Mario Kart DS|DS|2005": {
+      "title": "Mario Kart DS",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/5636",
+      "sourceId": "5636",
+      "main": {
+        "minutes": 276,
+        "reports": 53
+      },
+      "complete": {
+        "minutes": 1020.0,
+        "reports": 40
+      }
+    },
+    "Mario & Luigi: Superstar Saga|GBA|2003": {
+      "title": "Mario & Luigi: Superstar Saga",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5622",
+      "sourceId": "5622",
+      "main": {
+        "minutes": 1140,
+        "reports": 69
+      },
+      "complete": {
+        "minutes": 1800,
+        "reports": 19
+      }
+    },
+    "Mario & Luigi: Partners in Time|DS|2005": {
+      "title": "Mario & Luigi: Partners in Time",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/5621",
+      "sourceId": "5621",
+      "main": {
+        "minutes": 1080,
+        "reports": 79
+      },
+      "complete": {
+        "minutes": 2400,
+        "reports": 7
+      }
+    },
+    "Paper Mario|N64|2000": {
+      "title": "Paper Mario",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/6909",
+      "sourceId": "6909",
+      "main": {
+        "minutes": 1380.0,
+        "reports": 78
+      },
+      "complete": {
+        "minutes": 1872,
+        "reports": 17
+      }
+    },
+    "Mario vs. Donkey Kong|GBA|2004": {
+      "title": "Mario vs. Donkey Kong",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5660",
+      "sourceId": "5660",
+      "main": {
+        "minutes": 320,
+        "reports": 11
+      },
+      "complete": {
+        "minutes": 720,
+        "reports": 3
+      }
+    },
+    "Mario vs. Donkey Kong 2|DS|2006": {
+      "title": "Mario vs. Donkey Kong 2: March of the Minis",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/5661",
+      "sourceId": "5661",
+      "main": {
+        "minutes": 259,
+        "reports": 3
+      }
+    },
+    "Mario Party|N64|1998": {
+      "title": "Mario Party",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/5641",
+      "sourceId": "5641",
+      "main": {
+        "minutes": 540.0,
+        "reports": 26
+      },
+      "complete": {
+        "minutes": 1320,
+        "reports": 9
+      }
+    },
+    "Mario Party 2|N64|1999": {
+      "title": "Mario Party 2",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/5642",
+      "sourceId": "5642",
+      "main": {
+        "minutes": 403.0,
+        "reports": 14
+      },
+      "complete": {
+        "minutes": 1440,
+        "reports": 5
+      }
+    },
+    "Mario Party 3|N64|2000": {
+      "title": "Mario Party 3",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/5643",
+      "sourceId": "5643",
+      "main": {
+        "minutes": 480.0,
+        "reports": 12
+      },
+      "complete": {
+        "minutes": 1920,
+        "reports": 3
+      }
+    },
+    "Mario Party Advance|GBA|2005": {
+      "title": "Mario Party Advance",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5650",
+      "sourceId": "5650",
+      "main": {
+        "minutes": 300.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 1380,
+        "reports": 5
+      }
+    },
+    "Mario Party DS|DS|2007": {
+      "title": "Mario Party DS",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/5651",
+      "sourceId": "5651",
+      "main": {
+        "minutes": 412.5,
+        "reports": 10
+      },
+      "complete": {
+        "minutes": 480,
+        "reports": 3
+      }
+    },
+    "Mario Pinball Land|GBA|2004": {
+      "title": "Mario Pinball Land",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5652",
+      "sourceId": "5652",
+      "main": {
+        "minutes": 180.0,
+        "reports": 6
+      }
+    },
+    "Mario Tennis|N64|2000": {
+      "title": "Mario Tennis",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/5657",
+      "sourceId": "5657",
+      "main": {
+        "minutes": 600.0,
+        "reports": 14
+      },
+      "complete": {
+        "minutes": 900,
+        "reports": 3
+      }
+    },
+    "Mario Golf: Advance Tour|GBA|2004": {
+      "title": "Mario Golf: Advance Tour",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5629",
+      "sourceId": "5629",
+      "main": {
+        "minutes": 600,
+        "reports": 7
+      },
+      "complete": {
+        "minutes": 1515,
+        "reports": 3
+      }
+    },
+    "The Legend of Zelda|NES|1986": {
+      "title": "The Legend of Zelda",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/10025",
+      "sourceId": "10025",
+      "main": {
+        "minutes": 536,
+        "reports": 115
+      },
+      "complete": {
+        "minutes": 532,
+        "reports": 41
+      }
+    },
+    "Zelda II: The Adventure of Link|NES|1987": {
+      "title": "Zelda II: The Adventure of Link",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/11533",
+      "sourceId": "11533",
+      "main": {
+        "minutes": 690,
+        "reports": 49
+      },
+      "complete": {
+        "minutes": 561,
+        "reports": 27
+      }
+    },
+    "A Link to the Past|SNES|1991": {
+      "title": "The Legend of Zelda: A Link to the Past",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/10028",
+      "sourceId": "10028",
+      "main": {
+        "minutes": 960,
+        "reports": 91
+      },
+      "complete": {
+        "minutes": 1080.0,
+        "reports": 90
+      }
+    },
+    "Link's Awakening DX|GBC|1998": {
+      "title": "The Legend of Zelda: Link's Awakening DX",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/10033",
+      "sourceId": "10033",
+      "main": {
+        "minutes": 896,
+        "reports": 35
+      },
+      "complete": {
+        "minutes": 960,
+        "reports": 21
+      }
+    },
+    "Ocarina of Time|N64|1998": {
+      "title": "The Legend of Zelda: Ocarina of Time",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/10035",
+      "sourceId": "10035",
+      "main": {
+        "minutes": 1650.0,
+        "reports": 124
+      },
+      "complete": {
+        "minutes": 2400.0,
+        "reports": 88
+      }
+    },
+    "Majora's Mask|N64|2000": {
+      "title": "The Legend of Zelda: Majora's Mask",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/10034",
+      "sourceId": "10034",
+      "main": {
+        "minutes": 1200,
+        "reports": 49
+      },
+      "complete": {
+        "minutes": 1745.0,
+        "reports": 46
+      }
+    },
+    "Oracle of Seasons|GBC|2001": {
+      "title": "The Legend of Zelda: Oracle of Seasons",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/10039",
+      "sourceId": "10039",
+      "main": {
+        "minutes": 960,
+        "reports": 35
+      },
+      "complete": {
+        "minutes": 1382.5,
+        "reports": 14
+      }
+    },
+    "Oracle of Ages|GBC|2001": {
+      "title": "The Legend of Zelda: Oracle of Ages",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/10038",
+      "sourceId": "10038",
+      "main": {
+        "minutes": 1005.0,
+        "reports": 32
+      },
+      "complete": {
+        "minutes": 1500,
+        "reports": 15
+      }
+    },
+    "Four Swords|GBA|2002": {
+      "title": "The Legend of Zelda: Four Swords",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/10029",
+      "sourceId": "10029",
+      "main": {
+        "minutes": 210.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 936.0,
+        "reports": 2
+      }
+    },
+    "The Minish Cap|GBA|2004": {
+      "title": "The Legend of Zelda: The Minish Cap",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/10044",
+      "sourceId": "10044",
+      "main": {
+        "minutes": 900.0,
+        "reports": 66
+      },
+      "complete": {
+        "minutes": 1671,
+        "reports": 29
+      }
+    },
+    "Phantom Hourglass|DS|2007": {
+      "title": "The Legend of Zelda: Phantom Hourglass",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/10041",
+      "sourceId": "10041",
+      "main": {
+        "minutes": 960.0,
+        "reports": 78
+      },
+      "complete": {
+        "minutes": 1652.0,
+        "reports": 26
+      }
+    },
+    "Spirit Tracks|DS|2009": {
+      "title": "The Legend of Zelda: Spirit Tracks",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/10043",
+      "sourceId": "10043",
+      "main": {
+        "minutes": 1123,
+        "reports": 63
+      },
+      "complete": {
+        "minutes": 1714.0,
+        "reports": 24
+      }
+    },
+    "Sorcerer's / Philosopher's Stone|PS1|2001": {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/4315",
+      "sourceId": "4315",
+      "main": {
+        "minutes": 307,
+        "reports": 25
+      },
+      "complete": {
+        "minutes": 720,
+        "reports": 5
+      }
+    },
+    "Sorcerer's / Philosopher's Stone|GBC|2001": {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/4315",
+      "sourceId": "4315",
+      "main": {
+        "minutes": 360.0,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 1886,
+        "reports": 1
+      }
+    },
+    "Sorcerer's / Philosopher's Stone|GBA|2001": {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/4315",
+      "sourceId": "4315",
+      "main": {
+        "minutes": 360,
+        "reports": 5
+      },
+      "complete": {
+        "minutes": 1200,
+        "reports": 1
+      }
+    },
+    "Chamber of Secrets|PS1|2002": {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/4309",
+      "sourceId": "4309",
+      "main": {
+        "minutes": 480,
+        "reports": 7
+      },
+      "complete": {
+        "minutes": 990.0,
+        "reports": 2
+      }
+    },
+    "Chamber of Secrets|GBC|2002": {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/4309",
+      "sourceId": "4309",
+      "main": {
+        "minutes": 477.0,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 1354.0,
+        "reports": 4
+      }
+    },
+    "Chamber of Secrets|GBA|2002": {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/4309",
+      "sourceId": "4309",
+      "main": {
+        "minutes": 480,
+        "reports": 3
+      }
+    },
+    "Prisoner of Azkaban|GBA|2004": {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/4316",
+      "sourceId": "4316",
+      "main": {
+        "minutes": 450.0,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 2156.0,
+        "reports": 4
+      }
+    },
+    "Goblet of Fire|PSP|2005": {
+      "title": "Harry Potter and the Goblet of Fire",
+      "platform": "PSP",
+      "sourceUrl": "https://howlongtobeat.com/game/4312",
+      "sourceId": "4312",
+      "main": {
+        "minutes": 476.0,
+        "reports": 2
+      }
+    },
+    "Earthworm Jim|Genesis|1994": {
+      "title": "Earthworm Jim",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/3036",
+      "sourceId": "3036",
+      "main": {
+        "minutes": 188.5,
+        "reports": 10
+      },
+      "complete": {
+        "minutes": 185.0,
+        "reports": 6
+      }
+    },
+    "Earthworm Jim 2|Genesis|1995": {
+      "title": "Earthworm Jim 2",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/3037",
+      "sourceId": "3037",
+      "main": {
+        "minutes": 210,
+        "reports": 5
+      },
+      "complete": {
+        "minutes": 195,
+        "reports": 5
+      }
+    },
+    "Earthworm Jim 3D|N64|1999": {
+      "title": "Earthworm Jim 3D",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/3038",
+      "sourceId": "3038",
+      "main": {
+        "minutes": 720,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 531,
+        "reports": 1
+      }
+    },
+    "Crash Bandicoot|PS1|1996": {
+      "title": "Crash Bandicoot",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/1969",
+      "sourceId": "1969",
+      "main": {
+        "minutes": 393.0,
+        "reports": 110
+      },
+      "complete": {
+        "minutes": 720.0,
+        "reports": 28
+      }
+    },
+    "Crash Bandicoot 2: Cortex Strikes Back|PS1|1997": {
+      "title": "Crash Bandicoot 2: Cortex Strikes Back",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/1970",
+      "sourceId": "1970",
+      "main": {
+        "minutes": 360.0,
+        "reports": 80
+      },
+      "complete": {
+        "minutes": 659,
+        "reports": 35
+      }
+    },
+    "Crash Bandicoot: Warped|PS1|1998": {
+      "title": "Crash Bandicoot 3: Warped",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/1972",
+      "sourceId": "1972",
+      "main": {
+        "minutes": 456,
+        "reports": 81
+      },
+      "complete": {
+        "minutes": 900,
+        "reports": 31
+      }
+    },
+    "Crash Team Racing|PS1|1999": {
+      "title": "Crash Team Racing",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/1982",
+      "sourceId": "1982",
+      "main": {
+        "minutes": 340,
+        "reports": 49
+      },
+      "complete": {
+        "minutes": 1260,
+        "reports": 21
+      }
+    },
+    "Crash Bash|PS1|2000": {
+      "title": "Crash Bash",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/1976",
+      "sourceId": "1976",
+      "main": {
+        "minutes": 360.0,
+        "reports": 18
+      },
+      "complete": {
+        "minutes": 657,
+        "reports": 9
+      }
+    },
+    "The Huge Adventure / XS|GBA|2002": {
+      "title": "Crash Bandicoot: The Huge Adventure",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/1974",
+      "sourceId": "1974",
+      "main": {
+        "minutes": 180,
+        "reports": 15
+      },
+      "complete": {
+        "minutes": 253.0,
+        "reports": 4
+      }
+    },
+    "N-Tranced|GBA|2003": {
+      "title": "Crash Bandicoot 2: N-Tranced",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/1971",
+      "sourceId": "1971",
+      "main": {
+        "minutes": 210.0,
+        "reports": 8
+      },
+      "complete": {
+        "minutes": 555.5,
+        "reports": 2
+      }
+    },
+    "Donkey Kong|Arcade / NES|1981": {
+      "title": "Donkey Kong (1981)",
+      "platform": "Arcade / NES",
+      "sourceUrl": "https://howlongtobeat.com/game/2681",
+      "sourceId": "2681",
+      "main": {
+        "minutes": 15.0,
+        "reports": 34
+      },
+      "complete": {
+        "minutes": 60,
+        "reports": 5
+      }
+    },
+    "Donkey Kong Jr.|Arcade / NES|1982": {
+      "title": "Donkey Kong Jr.",
+      "platform": "Arcade / NES",
+      "sourceUrl": "https://howlongtobeat.com/game/2692",
+      "sourceId": "2692",
+      "main": {
+        "minutes": 10,
+        "reports": 27
+      },
+      "complete": {
+        "minutes": 29,
+        "reports": 7
+      }
+    },
+    "Donkey Kong|GB|1994": {
+      "title": "Donkey Kong (1994)",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/2682",
+      "sourceId": "2682",
+      "main": {
+        "minutes": 360,
+        "reports": 33
+      },
+      "complete": {
+        "minutes": 360,
+        "reports": 9
+      }
+    },
+    "Donkey Kong Country|SNES|1994": {
+      "title": "Donkey Kong Country",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/2686",
+      "sourceId": "2686",
+      "main": {
+        "minutes": 239,
+        "reports": 181
+      },
+      "complete": {
+        "minutes": 318,
+        "reports": 37
+      }
+    },
+    "Donkey Kong Country 2|SNES|1995": {
+      "title": "Donkey Kong Country 2: Diddy's Kong Quest",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/2687",
+      "sourceId": "2687",
+      "main": {
+        "minutes": 312,
+        "reports": 77
+      },
+      "complete": {
+        "minutes": 558,
+        "reports": 39
+      }
+    },
+    "Donkey Kong Country 3|SNES|1996": {
+      "title": "Donkey Kong Country 3: Dixie Kong's Double Trouble!",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/2688",
+      "sourceId": "2688",
+      "main": {
+        "minutes": 300.0,
+        "reports": 36
+      },
+      "complete": {
+        "minutes": 545,
+        "reports": 27
+      }
+    },
+    "Donkey Kong Land|GB|1995": {
+      "title": "Donkey Kong Land",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/2695",
+      "sourceId": "2695",
+      "main": {
+        "minutes": 126.0,
+        "reports": 14
+      },
+      "complete": {
+        "minutes": 198.0,
+        "reports": 8
+      }
+    },
+    "Donkey Kong Land 2|GB|1996": {
+      "title": "Donkey Kong Land 2",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/2696",
+      "sourceId": "2696",
+      "main": {
+        "minutes": 205,
+        "reports": 7
+      },
+      "complete": {
+        "minutes": 455,
+        "reports": 3
+      }
+    },
+    "Donkey Kong Land III|GB|1997": {
+      "title": "Donkey Kong Land III",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/2697",
+      "sourceId": "2697",
+      "main": {
+        "minutes": 288.0,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 900.0,
+        "reports": 6
+      }
+    },
+    "Donkey Kong 64|N64|1999": {
+      "title": "Donkey Kong 64",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/2684",
+      "sourceId": "2684",
+      "main": {
+        "minutes": 1916,
+        "reports": 37
+      },
+      "complete": {
+        "minutes": 1931,
+        "reports": 57
+      }
+    },
+    "Spyro the Dragon|PS1|1998": {
+      "title": "Spyro the Dragon",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/9006",
+      "sourceId": "9006",
+      "main": {
+        "minutes": 360.0,
+        "reports": 40
+      },
+      "complete": {
+        "minutes": 547.5,
+        "reports": 72
+      }
+    },
+    "Spyro 2: Ripto's Rage!|PS1|1999": {
+      "title": "Spyro 2: Ripto's Rage!",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/9004",
+      "sourceId": "9004",
+      "main": {
+        "minutes": 420,
+        "reports": 25
+      },
+      "complete": {
+        "minutes": 600,
+        "reports": 57
+      }
+    },
+    "Spyro: Year of the Dragon|PS1|2000": {
+      "title": "Spyro: Year of the Dragon",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/9011",
+      "sourceId": "9011",
+      "main": {
+        "minutes": 600.0,
+        "reports": 22
+      },
+      "complete": {
+        "minutes": 720,
+        "reports": 35
+      }
+    },
+    "Season of Ice|GBA|2001": {
+      "title": "Spyro: Season of Ice",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/9009",
+      "sourceId": "9009",
+      "main": {
+        "minutes": 386.5,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 360,
+        "reports": 1
+      }
+    },
+    "Season of Flame|GBA|2002": {
+      "title": "Spyro 2: Season of Flame",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/14030",
+      "sourceId": "14030",
+      "main": {
+        "minutes": 441,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 427.0,
+        "reports": 4
+      }
+    },
+    "Attack of the Rhynocs|GBA|2003": {
+      "title": "Spyro: Attack of the Rhynocs",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/12332",
+      "sourceId": "12332",
+      "main": {
+        "minutes": 647.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 791.0,
+        "reports": 2
+      }
+    },
+    "Spyro Orange: The Cortex Conspiracy|GBA|2004": {
+      "title": "Spyro Orange: The Cortex Conspiracy",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/9005",
+      "sourceId": "9005",
+      "main": {
+        "minutes": 180,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 480,
+        "reports": 1
+      }
+    },
+    "Avatar: The Last Airbender|GBA|2006": {
+      "title": "Avatar: The Last Airbender",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/741",
+      "sourceId": "741",
+      "main": {
+        "minutes": 230.0,
+        "reports": 4
+      }
+    },
+    "Avatar: The Last Airbender - The Burning Earth|GBA|2007": {
+      "title": "Avatar: The Last Airbender - The Burning Earth",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/742",
+      "sourceId": "742",
+      "main": {
+        "minutes": 80,
+        "reports": 1
+      }
+    },
+    "Pink Panther: Pinkadelic Pursuit|PS1|2002": {
+      "title": "Pink Panther: Pinkadelic Pursuit",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/14527",
+      "sourceId": "14527",
+      "main": {
+        "minutes": 210.0,
+        "reports": 2
+      }
+    },
+    "Pokémon Yellow Version - Special Pikachu Edition|GB|1998": {
+      "title": "Pokémon Yellow: Special Pikachu Edition",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/7182",
+      "sourceId": "7182",
+      "main": {
+        "minutes": 1680,
+        "reports": 43
+      },
+      "complete": {
+        "minutes": 4800,
+        "reports": 13
+      }
+    },
+    "Pokémon Crystal Version|GBC|2000": {
+      "title": "Pokémon Crystal",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/7146",
+      "sourceId": "7146",
+      "main": {
+        "minutes": 1883,
+        "reports": 55
+      },
+      "complete": {
+        "minutes": 10102,
+        "reports": 13
+      }
+    },
+    "Pokémon Emerald Version|GBA|2004": {
+      "title": "Pokémon Emerald",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/7150",
+      "sourceId": "7150",
+      "main": {
+        "minutes": 1800.0,
+        "reports": 114
+      },
+      "complete": {
+        "minutes": 10800,
+        "reports": 21
+      }
+    },
+    "Pokémon Platinum Version|DS|2008": {
+      "title": "Pokémon Platinum",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/7161",
+      "sourceId": "7161",
+      "main": {
+        "minutes": 2100.0,
+        "reports": 124
+      },
+      "complete": {
+        "minutes": 12600,
+        "reports": 35
+      }
+    },
+    "Pokémon Pinball|GBC|1999": {
+      "title": "Pokémon Pinball",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/7159",
+      "sourceId": "7159",
+      "main": {
+        "minutes": 900,
+        "reports": 17
+      },
+      "complete": {
+        "minutes": 1350.0,
+        "reports": 2
+      }
+    },
+    "Pokémon Pinball: Ruby & Sapphire|GBA|2003": {
+      "title": "Pokémon Pinball: Ruby & Sapphire",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/7160",
+      "sourceId": "7160",
+      "main": {
+        "minutes": 1440.0,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 1855.5,
+        "reports": 6
+      }
+    },
+    "Resident Evil - Director's Cut|PS1|1997": {
+      "title": "Resident Evil: Director's Cut",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/7738",
+      "sourceId": "7738",
+      "main": {
+        "minutes": 366.5,
+        "reports": 34
+      },
+      "complete": {
+        "minutes": 990,
+        "reports": 5
+      }
+    },
+    "Resident Evil 2|PS1|1998": {
+      "title": "Resident Evil 2 (1998)",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/7718",
+      "sourceId": "7718",
+      "main": {
+        "minutes": 332,
+        "reports": 165
+      },
+      "complete": {
+        "minutes": 900,
+        "reports": 35
+      }
+    },
+    "Resident Evil 3 - Nemesis|PS1|1999": {
+      "title": "Resident Evil 3: Nemesis",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/7719",
+      "sourceId": "7719",
+      "main": {
+        "minutes": 420,
+        "reports": 111
+      },
+      "complete": {
+        "minutes": 570.0,
+        "reports": 18
+      }
+    },
+    "Resident Evil - Survivor|PS1|2000": {
+      "title": "Resident Evil: Survivor",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/7743",
+      "sourceId": "7743",
+      "main": {
+        "minutes": 120,
+        "reports": 25
+      },
+      "complete": {
+        "minutes": 234,
+        "reports": 5
+      }
+    },
+    "Resident Evil Gaiden|GBC|2001": {
+      "title": "Resident Evil Gaiden",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/7729",
+      "sourceId": "7729",
+      "main": {
+        "minutes": 240,
+        "reports": 5
+      }
+    },
+    "Resident Evil - Deadly Silence|DS|2006": {
+      "title": "Resident Evil: Deadly Silence",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/7737",
+      "sourceId": "7737",
+      "main": {
+        "minutes": 332,
+        "reports": 17
+      },
+      "complete": {
+        "minutes": 617.5,
+        "reports": 2
+      }
+    },
+    "Metroid|NES|1986": {
+      "title": "Metroid",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/5948",
+      "sourceId": "5948",
+      "main": {
+        "minutes": 421.5,
+        "reports": 46
+      },
+      "complete": {
+        "minutes": 515.0,
+        "reports": 16
+      }
+    },
+    "Metroid II - Return of Samus|GB|1991": {
+      "title": "Metroid II: Return of Samus",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/5951",
+      "sourceId": "5951",
+      "main": {
+        "minutes": 300.0,
+        "reports": 28
+      },
+      "complete": {
+        "minutes": 227,
+        "reports": 23
+      }
+    },
+    "Super Metroid|SNES|1994": {
+      "title": "Super Metroid",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/9390",
+      "sourceId": "9390",
+      "main": {
+        "minutes": 447,
+        "reports": 143
+      },
+      "complete": {
+        "minutes": 564,
+        "reports": 51
+      }
+    },
+    "Metroid Fusion|GBA|2002": {
+      "title": "Metroid Fusion",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5950",
+      "sourceId": "5950",
+      "main": {
+        "minutes": 274,
+        "reports": 121
+      },
+      "complete": {
+        "minutes": 468,
+        "reports": 39
+      }
+    },
+    "Metroid - Zero Mission|GBA|2004": {
+      "title": "Metroid: Zero Mission",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5961",
+      "sourceId": "5961",
+      "main": {
+        "minutes": 248.5,
+        "reports": 164
+      },
+      "complete": {
+        "minutes": 362.0,
+        "reports": 28
+      }
+    },
+    "MediEvil|PS1|1998": {
+      "title": "MediEvil",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/5796",
+      "sourceId": "5796",
+      "main": {
+        "minutes": 356.5,
+        "reports": 18
+      },
+      "complete": {
+        "minutes": 430,
+        "reports": 29
+      }
+    },
+    "MediEvil II|PS1|2000": {
+      "title": "MediEvil 2",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/5797",
+      "sourceId": "5797",
+      "main": {
+        "minutes": 312.5,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 315,
+        "reports": 13
+      }
+    },
+    "MediEvil - Resurrection|PSP|2005": {
+      "title": "MediEvil: Resurrection",
+      "platform": "PSP",
+      "sourceUrl": "https://howlongtobeat.com/game/5799",
+      "sourceId": "5799",
+      "main": {
+        "minutes": 540,
+        "reports": 5
+      },
+      "complete": {
+        "minutes": 612.0,
+        "reports": 6
+      }
+    },
+    "The Nightmare Before Christmas: The Pumpkin King|GBA|2005": {
+      "title": "The Nightmare Before Christmas: The Pumpkin King",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/13322",
+      "sourceId": "13322",
+      "main": {
+        "minutes": 376,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 403,
+        "reports": 1
+      }
+    },
+    "Monster House|GBA|2006": {
+      "title": "Monster House",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/20776",
+      "sourceId": "20776",
+      "main": {
+        "minutes": 570,
+        "reports": 1
+      }
+    },
+    "The Lord of the Rings: The Fellowship of the Ring|GBA|2002": {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/10066",
+      "sourceId": "10066",
+      "main": {
+        "minutes": 530,
+        "reports": 1
+      }
+    },
+    "The Lord of the Rings: The Two Towers|GBA|2002": {
+      "title": "The Lord of the Rings: The Two Towers",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/10070",
+      "sourceId": "10070",
+      "main": {
+        "minutes": 360,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 3000,
+        "reports": 1
+      }
+    },
+    "The Lord of the Rings: The Return of the King|GBA|2003": {
+      "title": "The Lord of the Rings: The Return of the King",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/10067",
+      "sourceId": "10067",
+      "main": {
+        "minutes": 410,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 900,
+        "reports": 1
+      }
+    },
+    "The Lord of the Rings: Tactics|PSP|2005": {
+      "title": "The Lord of the Rings: Tactics",
+      "platform": "PSP",
+      "sourceUrl": "https://howlongtobeat.com/game/10062",
+      "sourceId": "10062",
+      "main": {
+        "minutes": 300,
+        "reports": 1
+      }
+    },
+    "Shrek: Fairy Tale Freakdown|GBC|2001": {
+      "title": "Shrek: Fairy Tale Freakdown",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/23606",
+      "sourceId": "23606",
+      "main": {
+        "minutes": 69.0,
+        "reports": 2
+      }
+    },
+    "Shrek Treasure Hunt|PS1|2002": {
+      "title": "Shrek: Treasure Hunt",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/20023",
+      "sourceId": "20023",
+      "main": {
+        "minutes": 150,
+        "reports": 1
+      }
+    },
+    "Shrek 2|GBA|2004": {
+      "title": "Shrek 2",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8489",
+      "sourceId": "8489",
+      "main": {
+        "minutes": 164,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 144,
+        "reports": 1
+      }
+    },
+    "Shrek 2: Beg for Mercy!|GBA|2004": {
+      "title": "Shrek 2: Beg for Mercy",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/17223",
+      "sourceId": "17223",
+      "main": {
+        "minutes": 76.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 90,
+        "reports": 1
+      }
+    },
+    "Shrek: SuperSlam|GBA|2005": {
+      "title": "Shrek SuperSlam",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8492",
+      "sourceId": "8492",
+      "main": {
+        "minutes": 34.0,
+        "reports": 2
+      }
+    },
+    "Shrek the Third|GBA|2007": {
+      "title": "Shrek the Third",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8493",
+      "sourceId": "8493",
+      "main": {
+        "minutes": 101,
+        "reports": 1
+      }
+    },
+    "Gargoyles|Genesis|1995": {
+      "title": "Gargoyles",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/13191",
+      "sourceId": "13191",
+      "main": {
+        "minutes": 191,
+        "reports": 3
+      }
+    },
+    "Tomb Raider|PS1|1996": {
+      "title": "Tomb Raider (1996)",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/10468",
+      "sourceId": "10468",
+      "main": {
+        "minutes": 974.5,
+        "reports": 20
+      },
+      "complete": {
+        "minutes": 1116.0,
+        "reports": 6
+      }
+    },
+    "Tomb Raider II: Starring Lara Croft|PS1|1997": {
+      "title": "Tomb Raider II",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/10471",
+      "sourceId": "10471",
+      "main": {
+        "minutes": 900,
+        "reports": 25
+      },
+      "complete": {
+        "minutes": 1020,
+        "reports": 5
+      }
+    },
+    "Tomb Raider III: Adventures of Lara Croft|PS1|1998": {
+      "title": "Tomb Raider III",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/10472",
+      "sourceId": "10472",
+      "main": {
+        "minutes": 1050.0,
+        "reports": 12
+      },
+      "complete": {
+        "minutes": 1009.5,
+        "reports": 4
+      }
+    },
+    "Tomb Raider: The Last Revelation|PS1|1999": {
+      "title": "Tomb Raider: The Last Revelation",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/10480",
+      "sourceId": "10480",
+      "main": {
+        "minutes": 942.5,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 1200,
+        "reports": 1
+      }
+    },
+    "Tomb Raider|GBC|2000": {
+      "title": "Tomb Raider (2000)",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/17515",
+      "sourceId": "17515",
+      "main": {
+        "minutes": 960,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 755,
+        "reports": 1
+      }
+    },
+    "Tomb Raider: Chronicles|PS1|2000": {
+      "title": "Tomb Raider Chronicles",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/10470",
+      "sourceId": "10470",
+      "main": {
+        "minutes": 759.5,
+        "reports": 2
+      }
+    },
+    "Tomb Raider: Curse of the Sword|GBC|2001": {
+      "title": "Tomb Raider: Curse of the Sword",
+      "platform": "GBC",
+      "sourceUrl": "https://howlongtobeat.com/game/34844",
+      "sourceId": "34844",
+      "complete": {
+        "minutes": 375,
+        "reports": 1
+      }
+    },
+    "Tomb Raider: The Prophecy|GBA|2002": {
+      "title": "Tomb Raider: The Prophecy",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/17995",
+      "sourceId": "17995",
+      "main": {
+        "minutes": 360,
+        "reports": 1
+      }
+    },
+    "Tomb Raider: Legend|PSP|2006": {
+      "title": "Tomb Raider: Legend",
+      "platform": "PSP",
+      "sourceUrl": "https://howlongtobeat.com/game/10477",
+      "sourceId": "10477",
+      "main": {
+        "minutes": 471,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 922.5,
+        "reports": 2
+      }
+    },
+    "Tomb Raider: Anniversary|PSP|2007": {
+      "title": "Tomb Raider: Anniversary",
+      "platform": "PSP",
+      "sourceUrl": "https://howlongtobeat.com/game/10476",
+      "sourceId": "10476",
+      "main": {
+        "minutes": 1005.0,
+        "reports": 2
+      }
+    },
+    "Batman: The Video Game|NES|1989": {
+      "title": "Batman: The Video Game",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/888",
+      "sourceId": "888",
+      "main": {
+        "minutes": 122.5,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 105.0,
+        "reports": 2
+      }
+    },
+    "Batman: The Video Game|GB|1990": {
+      "title": "Batman: The Video Game",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/888",
+      "sourceId": "888",
+      "main": {
+        "minutes": 82,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 150,
+        "reports": 1
+      }
+    },
+    "Batman: Return of the Joker|NES|1991": {
+      "title": "Batman: Return of the Joker",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/885",
+      "sourceId": "885",
+      "main": {
+        "minutes": 45.5,
+        "reports": 8
+      },
+      "complete": {
+        "minutes": 46,
+        "reports": 3
+      }
+    },
+    "Batman Returns|Genesis|1992": {
+      "title": "Batman Returns",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/880",
+      "sourceId": "880",
+      "main": {
+        "minutes": 108,
+        "reports": 3
+      }
+    },
+    "Batman: Return of the Joker|GB|1992": {
+      "title": "Batman: Return of the Joker",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/885",
+      "sourceId": "885",
+      "main": {
+        "minutes": 27.0,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 480,
+        "reports": 1
+      }
+    },
+    "Batman Returns|NES|1993": {
+      "title": "Batman Returns",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/880",
+      "sourceId": "880",
+      "main": {
+        "minutes": 112.5,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 120,
+        "reports": 1
+      }
+    },
+    "Batman Returns|SNES|1993": {
+      "title": "Batman Returns",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/880",
+      "sourceId": "880",
+      "main": {
+        "minutes": 110.0,
+        "reports": 14
+      },
+      "complete": {
+        "minutes": 165.0,
+        "reports": 2
+      }
+    },
+    "Batman: The Animated Series|GB|1993": {
+      "title": "Batman: The Animated Series",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/13916",
+      "sourceId": "13916",
+      "main": {
+        "minutes": 211,
+        "reports": 3
+      }
+    },
+    "The Adventures of Batman & Robin|SNES|1994": {
+      "title": "The Adventures of Batman & Robin",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/9747",
+      "sourceId": "9747",
+      "main": {
+        "minutes": 173,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 111,
+        "reports": 1
+      }
+    },
+    "Batman Forever|Genesis|1995": {
+      "title": "Batman Forever",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/879",
+      "sourceId": "879",
+      "main": {
+        "minutes": 180,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 240,
+        "reports": 3
+      }
+    },
+    "Batman Forever|SNES|1995": {
+      "title": "Batman Forever",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/879",
+      "sourceId": "879",
+      "main": {
+        "minutes": 165.0,
+        "reports": 2
+      }
+    },
+    "The Adventures of Batman & Robin|Genesis|1995": {
+      "title": "The Adventures of Batman & Robin",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/9747",
+      "sourceId": "9747",
+      "main": {
+        "minutes": 180,
+        "reports": 5
+      },
+      "complete": {
+        "minutes": 472,
+        "reports": 1
+      }
+    },
+    "Batman Beyond: Return of the Joker|PS1|2000": {
+      "title": "Batman Beyond: Return of the Joker",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/878",
+      "sourceId": "878",
+      "main": {
+        "minutes": 90,
+        "reports": 1
+      }
+    },
+    "Batman: Vengeance|GBA|2001": {
+      "title": "Batman: Vengeance",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/890",
+      "sourceId": "890",
+      "main": {
+        "minutes": 112,
+        "reports": 1
+      }
+    },
+    "LEGO Batman: The Videogame|DS|2008": {
+      "title": "LEGO Batman: The Videogame",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/5245",
+      "sourceId": "5245",
+      "main": {
+        "minutes": 634,
+        "reports": 5
+      }
+    },
+    "LEGO Batman: The Videogame|PSP|2008": {
+      "title": "LEGO Batman: The Videogame",
+      "platform": "PSP",
+      "sourceUrl": "https://howlongtobeat.com/game/5245",
+      "sourceId": "5245",
+      "main": {
+        "minutes": 600,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 1800,
+        "reports": 3
+      }
+    },
+    "The Incredible Hulk|Genesis|1994": {
+      "title": "The Incredible Hulk (1994)",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/9948",
+      "sourceId": "9948",
+      "main": {
+        "minutes": 60,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 313,
+        "reports": 1
+      }
+    },
+    "James Bond 007: The Duel|Genesis|1993": {
+      "title": "James Bond 007: The Duel",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/18122",
+      "sourceId": "18122",
+      "main": {
+        "minutes": 45.0,
+        "reports": 2
+      }
+    },
+    "GoldenEye 007|N64|1997": {
+      "title": "GoldenEye 007 (1997)",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/4003",
+      "sourceId": "4003",
+      "main": {
+        "minutes": 600,
+        "reports": 59
+      },
+      "complete": {
+        "minutes": 1200.0,
+        "reports": 18
+      }
+    },
+    "James Bond 007|GB|1998": {
+      "title": "James Bond 007",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/4805",
+      "sourceId": "4805",
+      "main": {
+        "minutes": 235.5,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 360,
+        "reports": 1
+      }
+    },
+    "007 Racing|PS1|2000": {
+      "title": "007 Racing",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/29",
+      "sourceId": "29",
+      "main": {
+        "minutes": 179,
+        "reports": 3
+      }
+    },
+    "007: The World Is Not Enough|N64|2000": {
+      "title": "007: The World Is Not Enough",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/10278",
+      "sourceId": "10278",
+      "main": {
+        "minutes": 345.0,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 960,
+        "reports": 1
+      }
+    },
+    "007: The World Is Not Enough|PS1|2000": {
+      "title": "007: The World Is Not Enough",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/10278",
+      "sourceId": "10278",
+      "main": {
+        "minutes": 292.5,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 480,
+        "reports": 1
+      }
+    },
+    "Frogger|PS1|1997": {
+      "title": "Frogger (1997)",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/3715",
+      "sourceId": "3715",
+      "main": {
+        "minutes": 514.5,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 780.0,
+        "reports": 2
+      }
+    },
+    "Frogger|SNES|1998": {
+      "title": "Frogger (1998)",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/30678",
+      "sourceId": "30678",
+      "main": {
+        "minutes": 540,
+        "reports": 1
+      }
+    },
+    "Frogger 2: Swampy's Revenge|PS1|2000": {
+      "title": "Frogger 2: Swampy's Revenge",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/3717",
+      "sourceId": "3717",
+      "main": {
+        "minutes": 94.0,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 145.0,
+        "reports": 2
+      }
+    },
+    "Frogger's Adventures: Temple of the Frog|GBA|2001": {
+      "title": "Frogger's Adventures: Temple of the Frog",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/15617",
+      "sourceId": "15617",
+      "main": {
+        "minutes": 67.5,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 120,
+        "reports": 1
+      }
+    },
+    "Prince of Persia|NES|1992": {
+      "title": "Prince of Persia (1989)",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/7287",
+      "sourceId": "7287",
+      "main": {
+        "minutes": 110,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 60,
+        "reports": 1
+      }
+    },
+    "Prince of Persia|SNES|1992": {
+      "title": "Prince of Persia (1989)",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/7287",
+      "sourceId": "7287",
+      "main": {
+        "minutes": 113,
+        "reports": 3
+      }
+    },
+    "Prince of Persia|Sega CD|1992": {
+      "title": "Prince of Persia (1989)",
+      "platform": "Sega CD",
+      "sourceUrl": "https://howlongtobeat.com/game/7287",
+      "sourceId": "7287",
+      "main": {
+        "minutes": 192,
+        "reports": 1
+      }
+    },
+    "Prince of Persia|Genesis|1993": {
+      "title": "Prince of Persia (1989)",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/7287",
+      "sourceId": "7287",
+      "main": {
+        "minutes": 143.5,
+        "reports": 2
+      }
+    },
+    "Prince of Persia 2: The Shadow and the Flame|SNES|1995": {
+      "title": "Prince of Persia 2: The Shadow and the Flame",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/7290",
+      "sourceId": "7290",
+      "main": {
+        "minutes": 317,
+        "reports": 1
+      }
+    },
+    "Prince of Persia: The Sands of Time|GBA|2003": {
+      "title": "Prince of Persia: The Sands of Time",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/7297",
+      "sourceId": "7297",
+      "main": {
+        "minutes": 608.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 261,
+        "reports": 1
+      }
+    },
+    "Hugo|PS1|1998": {
+      "title": "Hugo",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/16951",
+      "sourceId": "16951",
+      "main": {
+        "minutes": 26,
+        "reports": 1
+      }
+    },
+    "Dungeons & Dragons: Tower of Doom|Arcade|1994": {
+      "title": "Dungeons & Dragons: Tower of Doom",
+      "platform": "Arcade",
+      "sourceUrl": "https://howlongtobeat.com/game/2972",
+      "sourceId": "2972",
+      "main": {
+        "minutes": 90.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 208.5,
+        "reports": 2
+      }
+    },
+    "Dungeons & Dragons: Shadow Over Mystara|Arcade|1996": {
+      "title": "Dungeons & Dragons: Shadow over Mystara",
+      "platform": "Arcade",
+      "sourceUrl": "https://howlongtobeat.com/game/2971",
+      "sourceId": "2971",
+      "main": {
+        "minutes": 41.5,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 51.5,
+        "reports": 4
+      }
+    },
+    "Dungeons & Dragons: Warriors of the Eternal Sun|Genesis|1992": {
+      "title": "Dungeons & Dragons: Warriors of the Eternal Sun",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/2973",
+      "sourceId": "2973",
+      "main": {
+        "minutes": 858.0,
+        "reports": 2
+      }
+    },
+    "Dungeons & Dragons: Eye of the Beholder|GBA|2002": {
+      "title": "Dungeons & Dragons: Eye of the Beholder (2002)",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/17866",
+      "sourceId": "17866",
+      "main": {
+        "minutes": 591.5,
+        "reports": 2
+      }
+    },
+    "Home Alone 2: Lost in New York|NES|1992": {
+      "title": "Home Alone 2: Lost in New York",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/17385",
+      "sourceId": "17385",
+      "main": {
+        "minutes": 25,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 85.5,
+        "reports": 2
+      }
+    },
+    "Home Alone|SNES|1991": {
+      "title": "Home Alone",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/4492",
+      "sourceId": "4492",
+      "main": {
+        "minutes": 82.0,
+        "reports": 2
+      }
+    },
+    "Home Alone 2: Lost in New York|SNES|1992": {
+      "title": "Home Alone 2: Lost in New York",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/17385",
+      "sourceId": "17385",
+      "complete": {
+        "minutes": 26.0,
+        "reports": 2
+      }
+    },
+    "Home Alone|GB|1991": {
+      "title": "Home Alone",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/4492",
+      "sourceId": "4492",
+      "main": {
+        "minutes": 110.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 180,
+        "reports": 1
+      }
+    },
+    "Home Alone|Genesis|1992": {
+      "title": "Home Alone",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/4492",
+      "sourceId": "4492",
+      "main": {
+        "minutes": 88.0,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 150.0,
+        "reports": 2
+      }
+    },
+    "Home Alone 2: Lost in New York|Genesis|1993": {
+      "title": "Home Alone 2: Lost in New York",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/17385",
+      "sourceId": "17385",
+      "complete": {
+        "minutes": 40,
+        "reports": 1
+      }
+    },
+    "DuckTales|NES|1989": {
+      "title": "DuckTales",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/2908",
+      "sourceId": "2908",
+      "main": {
+        "minutes": 92,
+        "reports": 51
+      },
+      "complete": {
+        "minutes": 120,
+        "reports": 9
+      }
+    },
+    "DuckTales 2|NES|1993": {
+      "title": "DuckTales 2",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/2909",
+      "sourceId": "2909",
+      "main": {
+        "minutes": 60,
+        "reports": 17
+      },
+      "complete": {
+        "minutes": 119.5,
+        "reports": 4
+      }
+    },
+    "Aladdin|Genesis|1993": {
+      "title": "Disney's Aladdin (1993)",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/2608",
+      "sourceId": "2608",
+      "main": {
+        "minutes": 120,
+        "reports": 43
+      },
+      "complete": {
+        "minutes": 135.0,
+        "reports": 6
+      }
+    },
+    "The Lion King|SNES|1994": {
+      "title": "Disney's The Lion King",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/10051",
+      "sourceId": "10051",
+      "main": {
+        "minutes": 120.0,
+        "reports": 16
+      },
+      "complete": {
+        "minutes": 180.0,
+        "reports": 4
+      }
+    },
+    "Castle of Illusion Starring Mickey Mouse|Genesis|1990": {
+      "title": "Castle of Illusion Starring Mickey Mouse",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/1559",
+      "sourceId": "1559",
+      "main": {
+        "minutes": 120.0,
+        "reports": 30
+      },
+      "complete": {
+        "minutes": 215,
+        "reports": 7
+      }
+    },
+    "Pirates of the Caribbean: Dead Man's Chest|GBA|2006": {
+      "title": "Pirates of the Caribbean: Dead Man's Chest",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/13435",
+      "sourceId": "13435",
+      "main": {
+        "minutes": 156.0,
+        "reports": 2
+      }
+    },
+    "Chicken Little|GBA|2005": {
+      "title": "Chicken Little",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/13810",
+      "sourceId": "13810",
+      "main": {
+        "minutes": 145.0,
+        "reports": 2
+      }
+    },
+    "Lilo & Stitch|GBA|2002": {
+      "title": "Disney's Lilo & Stitch",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/2616",
+      "sourceId": "2616",
+      "main": {
+        "minutes": 119,
+        "reports": 1
+      }
+    },
+    "Toy Story|SNES|1995": {
+      "title": "Toy Story",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/10587",
+      "sourceId": "10587",
+      "main": {
+        "minutes": 90,
+        "reports": 7
+      },
+      "complete": {
+        "minutes": 66,
+        "reports": 1
+      }
+    },
+    "Toy Story 2: Buzz Lightyear to the Rescue!|PS1|1999": {
+      "title": "Toy Story 2: Buzz Lightyear to the Rescue",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/10588",
+      "sourceId": "10588",
+      "main": {
+        "minutes": 500.5,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 600,
+        "reports": 5
+      }
+    },
+    "Toy Story Racer|PS1|2001": {
+      "title": "Toy Story Racer",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/10590",
+      "sourceId": "10590",
+      "complete": {
+        "minutes": 585,
+        "reports": 1
+      }
+    },
+    "The Incredibles|GBA|2004": {
+      "title": "The Incredibles",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/9955",
+      "sourceId": "9955",
+      "main": {
+        "minutes": 240.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 252,
+        "reports": 1
+      }
+    },
+    "Cars|GBA|2006": {
+      "title": "Cars (2006)",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/1546",
+      "sourceId": "1546",
+      "main": {
+        "minutes": 63,
+        "reports": 1
+      }
+    },
+    "Monsters, Inc.|GBA|2001": {
+      "title": "Monsters, Inc.",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/13907",
+      "sourceId": "13907",
+      "main": {
+        "minutes": 180,
+        "reports": 3
+      }
+    },
+    "Shaman King: Master of Spirits|GBA|2004": {
+      "title": "Shaman King: Master of Spirits",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8374",
+      "sourceId": "8374",
+      "main": {
+        "minutes": 661.0,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 1350.0,
+        "reports": 2
+      }
+    },
+    "Shaman King: Master of Spirits 2|GBA|2005": {
+      "title": "Shaman King: Master of Spirits 2",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8375",
+      "sourceId": "8375",
+      "main": {
+        "minutes": 450.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 1500,
+        "reports": 1
+      }
+    },
+    "Bishoujo Senshi Sailor Moon|SNES|1993": {
+      "title": "Bishoujo Senshi Sailor Moon",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/1075",
+      "sourceId": "1075",
+      "main": {
+        "minutes": 99.5,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 116,
+        "reports": 1
+      }
+    },
+    "Bishoujo Senshi Sailor Moon R|SNES|1993": {
+      "title": "Bishoujo Senshi Sailor Moon R",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/1076",
+      "sourceId": "1076",
+      "main": {
+        "minutes": 43.5,
+        "reports": 2
+      }
+    },
+    "The Addams Family|SNES|1992": {
+      "title": "The Addams Family",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/9744",
+      "sourceId": "9744",
+      "main": {
+        "minutes": 180.0,
+        "reports": 2
+      }
+    },
+    "The Addams Family: Pugsley's Scavenger Hunt|SNES|1993": {
+      "title": "The Addams Family: Pugsley's Scavenger Hunt",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/9745",
+      "sourceId": "9745",
+      "main": {
+        "minutes": 210,
+        "reports": 1
+      }
+    },
+    "Totally Spies!|GBA|2005": {
+      "title": "Totally Spies!",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/20976",
+      "sourceId": "20976",
+      "main": {
+        "minutes": 81,
+        "reports": 1
+      }
+    },
+    "Cartoon Network Speedway|GBA|2003": {
+      "title": "Cartoon Network Speedway",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/22400",
+      "sourceId": "22400",
+      "main": {
+        "minutes": 56,
+        "reports": 1
+      }
+    },
+    "Cartoon Network Racing|DS|2006": {
+      "title": "Cartoon Network Racing",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/12064",
+      "sourceId": "12064",
+      "complete": {
+        "minutes": 892,
+        "reports": 1
+      }
+    },
+    "Ed, Edd n Eddy: The Mis-Edventures|GBA|2005": {
+      "title": "Ed, Edd n Eddy: The Mis-Edventures",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/3056",
+      "sourceId": "3056",
+      "main": {
+        "minutes": 180,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 300,
+        "reports": 1
+      }
+    },
+    "Ben 10: Alien Force|PSP|2008": {
+      "title": "Ben 10: Alien Force",
+      "platform": "PSP",
+      "sourceUrl": "https://howlongtobeat.com/game/14162",
+      "sourceId": "14162",
+      "main": {
+        "minutes": 334,
+        "reports": 1
+      }
+    },
+    "Ben 10: Protector of Earth|PSP|2007": {
+      "title": "Ben 10: Protector of Earth",
+      "platform": "PSP",
+      "sourceUrl": "https://howlongtobeat.com/game/13889",
+      "sourceId": "13889",
+      "main": {
+        "minutes": 300,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 260,
+        "reports": 1
+      }
+    },
+    "LEGO Star Wars: The Video Game|GBA|2005": {
+      "title": "LEGO Star Wars: The Video Game",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5264",
+      "sourceId": "5264",
+      "main": {
+        "minutes": 360,
+        "reports": 3
+      }
+    },
+    "LEGO Indiana Jones: The Original Adventures|PSP|2008": {
+      "title": "LEGO Indiana Jones: The Original Adventures",
+      "platform": "PSP",
+      "sourceUrl": "https://howlongtobeat.com/game/5253",
+      "sourceId": "5253",
+      "main": {
+        "minutes": 600,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 2138,
+        "reports": 3
+      }
+    },
+    "Super Star Wars|SNES|1992": {
+      "title": "Super Star Wars",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/9453",
+      "sourceId": "9453",
+      "main": {
+        "minutes": 120,
+        "reports": 11
+      },
+      "complete": {
+        "minutes": 240.0,
+        "reports": 2
+      }
+    },
+    "Super Star Wars: The Empire Strikes Back|SNES|1993": {
+      "title": "Super Star Wars: The Empire Strikes Back",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/9455",
+      "sourceId": "9455",
+      "main": {
+        "minutes": 255.0,
+        "reports": 8
+      },
+      "complete": {
+        "minutes": 300,
+        "reports": 1
+      }
+    },
+    "Super Star Wars: Return of the Jedi|SNES|1994": {
+      "title": "Super Star Wars: Return of the Jedi",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/9454",
+      "sourceId": "9454",
+      "main": {
+        "minutes": 180,
+        "reports": 5
+      },
+      "complete": {
+        "minutes": 480,
+        "reports": 1
+      }
+    },
+    "Star Wars: Rogue Squadron|N64|1998": {
+      "title": "Star Wars: Rogue Squadron",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/9122",
+      "sourceId": "9122",
+      "main": {
+        "minutes": 568.5,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 810.0,
+        "reports": 2
+      }
+    },
+    "Battletoads|NES|1991": {
+      "title": "Battletoads",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/957",
+      "sourceId": "957",
+      "main": {
+        "minutes": 240,
+        "reports": 11
+      },
+      "complete": {
+        "minutes": 241.5,
+        "reports": 2
+      }
+    },
+    "Battletoads in Battlemaniacs|SNES|1993": {
+      "title": "Battletoads in Battlemaniacs",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/960",
+      "sourceId": "960",
+      "main": {
+        "minutes": 64,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 88.5,
+        "reports": 2
+      }
+    },
+    "Looney Tunes|GB|1992": {
+      "title": "Looney Tunes",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/5368",
+      "sourceId": "5368",
+      "main": {
+        "minutes": 89,
+        "reports": 3
+      }
+    },
+    "Looney Tunes: Sheep Raider|PS1|2001": {
+      "title": "Looney Tunes: Sheep Raider",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/8396",
+      "sourceId": "8396",
+      "main": {
+        "minutes": 589,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 1020,
+        "reports": 1
+      }
+    },
+    "Animaniacs|SNES|1994": {
+      "title": "Animaniacs",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/478",
+      "sourceId": "478",
+      "main": {
+        "minutes": 121.5,
+        "reports": 4
+      },
+      "complete": {
+        "minutes": 157.5,
+        "reports": 4
+      }
+    },
+    "Animaniacs|Genesis|1994": {
+      "title": "Animaniacs",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/478",
+      "sourceId": "478",
+      "main": {
+        "minutes": 120,
+        "reports": 3
+      }
+    },
+    "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe|GBA|2005": {
+      "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/9806",
+      "sourceId": "9806",
+      "main": {
+        "minutes": 153.0,
+        "reports": 4
+      }
+    },
+    "Jackie Chan Stuntmaster|PS1|2000": {
+      "title": "Jackie Chan Stuntmaster",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/4785",
+      "sourceId": "4785",
+      "main": {
+        "minutes": 240.0,
+        "reports": 8
+      }
+    },
+    "Jackie Chan Adventures: Legend of the Dark Hand|GBA|2001": {
+      "title": "Jackie Chan Adventures: Legend of the Dark Hand",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/4783",
+      "sourceId": "4783",
+      "main": {
+        "minutes": 171,
+        "reports": 3
+      }
+    },
+    "Max Payne|GBA|2003": {
+      "title": "Max Payne",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/5736",
+      "sourceId": "5736",
+      "main": {
+        "minutes": 282,
+        "reports": 1
+      }
+    },
+    "Need for Speed III: Hot Pursuit|PS1|1998": {
+      "title": "Need for Speed III: Hot Pursuit",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/6470",
+      "sourceId": "6470",
+      "main": {
+        "minutes": 660,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 1080,
+        "reports": 1
+      }
+    },
+    "Disney's Tarzan|PS1|1999": {
+      "title": "Disney's Tarzan",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/2623",
+      "sourceId": "2623",
+      "main": {
+        "minutes": 360,
+        "reports": 7
+      },
+      "complete": {
+        "minutes": 91,
+        "reports": 1
+      }
+    },
+    "Disney's Tarzan|N64|2000": {
+      "title": "Disney's Tarzan",
+      "platform": "N64",
+      "sourceUrl": "https://howlongtobeat.com/game/2623",
+      "sourceId": "2623",
+      "main": {
+        "minutes": 250,
+        "reports": 1
+      },
+      "complete": {
+        "minutes": 197.0,
+        "reports": 2
+      }
+    },
+    "Disney's Hercules Action Game|PS1|1997": {
+      "title": "Disney's Hercules Action Game",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/2615",
+      "sourceId": "2615",
+      "main": {
+        "minutes": 180,
+        "reports": 17
+      },
+      "complete": {
+        "minutes": 360.0,
+        "reports": 4
+      }
+    },
+    "Disney's Pocahontas|Genesis|1996": {
+      "title": "Disney's Pocahontas",
+      "platform": "Genesis",
+      "sourceUrl": "https://howlongtobeat.com/game/2622",
+      "sourceId": "2622",
+      "complete": {
+        "minutes": 90.0,
+        "reports": 2
+      }
+    },
+    "Kirby's Pinball Land|GB|1993": {
+      "title": "Kirby's Pinball Land",
+      "platform": "GB",
+      "sourceUrl": "https://howlongtobeat.com/game/5081",
+      "sourceId": "5081",
+      "main": {
+        "minutes": 70,
+        "reports": 5
+      },
+      "complete": {
+        "minutes": 124,
+        "reports": 3
+      }
+    },
+    "SimCity|SNES|1991": {
+      "title": "SimCity",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/8555",
+      "sourceId": "8555",
+      "main": {
+        "minutes": 900,
+        "reports": 3
+      },
+      "complete": {
+        "minutes": 1200,
+        "reports": 1
+      }
+    },
+    "Harvest Moon: Friends of Mineral Town|GBA|2003": {
+      "title": "Harvest Moon: Friends of Mineral Town",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/4337",
+      "sourceId": "4337",
+      "main": {
+        "minutes": 1372.0,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 5480.0,
+        "reports": 2
+      }
+    },
+    "Rhythm Tengoku|GBA|2006": {
+      "title": "Rhythm Tengoku",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/7792",
+      "sourceId": "7792",
+      "main": {
+        "minutes": 246.5,
+        "reports": 6
+      },
+      "complete": {
+        "minutes": 509.5,
+        "reports": 2
+      }
+    },
+    "PaRappa the Rapper|PS1|1996": {
+      "title": "PaRappa the Rapper",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/6922",
+      "sourceId": "6922",
+      "main": {
+        "minutes": 82.5,
+        "reports": 22
+      },
+      "complete": {
+        "minutes": 171.5,
+        "reports": 2
+      }
+    },
+    "Tenchu: Stealth Assassins|PS1|1998": {
+      "title": "Tenchu: Stealth Assassins",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/9691",
+      "sourceId": "9691",
+      "main": {
+        "minutes": 512,
+        "reports": 15
+      },
+      "complete": {
+        "minutes": 955,
+        "reports": 1
+      }
+    },
+    "ActRaiser|SNES|1990": {
+      "title": "ActRaiser",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/191",
+      "sourceId": "191",
+      "main": {
+        "minutes": 286,
+        "reports": 35
+      },
+      "complete": {
+        "minutes": 326.0,
+        "reports": 18
+      }
+    },
+    "Harvest Moon: Back to Nature|PS1|1999": {
+      "title": "Harvest Moon: Back to Nature",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/4335",
+      "sourceId": "4335",
+      "main": {
+        "minutes": 5400.0,
+        "reports": 2
+      },
+      "complete": {
+        "minutes": 10500.0,
+        "reports": 2
+      }
+    },
+    "Animal Crossing: Wild World|DS|2005": {
+      "title": "Animal Crossing: Wild World",
+      "platform": "DS",
+      "sourceUrl": "https://howlongtobeat.com/game/475",
+      "sourceId": "475",
+      "main": {
+        "minutes": 4200,
+        "reports": 17
+      },
+      "complete": {
+        "minutes": 19200,
+        "reports": 5
+      }
+    },
+    "Shining Soul II|GBA|2004": {
+      "title": "Shining Soul II",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/8460",
+      "sourceId": "8460",
+      "main": {
+        "minutes": 494,
+        "reports": 3
+      }
+    },
+    "Advance Wars|GBA|2001": {
+      "title": "Advance Wars",
+      "platform": "GBA",
+      "sourceUrl": "https://howlongtobeat.com/game/204",
+      "sourceId": "204",
+      "main": {
+        "minutes": 840.0,
+        "reports": 36
+      }
+    },
+    "Final Fantasy Tactics|PS1|1997": {
+      "title": "Final Fantasy Tactics",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/3511",
+      "sourceId": "3511",
+      "main": {
+        "minutes": 2280,
+        "reports": 51
+      },
+      "complete": {
+        "minutes": 5138,
+        "reports": 25
+      }
+    },
+    "Silent Hill|PS1|1999": {
+      "title": "Silent Hill",
+      "platform": "PS1",
+      "sourceUrl": "https://howlongtobeat.com/game/8522",
+      "sourceId": "8522",
+      "main": {
+        "minutes": 420.0,
+        "reports": 170
+      },
+      "complete": {
+        "minutes": 802.5,
+        "reports": 10
+      }
+    },
+    "Pac-Man|NES|1984": {
+      "title": "Pac-Man",
+      "platform": "NES",
+      "sourceUrl": "https://howlongtobeat.com/game/6856",
+      "sourceId": "6856",
+      "main": {
+        "minutes": 30,
+        "reports": 3
+      }
+    },
+    "Harvest Moon|SNES|1996": {
+      "title": "Harvest Moon",
+      "platform": "SNES",
+      "sourceUrl": "https://howlongtobeat.com/game/4318",
+      "sourceId": "4318",
+      "main": {
+        "minutes": 1500,
+        "reports": 5
+      },
+      "complete": {
+        "minutes": 1063,
+        "reports": 1
+      }
+    }
+  }
+}

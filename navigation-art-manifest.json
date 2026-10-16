@@ -1,0 +1,14 @@
+{
+  "mode": "built-in image_gen",
+  "source": "exec-8baba52b-f31c-4986-8820-4b960eedc8c8.png",
+  "prompt": "Use case: stylized-concept. One production sprite atlas for a retro videogame website navigation. Wide 3:2 canvas, EXACTLY SIX equally sized separate small icons in a precise 3 column by 2 row grid, each centered inside its own equal square cell with wide transparent padding, no touching. Top row left to right: a mint jigsaw puzzle piece for Genres; a small lavender stack of three game cartridges for Franchises; a gold target with one turquoise arrow for Play Next. Bottom row left to right: a cream and plum game controller for Consoles; a muted gold trophy for Trophy Room; a lavender ivory six-sided die for Random Game. Unified authentic SNES 16-bit pixel art with visible square clusters, limited plum cream muted gold lavender cyan palette, dark plum crisp outlines, simple readable silhouettes. Flat front view, modest highlights, no realism, no soft shading, no glow. NO text, NO letters, NO numbers outside die dots, NO button backgrounds, NO panels, actual transparent alpha background. Equal visual size and detail across all six sprites. This is one coherent sprite-sheet asset.",
+  "cleanupPrompt": "Use case: background-extraction. Remove ONLY the entire dark purple gradient background and soft halos from this six-icon sprite atlas and replace it with actual transparent alpha. Preserve all six pixel-art icons, precise grid positions, their shapes, colors and dark plum crisp pixel outlines. No additions, no redesign, no resizing. Keep inside die pips and controller holes dark; do not make dark object pixels transparent. Edges crisp stepped pixel art, zero glow and no shadow outside the solid silhouettes.",
+  "assets": [
+    "outputs/brand-art/nav-genres-v1.webp",
+    "outputs/brand-art/nav-franchises-v1.webp",
+    "outputs/brand-art/nav-next-v1.webp",
+    "outputs/brand-art/nav-consoles-v1.webp",
+    "outputs/brand-art/nav-trophies-v1.webp",
+    "outputs/brand-art/nav-random-v1.webp"
+  ]
+}

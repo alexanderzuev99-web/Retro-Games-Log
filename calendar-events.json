@@ -185,5 +185,107 @@
       "Max Payne",
       "The Invincible Iron Man"
     ]
+  },
+  {
+    "key": "sega-day",
+    "name": "SEGA Day",
+    "kind": "anniversary",
+    "anniversaryLabel": "SEGA origins",
+    "month": 6,
+    "day": 3,
+    "firstYear": 1960,
+    "source": "https://www.sega.jp/special/60th/en/gosega/",
+    "platforms": [
+      "Genesis",
+      "Sega CD",
+      "32X",
+      "Dreamcast"
+    ],
+    "excludeFranchises": [
+      "Sonic"
+    ],
+    "colors": [
+      "#90cbe4",
+      "#202c49"
+    ],
+    "music": "summer",
+    "desc": "День SEGA: разные миры Genesis, Sega CD, 32X и Dreamcast. Приключения Соника оставлены для отдельного дня рождения серии.",
+    "art": "Blue and violet retro console room, cartridge and disc systems, calm blue pixel rails with cartridge and controller corners",
+    "image": "season-backgrounds/sega-day-v3.webp",
+    "frame": "brand-art/sega-day-frame.webp"
+  },
+  {
+    "key": "famicom-day",
+    "name": "Famicom Birthday",
+    "kind": "anniversary",
+    "anniversaryLabel": "Console debut",
+    "month": 7,
+    "day": 15,
+    "firstYear": 1983,
+    "source": "https://www.nintendo.com/jp/famicom/history/index.html",
+    "platforms": [
+      "NES",
+      "Famicom",
+      "Arcade / NES"
+    ],
+    "colors": [
+      "#ead5ac",
+      "#4a2834"
+    ],
+    "music": "summer",
+    "desc": "День рождения Famicom: классика NES и Famicom, знакомые картриджи и приключения 8-битной эпохи.",
+    "art": "Cream and red Famicom gaming room, pixel television and cartridges, cream red rails with controller corners",
+    "image": "season-backgrounds/famicom-day-v3.webp",
+    "frame": "brand-art/famicom-day-frame.webp"
+  },
+  {
+    "key": "spyro-day",
+    "name": "Spyro Anniversary",
+    "kind": "anniversary",
+    "anniversaryLabel": "Series debut",
+    "month": 9,
+    "day": 9,
+    "firstYear": 1998,
+    "source": "https://blog.playstation.com/?p=384113",
+    "franchise": "Spyro",
+    "colors": [
+      "#ccafe9",
+      "#372b4b"
+    ],
+    "music": "fantasy",
+    "desc": "День рождения Spyro: драконьи миры, самоцветы и сказочные приключения серии.",
+    "art": "Bright fantasy floating islands purple dragon world, gems, lavender and gold rails",
+    "image": "season-backgrounds/spyro-day-v3.webp",
+    "frame": "brand-art/spyro-day-frame.webp"
+  },
+  {
+    "key": "movie-night",
+    "name": "Movie Night",
+    "kind": "theme",
+    "month": 10,
+    "weekend": 1,
+    "franchises": [
+      "Harry Potter",
+      "Shrek",
+      "Disney",
+      "Pixar",
+      "The Lord of the Rings",
+      "The Chronicles of Narnia",
+      "Ice Age",
+      "Hercules",
+      "Tarzan",
+      "Pocahontas",
+      "The Nightmare Before Christmas",
+      "Monster House"
+    ],
+    "colors": [
+      "#d6b790",
+      "#3d2736"
+    ],
+    "music": "autumn",
+    "desc": "Вечер кино: игровые истории по фильмам и мультфильмам — от Гарри Поттера и Шрека до Disney и Pixar.",
+    "art": "Cozy red velvet retro cinema with projector beam, film reels, gold brass and burgundy pixel rails",
+    "image": "season-backgrounds/movie-night-v3.webp",
+    "frame": "brand-art/movie-night-frame.webp"
   }
 ]

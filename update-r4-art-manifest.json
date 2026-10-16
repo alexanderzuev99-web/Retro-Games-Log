@@ -1,0 +1,98 @@
+{
+  "mode": "built-in image_gen",
+  "eventArt": [
+    {
+      "key": "sega-day",
+      "kind": "scene",
+      "prompt": "Use case: stylized-concept. Asset: wide website header background, aspect 3:1. Original 16-bit console pixel art with crisp visible square pixels, limited harmonious palette, no realism, no antialiasing. SEGA Day: a nostalgic early-1990s gaming room celebrating the whole SEGA console family: black 16-bit console with cartridges on left, disc console on right, small arcade cabinets and electric blue geometric signage without lettering. Blue/cyan highlights, muted violet shadows, inviting daylight. Detailed environment but calm low contrast central space for overlaid website text. No Sonic character, no rings, no text, no logos, no border. Wide full-bleed panoramic composition.",
+      "source": "exec-4817ae20-170a-483e-9fc4-deb4a5edd919.png",
+      "asset": "season-backgrounds/sega-day-v3.webp"
+    },
+    {
+      "key": "sega-day",
+      "kind": "frame",
+      "prompt": "Use case: stylized-concept. Production 16-bit pixel-art square decorative UI FRAME ONLY, actual transparent alpha centre and outside. SEGA console celebration: restrained cobalt and muted cyan parallel metal rails with dark plum outlines, tiny pixel cartridge at upper right and black 3-button gamepad at lower left. Thin continuous straight rails on all four sides, equal inset, square corners. Frame near outer edges, large empty centre. Middle 50% of each rail absolutely plain uninterrupted repeatable bars, no diagonal edges, no text, no glow, no shadow. Authentic SNES chunky square pixel clusters and limited palette; not realistic. Small corner objects each within outer 20% of square.",
+      "source": "exec-e4bcf176-2535-4bbf-9830-3c1f65c67e0b.png",
+      "asset": "brand-art/sega-day-frame.webp"
+    },
+    {
+      "key": "famicom-day",
+      "kind": "scene",
+      "prompt": "Use case: stylized-concept. Website panoramic background 3:1 aspect. Warm bright Japanese 1980s gaming room with cream-and-red Famicom console and wired controllers on low table at left, CRT television and neatly arranged cartridges at right. Sunlit window and cream wood, playful red accents. No characters. Authentic SNES 16-bit pixel art, crisp deliberately visible square pixel clusters, limited rich palette, layered game scenery, no realism, no smooth 3D, no painterly textures. Polished thematic scene with quiet central area for overlaid interface. Moderate contrast and clear cheerful color. Full bleed, no border, no text, no logos, no watermark.",
+      "source": "exec-7db34351-0754-4e00-a343-49c18236198e.png",
+      "asset": "season-backgrounds/famicom-day-v3.webp"
+    },
+    {
+      "key": "spyro-day",
+      "kind": "scene",
+      "prompt": "Use case: stylized-concept. Website panoramic background 3:1 aspect. Epic cheerful Spyro-inspired fantasy floating islands with purple dragon silhouette on far-left ledge, bright violet and golden castle towers, emerald grass, crystal gems at right, blue sky and sunlit clouds. Recognizable dragon-world adventure, no text. Authentic SNES 16-bit pixel art, crisp deliberately visible square pixel clusters, limited rich palette, layered game scenery, no realism, no smooth 3D, no painterly textures. Polished thematic scene with quiet central area for overlaid interface. Moderate contrast and clear cheerful color. Full bleed, no border, no text, no logos, no watermark.",
+      "source": "exec-c9422935-459b-45fb-8c00-ba54fd357376.png",
+      "asset": "season-backgrounds/spyro-day-v3.webp"
+    },
+    {
+      "key": "movie-night",
+      "kind": "scene",
+      "prompt": "Use case: stylized-concept. Website panoramic background 3:1 aspect. Cozy retro movie theater, deep burgundy velvet seats along the bottom, brass wall sconces, vintage film projector and stacked reels at far right projecting warm light toward a blank silver screen at left. Amber lighting with plum shadows. No people, no film images. Authentic SNES 16-bit pixel art, crisp deliberately visible square pixel clusters, limited rich palette, layered game scenery, no realism, no smooth 3D, no painterly textures. Polished thematic scene with quiet central area for overlaid interface. Moderate contrast and clear cheerful color. Full bleed, no border, no text, no logos, no watermark.",
+      "source": "exec-16c8f876-3f48-4c5f-b0fe-9efa32e13c2b.png",
+      "asset": "season-backgrounds/movie-night-v3.webp"
+    },
+    {
+      "key": "famicom-day",
+      "kind": "frame",
+      "prompt": "Use case: stylized-concept. Production square decorative UI FRAME ONLY. Warm cream and brick-red parallel rails with dark plum outline, one small cream-red Famicom controller at upper right and a small cartridge at lower left. Authentic 16-bit pixel art, crisp chunky square clusters and limited colors. Actual transparent alpha empty centre and outside. Frame near edges, thin straight continuous rails on all four sides, equal inset, right-angle corners. Middle 50% of each edge must be plain repeatable uninterrupted rails. Small corner objects each within outer 20% of square, very broad empty center. No realism, no glow, no text, no lettering, no drop shadow.",
+      "source": "exec-44cba7fd-14c7-47ba-8cfe-4c6215b8d27a.png",
+      "asset": "brand-art/famicom-day-frame.webp"
+    },
+    {
+      "key": "spyro-day",
+      "kind": "frame",
+      "prompt": "Use case: stylized-concept. Production square decorative UI FRAME ONLY. Lavender purple and muted gold parallel rails with dark plum outline, a small purple dragon head at upper right and three colored gems at lower left. Authentic 16-bit pixel art, crisp chunky square clusters and limited colors. Actual transparent alpha empty centre and outside. Frame near edges, thin straight continuous rails on all four sides, equal inset, right-angle corners. Middle 50% of each edge must be plain repeatable uninterrupted rails. Small corner objects each within outer 20% of square, very broad empty center. No realism, no glow, no text, no lettering, no drop shadow.",
+      "source": "exec-77fa8b67-c180-41da-8458-8012c439c0c4.png",
+      "asset": "brand-art/spyro-day-frame.webp"
+    },
+    {
+      "key": "movie-night",
+      "kind": "frame",
+      "prompt": "Use case: stylized-concept. Production square decorative UI FRAME ONLY. Burgundy velvet and antique brass gold parallel rails with dark plum outline, small movie projector at upper right and a film reel at lower left. Authentic 16-bit pixel art, crisp chunky square clusters and limited colors. Actual transparent alpha empty centre and outside. Frame near edges, thin straight continuous rails on all four sides, equal inset, right-angle corners. Middle 50% of each edge must be plain repeatable uninterrupted rails. Small corner objects each within outer 20% of square, very broad empty center. No realism, no glow, no text, no lettering, no drop shadow.",
+      "source": "exec-e4ca8f26-a152-463c-a414-1eacf795b3f6.png",
+      "asset": "brand-art/movie-night-frame.webp"
+    }
+  ],
+  "seasonRevisions": [
+    {
+      "prompt": "Use case: precise-object-edit. Edit the supplied winter decorative 16-bit pixel-art frame. Preserve ALL snowflakes, snowy fir tree, snowman, corner ornaments, square layout, transparent alpha centre and outside, pixel-art style. Repair only the rail defects: remove the stray saturated electric-blue solid strips along the left inner edge and bottom inner edge. All four sides should be consistent thin silver icy-lavender parallel rails, dark plum outline, no chunky blue bands. Remove the little mid-edge diamond ornaments at the exact top centre, bottom centre and sides centres so the middle 50 percent of each straight rail is completely plain and can repeat seamlessly on a responsive website. Keep corner decorations exactly as drawn. No new objects, no text, no glow, no realism. Transparent background.",
+      "key": "snow",
+      "kind": "frame",
+      "source": "exec-428ae3b3-9895-48e8-ba44-659206270ecd.png",
+      "asset": "outputs/brand-art/snow-frame-v2.webp"
+    },
+    {
+      "key": "green",
+      "prompt": "Use case: stylized-concept. Production website header panoramic background, wide 3:1. March spring landscape, fresh green meadows, blossoming orchard buds, a small stream with stepping stones, distant wooded hills, soft clear blue sky with white clouds, warm pale sunlight breaking through. Early spring with lively greens and subtle yellow flowers. No snow, no gloomy fog, no sunset. Authentic SNES 16-bit pixel-art, clearly visible square pixel clusters, limited harmonious palette, layered game landscape. Beautiful coherent scenery with quiet centre for overlaid UI, detailed environment edges. More luminous and joyful spring atmosphere but restrained moderate contrast for dark plum website. No photorealism, no painterly smoothing, no 3D, no text, no border, no characters.",
+      "kind": "scene",
+      "source": "exec-ca5190ce-0759-4531-82e9-dc09396a3beb.png",
+      "asset": "outputs/season-backgrounds/green-v4.webp"
+    },
+    {
+      "key": "hunt",
+      "prompt": "Use case: stylized-concept. Production website header panoramic background, wide 3:1. April spring landscape, fresh rain has passed, vivid new leaves, tulips and daffodils near a garden path, reflective puddles and small wooden bridge, bright cloud openings and gentle sunbeams. Cheerful fresh blue mint green and soft peach flowers; spring showers balanced with hopeful daylight, no gray gloom, no storm, no Easter eggs. Authentic SNES 16-bit pixel-art, clearly visible square pixel clusters, limited harmonious palette, layered game landscape. Beautiful coherent scenery with quiet centre for overlaid UI, detailed environment edges. More luminous and joyful spring atmosphere but restrained moderate contrast for dark plum website. No photorealism, no painterly smoothing, no 3D, no text, no border, no characters.",
+      "kind": "scene",
+      "source": "exec-24459cbb-48c5-4f3a-bd23-83734052aa83.png",
+      "asset": "outputs/season-backgrounds/hunt-v4.webp"
+    }
+  ],
+  "navigation": {
+    "mode": "built-in image_gen",
+    "source": "exec-8baba52b-f31c-4986-8820-4b960eedc8c8.png",
+    "prompt": "Use case: stylized-concept. One production sprite atlas for a retro videogame website navigation. Wide 3:2 canvas, EXACTLY SIX equally sized separate small icons in a precise 3 column by 2 row grid, each centered inside its own equal square cell with wide transparent padding, no touching. Top row left to right: a mint jigsaw puzzle piece for Genres; a small lavender stack of three game cartridges for Franchises; a gold target with one turquoise arrow for Play Next. Bottom row left to right: a cream and plum game controller for Consoles; a muted gold trophy for Trophy Room; a lavender ivory six-sided die for Random Game. Unified authentic SNES 16-bit pixel art with visible square clusters, limited plum cream muted gold lavender cyan palette, dark plum crisp outlines, simple readable silhouettes. Flat front view, modest highlights, no realism, no soft shading, no glow. NO text, NO letters, NO numbers outside die dots, NO button backgrounds, NO panels, actual transparent alpha background. Equal visual size and detail across all six sprites. This is one coherent sprite-sheet asset.",
+    "cleanupPrompt": "Use case: background-extraction. Remove ONLY the entire dark purple gradient background and soft halos from this six-icon sprite atlas and replace it with actual transparent alpha. Preserve all six pixel-art icons, precise grid positions, their shapes, colors and dark plum crisp pixel outlines. No additions, no redesign, no resizing. Keep inside die pips and controller holes dark; do not make dark object pixels transparent. Edges crisp stepped pixel art, zero glow and no shadow outside the solid silhouettes.",
+    "assets": [
+      "outputs/brand-art/nav-genres-v1.webp",
+      "outputs/brand-art/nav-franchises-v1.webp",
+      "outputs/brand-art/nav-next-v1.webp",
+      "outputs/brand-art/nav-consoles-v1.webp",
+      "outputs/brand-art/nav-trophies-v1.webp",
+      "outputs/brand-art/nav-random-v1.webp"
+    ]
+  }
+}

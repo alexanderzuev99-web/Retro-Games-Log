@@ -1,0 +1,26 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "prompt": "Use case: precise-object-edit. Edit the supplied winter decorative 16-bit pixel-art frame. Preserve ALL snowflakes, snowy fir tree, snowman, corner ornaments, square layout, transparent alpha centre and outside, pixel-art style. Repair only the rail defects: remove the stray saturated electric-blue solid strips along the left inner edge and bottom inner edge. All four sides should be consistent thin silver icy-lavender parallel rails, dark plum outline, no chunky blue bands. Remove the little mid-edge diamond ornaments at the exact top centre, bottom centre and sides centres so the middle 50 percent of each straight rail is completely plain and can repeat seamlessly on a responsive website. Keep corner decorations exactly as drawn. No new objects, no text, no glow, no realism. Transparent background.",
+      "key": "snow",
+      "kind": "frame",
+      "source": "exec-428ae3b3-9895-48e8-ba44-659206270ecd.png",
+      "asset": "outputs/brand-art/snow-frame-v2.webp"
+    },
+    {
+      "key": "green",
+      "prompt": "Use case: stylized-concept. Production website header panoramic background, wide 3:1. March spring landscape, fresh green meadows, blossoming orchard buds, a small stream with stepping stones, distant wooded hills, soft clear blue sky with white clouds, warm pale sunlight breaking through. Early spring with lively greens and subtle yellow flowers. No snow, no gloomy fog, no sunset. Authentic SNES 16-bit pixel-art, clearly visible square pixel clusters, limited harmonious palette, layered game landscape. Beautiful coherent scenery with quiet centre for overlaid UI, detailed environment edges. More luminous and joyful spring atmosphere but restrained moderate contrast for dark plum website. No photorealism, no painterly smoothing, no 3D, no text, no border, no characters.",
+      "kind": "scene",
+      "source": "exec-ca5190ce-0759-4531-82e9-dc09396a3beb.png",
+      "asset": "outputs/season-backgrounds/green-v4.webp"
+    },
+    {
+      "key": "hunt",
+      "prompt": "Use case: stylized-concept. Production website header panoramic background, wide 3:1. April spring landscape, fresh rain has passed, vivid new leaves, tulips and daffodils near a garden path, reflective puddles and small wooden bridge, bright cloud openings and gentle sunbeams. Cheerful fresh blue mint green and soft peach flowers; spring showers balanced with hopeful daylight, no gray gloom, no storm, no Easter eggs. Authentic SNES 16-bit pixel-art, clearly visible square pixel clusters, limited harmonious palette, layered game landscape. Beautiful coherent scenery with quiet centre for overlaid UI, detailed environment edges. More luminous and joyful spring atmosphere but restrained moderate contrast for dark plum website. No photorealism, no painterly smoothing, no 3D, no text, no border, no characters.",
+      "kind": "scene",
+      "source": "exec-24459cbb-48c5-4f3a-bd23-83734052aa83.png",
+      "asset": "outputs/season-backgrounds/hunt-v4.webp"
+    }
+  ]
+}
