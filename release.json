@@ -1,22 +1,9 @@
 {
-  "version": "v9.9.5 BETA 3",
-  "build": "2026-10-16-r6",
+  "version": "v9.9.6 BETA 3",
+  "build": "2026-10-16-r7",
   "date": "2026-10-16",
   "previewState": "ready",
   "changes": [
-    "Added English translations for catalog descriptions, library notes, genres, consoles and seasonal collections while preserving original library records and saved progress.",
-    "Compacted the game diary and aligned play status with the rating source; priority chips now open the matching catalog filter.",
-    "Rebuilt seasonal frame rendering with fixed ornaments and identical source-pixel stripes on all four sides. Added a new Halloween frame and a brighter PlayStation scene.",
-    "Redrew both decorative achievement frames with restrained plum casing, a counter trophy at the upper right and gold trim on the latest achievement; simplified individual trophy cards and refreshed statistics, Trophy Room, Player Profile and the console timeline.",
-    "Aligned Now Playing and Play Next covers, titles, metadata, ratings and footers on the same grid; both footer controls now share identical computed styles.",
-    "Corrected the cassette label symmetry, display and Play/Pause artwork; added a cassette icon with blank physical buttons, preserved cream label and no lettering or control symbols; moved the four autumn horror tracks into Halloween.",
-    "Added Current year to the calendar, centered close controls and enabled backdrop dismissal for dialogs.",
-    "Removed obsolete decorative resources and their page references, and made final styles available before the first paint.",
-    "Added irregular flicker bursts and occasional 1–8 second outages with recovery flashes for the complete G and A in GAME, keeping ME steady; made ON AIR depend on a successful current-session RetroAchievements response and replaced recurring flicker with a brief fluorescent-lamp burst only when switching on or off, plus a quiet electrical click after user interaction; expanded the achievement counter to five digits.",
-    "Added the supplied Leaves, Slow down and Downpour tracks to the calendar-based Autumn playlist, separate from Halloween.",
-    "Redrew the complete cassette in matching Full, Mini and blank-key Icon sizes, with centered solid black pixel-grid symbols matching the user reference, a latched Shuffle state, vertical mode indicators and a turquoise physical side switch; the display shows playlist - track on one line with time below and opens playlist selection and All tracks playback.",
-    "Extended the achievement-counter sweep to the frame edges with occasional paired scan bands.",
-    "Gave saved Seasonal discoveries a dedicated pixel-art cover; verified that this group restores explicitly adopted seasonal games without adding recommendations automatically.",
-    "Prepared 106 original track titles and generation prompts covering 44 seasonal and event collections."
+    "Aligned every cassette control symbol to the measured center of its illustrated key in Mini and Full. Pressed keys retain their original bounds; the compact Icon keeps blank keys."
   ]
 }
