@@ -1,5 +1,25 @@
 [
   {
+    "version": "v9.9.3 BETA 3",
+    "build": "2026-10-15-r4",
+    "date": "2026-10-15",
+    "previewState": "ready",
+    "changes": [
+      "Added SEGA Day (June 3), Famicom Birthday (July 15), Spyro Anniversary (September 9) and Movie Night (first October weekend), with original pixel scenes, frames and matching recommendations.",
+      "Kept SEGA Day focused on other SEGA games, with Sonic retaining its own birthday collection. Fixed anniversary priority when a library weekend overlaps.",
+      "Replaced navigation emojis with six generated pixel-art icons, enlarged labels and aligned the controls across desktop, tablet and mobile layouts.",
+      "Moved Games before Franchises and styled the seasonal horizontal scrollbar to match the plum interface.",
+      "Redrew the March and April scenery with fresh spring daylight, and repaired the December frame rails and unwanted colored bands.",
+      "Added changelog history with older/newer navigation, including published versions and the current local build.",
+      "Added platform-specific Main story and 100% completion estimates from archived community reports for 314 catalog games, with sample counts and source links. Missing reports remain explicitly unavailable.",
+      "Placed game-length estimates alongside the score and progress controls, and standardized the franchise navigation button.",
+      "Combined backup, sync, appearance and removed games into one tabbed profile panel; removed the separate footer entry."
+    ],
+    "published": true,
+    "commit": "2d3dfa2d07ed7fc3f3f1a24e1d63e2aeabc68ce2",
+    "pagesRun": "https://github.com/alexanderzuev99-web/Retro-Games-Log/actions/runs/38830700416"
+  },
+  {
     "version": "v9.9.2 BETA 3",
     "build": "2026-10-15-r3",
     "date": "2026-10-15",
