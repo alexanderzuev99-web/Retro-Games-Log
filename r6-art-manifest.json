@@ -1,0 +1,56 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "key": "ps1-background",
+      "source": "exec-3b7537b5-24e5-41ce-b03b-5a2b7be773a2.png",
+      "prompt": "Wide 3:1 authentic 16-bit pixel scene for PlayStation Day: cheerful sunlit 1990s room, grey disc console and wired controller, jewel cases, memory cards, colorful CRT at left, lavender walls and cream sunlight, quiet center, no text, no realism, no sunset.",
+      "asset": "season-backgrounds/ps1-r6.webp"
+    },
+    {
+      "key": "halloween-frame",
+      "source": "exec-0092a005-b010-4837-b36b-c0d312b4220d.png",
+      "prompt": "Square 16-bit Halloween UI frame, transparent center, continuous purple amber rails, castle moon pumpkin in upper-right quarter, tiny bats and pumpkins in other corners, empty central 65%, crisp chunky square pixels, no gradients, no text, nine-slice-safe edge centers.",
+      "asset": "brand-art/halloween-frame-r6.webp"
+    },
+    {
+      "key": "achievement-counter-frame-r6",
+      "source": "exec-e7488a99-1e24-4b2c-a7ec-b042450886d2.png",
+      "asset": "brand-art/achievement-counter-frame-r6.webp",
+      "prompt": "Restrained 16-bit decorative HUD frame in plum and antique brass; transparent center; counter trophy at upper right; latest achievement has gold trim."
+    },
+    {
+      "key": "achievement-latest-frame-r6",
+      "source": "exec-60a79a92-5794-46ea-9840-b74e7ef5b163.png",
+      "asset": "brand-art/achievement-latest-frame-r6.webp",
+      "prompt": "Edit to rich antique gold rails and corners, preserving silhouette, thickness, transparent center and pixel art."
+    },
+    {
+      "key": "cassette-play-pause",
+      "source": "exec-349f9410-c500-488b-b646-b586fb735909.png",
+      "assets": [
+        "radio-art/cassette-play-r6.webp",
+        "radio-art/cassette-pause-r6.webp"
+      ],
+      "prompt": "Two quiet lavender pixel-art beveled button states, centered dark plum play triangle and pause bars, matching cassette casing."
+    },
+    {
+      "key": "cassette-hardware",
+      "asset": "radio-art/cassette-hardware-r6.webp",
+      "source": "exec-7d172f3e-ff9b-4f46-ad97-eea1c5a59aab.png",
+      "mode": "built-in image_gen"
+    },
+    {
+      "key": "cassette-hardware-icon",
+      "asset": "radio-art/cassette-hardware-icon-r6.webp",
+      "source": "exec-7d172f3e-ff9b-4f46-ad97-eea1c5a59aab.png",
+      "mode": "built-in image_gen"
+    },
+    {
+      "key": "seasonal-discoveries",
+      "asset": "franchise-art/seasonal-discoveries-r6.webp",
+      "source": "exec-fbfdcea3-513e-4207-b29b-414d41ea8dc8.png",
+      "mode": "built-in image_gen"
+    }
+  ]
+}

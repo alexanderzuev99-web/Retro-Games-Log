@@ -1,0 +1,536 @@
+{
+  "events": 44,
+  "tracks": 106,
+  "proposals": [
+    {
+      "event": "Spring",
+      "title": "First Buds",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: fresh, hopeful, soft pulse bells and plucked synths. Tempo: 78–100 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Spring",
+      "title": "Rain on the Cartridge",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: fresh, hopeful, soft pulse bells and plucked synths. Tempo: 78–100 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Spring",
+      "title": "Meadow Save Point",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: fresh, hopeful, soft pulse bells and plucked synths. Tempo: 78–100 BPM. A quieter evening variation, sparse percussion and warm sustained chords."
+    },
+    {
+      "event": "Spring",
+      "title": "After the April Shower",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: fresh, hopeful, soft pulse bells and plucked synths. Tempo: 78–100 BPM. A cheerful finale variation, sparkling accents and a concise recurring hook."
+    },
+    {
+      "event": "Summer",
+      "title": "Sunscreen and Save Files",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: sunny, carefree, bright FM marimba, syncopated bass and light chip drums. Tempo: 110–128 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Summer",
+      "title": "Ocean Cartridge",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: sunny, carefree, bright FM marimba, syncopated bass and light chip drums. Tempo: 110–128 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Summer",
+      "title": "Lemonade Level",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: sunny, carefree, bright FM marimba, syncopated bass and light chip drums. Tempo: 110–128 BPM. A quieter evening variation, sparse percussion and warm sustained chords."
+    },
+    {
+      "event": "Summer",
+      "title": "Blue Sky Bonus",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: sunny, carefree, bright FM marimba, syncopated bass and light chip drums. Tempo: 110–128 BPM. A cheerful finale variation, sparkling accents and a concise recurring hook."
+    },
+    {
+      "event": "Autumn",
+      "title": "Amber Window",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm and reflective, mellow FM electric piano, round bass and gentle brushed chip drums; no horror sounds. Tempo: 78–96 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Autumn",
+      "title": "Leaves at the Checkpoint",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm and reflective, mellow FM electric piano, round bass and gentle brushed chip drums; no horror sounds. Tempo: 78–96 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Autumn",
+      "title": "Library Lamplight",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm and reflective, mellow FM electric piano, round bass and gentle brushed chip drums; no horror sounds. Tempo: 78–96 BPM. A quieter evening variation, sparse percussion and warm sustained chords."
+    },
+    {
+      "event": "Autumn",
+      "title": "October Tea",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm and reflective, mellow FM electric piano, round bass and gentle brushed chip drums; no horror sounds. Tempo: 78–96 BPM. A cheerful finale variation, sparkling accents and a concise recurring hook."
+    },
+    {
+      "event": "Winter",
+      "title": "Snow Beyond the Screen",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: quiet, snowy, soft triangle bells, warm sustained synth chords and gentle bass. Tempo: 70–92 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Winter",
+      "title": "Frosted Save Point",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: quiet, snowy, soft triangle bells, warm sustained synth chords and gentle bass. Tempo: 70–92 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Winter",
+      "title": "Midnight Mittens",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: quiet, snowy, soft triangle bells, warm sustained synth chords and gentle bass. Tempo: 70–92 BPM. A quieter evening variation, sparse percussion and warm sustained chords."
+    },
+    {
+      "event": "Winter",
+      "title": "Snowflake Cartridge",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: quiet, snowy, soft triangle bells, warm sustained synth chords and gentle bass. Tempo: 70–92 BPM. A cheerful finale variation, sparkling accents and a concise recurring hook."
+    },
+    {
+      "event": "January — New Journeys",
+      "title": "Blank Map Morning",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: hopeful overworld exploration, clean square-wave lead, rising arpeggios. Tempo: 100–112 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "January — New Journeys",
+      "title": "A New Save Slot",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: hopeful overworld exploration, clean square-wave lead, rising arpeggios. Tempo: 100–112 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "February — Quiet Evenings",
+      "title": "Quiet Window Seat",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: intimate cozy room, soft FM keys, gentle bass, no romantic fanfare. Tempo: 72–86 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "February — Quiet Evenings",
+      "title": "Two Cups of Cocoa",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: intimate cozy room, soft FM keys, gentle bass, no romantic fanfare. Tempo: 72–86 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "March — Green Worlds",
+      "title": "Mint Leaf Trail",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: fresh spring forest, airy chip flute and plucked square waves. Tempo: 96–110 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "March — Green Worlds",
+      "title": "Sun Through New Leaves",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: fresh spring forest, airy chip flute and plucked square waves. Tempo: 96–110 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "April — Rain & Renewal",
+      "title": "Puddles in Bloom",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: refreshing spring rain, bright droplets on FM bells, gentle hopeful chords. Tempo: 84–100 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "April — Rain & Renewal",
+      "title": "Cloudbreak Path",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: refreshing spring rain, bright droplets on FM bells, gentle hopeful chords. Tempo: 84–100 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "May — Spring Adventure",
+      "title": "Butterfly Overworld",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: flower meadows, playful flute-like chip lead and bouncing bass. Tempo: 108–120 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "May — Spring Adventure",
+      "title": "Blossom Footpath",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: flower meadows, playful flute-like chip lead and bouncing bass. Tempo: 108–120 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "June — Start of Summer",
+      "title": "First Day Off",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: open skies and a holiday departure, bright FM guitar-like plucks. Tempo: 112–124 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "June — Start of Summer",
+      "title": "Sunlit Departure",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: open skies and a holiday departure, bright FM guitar-like plucks. Tempo: 112–124 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "July — Beach Week",
+      "title": "Tide Pool Tokens",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: tropical coast, FM steel-drum-like lead and rolling bass. Tempo: 114–128 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "July — Beach Week",
+      "title": "Boardwalk Checkpoint",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: tropical coast, FM steel-drum-like lead and rolling bass. Tempo: 114–128 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "August — Arcade Summer",
+      "title": "Neon Ice Cream",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: cheerful arcade floor, punchy FM bass, colorful synth brass and crisp drums. Tempo: 120–136 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "August — Arcade Summer",
+      "title": "One More Summer Credit",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: cheerful arcade floor, punchy FM bass, colorful synth brass and crisp drums. Tempo: 120–136 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "September — Back to School",
+      "title": "Notebook Overworld",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: sunny early-autumn morning, soft keys, bright plucks, gentle forward motion. Tempo: 94–108 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "September — Back to School",
+      "title": "Golden Recess",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: sunny early-autumn morning, soft keys, bright plucks, gentle forward motion. Tempo: 94–108 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "October — Twilight Trails",
+      "title": "Lantern Path at Dusk",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: mysterious but cozy autumn forest, mellow flute and subtle percussion; no Halloween clichés. Tempo: 82–98 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "October — Twilight Trails",
+      "title": "Russet Forest Map",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: mysterious but cozy autumn forest, mellow flute and subtle percussion; no Halloween clichés. Tempo: 82–98 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "November — Cozy Autumn",
+      "title": "Wool Blanket Save",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm room and late-autumn rain, soft FM piano and low rounded bass. Tempo: 74–88 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "November — Cozy Autumn",
+      "title": "Rain Behind the Bookshelf",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm room and late-autumn rain, soft FM piano and low rounded bass. Tempo: 74–88 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "December — Winter Cozy",
+      "title": "Warm Window in Snow",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: peaceful snowy evening, warm chords and delicate bells; not a Christmas jingle. Tempo: 72–90 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "December — Winter Cozy",
+      "title": "Frost on the Memory Card",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: peaceful snowy evening, warm chords and delicate bells; not a Christmas jingle. Tempo: 72–90 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "New Year",
+      "title": "Midnight Continue",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: festive colorful fireworks, sparkling arpeggios, bright synth brass and celebratory drums. Tempo: 116–132 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "New Year",
+      "title": "Fireworks Over the Arcade",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: festive colorful fireworks, sparkling arpeggios, bright synth brass and celebratory drums. Tempo: 116–132 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "New Year",
+      "title": "Confetti High Score",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: festive colorful fireworks, sparkling arpeggios, bright synth brass and celebratory drums. Tempo: 116–132 BPM. A quieter evening variation, sparse percussion and warm sustained chords."
+    },
+    {
+      "event": "New Year",
+      "title": "First Sunrise Save",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: festive colorful fireworks, sparkling arpeggios, bright synth brass and celebratory drums. Tempo: 116–132 BPM. A cheerful finale variation, sparkling accents and a concise recurring hook."
+    },
+    {
+      "event": "Valentine — Player Two",
+      "title": "Player Two Connected",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm playful affection, two alternating chip leads answering each other, gentle bass. Tempo: 86–108 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Valentine — Player Two",
+      "title": "Co-op Heartbeat",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm playful affection, two alternating chip leads answering each other, gentle bass. Tempo: 86–108 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Valentine — Player Two",
+      "title": "Shared Save Point",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm playful affection, two alternating chip leads answering each other, gentle bass. Tempo: 86–108 BPM. A quieter evening variation, sparse percussion and warm sustained chords."
+    },
+    {
+      "event": "Valentine — Player Two",
+      "title": "Two Controllers One Sofa",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm playful affection, two alternating chip leads answering each other, gentle bass. Tempo: 86–108 BPM. A cheerful finale variation, sparkling accents and a concise recurring hook."
+    },
+    {
+      "event": "Easter",
+      "title": "Pastel Egg Quest",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: cheerful spring egg hunt, hopping bass, bell lead and playful flute-like synth. Tempo: 100–118 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Easter",
+      "title": "Bunny Bonus Trail",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: cheerful spring egg hunt, hopping bass, bell lead and playful flute-like synth. Tempo: 100–118 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Easter",
+      "title": "Spring Basket Stage",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: cheerful spring egg hunt, hopping bass, bell lead and playful flute-like synth. Tempo: 100–118 BPM. A quieter evening variation, sparse percussion and warm sustained chords."
+    },
+    {
+      "event": "Easter",
+      "title": "Hidden Egg Fanfare",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: cheerful spring egg hunt, hopping bass, bell lead and playful flute-like synth. Tempo: 100–118 BPM. A cheerful finale variation, sparkling accents and a concise recurring hook."
+    },
+    {
+      "event": "Halloween",
+      "title": "Pumpkin Portal",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: playful spooky adventure, hollow chip organ, minor-key arpeggios and light rhythmic drums; not harsh horror. Tempo: 96–116 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Halloween",
+      "title": "Moonlit Bonus Room",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: playful spooky adventure, hollow chip organ, minor-key arpeggios and light rhythmic drums; not harsh horror. Tempo: 96–116 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Halloween",
+      "title": "Ghosts in the Cartridge",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: playful spooky adventure, hollow chip organ, minor-key arpeggios and light rhythmic drums; not harsh horror. Tempo: 96–116 BPM. A quieter evening variation, sparse percussion and warm sustained chords."
+    },
+    {
+      "event": "Halloween",
+      "title": "Candles at Continue",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: playful spooky adventure, hollow chip organ, minor-key arpeggios and light rhythmic drums; not harsh horror. Tempo: 96–116 BPM. A cheerful finale variation, sparkling accents and a concise recurring hook."
+    },
+    {
+      "event": "Christmas",
+      "title": "Fireplace Save Point",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm festive fireplace mood, FM bells, gentle chip strings and soft bass; original melody only. Tempo: 78–108 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Christmas",
+      "title": "Starlight Stocking",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm festive fireplace mood, FM bells, gentle chip strings and soft bass; original melody only. Tempo: 78–108 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Christmas",
+      "title": "Gingerbread Cartridge",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm festive fireplace mood, FM bells, gentle chip strings and soft bass; original melody only. Tempo: 78–108 BPM. A quieter evening variation, sparse percussion and warm sustained chords."
+    },
+    {
+      "event": "Christmas",
+      "title": "Snow Outside Cocoa Inside",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: warm festive fireplace mood, FM bells, gentle chip strings and soft bass; original melody only. Tempo: 78–108 BPM. A cheerful finale variation, sparkling accents and a concise recurring hook."
+    },
+    {
+      "event": "Star Wars Day",
+      "title": "Starlight Squadron",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: epic original space battle, chip orchestral brass, driving ostinato, laser-like percussion; no film melody. Tempo: 112–132 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Star Wars Day",
+      "title": "Beyond the Nebula",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: epic original space battle, chip orchestral brass, driving ostinato, laser-like percussion; no film melody. Tempo: 112–132 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Friday the 13th",
+      "title": "Cabin Checkpoint",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: restrained suspense, sparse pulsing bass, distant bell tones, tense pauses. Tempo: 78–100 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Friday the 13th",
+      "title": "Thirteen Empty Corridors",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: restrained suspense, sparse pulsing bass, distant bell tones, tense pauses. Tempo: 78–100 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Mario Day",
+      "title": "Mushroom Morning Route",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: sunny platform adventure, bouncing bass, playful square lead, bright short phrases; no existing game melody. Tempo: 116–132 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Mario Day",
+      "title": "Pipeyard Parade",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: sunny platform adventure, bouncing bass, playful square lead, bright short phrases; no existing game melody. Tempo: 116–132 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Pokémon Day",
+      "title": "Pocket Meadow Journey",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: friendly creature-collecting journey, bright chip flute, upbeat town feel; original melody. Tempo: 104–120 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Pokémon Day",
+      "title": "Badge Case Sunrise",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: friendly creature-collecting journey, bright chip flute, upbeat town feel; original melody. Tempo: 104–120 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Metroidvania Week",
+      "title": "Unmapped Passage",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: mysterious exploration, cavern echoes expressed with short synth tails, pulsing low bass. Tempo: 92–112 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Metroidvania Week",
+      "title": "Ability Gate",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: mysterious exploration, cavern echoes expressed with short synth tails, pulsing low bass. Tempo: 92–112 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Handheld Week",
+      "title": "Pocket Battery Glow",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: compact portable adventure, crisp limited-channel square and triangle waves. Tempo: 100–116 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Handheld Week",
+      "title": "Bus Ride Bonus Stage",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: compact portable adventure, crisp limited-channel square and triangle waves. Tempo: 100–116 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Boss Rush Weekend",
+      "title": "Final Health Bar",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: urgent boss battle, FM guitar-like lead, driving bass and rapid chip drums. Tempo: 138–158 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Boss Rush Weekend",
+      "title": "Phase Two Voltage",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: urgent boss battle, FM guitar-like lead, driving bass and rapid chip drums. Tempo: 138–158 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Cozy Rainy Day",
+      "title": "Rain on the CRT",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: calm rainy room, soft synth piano, minimal percussion and warm chords. Tempo: 68–84 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Cozy Rainy Day",
+      "title": "Tea at the Save Point",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: calm rainy room, soft synth piano, minimal percussion and warm chords. Tempo: 68–84 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Detective Week",
+      "title": "Clue in Room 215",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: curious noir mystery, plucked bass, restrained FM electric piano and gentle syncopation. Tempo: 82–100 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Detective Week",
+      "title": "Midnight Case File",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: curious noir mystery, plucked bass, restrained FM electric piano and gentle syncopation. Tempo: 82–100 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "PS1 Weekend",
+      "title": "Polygon Sunshine",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: colorful 1990s polygon adventure, melodic FM synths, playful bass and early game-console energy. Tempo: 108–126 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "PS1 Weekend",
+      "title": "Memory Card Holiday",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: colorful 1990s polygon adventure, melodic FM synths, playful bass and early game-console energy. Tempo: 108–126 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Zelda Anniversary",
+      "title": "Courage Beyond the Grove",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: heroic forest exploration, original chip flute melody and warm arpeggiated accompaniment; no Zelda tune. Tempo: 96–116 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Zelda Anniversary",
+      "title": "Ruins Under Green Light",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: heroic forest exploration, original chip flute melody and warm arpeggiated accompaniment; no Zelda tune. Tempo: 96–116 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Kirby Birthday",
+      "title": "Star Pillow Parade",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: gentle pastel dream world, rounded chip lead, playful bells and buoyant rhythm; original melody. Tempo: 110–126 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Kirby Birthday",
+      "title": "Dream Meadow Picnic",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: gentle pastel dream world, rounded chip lead, playful bells and buoyant rhythm; original melody. Tempo: 110–126 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Sonic Birthday",
+      "title": "Ringlight Coast",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: fast bright coastal platform adventure, lively FM bass and punchy drums; no Sonic tune. Tempo: 132–152 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Sonic Birthday",
+      "title": "Emerald Velocity",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: fast bright coastal platform adventure, lively FM bass and punchy drums; no Sonic tune. Tempo: 132–152 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Metroid Anniversary",
+      "title": "Chozo Echo Chamber",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: alien ruins, spacious dark FM ambience, restrained electronic pulse and exploratory melody. Tempo: 88–110 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Metroid Anniversary",
+      "title": "Orange Suit Horizon",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: alien ruins, spacious dark FM ambience, restrained electronic pulse and exploratory melody. Tempo: 88–110 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Castlevania Anniversary",
+      "title": "Moonlit Stairway",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: gothic action, baroque chip organ, driving bass and dramatic original melody. Tempo: 118–138 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Castlevania Anniversary",
+      "title": "Candles Against the Night",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: gothic action, baroque chip organ, driving bass and dramatic original melody. Tempo: 118–138 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "SEGA Day",
+      "title": "Blue Console Boulevard",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: varied lively 16-bit arcade energy, punchy FM bass, bright brass, not exclusively Sonic. Tempo: 118–138 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "SEGA Day",
+      "title": "FM Festival Circuit",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: varied lively 16-bit arcade energy, punchy FM bass, bright brass, not exclusively Sonic. Tempo: 118–138 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Famicom Birthday",
+      "title": "Red and Cream Morning",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: joyful 8-bit roots arranged as a 16-bit celebration, clean square lead and triangle bass. Tempo: 108–124 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Famicom Birthday",
+      "title": "Cartridge Birthday Party",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: joyful 8-bit roots arranged as a 16-bit celebration, clean square lead and triangle bass. Tempo: 108–124 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Spyro Anniversary",
+      "title": "Gem Valley Glide",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: colorful fantasy gliding, playful synth percussion, airy lead and bright bass. Tempo: 104–122 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Spyro Anniversary",
+      "title": "Dragon Courtyard Dawn",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: colorful fantasy gliding, playful synth percussion, airy lead and bright bass. Tempo: 104–122 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Pinball Weekend",
+      "title": "Flipper Fever Circuit",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: kinetic arcade pinball, bouncy bass, bell-like score accents and playful chip lead. Tempo: 120–138 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Pinball Weekend",
+      "title": "Multiball After Midnight",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: kinetic arcade pinball, bouncy bass, bell-like score accents and playful chip lead. Tempo: 120–138 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Harvest Days",
+      "title": "Turnip Field Morning",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: peaceful farm morning, warm plucked synth, gentle flute and soft country-like chip rhythm. Tempo: 78–98 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Harvest Days",
+      "title": "Barnlight Evening",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: peaceful farm morning, warm plucked synth, gentle flute and soft country-like chip rhythm. Tempo: 78–98 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Puzzle Picnic",
+      "title": "Checkered Blanket Combo",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: friendly concentration, interlocking melodic chip motifs and light percussion. Tempo: 92–110 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Puzzle Picnic",
+      "title": "Lemonade Logic",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: friendly concentration, interlocking melodic chip motifs and light percussion. Tempo: 92–110 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Hidden Gems",
+      "title": "Forgotten Cartridge Glow",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: curious discovery, unusual but accessible chord colors, shimmering chip arpeggios. Tempo: 96–116 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Hidden Gems",
+      "title": "Secret Shelf Discovery",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: curious discovery, unusual but accessible chord colors, shimmering chip arpeggios. Tempo: 96–116 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    },
+    {
+      "event": "Movie Night",
+      "title": "Velvet Seat Save",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: cozy miniature cinema, soft synth strings, warm keys and an original cinematic theme. Tempo: 86–108 BPM. Melodic exploration arrangement, a clear memorable theme and moderate energy."
+    },
+    {
+      "event": "Movie Night",
+      "title": "Projector Beam Adventure",
+      "prompt": "Original instrumental 16-bit video-game soundtrack. Crisp square-wave melody, FM synthesis, triangle bass and restrained chip percussion; authentic early-1990s console palette. No vocals, spoken words, modern EDM drops or borrowed melodies. Clear melody, comfortable background-listening volume, 2–3 minutes, short intro, seamless loop ending, no long fade-out. Theme: cozy miniature cinema, soft synth strings, warm keys and an original cinematic theme. Tempo: 86–108 BPM. More rhythmic arrangement, syncopated bass and a contrasting answering melody."
+    }
+  ]
+}

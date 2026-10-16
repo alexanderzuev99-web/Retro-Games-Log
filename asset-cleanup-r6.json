@@ -1,0 +1,92 @@
+{
+  "removed": [
+    {
+      "path": "brand-art/on-air-wide-v2.webp",
+      "bytes": 31102
+    },
+    {
+      "path": "brand-art/README.md",
+      "bytes": 81
+    },
+    {
+      "path": "brand-art/press-start-red-v2.webp",
+      "bytes": 36610
+    },
+    {
+      "path": "radio-art/cassette-16bit.webp",
+      "bytes": 67712
+    },
+    {
+      "path": "radio-art/cassette-shuffle-v7.webp",
+      "bytes": 82202
+    },
+    {
+      "path": "radio-art/cassette-pause-v6.webp",
+      "bytes": 77690
+    },
+    {
+      "path": "radio-art/cassette-key-v2.webp",
+      "bytes": 3300
+    },
+    {
+      "path": "season-backgrounds/hunt-v3.webp",
+      "bytes": 522146
+    },
+    {
+      "path": "season-backgrounds/green-v3.webp",
+      "bytes": 482524
+    },
+    {
+      "path": "season-backgrounds/ps1-v3.webp",
+      "bytes": 364168
+    },
+    {
+      "path": "sticker-art/pinball-table.webp",
+      "bytes": 24530
+    },
+    {
+      "path": "brand-art/achievement-gold-frame-v3.webp",
+      "bytes": 24482
+    },
+    {
+      "path": "brand-art/console-green-frame-v2.webp",
+      "bytes": 19776
+    },
+    {
+      "path": "brand-art/console-gold-frame-v2.webp",
+      "bytes": 20386
+    },
+    {
+      "path": "radio-art/cassette-integrated-v4.webp",
+      "bytes": 73294
+    },
+    {
+      "path": "radio-art/cassette-icon-r6.webp",
+      "bytes": 10362
+    },
+    {
+      "path": "radio-art/cassette-symmetric-r6.webp",
+      "bytes": 75366
+    },
+    {
+      "path": "radio-art/cassette-play-r6.webp",
+      "bytes": 1196
+    },
+    {
+      "path": "radio-art/cassette-icon-blank-r6.webp",
+      "bytes": 11518
+    },
+    {
+      "path": "radio-art/cassette-pause-r6.webp",
+      "bytes": 1192
+    },
+    {
+      "path": "radio-art/cassette-shell-r6.webp",
+      "bytes": 66394
+    }
+  ],
+  "removedBytes": 1996031,
+  "keptCount": 133,
+  "inlineBytesRemoved": 40921,
+  "method": "Removed only generated decoration files with no literal or current dynamic asset reference. Catalog artwork, audio, user data and source originals were not changed."
+}

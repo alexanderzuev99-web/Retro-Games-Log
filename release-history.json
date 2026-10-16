@@ -1,5 +1,23 @@
 [
   {
+    "version": "v9.9.4 BETA 3",
+    "build": "2026-10-15-r5",
+    "date": "2026-10-15",
+    "previewState": "ready",
+    "changes": [
+      "Redrew Retrovision as an original pixel-art television, with a responsive video screen and controls fitted to the illustrated cabinet.",
+      "Unified year, platform, priority and genre chips on game pages, and replaced plain rating-source links with readable reference panels.",
+      "Removed the running achievement-frame spark. The stationary star now appears at different frame positions every 7–12 seconds.",
+      "Added ON AIR ignition flicker and varied bursts 40–50 seconds apart, plus individual flickering title letters. Animation preferences remain respected.",
+      "Moved seasonal Add/Restore actions into compact cover-corner plus buttons, revealed on hover or keyboard focus and visible on touch layouts.",
+      "Reorganized catalog search and filters, placing Reset filters in the same control row on wider screens and using a compact mobile grid.",
+      "Made the similar-genre labels beneath Play Next open the corresponding genre page."
+    ],
+    "published": true,
+    "commit": "1925b30b3bdd18389c6b691a9d55eb337d8a5fba",
+    "pagesRun": "https://github.com/alexanderzuev99-web/Retro-Games-Log/actions/runs/38833880969"
+  },
+  {
     "version": "v9.9.3 BETA 3",
     "build": "2026-10-15-r4",
     "date": "2026-10-15",
