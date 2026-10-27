@@ -260,6 +260,20 @@
       "width": 512,
       "height": 512,
       "bytes": 89250
+    },
+    {
+      "key": "alex-birthday",
+      "kind": "scene",
+      "source": "exec-479f3190-6a44-4dfe-a5fc-31be50a5728a.png",
+      "asset": "season-backgrounds/alex-birthday-v3.webp",
+      "prompt": "Original crisp 16-bit pixel-art birthday gaming room at a sunny early-summer evening, plum/cyan/gold palette, quiet central space, cake with one candle, three gifts, generic controller, balloons and bunting at edges; no people, words, numbers or logos; 3:1 panorama."
+    },
+    {
+      "key": "alex-birthday",
+      "kind": "frame",
+      "source": "exec-16cbca91-f7b6-4a5c-84a0-d27321997d63.png",
+      "asset": "brand-art/alex-birthday-frame.webp",
+      "prompt": "Original transparent square 16-bit pixel-art birthday frame; pinball frame used only as construction/style reference. Thin connected plum rails, cream/gold/cyan highlights, small cake and two gifts upper-right, gold corner stars and two balloons lower-left; middle half of each rail plain for exact tiling, clean silhouettes, no confetti noise, text, numbers or logos."
     }
   ]
 }
