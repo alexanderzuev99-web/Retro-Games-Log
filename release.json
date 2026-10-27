@@ -1,9 +1,16 @@
 {
-  "version": "v9.9.6 BETA 3",
-  "build": "2026-10-16-r7b",
-  "date": "2026-10-16",
+  "version": "v9.9.7 BETA 3",
+  "build": "2026-10-27-r1",
+  "date": "2026-10-27",
   "previewState": "ready",
   "changes": [
-    "Aligned every cassette control symbol to the measured center of its illustrated key in Mini and Full. Pressed keys retain their original bounds; the compact Icon keeps blank keys."
+    "Redrew Puzzle, Board Game and Rhythm genre covers and preserved complete artwork while reducing images.",
+    "Kept the back-to-top artwork visible after touch, hover and press; fixed narrow-phone catalog overflow and clearance around the floating radio.",
+    "Preserved explicit personal play status and progress when RetroAchievements data arrives; restored manual status control.",
+    "Used one visible-record list for catalog and statistics, excluding cloud-removed adoptions and duplicate stable identities.",
+    "Excluded the selected game from its own Play Next recommendations and accepted both RetroAchievements Genesis console labels.",
+    "Added Russian genre search aliases and an explicit matching placeholder for the unavailable Half-Blood Prince PSP cover.",
+    "Added Alex’s Birthday on June 4 every year, with favorites, cheerful games, original pixel scenery and a matching frame.",
+    "ON AIR now also requires a fresh server completion timestamp matching the validated account snapshot."
   ]
 }

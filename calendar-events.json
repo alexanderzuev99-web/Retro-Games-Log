@@ -287,5 +287,36 @@
     "art": "Cozy red velvet retro cinema with projector beam, film reels, gold brass and burgundy pixel rails",
     "image": "season-backgrounds/movie-night-v3.webp",
     "frame": "brand-art/movie-night-frame.webp"
+  },
+  {
+    "key": "alex-birthday",
+    "name": "Alex's Birthday",
+    "heading": "Alex's Birthday — Player 1 Day",
+    "month": 6,
+    "day": 4,
+    "kind": "personal",
+    "priority": 100,
+    "icon": "🎂",
+    "colors": [
+      "#f0c580",
+      "#29203b"
+    ],
+    "image": "season-backgrounds/alex-birthday-v3.webp",
+    "frame": "brand-art/alex-birthday-frame.webp",
+    "music": "fantasy",
+    "desc": "Player 1 gets the spotlight: favorite games, colorful adventures, kart races and party games for a birthday gaming session.",
+    "picks": [
+      "rgl-004-000",
+      "rgl-006-001",
+      "rgl-007-005",
+      "rgl-007-009",
+      "rgl-007-010",
+      "rgl-007-012",
+      "rgl-007-019",
+      "rgl-007-022",
+      "rgl-011-003",
+      "ra-708"
+    ],
+    "includeFavorites": true
   }
 ]
