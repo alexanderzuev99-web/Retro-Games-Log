@@ -1,0 +1,100 @@
+{
+  "mode": "built-in image_gen",
+  "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-914662d0-95fc-4ebe-9107-98b37a3685d4.png",
+  "style": "16-bit pixel-art stickers",
+  "preparation": "Individually verified object bounds; crop and nearest-neighbor resize only; original alpha preserved.",
+  "assets": [
+    "pumpkin",
+    "christmas",
+    "snowflake",
+    "heart",
+    "egg",
+    "rocket",
+    "cake",
+    "clover",
+    "leaf",
+    "sun",
+    "detective",
+    "boss",
+    "handheld",
+    "joystick",
+    "book",
+    "rain",
+    "puzzle",
+    "chest",
+    "gem",
+    "star",
+    "sword",
+    "ring",
+    "turnip",
+    "famicom",
+    "zelda",
+    "castle",
+    "metroid",
+    "dragon",
+    "cinema",
+    "pinball"
+  ],
+  "corrected": [
+    "pinball",
+    "ring",
+    "zelda",
+    "puzzle"
+  ],
+  "bannerSource": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-befb165b-587e-41a2-810a-909bbdfaa97c.png",
+  "offTextures": {
+    "brand-art/epic-neon-ga-off-r2.webp": {
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-befb165b-587e-41a2-810a-909bbdfaa97c.png",
+      "specification": "Preserve the original sign; draw only G and A in GAME as unlit charcoal pixel segments; M and E remain lit."
+    },
+    "brand-art/press-start-off-r2.webp": {
+      "source": "exec-8f552534-98c5-4881-ad5a-64386bacbcfa.png",
+      "specification": "Keep the original solid block pixel font, arrow and stepped border; draw dark unlit amber-gray fills, no pipes or clamps."
+    },
+    "radio-art/mode-lamp-off-r3.webp": {
+      "source": "exec-a2c2be2a-321c-4094-a452-76eaa26b944a.png",
+      "specification": "Three individually drawn unlit smoky-glass indicator lenses; crop one housing from the generated cassette texture."
+    }
+  },
+  "normalizedPrompt": "Transparent 6 by 5 atlas of 30 separate 16-bit pixel stickers with plum outlines and cream rims; pumpkin, Christmas tree, snowflake, heart, Easter egg, rocket, cake, clover, maple leaf, sun, magnifier, boss helmet, handheld, joystick, book, rain cloud, connected jigsaw, chest, gem, shooting star, sword, simple golden Sonic ring, turnip, Famicom, blue Hylian shield with red bird and gold Triforce, castle, alien planet, dragon egg, cinema and pinball. Corrected ring, shield, jigsaw geometry and chrome pinball with tapered flippers.",
+  "cropReview": "audit/sticker-crop-review.json",
+  "newAssets": {
+    "cocoa": {
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-27b680eb-843d-4609-a602-3046932b369e.png",
+      "crop": [
+        235,
+        93,
+        1174,
+        1131
+      ]
+    },
+    "movie": {
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-ffd0123c-1d05-41c3-a35c-07692ca06757.png",
+      "crop": [
+        290,
+        55,
+        1269,
+        955
+      ]
+    },
+    "hidden": {
+      "source": "/Users/alexander/.codex/generated_images/01a1147c-ed07-7ad3-8d3c-a6b415a7e795/exec-683226ab-7a8f-4496-aad2-6b65fc2ef900.png",
+      "crop": [
+        253,
+        217,
+        1091,
+        1043
+      ]
+    },
+    "blossom": {
+      "source": "exec-d3355dc4-ca2c-4884-82a0-863e37faee0e.png",
+      "crop": [
+        352,
+        201,
+        1230,
+        848
+      ],
+      "theme": "bloom / May"
+    }
+  }
+}
