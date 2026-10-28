@@ -1,16 +1,26 @@
 {
-  "version": "v9.9.7 BETA 3",
-  "build": "2026-10-27-r1",
-  "date": "2026-10-27",
+  "version": "v9.9.8 BETA 3",
+  "build": "2026-10-28-r7",
+  "date": "2026-10-28",
   "previewState": "ready",
   "changes": [
-    "Redrew Puzzle, Board Game and Rhythm genre covers and preserved complete artwork while reducing images.",
-    "Kept the back-to-top artwork visible after touch, hover and press; fixed narrow-phone catalog overflow and clearance around the floating radio.",
-    "Preserved explicit personal play status and progress when RetroAchievements data arrives; restored manual status control.",
-    "Used one visible-record list for catalog and statistics, excluding cloud-removed adoptions and duplicate stable identities.",
-    "Excluded the selected game from its own Play Next recommendations and accepted both RetroAchievements Genesis console labels.",
-    "Added Russian genre search aliases and an explicit matching placeholder for the unavailable Half-Blood Prince PSP cover.",
-    "Added Alex’s Birthday on June 4 every year, with favorites, cheerful games, original pixel scenery and a matching frame.",
-    "ON AIR now also requires a fresh server completion timestamp matching the validated account snapshot."
+    "Added coordinated palettes for all 41 monthly and event themes, including distinct hardware colors that remain active while keys are pressed or Shuffle is enabled.",
+    "Redrew the cassette in approved slate-blue and silver materials, with integrated metal fasteners, muted lilac reel rings and an orange side switch; retained the approved black pixel symbols.",
+    "Matched keycaps and inactive mode indicators to the new artwork grid, removed stale whole-device sprite backgrounds and kept pressed controls inside their original bounds.",
+    "Added larger event stickers with varied central, left-edge and upper-left placements; cleaned neighboring atlas fragments and gave May, February, Movie Night and Hidden Gems distinct artwork.",
+    "Cassette titles show playlist and song together, scroll with a two-second pause per loop, and keep the timer on a separate fixed row.",
+    "Restored original Press Start timing using drawn off textures; clipped the counter scan inside its frame and placed Press Start before On Air.",
+    "Birthday collections contain only saved favorites and update immediately without fixed fallback games.",
+    "The event list starts collapsed while all twelve calendar months remain independently visible; the music library has compact pixel controls.",
+    "Rebuilt the CRT television as one texture with crochet lace, a silver rabbit-ear antenna, a larger screen and a restyled game label below it.",
+    "Reorganized Player Profile metrics and library settings while preserving existing actions and personal data.",
+    "Aligned all 48 frame definitions to integer cuts, normalized four non-grid source dimensions, prevented legacy dimensions from overwriting current ones and redrew Christmas rails without burgundy bands.",
+    "Seasonal back-to-top skins recolor the original bitmap without changing its shape or responsive dimensions.",
+    "Refined the TV label inset with a local pixel font and centered pixel close icon; removed the two decorative yellow knob indicators.",
+    "Covered complete cassette key bevels and rebuilt the full three-slot indicator strip from the current case crop. Movie Night now uses all safe sticker zones.",
+    "Centered cassette glyphs in Full and Mini, including pause and latched Shuffle, without moving or enlarging the keys.",
+    "Added an illustrated pixel catalog console, matching Reset filters and By calendar buttons, and a compact neutral collection picker.",
+    "Seasonal scrollbars reveal only while in use; removed the redundant home recommendation caption and fixed both home preview cards to the same cover geometry.",
+    "Removed transparent margins from Back to top, matched its clickable pixel outline and fixed a shared 48\u00d746 size in every theme and viewport without pressed movement."
   ]
 }
