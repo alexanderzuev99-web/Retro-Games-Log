@@ -1,9 +1,10 @@
 {
   "version": "Beta 4",
-  "build": "2026-10-30-r3",
+  "build": "2026-10-30-r4",
   "date": "2026-10-30",
   "previewState": "ready",
   "changes": [
+    "Restored the approved slate-blue radio with two light reel rings in Full, Mini and Icon, retaining the enlarged orange side switch and existing player behavior.",
     "Gave Friday the 13th its own hockey-mask sticker and steel frame, distinct from Castlevania and Halloween.",
     "Separated seven duplicated event-sticker pairs: April/rainy days, June/July, October/November, December/New Year, January/Kirby, Friday/Castlevania and Metroidvania/Metroid.",
     "Retained other artwork and checked all 41 active themes for unique visible frame and sticker assets.",
