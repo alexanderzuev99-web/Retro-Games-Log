@@ -1,0 +1,158 @@
+{
+  "photos": [
+    {
+      "src": "console-photos/nes-original-alpha.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Nes-transparent-improved.png",
+      "label": "Nintendo Entertainment System (NES-001, North America)",
+      "author": "Eike / Ubcule",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "changes": "Existing Ubcule background removal, synthetic shadow and color correction; original transparent PNG, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/nes-controller.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Nintendo-Entertainment-System-NES-Controller-FL.png",
+      "label": "Original NES controller (NES-004)",
+      "author": "Evan-Amos / Gunnar.offel",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/snes.png",
+      "source": "https://commons.wikimedia.org/wiki/File:SNES-Mod1-Console-Set.png",
+      "label": "Super Nintendo Entertainment System (SNS-001, North America) with controller",
+      "author": "Evan-Amos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/snes-console.png",
+      "source": "https://commons.wikimedia.org/wiki/File:SNES_US.png",
+      "label": "Super Nintendo Entertainment System (SNS-001, North America)",
+      "author": "Evan-Amos / Pixel8",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/gb.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Game-Boy-Original.png",
+      "label": "Original Game Boy (DMG-01)",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/gbc.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Nintendo-Game-Boy-Color-FL.png",
+      "label": "Game Boy Color (CGB-001)",
+      "author": "Evan-Amos / Gunnar.offel",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/gba.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Nintendo-Game-Boy-Advance-Black-FL.png",
+      "label": "Game Boy Advance (AGB-001, black)",
+      "author": "Evan-Amos / Sacamol",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/genesis.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Sega-Genesis-NA-Mk2-Console-Set.png",
+      "label": "Sega Genesis Model 2 with controller",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/sega-cd.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Sega-CD-Model2-Set.png",
+      "label": "Sega CD Model 2 with Genesis Model 2",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/32x.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Sega-Genesis-Model2-32X.png",
+      "label": "Sega 32X attached to Genesis Model 2",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/ps1.png",
+      "source": "https://commons.wikimedia.org/wiki/File:PSX-Console-wController.png",
+      "label": "Sony PlayStation (SCPH-5001) with DualShock and memory card",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/n64.png",
+      "source": "https://commons.wikimedia.org/wiki/File:N64-Console-Set.png",
+      "label": "Nintendo 64 with gray controller",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/n64-console.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Nintendo-64-Console-FL.png",
+      "label": "Nintendo 64 console",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/dreamcast.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Sega-Dreamcast-Console-FL.png",
+      "label": "Sega Dreamcast (North America)",
+      "author": "Evan-Amos / Gunnar.offel",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/ds.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Nintendo-DS-Fat-Blue.png",
+      "label": "Original Nintendo DS (NTR-001, blue)",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/psp.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Sony-PSP-1000-Body.png",
+      "label": "Sony PlayStation Portable (PSP-1000)",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    },
+    {
+      "src": "console-photos/pc-engine-cd.png",
+      "source": "https://commons.wikimedia.org/wiki/File:NEC-TurboGrafx-16-CD-FL.png",
+      "label": "TurboGrafx-CD dock and drive with TurboGrafx-16 (North America)",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+    }
+  ]
+}
+
