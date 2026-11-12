@@ -37,13 +37,13 @@
       "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
     },
     {
-      "src": "console-photos/gb.png",
+      "src": "console-photos/gb-restored-nov3.png",
       "source": "https://commons.wikimedia.org/wiki/File:Game-Boy-Original.png",
       "label": "Original Game Boy (DMG-01)",
       "author": "Evan-Amos",
       "license": "Public domain",
       "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
-      "changes": "Existing transparent cutout; Wikimedia thumbnail, no local bitmap changes"
+      "changes": "Upper housing and power-switch area restored from the existing damaged local photo with ImageGen, by explicit user approval on 2026-11-03; photographic appearance retained. Not a new photograph."
     },
     {
       "src": "console-photos/gbc.png",

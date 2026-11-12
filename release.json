@@ -1,11 +1,18 @@
 {
-  "version": "Beta 5",
-  "build": "2026-10-31-r1",
-  "date": "2026-10-31",
+  "version": "Beta 7",
+  "build": "2026-11-12-r1",
+  "date": "2026-11-12",
   "previewState": "ready",
   "changes": [
-    "Added a large illustrated amber side-switch texture fitted to the existing radio case, preserving size switching and fixed pressed bounds.",
-    "Added an iPhone home-screen icon based on the original cartridge-and-book logo, with an opaque 1024px master and an Apple touch icon."
+    "Press Start now opens a random eligible game from your library while keeping its illustrated button and animation.",
+    "Replaced Random Game navigation with Game History, including a pixel journal icon, monthly grouping, play dates, player scores and personal notes.",
+    "Kept undated records in a separate section and used existing stable game IDs and saves without inventing dates, recording browsing as play activity or changing personal data.",
+    "Distinguished previous unpublished beta previews from published releases in the changelog.",
+    "Fixed Game History Back navigation after reopening the same section, and labeled status timestamps as activity rather than proof of a play session.",
+    "Fixed Play Next cards widening the page on narrow phones while retaining readable text and full covers.",
+    "Cleaned duplicate internal component IDs and made rebuilding the current page repeatable.",
+    "Prepared a clean publication file list that includes computed seasonal artwork and excludes authoring files, audit archives and obsolete artwork variants.",
+    "Fixed the Press Start blink so the drawn dark frame appears only after loading and the button stays readable if either image is unavailable."
   ],
   "channel": "beta"
 }
