@@ -1,18 +1,15 @@
 {
-  "version": "Beta 7",
-  "build": "2026-11-12-r1",
+  "version": "Beta 7.1",
+  "build": "2026-11-12-r2",
   "date": "2026-11-12",
   "previewState": "ready",
   "changes": [
-    "Press Start now opens a random eligible game from your library while keeping its illustrated button and animation.",
-    "Replaced Random Game navigation with Game History, including a pixel journal icon, monthly grouping, play dates, player scores and personal notes.",
-    "Kept undated records in a separate section and used existing stable game IDs and saves without inventing dates, recording browsing as play activity or changing personal data.",
-    "Distinguished previous unpublished beta previews from published releases in the changelog.",
-    "Fixed Game History Back navigation after reopening the same section, and labeled status timestamps as activity rather than proof of a play session.",
-    "Fixed Play Next cards widening the page on narrow phones while retaining readable text and full covers.",
-    "Cleaned duplicate internal component IDs and made rebuilding the current page repeatable.",
-    "Prepared a clean publication file list that includes computed seasonal artwork and excludes authoring files, audit archives and obsolete artwork variants.",
-    "Fixed the Press Start blink so the drawn dark frame appears only after loading and the button stays readable if either image is unavailable."
+    "Aligned console photos, titles, metadata, counts and Explore console buttons on shared rows.",
+    "Placed each genre game count directly above its Explore genre button.",
+    "Redrew the pixel icons for Game History, Genres and Consoles, and simplified the Game Catalog heading.",
+    "Added Stalking Motif as the Friday the 13th radio playlist, with calendar selection and manual playback.",
+    "Removed the dark inset from highlighted library statistic tiles.",
+    "Starts the radio at 20% by default, retrying after the first interaction when required by the browser. Saved pause and custom volume are respected."
   ],
   "channel": "beta"
 }
